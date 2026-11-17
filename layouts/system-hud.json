@@ -1,0 +1,1243 @@
+{
+  "_seed": true,
+  "grid": {
+    "snap": true,
+    "step": 20
+  },
+  "nodes": [
+    {
+      "anchor": "c",
+      "id": "clock",
+      "type": "data",
+      "prop": "Clock.Time",
+      "x": -300,
+      "y": -361,
+      "w": 600,
+      "color": "#39ff70",
+      "font": {
+        "family": "seg7c",
+        "size": 76,
+        "weight": 700
+      },
+      "align": "center",
+      "digits": 0,
+      "mono": true
+    },
+    {
+      "anchor": "c",
+      "id": "c_cpu",
+      "type": "box",
+      "text": "CPU",
+      "x": -680,
+      "y": -315,
+      "w": 60,
+      "h": 15,
+      "color": "#0f4d26",
+      "font": {
+        "family": "droid",
+        "size": 9,
+        "weight": 500
+      },
+      "align": "left"
+    },
+    {
+      "anchor": "c",
+      "id": "cpu",
+      "type": "data",
+      "prop": "Sys.Cpu",
+      "x": -680,
+      "y": -278,
+      "w": 110,
+      "color": "#39ff70",
+      "font": {
+        "family": "seg7c",
+        "size": 38,
+        "weight": 700
+      },
+      "align": "left",
+      "unit": "%",
+      "digits": 3,
+      "mono": true
+    },
+    {
+      "anchor": "c",
+      "id": "cpu_b",
+      "type": "bar",
+      "prop": "Sys.Cpu",
+      "x": -680,
+      "y": -253,
+      "w": 200,
+      "h": 7,
+      "orient": "h",
+      "min": 0,
+      "max": 100,
+      "color": "#39ff70",
+      "fill": "gradient",
+      "color2": "#ffd24a",
+      "color3": "#ff4646",
+      "z1": 70,
+      "z2": 90
+    },
+    {
+      "anchor": "c",
+      "id": "cpu_t_l",
+      "type": "box",
+      "text": "temp",
+      "x": -680,
+      "y": -218,
+      "w": 52,
+      "h": 16,
+      "color": "#1f9e4d",
+      "font": {
+        "family": "droid",
+        "size": 10,
+        "weight": 500
+      },
+      "align": "right"
+    },
+    {
+      "anchor": "c",
+      "id": "cpu_t",
+      "type": "data",
+      "prop": "Sys.CpuTemp",
+      "x": -622,
+      "y": -224,
+      "w": 66,
+      "color": "#39ff70",
+      "font": {
+        "family": "oxan",
+        "size": 16,
+        "weight": 400
+      },
+      "align": "left",
+      "unit": "°C",
+      "digits": 2
+    },
+    {
+      "anchor": "c",
+      "id": "cpu_p_l",
+      "type": "box",
+      "text": "pwr",
+      "x": -680,
+      "y": -192,
+      "w": 52,
+      "h": 16,
+      "color": "#0f4d26",
+      "font": {
+        "family": "droid",
+        "size": 10,
+        "weight": 500
+      },
+      "align": "right"
+    },
+    {
+      "anchor": "c",
+      "id": "cpu_p",
+      "type": "data",
+      "prop": "Sys.CpuPower",
+      "x": -622,
+      "y": -198,
+      "w": 66,
+      "color": "#1f9e4d",
+      "font": {
+        "family": "oxan",
+        "size": 16,
+        "weight": 400
+      },
+      "align": "left",
+      "unit": "W",
+      "digits": 3
+    },
+    {
+      "anchor": "c",
+      "id": "c_gpu",
+      "type": "box",
+      "text": "GPU",
+      "x": 480,
+      "y": -315,
+      "w": 60,
+      "h": 15,
+      "color": "#0f4d26",
+      "font": {
+        "family": "droid",
+        "size": 9,
+        "weight": 500
+      },
+      "align": "left"
+    },
+    {
+      "anchor": "c",
+      "id": "gpu_u",
+      "type": "data",
+      "prop": "Gpu.Usage",
+      "x": 480,
+      "y": -278,
+      "w": 110,
+      "color": "#39ff70",
+      "font": {
+        "family": "seg7c",
+        "size": 38,
+        "weight": 700
+      },
+      "align": "left",
+      "unit": "%",
+      "digits": 3,
+      "mono": true
+    },
+    {
+      "anchor": "c",
+      "id": "gpu_b",
+      "type": "bar",
+      "prop": "Gpu.Usage",
+      "x": 480,
+      "y": -253,
+      "w": 200,
+      "h": 7,
+      "orient": "h",
+      "min": 0,
+      "max": 100,
+      "color": "#39ff70",
+      "fill": "gradient",
+      "color2": "#ffd24a",
+      "color3": "#ff4646",
+      "z1": 70,
+      "z2": 90
+    },
+    {
+      "anchor": "c",
+      "id": "gpu_t_l",
+      "type": "box",
+      "text": "temp",
+      "x": 480,
+      "y": -218,
+      "w": 52,
+      "h": 16,
+      "color": "#1f9e4d",
+      "font": {
+        "family": "droid",
+        "size": 10,
+        "weight": 500
+      },
+      "align": "right"
+    },
+    {
+      "anchor": "c",
+      "id": "gpu_t",
+      "type": "data",
+      "prop": "Gpu.Temp",
+      "x": 538,
+      "y": -224,
+      "w": 66,
+      "color": "#39ff70",
+      "font": {
+        "family": "oxan",
+        "size": 16,
+        "weight": 400
+      },
+      "align": "left",
+      "unit": "°C",
+      "digits": 2
+    },
+    {
+      "anchor": "c",
+      "id": "gpu_f_l",
+      "type": "box",
+      "text": "fan",
+      "x": 480,
+      "y": -192,
+      "w": 52,
+      "h": 16,
+      "color": "#0f4d26",
+      "font": {
+        "family": "droid",
+        "size": 10,
+        "weight": 500
+      },
+      "align": "right"
+    },
+    {
+      "anchor": "c",
+      "id": "gpu_f",
+      "type": "data",
+      "prop": "Gpu.FanPct",
+      "x": 538,
+      "y": -198,
+      "w": 66,
+      "color": "#1f9e4d",
+      "font": {
+        "family": "oxan",
+        "size": 16,
+        "weight": 400
+      },
+      "align": "left",
+      "unit": "%",
+      "digits": 2
+    },
+    {
+      "anchor": "c",
+      "id": "gpu_p_l",
+      "type": "box",
+      "text": "pwr",
+      "x": 480,
+      "y": -166,
+      "w": 52,
+      "h": 16,
+      "color": "#0f4d26",
+      "font": {
+        "family": "droid",
+        "size": 10,
+        "weight": 500
+      },
+      "align": "right"
+    },
+    {
+      "anchor": "c",
+      "id": "gpu_p",
+      "type": "data",
+      "prop": "Gpu.Power",
+      "x": 538,
+      "y": -172,
+      "w": 66,
+      "color": "#1f9e4d",
+      "font": {
+        "family": "oxan",
+        "size": 16,
+        "weight": 400
+      },
+      "align": "left",
+      "unit": "W",
+      "digits": 3
+    },
+    {
+      "anchor": "c",
+      "id": "c_dx",
+      "type": "box",
+      "text": "FPS",
+      "x": -140,
+      "y": -185,
+      "w": 60,
+      "h": 15,
+      "color": "#0f4d26",
+      "font": {
+        "family": "droid",
+        "size": 9,
+        "weight": 500
+      },
+      "align": "left"
+    },
+    {
+      "anchor": "c",
+      "id": "fps",
+      "type": "data",
+      "prop": "Dx.Fps",
+      "x": -140,
+      "y": -145,
+      "w": 130,
+      "color": "#39ff70",
+      "font": {
+        "family": "seg7c",
+        "size": 40,
+        "weight": 700
+      },
+      "align": "left",
+      "unit": "fps",
+      "digits": 3,
+      "mono": true
+    },
+    {
+      "anchor": "c",
+      "id": "fms_l",
+      "type": "box",
+      "text": "frame",
+      "x": 30,
+      "y": -155,
+      "w": 52,
+      "h": 16,
+      "color": "#1f9e4d",
+      "font": {
+        "family": "droid",
+        "size": 10,
+        "weight": 500
+      },
+      "align": "right"
+    },
+    {
+      "anchor": "c",
+      "id": "fms",
+      "type": "data",
+      "prop": "Dx.FrameMs",
+      "x": 88,
+      "y": -160,
+      "w": 60,
+      "color": "#39ff70",
+      "font": {
+        "family": "oxan",
+        "size": 15,
+        "weight": 400
+      },
+      "align": "left",
+      "unit": "ms",
+      "dec": 1
+    },
+    {
+      "anchor": "c",
+      "id": "cms_l",
+      "type": "box",
+      "text": "cpu",
+      "x": 160,
+      "y": -155,
+      "w": 30,
+      "h": 16,
+      "color": "#1f9e4d",
+      "font": {
+        "family": "droid",
+        "size": 10,
+        "weight": 500
+      },
+      "align": "right"
+    },
+    {
+      "anchor": "c",
+      "id": "cms",
+      "type": "data",
+      "prop": "Dx.CpuMs",
+      "x": 196,
+      "y": -160,
+      "w": 50,
+      "color": "#1f9e4d",
+      "font": {
+        "family": "oxan",
+        "size": 15,
+        "weight": 400
+      },
+      "align": "left",
+      "unit": "ms",
+      "dec": 1
+    },
+    {
+      "anchor": "c",
+      "id": "gms_l",
+      "type": "box",
+      "text": "gpu",
+      "x": 30,
+      "y": -129,
+      "w": 52,
+      "h": 16,
+      "color": "#1f9e4d",
+      "font": {
+        "family": "droid",
+        "size": 10,
+        "weight": 500
+      },
+      "align": "right"
+    },
+    {
+      "anchor": "c",
+      "id": "gms",
+      "type": "data",
+      "prop": "Dx.GpuMs",
+      "x": 88,
+      "y": -134,
+      "w": 60,
+      "color": "#39ff70",
+      "font": {
+        "family": "oxan",
+        "size": 15,
+        "weight": 400
+      },
+      "align": "left",
+      "unit": "ms",
+      "dec": 1
+    },
+    {
+      "anchor": "c",
+      "id": "drp_l",
+      "type": "box",
+      "text": "drop",
+      "x": 160,
+      "y": -129,
+      "w": 34,
+      "h": 16,
+      "color": "#1f9e4d",
+      "font": {
+        "family": "droid",
+        "size": 10,
+        "weight": 500
+      },
+      "align": "right"
+    },
+    {
+      "anchor": "c",
+      "id": "drp",
+      "type": "data",
+      "prop": "Dx.Drops",
+      "x": 200,
+      "y": -134,
+      "w": 50,
+      "color": "#1f9e4d",
+      "font": {
+        "family": "oxan",
+        "size": 15,
+        "weight": 400
+      },
+      "align": "left"
+    },
+    {
+      "anchor": "c",
+      "id": "g_fps",
+      "type": "graph",
+      "prop": "Dx.Fps",
+      "x": -140,
+      "y": -60,
+      "w": 280,
+      "h": 60,
+      "color": "#39ff70",
+      "min": 0,
+      "max": 240
+    },
+    {
+      "anchor": "c",
+      "id": "c_hist",
+      "type": "box",
+      "text": "HISTORY",
+      "x": -140,
+      "y": -29,
+      "w": 70,
+      "h": 15,
+      "color": "#0f4d26",
+      "font": {
+        "family": "droid",
+        "size": 9,
+        "weight": 500
+      },
+      "align": "left"
+    },
+    {
+      "anchor": "c",
+      "id": "g_cpu",
+      "type": "graph",
+      "prop": "Sys.Cpu",
+      "x": -140,
+      "y": 20,
+      "w": 280,
+      "h": 50,
+      "color": "#39ff70",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "anchor": "c",
+      "id": "g_ram",
+      "type": "graph",
+      "prop": "Sys.Ram",
+      "x": -140,
+      "y": 20,
+      "w": 280,
+      "h": 50,
+      "color": "#1f9e4d",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "anchor": "c",
+      "id": "hcl",
+      "type": "box",
+      "text": "cpu",
+      "x": -140,
+      "y": 41,
+      "w": 30,
+      "h": 15,
+      "color": "#39ff70",
+      "font": {
+        "family": "droid",
+        "size": 9,
+        "weight": 500
+      },
+      "align": "left"
+    },
+    {
+      "anchor": "c",
+      "id": "hrl",
+      "type": "box",
+      "text": "ram",
+      "x": -104,
+      "y": 41,
+      "w": 30,
+      "h": 15,
+      "color": "#1f9e4d",
+      "font": {
+        "family": "droid",
+        "size": 9,
+        "weight": 500
+      },
+      "align": "left"
+    },
+    {
+      "anchor": "c",
+      "id": "c_ram",
+      "type": "box",
+      "text": "RAM",
+      "x": -680,
+      "y": -75,
+      "w": 60,
+      "h": 15,
+      "color": "#0f4d26",
+      "font": {
+        "family": "droid",
+        "size": 9,
+        "weight": 500
+      },
+      "align": "left"
+    },
+    {
+      "anchor": "c",
+      "id": "ram",
+      "type": "data",
+      "prop": "Sys.Ram",
+      "x": -680,
+      "y": -48,
+      "w": 100,
+      "color": "#39ff70",
+      "font": {
+        "family": "oxan",
+        "size": 26,
+        "weight": 700
+      },
+      "align": "left",
+      "unit": "%",
+      "digits": 3,
+      "mono": true
+    },
+    {
+      "anchor": "c",
+      "id": "ram_b",
+      "type": "bar",
+      "prop": "Sys.Ram",
+      "x": -560,
+      "y": -56,
+      "w": 400,
+      "h": 6,
+      "orient": "h",
+      "min": 0,
+      "max": 100,
+      "color": "#39ff70",
+      "fill": "gradient",
+      "color2": "#ffd24a",
+      "color3": "#ff4646",
+      "z1": 80,
+      "z2": 92
+    },
+    {
+      "anchor": "c",
+      "id": "c_fan",
+      "type": "box",
+      "text": "FANS RPM",
+      "x": -680,
+      "y": -15,
+      "w": 90,
+      "h": 15,
+      "color": "#0f4d26",
+      "font": {
+        "family": "droid",
+        "size": 9,
+        "weight": 500
+      },
+      "align": "left"
+    },
+    {
+      "anchor": "c",
+      "id": "fl1",
+      "type": "box",
+      "text": "f1",
+      "x": -680,
+      "y": 9,
+      "w": 30,
+      "h": 15,
+      "color": "#0f4d26",
+      "font": {
+        "family": "droid",
+        "size": 9,
+        "weight": 500
+      },
+      "align": "left"
+    },
+    {
+      "anchor": "c",
+      "id": "fan1",
+      "type": "data",
+      "prop": "Fan.1",
+      "x": -650,
+      "y": 2,
+      "w": 70,
+      "color": "#39ff70",
+      "font": {
+        "family": "oxan",
+        "size": 15,
+        "weight": 400
+      },
+      "align": "left",
+      "digits": 4,
+      "mono": true
+    },
+    {
+      "anchor": "c",
+      "id": "fl2",
+      "type": "box",
+      "text": "f2",
+      "x": -570,
+      "y": 9,
+      "w": 30,
+      "h": 15,
+      "color": "#0f4d26",
+      "font": {
+        "family": "droid",
+        "size": 9,
+        "weight": 500
+      },
+      "align": "left"
+    },
+    {
+      "anchor": "c",
+      "id": "fan2",
+      "type": "data",
+      "prop": "Fan.2",
+      "x": -540,
+      "y": 2,
+      "w": 70,
+      "color": "#39ff70",
+      "font": {
+        "family": "oxan",
+        "size": 15,
+        "weight": 400
+      },
+      "align": "left",
+      "digits": 4,
+      "mono": true
+    },
+    {
+      "anchor": "c",
+      "id": "fl3",
+      "type": "box",
+      "text": "f3",
+      "x": -460,
+      "y": 9,
+      "w": 30,
+      "h": 15,
+      "color": "#0f4d26",
+      "font": {
+        "family": "droid",
+        "size": 9,
+        "weight": 500
+      },
+      "align": "left"
+    },
+    {
+      "anchor": "c",
+      "id": "fan3",
+      "type": "data",
+      "prop": "Fan.3",
+      "x": -430,
+      "y": 2,
+      "w": 70,
+      "color": "#39ff70",
+      "font": {
+        "family": "oxan",
+        "size": 15,
+        "weight": 400
+      },
+      "align": "left",
+      "digits": 4,
+      "mono": true
+    },
+    {
+      "anchor": "c",
+      "id": "fl4",
+      "type": "box",
+      "text": "f4",
+      "x": -350,
+      "y": 9,
+      "w": 30,
+      "h": 15,
+      "color": "#0f4d26",
+      "font": {
+        "family": "droid",
+        "size": 9,
+        "weight": 500
+      },
+      "align": "left"
+    },
+    {
+      "anchor": "c",
+      "id": "fan4",
+      "type": "data",
+      "prop": "Fan.4",
+      "x": -320,
+      "y": 2,
+      "w": 70,
+      "color": "#39ff70",
+      "font": {
+        "family": "oxan",
+        "size": 15,
+        "weight": 400
+      },
+      "align": "left",
+      "digits": 4,
+      "mono": true
+    },
+    {
+      "anchor": "c",
+      "id": "fl5",
+      "type": "box",
+      "text": "f5",
+      "x": -240,
+      "y": 9,
+      "w": 30,
+      "h": 15,
+      "color": "#0f4d26",
+      "font": {
+        "family": "droid",
+        "size": 9,
+        "weight": 500
+      },
+      "align": "left"
+    },
+    {
+      "anchor": "c",
+      "id": "fan5",
+      "type": "data",
+      "prop": "Fan.5",
+      "x": -210,
+      "y": 2,
+      "w": 70,
+      "color": "#39ff70",
+      "font": {
+        "family": "oxan",
+        "size": 15,
+        "weight": 400
+      },
+      "align": "left",
+      "digits": 4,
+      "mono": true
+    },
+    {
+      "anchor": "c",
+      "id": "bt0",
+      "type": "box",
+      "x": -680,
+      "y": 328,
+      "w": 1,
+      "h": 8,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt1",
+      "type": "box",
+      "x": -640,
+      "y": 324,
+      "w": 1,
+      "h": 4,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt2",
+      "type": "box",
+      "x": -600,
+      "y": 324,
+      "w": 1,
+      "h": 4,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt3",
+      "type": "box",
+      "x": -560,
+      "y": 324,
+      "w": 1,
+      "h": 4,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt4",
+      "type": "box",
+      "x": -520,
+      "y": 324,
+      "w": 1,
+      "h": 4,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt5",
+      "type": "box",
+      "x": -480,
+      "y": 328,
+      "w": 1,
+      "h": 8,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt6",
+      "type": "box",
+      "x": -440,
+      "y": 324,
+      "w": 1,
+      "h": 4,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt7",
+      "type": "box",
+      "x": -400,
+      "y": 324,
+      "w": 1,
+      "h": 4,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt8",
+      "type": "box",
+      "x": -360,
+      "y": 324,
+      "w": 1,
+      "h": 4,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt9",
+      "type": "box",
+      "x": -320,
+      "y": 324,
+      "w": 1,
+      "h": 4,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt10",
+      "type": "box",
+      "x": -280,
+      "y": 328,
+      "w": 1,
+      "h": 8,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt11",
+      "type": "box",
+      "x": -240,
+      "y": 324,
+      "w": 1,
+      "h": 4,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt12",
+      "type": "box",
+      "x": -200,
+      "y": 324,
+      "w": 1,
+      "h": 4,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt13",
+      "type": "box",
+      "x": -160,
+      "y": 324,
+      "w": 1,
+      "h": 4,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt14",
+      "type": "box",
+      "x": -120,
+      "y": 324,
+      "w": 1,
+      "h": 4,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt15",
+      "type": "box",
+      "x": -80,
+      "y": 328,
+      "w": 1,
+      "h": 8,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt16",
+      "type": "box",
+      "x": -40,
+      "y": 324,
+      "w": 1,
+      "h": 4,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt17",
+      "type": "box",
+      "x": 0,
+      "y": 324,
+      "w": 1,
+      "h": 4,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt18",
+      "type": "box",
+      "x": 40,
+      "y": 324,
+      "w": 1,
+      "h": 4,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt19",
+      "type": "box",
+      "x": 80,
+      "y": 324,
+      "w": 1,
+      "h": 4,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt20",
+      "type": "box",
+      "x": 120,
+      "y": 328,
+      "w": 1,
+      "h": 8,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt21",
+      "type": "box",
+      "x": 160,
+      "y": 324,
+      "w": 1,
+      "h": 4,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt22",
+      "type": "box",
+      "x": 200,
+      "y": 324,
+      "w": 1,
+      "h": 4,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt23",
+      "type": "box",
+      "x": 240,
+      "y": 324,
+      "w": 1,
+      "h": 4,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt24",
+      "type": "box",
+      "x": 280,
+      "y": 324,
+      "w": 1,
+      "h": 4,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt25",
+      "type": "box",
+      "x": 320,
+      "y": 328,
+      "w": 1,
+      "h": 8,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt26",
+      "type": "box",
+      "x": 360,
+      "y": 324,
+      "w": 1,
+      "h": 4,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt27",
+      "type": "box",
+      "x": 400,
+      "y": 324,
+      "w": 1,
+      "h": 4,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt28",
+      "type": "box",
+      "x": 440,
+      "y": 324,
+      "w": 1,
+      "h": 4,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt29",
+      "type": "box",
+      "x": 480,
+      "y": 324,
+      "w": 1,
+      "h": 4,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt30",
+      "type": "box",
+      "x": 520,
+      "y": 328,
+      "w": 1,
+      "h": 8,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt31",
+      "type": "box",
+      "x": 560,
+      "y": 324,
+      "w": 1,
+      "h": 4,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt32",
+      "type": "box",
+      "x": 600,
+      "y": 324,
+      "w": 1,
+      "h": 4,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt33",
+      "type": "box",
+      "x": 640,
+      "y": 324,
+      "w": 1,
+      "h": 4,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    },
+    {
+      "anchor": "c",
+      "id": "bt34",
+      "type": "box",
+      "x": 680,
+      "y": 324,
+      "w": 1,
+      "h": 4,
+      "bg": true,
+      "bgColor": "#39ff70",
+      "bgAlpha": 30
+    }
+  ]
+}

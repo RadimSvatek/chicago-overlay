@@ -1,0 +1,754 @@
+{
+ "_seed": true,
+ "grid": {
+  "snap": true,
+  "step": 20
+ },
+ "nodes": [
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "l_os",
+   "type": "box",
+   "x": -180,
+   "y": -172,
+   "w": 60,
+   "h": 16,
+   "text": "OS",
+   "color": "#6b7688",
+   "font": {
+    "family": "droid",
+    "size": 10,
+    "weight": 500
+   },
+   "align": "right"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "d_os",
+   "type": "data",
+   "prop": "Hw.Os",
+   "x": 0,
+   "y": -174,
+   "w": 280,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 11,
+    "weight": 400
+   },
+   "align": "center"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "l_mb",
+   "type": "box",
+   "x": -180,
+   "y": -148,
+   "w": 60,
+   "h": 16,
+   "text": "MB",
+   "color": "#6b7688",
+   "font": {
+    "family": "droid",
+    "size": 10,
+    "weight": 500
+   },
+   "align": "right"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "d_mb",
+   "type": "data",
+   "prop": "Hw.Mb",
+   "x": 0,
+   "y": -150,
+   "w": 280,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 11,
+    "weight": 400
+   },
+   "align": "center"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "l_bios",
+   "type": "box",
+   "x": -180,
+   "y": -124,
+   "w": 60,
+   "h": 16,
+   "text": "BIOS",
+   "color": "#6b7688",
+   "font": {
+    "family": "droid",
+    "size": 10,
+    "weight": 500
+   },
+   "align": "right"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "d_bios",
+   "type": "data",
+   "prop": "Hw.Bios",
+   "x": 0,
+   "y": -126,
+   "w": 280,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 11,
+    "weight": 400
+   },
+   "align": "center"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "l_cpu",
+   "type": "box",
+   "x": -180,
+   "y": -100,
+   "w": 60,
+   "h": 16,
+   "text": "CPU",
+   "color": "#6b7688",
+   "font": {
+    "family": "droid",
+    "size": 10,
+    "weight": 500
+   },
+   "align": "right"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "d_cpu",
+   "type": "data",
+   "prop": "Hw.Cpu",
+   "x": 0,
+   "y": -102,
+   "w": 280,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 11,
+    "weight": 400
+   },
+   "align": "center"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "l_cspec",
+   "type": "box",
+   "x": -180,
+   "y": -76,
+   "w": 60,
+   "h": 16,
+   "text": "spec",
+   "color": "#6b7688",
+   "font": {
+    "family": "droid",
+    "size": 10,
+    "weight": 500
+   },
+   "align": "right"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "d_cspec",
+   "type": "data",
+   "prop": "Hw.Cpu.Cores",
+   "x": 0,
+   "y": -78,
+   "w": 280,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 11,
+    "weight": 400
+   },
+   "align": "center"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "l_gpu",
+   "type": "box",
+   "x": -180,
+   "y": -52,
+   "w": 60,
+   "h": 16,
+   "text": "GPU",
+   "color": "#6b7688",
+   "font": {
+    "family": "droid",
+    "size": 10,
+    "weight": 500
+   },
+   "align": "right"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "d_gpu",
+   "type": "data",
+   "prop": "Hw.Gpu",
+   "x": 0,
+   "y": -54,
+   "w": 280,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 11,
+    "weight": 400
+   },
+   "align": "center"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "l_vram",
+   "type": "box",
+   "x": -180,
+   "y": -28,
+   "w": 60,
+   "h": 16,
+   "text": "vram",
+   "color": "#6b7688",
+   "font": {
+    "family": "droid",
+    "size": 10,
+    "weight": 500
+   },
+   "align": "right"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "d_vram",
+   "type": "data",
+   "prop": "Hw.Gpu.Vram",
+   "x": 0,
+   "y": -30,
+   "w": 280,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 11,
+    "weight": 400
+   },
+   "align": "center"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "l_sio",
+   "type": "box",
+   "x": -180,
+   "y": -4,
+   "w": 60,
+   "h": 16,
+   "text": "SIO",
+   "color": "#6b7688",
+   "font": {
+    "family": "droid",
+    "size": 10,
+    "weight": 500
+   },
+   "align": "right"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "d_sio",
+   "type": "data",
+   "prop": "Hw.Sio",
+   "x": 0,
+   "y": -6,
+   "w": 280,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 11,
+    "weight": 400
+   },
+   "align": "center"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "l_ram",
+   "type": "box",
+   "x": -180,
+   "y": 20,
+   "w": 60,
+   "h": 16,
+   "text": "RAM",
+   "color": "#6b7688",
+   "font": {
+    "family": "droid",
+    "size": 10,
+    "weight": 500
+   },
+   "align": "right"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "d_ram",
+   "type": "data",
+   "prop": "Hw.Ram",
+   "x": 0,
+   "y": 18,
+   "w": 280,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 11,
+    "weight": 400
+   },
+   "align": "center"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "l_part",
+   "type": "box",
+   "x": -180,
+   "y": 44,
+   "w": 60,
+   "h": 16,
+   "text": "part",
+   "color": "#6b7688",
+   "font": {
+    "family": "droid",
+    "size": 10,
+    "weight": 500
+   },
+   "align": "right"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "d_part",
+   "type": "data",
+   "prop": "Hw.Ram.Part",
+   "x": 0,
+   "y": 42,
+   "w": 280,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 11,
+    "weight": 400
+   },
+   "align": "center"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "l_dsk1",
+   "type": "box",
+   "x": -180,
+   "y": 68,
+   "w": 60,
+   "h": 16,
+   "text": "DISK",
+   "color": "#6b7688",
+   "font": {
+    "family": "droid",
+    "size": 10,
+    "weight": 500
+   },
+   "align": "right"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "d_dsk1",
+   "type": "data",
+   "prop": "Hw.Disk.1",
+   "x": 0,
+   "y": 66,
+   "w": 280,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 11,
+    "weight": 400
+   },
+   "align": "center"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "l_dsk2",
+   "type": "box",
+   "x": -180,
+   "y": 92,
+   "w": 60,
+   "h": 16,
+   "text": "",
+   "color": "#6b7688",
+   "font": {
+    "family": "droid",
+    "size": 10,
+    "weight": 500
+   },
+   "align": "right"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "d_dsk2",
+   "type": "data",
+   "prop": "Hw.Disk.2",
+   "x": 0,
+   "y": 90,
+   "w": 280,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 11,
+    "weight": 400
+   },
+   "align": "center"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "l_dsk3",
+   "type": "box",
+   "x": -180,
+   "y": 116,
+   "w": 60,
+   "h": 16,
+   "text": "",
+   "color": "#6b7688",
+   "font": {
+    "family": "droid",
+    "size": 10,
+    "weight": 500
+   },
+   "align": "right"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "d_dsk3",
+   "type": "data",
+   "prop": "Hw.Disk.3",
+   "x": 0,
+   "y": 114,
+   "w": 280,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 11,
+    "weight": 400
+   },
+   "align": "center"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "l_dsk4",
+   "type": "box",
+   "x": -180,
+   "y": 140,
+   "w": 60,
+   "h": 16,
+   "text": "",
+   "color": "#6b7688",
+   "font": {
+    "family": "droid",
+    "size": 10,
+    "weight": 500
+   },
+   "align": "right"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "d_dsk4",
+   "type": "data",
+   "prop": "Hw.Disk.4",
+   "x": 0,
+   "y": 138,
+   "w": 280,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 11,
+    "weight": 400
+   },
+   "align": "center"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "l_t",
+   "type": "box",
+   "x": -180,
+   "y": 180,
+   "w": 60,
+   "h": 16,
+   "text": "temp",
+   "color": "#6b7688",
+   "font": {
+    "family": "droid",
+    "size": 10,
+    "weight": 500
+   },
+   "align": "right"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "d_t0",
+   "type": "data",
+   "prop": "Sys.CpuTemp",
+   "x": -140,
+   "y": 178,
+   "w": 120,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 15,
+    "weight": 400
+   },
+   "align": "center",
+   "unit": "°C",
+   "digits": 0
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "d_t1",
+   "type": "data",
+   "prop": "Gpu.Temp",
+   "x": 0,
+   "y": 178,
+   "w": 120,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 15,
+    "weight": 400
+   },
+   "align": "center",
+   "unit": "°C",
+   "digits": 0
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "d_t2",
+   "type": "data",
+   "prop": "Mb.Temp",
+   "x": 140,
+   "y": 178,
+   "w": 120,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 15,
+    "weight": 400
+   },
+   "align": "center",
+   "unit": "°C",
+   "digits": 0
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "l_f",
+   "type": "box",
+   "x": -180,
+   "y": 224,
+   "w": 60,
+   "h": 16,
+   "text": "fan",
+   "color": "#6b7688",
+   "font": {
+    "family": "droid",
+    "size": 10,
+    "weight": 500
+   },
+   "align": "right"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "d_f0",
+   "type": "data",
+   "prop": "Fan.1",
+   "x": -165,
+   "y": 222,
+   "w": 62,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 11,
+    "weight": 400
+   },
+   "align": "center",
+   "unit": "rpm",
+   "digits": 0
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "d_f1",
+   "type": "data",
+   "prop": "Fan.2",
+   "x": -99,
+   "y": 222,
+   "w": 62,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 11,
+    "weight": 400
+   },
+   "align": "center",
+   "unit": "rpm",
+   "digits": 0
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "d_f2",
+   "type": "data",
+   "prop": "Fan.3",
+   "x": -33,
+   "y": 222,
+   "w": 62,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 11,
+    "weight": 400
+   },
+   "align": "center",
+   "unit": "rpm",
+   "digits": 0
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "d_f3",
+   "type": "data",
+   "prop": "Fan.4",
+   "x": 33,
+   "y": 222,
+   "w": 62,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 11,
+    "weight": 400
+   },
+   "align": "center",
+   "unit": "rpm",
+   "digits": 0
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "d_f4",
+   "type": "data",
+   "prop": "Fan.5",
+   "x": 99,
+   "y": 222,
+   "w": 62,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 11,
+    "weight": 400
+   },
+   "align": "center",
+   "unit": "rpm",
+   "digits": 0
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "d_f5",
+   "type": "data",
+   "prop": "Fan.6",
+   "x": 165,
+   "y": 222,
+   "w": 62,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 11,
+    "weight": 400
+   },
+   "align": "center",
+   "unit": "rpm",
+   "digits": 0
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "p_hw",
+   "type": "box",
+   "x": -230,
+   "y": 242,
+   "w": 460,
+   "h": 446,
+   "bg": true,
+   "bgColor": "#0a0d14",
+   "bgAlpha": 58,
+   "radius": 9,
+   "borderW": 1,
+   "borderColor": "#232c3c"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "p_hw_a",
+   "type": "box",
+   "x": -230,
+   "y": 242,
+   "w": 3,
+   "h": 446,
+   "bg": true,
+   "bgColor": "#37f06a",
+   "bgAlpha": 75,
+   "radius": 1
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "cap",
+   "type": "box",
+   "x": -216,
+   "y": -208,
+   "w": 120,
+   "h": 16,
+   "text": "HW INFO",
+   "color": "#6b7688",
+   "font": {
+    "family": "droid",
+    "size": 10,
+    "weight": 500
+   },
+   "align": "left"
+  }
+ ]
+}

@@ -10,17 +10,29 @@ Navržený pro simracing (přes SimHub) i sledování výkonu PC — bez zbyteč
 * **Univerzální telemetrie a systémová data:**
   * **SimRacing (SimHub Bridge):** Podpora více než 600 hodnot ze SimHubu (rychlost, otáčky, zařazený stupeň, živá delta, sektorové a traťové časy s automatickým fialovým/zeleným/žlutým stavovým barvením, rozestupy, teploty a tlaky pneumatik i brzd, palivo, vlajky, grafy pedálů). Obsahuje automatickou instalaci pluginu a hlídání kompatibility verzí.
   * **DirectX FPS a Frametime:** Měření FPS, frametime grafy a odezva CPU/GPU přes Intel PresentMon (funguje v okně bez okrajů i ve fullscreenu, nezávisle na značce grafické karty).
-  * **Hardwarové senzory:** Teploty CPU/GPU, spotřeba ve Wattech, vytížení, RAM a otáčky ventilátorů základní desky přes LibreHardwareMonitor a podepsaný ovladač PawnIO.
+  * **Hardwarové senzory:** Teploty CPU/GPU, spotřeba ve Wattech, vytížení, RAM, teplotní čidla desky a otáčky ventilátorů přes LibreHardwareMonitor a podepsaný ovladač PawnIO.
   * **Plocha a multimédia:** Hodiny, datum a real-time audio spektrum (8 volitelných EQ motorů) se zobrazením právě přehrávané skladby.
 * **Vestavěný vizuální editor (`Ctrl+Alt+E`):**
   * Přetahování myší, hromadný výběr prvků (jako v Průzkumníku), přichytávání k mřížce se zvýrazněnými hlavními linkami, zaměřovač přes obrazovku a ztmavení podkladu při úpravách.
   * Bohaté vizuální prvky: datové hodnoty, bary (plné, gradient, HSL spektrum, LED segmenty, svit, zrcadlový odraz), křivkové grafy, vlajky, sektory, časy kol a stavové boxy.
   * **Chytrá podmíněná pravidla:** Tříúrovňové barevné prahy, blikající výstrahy a podmínky zobrazení (`<`, `<=`, `=`, `!=`, `>=`, `>`) bez jediného řádku kódu.
+* **Auto profily (HUD podle hry):**
+  * Layout se přepne automaticky při spuštění hry nebo libovolného procesu — závodní HUD po startu, po vypnutí zpátky na čistou plochu. Detekce podle názvu procesu nebo hry ze SimHubu (částečná shoda).
+  * Pro jednotlivé nebo všechny monitory, včetně pravidel „HUD vypnutý" — třeba závod na hlavním monitoru a postranní zhasnuté.
+* **Řízení ventilátorů (bezpečné, na úrovni hw):**
+  * Ovládání hlaviček ventilátorů desky (SuperIO čip přes PawnIO — jako FanControl), větráků GPU i USB řadičů — auto / manuální % / teplotní křivka.
+  * Křivky s 2–6 body a hysterezí pro každou křivku; identifikace roztočí kanál na 100 %, aby bylo poznat, který větrák to fyzicky je.
+  * Bezpečí vestavěné: spodní limit 20 %, okamžitý návrat na hardware-auto při kritické teplotě a hlídací guardian proces, který vrátí řízení i při pádu aplikace.
+* **HW info — PC na jeden pohled:**
+  * Verze Windows, BIOS, deska, CPU (jádra/socket/takt), GPU (VRAM/ovladač), moduly RAM a disky s kapacitou — v okně z tray, na stránce v nastavení i v přiloženém layoutu `hw-info`. Náhrada výpisu HWiNFO.
+* **Upozornění a detekce bottlenecku:**
+  * Pravidla „klíč >= / <= hodnota" nad libovolnou telemetrií s pípnutím nebo hlasovou hláškou Windows (s pauzou mezi opakováním).
+  * Klíče `Sys.Limit` / `Sys.Throttle` ukážou, co brzdí FPS — GPU, CPU nebo teplotní throttle.
 * **Skutečná podpora více monitorů a úspora RAM:**
   * Každý monitor může mít vlastní layout i nezávislou obnovovací frekvenci (Plná / 60 / 30 / 20 / 10 / 5 Hz).
   * Volba mezi **sdíleným plátnem** (jeden WebView2 renderer pro všechny monitory — úspora ~140 MB RAM na každý další monitor) nebo **oddělenými okny**.
-* **14 vyladěných šablon v balíčku:**
-  * Obsahuje layouty `start`, `race-minimal`, `race-hud`, `race-pro`, `race-pro-2`, `race-hw`, `system-hw`, `system-hud`, `media-eq`, `media-hud`, `media-hud-2`, `combo-desk`, `combo-hud` a `sci-fi`.
+* **15 vyladěných šablon v balíčku:**
+  * Obsahuje layouty `start`, `race-minimal`, `race-hud`, `race-pro`, `race-pro-2`, `race-hw`, `system-hw`, `system-hud`, `hw-info`, `media-eq`, `media-hud`, `media-hud-2`, `combo-desk`, `combo-hud` a `sci-fi`.
 * **7 jazyků a nativní vzhled Windows 11/10:**
   * Kompletně v **češtině, angličtině, němčině, španělštině, francouzštině, italštině a polštině**. Automaticky přebírá akcentovou barvu a tmavý/světlý motiv Windows.
 

@@ -16,11 +16,23 @@ Entwickelt für Sim-Racing (über SimHub) und PC-Hardware-Monitoring — ohne un
   * Drag-and-Drop-Platzierung, Mehrfachauswahl (Auswahlrahmen), einrastendes Raster mit konfigurierbaren Hauptlinien, bildschirmweites Fadenkreuz und Hintergrundabdunklung für entspanntes Bearbeiten.
   * Vielfältige visuelle Elemente: Datenfelder, Balken (einfarbig, Farbverlauf, HSL-Spektrum, LED-Segmente, Leuchteffekt, Spiegelung), Liniendiagramme, Flaggen, Sektoren, Rundenzeiten und Status-Boxen.
   * **Intelligente bedingte Regeln:** 3-stufige Farbschwellenwerte, blinkende Warnungen und Sichtbarkeitsregeln (`<`, `<=`, `=`, `!=`, `>=`, `>`) ganz ohne Programmierkenntnisse.
+* **Auto-Profile (spielabhängiges HUD):**
+  * Wechselt Layouts automatisch, wenn ein Spiel oder ein beliebiger Prozess startet — Renn-HUD beim Start, nach dem Beenden zurück zum aufgeräumten Desktop. Erkennung über Prozessname oder SimHub-Spielname (Teilübereinstimmung).
+  * Pro Monitor oder für alle, plus „HUD aus"-Regeln — z. B. Rennlayout auf dem Hauptbildschirm, Seitenmonitore dunkel.
+* **Lüftersteuerung (sicher, auf Hardware-Ebene):**
+  * Steuerung der Mainboard-Lüfter-Header (SuperIO-Chip über PawnIO — wie FanControl), GPU-Lüfter und USB-Lüftercontroller — Auto / manuell % / Temperaturkurve.
+  * Kurven mit 2–6 Ankern und Hysterese pro Kurve; Lüfter-Identifikation dreht einen Kanal auf 100 %, damit du erkennst, welcher Header welcher ist.
+  * Sicherheit eingebaut: 20%-Minimum, sofortige Rückkehr zu Hardware-Auto bei kritischen Temperaturen und ein Guardian-Watchdog-Prozess, der die Steuerung selbst bei einem App-Absturz zurücksetzt.
+* **HW-Info — dein PC auf einen Blick:**
+  * Windows-Version, BIOS, Mainboard, CPU (Kerne/Sockel/Takt), GPU (VRAM/Treiber), RAM-Module und Festplatten mit Kapazität — im Tray-Fenster, auf einer Einstellungsseite und im mitgelieferten `hw-info`-Layout. Ersetzt die HWiNFO-Übersicht.
+* **Warnungen & Bottleneck-Erkennung:**
+  * Regeln „Schlüssel >= / <= Wert" über beliebiger Telemetrie mit Piep oder Windows-Sprachansage (mit Pause zwischen Wiederholungen).
+  * `Sys.Limit` / `Sys.Throttle` zeigen, was deine FPS bremst — GPU, CPU oder Thermo-Throttle.
 * **Echte Multi-Monitor-Unterstützung & geringer RAM-Verbrauch:**
   * Jedem Monitor lassen sich ein eigenes Layout sowie eine unabhängige Bildwiederholrate (Volle Geschwindigkeit / 60 / 30 / 20 / 10 / 5 Hz) zuweisen.
   * Wahl zwischen **Shared Canvas** (ein einziger WebView2-Renderer für alle Monitore — spart ca. 140 MB RAM pro zusätzlichem Bildschirm) oder **Split Canvas**.
-* **14 einsatzbereite Vorlagen enthalten:**
-  * Enthält die Layouts `start`, `race-minimal`, `race-hud`, `race-pro`, `race-pro-2`, `race-hw`, `system-hw`, `system-hud`, `media-eq`, `media-hud`, `media-hud-2`, `combo-desk`, `combo-hud` und `sci-fi`.
+* **15 einsatzbereite Vorlagen enthalten:**
+  * Enthält die Layouts `start`, `race-minimal`, `race-hud`, `race-pro`, `race-pro-2`, `race-hw`, `system-hw`, `system-hud`, `hw-info`, `media-eq`, `media-hud`, `media-hud-2`, `combo-desk`, `combo-hud` und `sci-fi`.
 * **7 Sprachen & natives Windows-11/10-Design:**
   * Verfügbar auf **Deutsch, Englisch, Tschechisch, Spanisch, Französisch, Italienisch und Polnisch** (sowohl Installer als auch App). Übernimmt automatisch die Windows-Akzentfarbe sowie den Dunkel-/Hellmodus.
 

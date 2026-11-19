@@ -1,4 +1,4 @@
-# Chicago Overlay
+![Chicago Overlay](assets/chicago_banner_1920x384.png)
 
 **A lightweight, customizable, multi-monitor telemetry & system HUD overlay for Windows 10/11.**
 Built for sim racing (via SimHub) and PC hardware monitoring — with zero bloat, low memory footprint, and a built-in visual layout editor.

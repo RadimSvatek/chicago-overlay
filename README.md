@@ -1,4 +1,4 @@
-![Chicago Overlay](assets/chicago_banner_1920x384.png)
+![Chicago Overlay](assets/chicago_banner.png)
 
 **A lightweight, customizable, multi-monitor telemetry & system HUD overlay for Windows 10/11.**
 Built for sim racing (via SimHub), PC hardware monitoring, and safe hardware-level fan control — with zero bloat, low memory footprint, a built-in visual layout editor, and an at-a-glance HW info panel.

@@ -15,7 +15,8 @@ Built for sim racing (via SimHub), PC hardware monitoring, and safe hardware-lev
   * **Desktop & Media:** Clock, date, and real-time audio spectrum visualizer (8 selectable EQ engines) with current track info.
 * **Built-in Visual HUD Builder (`Ctrl+Alt+E`):**
   * Drag-and-drop placement, multi-select marquee, snapping grid with configurable major lines, screen-wide crosshairs, and background dimming scrim for easy editing.
-  * Rich visual elements: data readouts, bars (solid, gradient, HSL spectrum, LED segments, glow, reflection), line graphs, flags, sectors, lap times, and status boxes.
+  * Rich visual elements: data readouts, bars (solid, gradient, HSL spectrum, LED segments, glow, reflection), line graphs, flags, sectors, lap times, status boxes — and **image elements** for logos, badges or any picture (fit modes, opacity, background, corner radius, PNG transparency).
+  * Right-click any element for **layer ordering** — to front / forward / backward / to back works across every element type, groups move as a block, full undo support.
   * **Smart Conditional Rules:** 3-level color thresholds, blinking alerts, and visibility rules (`<`, `<=`, `=`, `!=`, `>=`, `>`) without touching a single line of code.
 * **Auto Profiles (game-aware HUD):**
   * Switch layouts automatically when a game or any process starts — race HUD on launch, back to a clean desktop on exit. Detection via process name or SimHub game name (partial match).
@@ -32,18 +33,41 @@ Built for sim racing (via SimHub), PC hardware monitoring, and safe hardware-lev
 * **HW Info — your PC at a glance:**
   * Windows version, BIOS, motherboard, CPU (cores/socket/clock), GPU (VRAM/driver), RAM modules, and disks with capacity — in a tray window, a settings page, and the bundled `hw-info` HUD layout. No separate HWiNFO summary needed.
 * **Session Reports & Built-in Stress Test:**
-  * After each gaming session a summary is recorded (average fps, 1% low, max CPU/GPU temps & power, duration) — in Settings → System, so you can see what the last race actually did to your rig.
+  * After each gaming session a summary is recorded (average fps, 1% low, max CPU/GPU temps & power, duration) — browse them in the standalone Sessions window (tray menu or Settings), delete or ignore apps you don't want tracked.
   * Built-in CPU (0-100 % on all cores), GPU (WebGL shader) and RAM (MB allocation) stress test — perfect for tuning fan curves and the `tune-lab` layout without external tools.
 * **Alerts & Bottleneck Detection:**
   * "key >= / <= value" rules on any telemetry with a beep or Windows voice announcement (cooldown between repeats).
   * `Sys.Limit` / `Sys.Throttle` keys show what is holding your FPS back — GPU, CPU, or thermal throttle.
+* **Lite Mode — fans & HW monitor only:**
+  * Don't race? Run Chicago as a lean PC-tuning tool: fan control with curves, tray temperature icons, HW info, live network ping/loss, stress test, session reports and alerts — with the overlay, SimHub plugin and WebView2 completely off.
+  * Enable it in the installer options, in Settings, or just launch the always-installed **"Chicago Overlay lite"** shortcut (both full and lite shortcuts optionally on the desktop).
 * **True Multi-Monitor & Low RAM Architecture:**
   * Assign different layouts and independent refresh rates (Full / 60 / 30 / 20 / 10 / 5 Hz) per monitor.
   * Choose between **Shared Canvas** (single WebView2 renderer across all monitors, saving ~140 MB RAM per extra display) or **Split Canvas**.
 * **16 Ready-to-Use Presets Included:**
   * Includes `start`, `race-minimal`, `race-hud`, `race-pro`, `race-pro-2`, `race-hw`, `system-hw`, `system-hud`, `hw-info`, `media-eq`, `media-hud`, `media-hud-2`, `combo-desk`, `combo-hud`, `tune-lab` (fan-curve & stress tuning), and `sci-fi`.
 * **7 Languages & Native Windows 11/10 Styling:**
-  * Available in **English, Czech, German, Spanish, French, Italian, and Polish** (both installer and app). Automatically follows your Windows accent color and dark/light theme.
+  * Available in **English, Czech, German, Spanish, French, Italian, and Polish** (both installer and app). Follows your Windows accent color and dark/light theme — or pick any custom accent; the brand teal `#18D4C2` comes preselected on a clean install (your choice is never overwritten).
+
+---
+
+### Full or Lite — your choice at install
+
+One installer, two editions. You pick right after the info page — and you can always launch the other edition later, both live side by side.
+
+| | **Full** | **Lite** |
+|---|:---:|:---:|
+| HUD overlay, layouts & visual editor | ✓ | — |
+| SimHub racing telemetry | ✓ | — |
+| Media info & audio spectrum | ✓ | — |
+| FPS & frametimes (PresentMon) | ✓ | ✓ |
+| Fan control, curves & guardian watchdog | ✓ | ✓ |
+| HW info, sensors & network monitoring | ✓ | ✓ |
+| Stress test, session reports & alerts | ✓ | ✓ |
+| Settings, updates, autostart, 7 languages | ✓ | ✓ |
+| WebView2 runtime loaded | ✓ | never |
+
+*Both editions get their own Start-menu shortcut (desktop optional). Lite is a lean resident tool for PC tuning — no overlay, no SimHub, minimal RAM.*
 
 ---
 

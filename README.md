@@ -15,7 +15,7 @@ Built for sim racing (via SimHub), PC hardware monitoring, and safe hardware-lev
   * **Desktop & Media:** Clock, date, and real-time audio spectrum visualizer (8 selectable EQ engines) with current track info.
 * **Built-in Visual HUD Builder (`Ctrl+Alt+E`):**
   * Drag-and-drop placement, multi-select marquee, snapping grid with configurable major lines, screen-wide crosshairs, and background dimming scrim for easy editing.
-  * Rich visual elements: data readouts, bars (solid, gradient, HSL spectrum, LED segments, glow, reflection), line graphs, flags, sectors, lap times, status boxes — and **image elements** for logos, badges or any picture (fit modes, opacity, background, corner radius, PNG transparency).
+  * Rich visual elements: data readouts, bars (solid, gradient, HSL spectrum, LED segments, glow, reflection), line graphs, flags, sectors, lap times, status boxes — and **image elements** for team logos, channel branding, badges or any picture — a must-have when your HUD doubles as a stream overlay (fit modes, opacity, background, corner radius, PNG transparency).
   * Right-click any element for **layer ordering** — to front / forward / backward / to back works across every element type, groups move as a block, full undo support.
   * **Smart Conditional Rules:** 3-level color thresholds, blinking alerts, and visibility rules (`<`, `<=`, `=`, `!=`, `>=`, `>`) without touching a single line of code.
 * **Auto Profiles (game-aware HUD):**

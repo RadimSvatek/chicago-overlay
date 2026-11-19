@@ -11,7 +11,7 @@ Built for sim racing (via SimHub), PC hardware monitoring, and safe hardware-lev
   * **Sim Racing (SimHub Bridge):** Full support for 600+ SimHub properties (speed, RPM, gear, live delta, sector & lap times with automatic purple/green/yellow status colors, gaps, tyre/brake temperatures & pressures, fuel, flags, pedal graphs). Includes automatic plugin installation and version checks.
   * **DirectX FPS & Frametimes:** Vendor-agnostic FPS, frametime graphs, and CPU/GPU frame times powered by Intel PresentMon (works in borderless & fullscreen).
   * **Hardware Sensors:** Real-time CPU/GPU temperatures, power draw (W), usage, RAM, motherboard temperature sensors and fan RPMs via LibreHardwareMonitor & signed PawnIO driver.
-  * **Network Telemetry:** ping (ms to 1.1.1.1), packet loss %, and down/up throughput (kB/s) — for online racing and everyday monitoring; usable in alert rules ("packet loss" voice warning).
+  * **Network Telemetry:** ping, packet loss %, and down/up throughput (kB/s) — with configurable ping targets (address list in Settings, add your own, cycle them via a shortcut; `Net.Target` shows the active one). For online racing and everyday monitoring; usable in alert rules ("packet loss" voice warning).
   * **Desktop & Media:** Clock, date, and real-time audio spectrum visualizer (8 selectable EQ engines) with current track info.
 * **Built-in Visual HUD Builder (`Ctrl+Alt+E`):**
   * Drag-and-drop placement, multi-select marquee, snapping grid with configurable major lines, screen-wide crosshairs, and background dimming scrim for easy editing.

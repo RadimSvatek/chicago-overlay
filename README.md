@@ -23,6 +23,8 @@ Built for sim racing (via SimHub) and PC hardware monitoring — with zero bloat
 * **Fan Control (safe, hardware-level):**
   * Control motherboard fan headers (SuperIO chip via PawnIO — like FanControl), GPU fans, and USB fan controllers — auto / manual % / temperature curve.
   * Curves with 2-6 draggable points and per-curve hysteresis; fan identification spins a channel to 100 % so you can tell which header is which.
+  * **Tray temperature icons:** any fan's temperature source can live in the tray as a transparent icon with the live value — LED "segment" digits (default) or classic mono typeface, accent or custom color per fan.
+  * Dedicated **Fans window** from the tray menu, plus built-in warnings for missing admin rights and conflicts with other fan-control software.
   * Safety built in: 20 % minimum floor, instant return to hardware-auto on critical temps, and a watchdog guardian process that restores fan control even if the app crashes.
 * **Button & Key Mapping (wheel/button-box friendly):**
   * Bind any keyboard key or steering wheel / button-box button (up to 16 devices × 32 buttons) on the dedicated Shortcuts page — cycle layouts, HUD on/off, edit mode, identify monitors, fans on/off, or start the stress test.

@@ -1,7 +1,7 @@
 ![Chicago Overlay](assets/chicago_banner.png)
 
 **A lightweight, customizable, multi-monitor telemetry & system HUD overlay for Windows 10/11.**
-Built for sim racing (via SimHub), PC hardware monitoring, and safe hardware-level fan control — with zero bloat, low memory footprint, a built-in visual layout editor, and an at-a-glance HW info panel.
+Built for sim racing (via SimHub), PC hardware monitoring, and safe hardware-level fan control — with zero bloat, low memory footprint, a built-in visual layout editor, an at-a-glance HW info panel, and a maintenance toolkit (deep clean, startup & task manager).
 
 ---
 
@@ -38,24 +38,31 @@ Built for sim racing (via SimHub), PC hardware monitoring, and safe hardware-lev
 * **Alerts & Bottleneck Detection:**
   * "key >= / <= value" rules on any telemetry with a beep or Windows voice announcement (cooldown between repeats).
   * `Sys.Limit` / `Sys.Throttle` keys show what is holding your FPS back — GPU, CPU, or thermal throttle.
-* **Lite Mode — fans & HW monitor only:**
-  * Don't race? Run Chicago as a lean PC-tuning tool: fan control with curves, tray temperature icons, HW info, live network ping/loss, stress test, session reports and alerts — with the overlay, SimHub plugin and WebView2 completely off.
-  * Enable it in the installer options, in Settings, or just launch the always-installed **"Chicago Overlay lite"** shortcut (both full and lite shortcuts optionally on the desktop).
+* **System Cleanup with T800 mode:**
+  * One-click deep clean for Windows junk and browser data: temp files, logs, caches, delivery optimization, WinSxS components (DISM), font & thumbnail caches, update leftovers, Defender & diagnostic history and more — every item labeled by risk tier (safe / dangerous / privacy / user data).
+  * Optional **T800 mode** force-deletes locked files: it terminates the processes holding them — protecting itself, its own child processes and anything marked system-critical — and schedules the stragglers for removal at the next boot. Silent clean-up also runs from the recycle-bin context menu.
+* **Start & Tasks manager:**
+  * Everything that starts with your PC in a single window — registry Run keys, startup folders, services and all scheduled tasks (trigger type, next & last run, run-now, disable, and delete for non-system entries).
+* **Command-line control (`/help`):**
+  * One exe, many switches (`/x`, `-x` or `--x`): jump straight to any window (`/settings`, `/cleaner`, `/startup`, `/fans`, `/hwinfo` …), pick a mode (`/tools`, `/lite`, `/full`), run a silent clean (`/clean`, `/clean-bin`) or set launch state without writing settings (`/debug`, `/applog`, `/source`, `/lang`, `/scale`, `/layout`).
+* **Chicago HW Tools — dedicated PC-tuning mode:**
+  * Don't race? Run Chicago as a lean PC-tuning tool: fan control with curves, tray temperature icons, HW info, live network ping/loss, stress test, session reports, system cleanup and alerts — with the overlay, SimHub plugin and WebView2 completely off.
+  * Installs as an optional component with its own **"Chicago HW Tools"** shortcut and icon — or launch it anytime via `chicago.exe --tools`. The main app can also run lean with `/lite`.
 * **True Multi-Monitor & Low RAM Architecture:**
   * Assign different layouts and independent refresh rates (Full / 60 / 30 / 20 / 10 / 5 Hz) per monitor.
   * Choose between **Shared Canvas** (single WebView2 renderer across all monitors, saving ~140 MB RAM per extra display) or **Split Canvas**.
-* **16 Ready-to-Use Presets Included:**
-  * Includes `start`, `race-minimal`, `race-hud`, `race-pro`, `race-pro-2`, `race-hw`, `system-hw`, `system-hud`, `hw-info`, `media-eq`, `media-hud`, `media-hud-2`, `combo-desk`, `combo-hud`, `tune-lab` (fan-curve & stress tuning), and `sci-fi`.
+* **17 Ready-to-Use Presets Included:**
+  * Includes `start`, `race-minimal`, `race-hud`, `race-pro`, `race-pro-2`, `race-hw`, `system-hw`, `system-hud`, `hw-info`, `maxi-hw`, `media-eq`, `media-hud`, `media-hud-2`, `combo-desk`, `combo-hud`, `tune-lab` (fan-curve & stress tuning), and `sci-fi`.
 * **7 Languages & Native Windows 11/10 Styling:**
   * Available in **English, Czech, German, Spanish, French, Italian, and Polish** (both installer and app). Follows your Windows accent color and dark/light theme — or pick any custom accent; the brand teal `#18D4C2` comes preselected on a clean install (your choice is never overwritten).
 
 ---
 
-### Full or Lite — your choice at install
+### Full or HW Tools — your choice at install
 
 One installer, two editions. You pick right after the info page — and you can always launch the other edition later, both live side by side.
 
-| | **Full** | **Lite** |
+| | **Full** | **HW Tools** |
 |---|:---:|:---:|
 | HUD overlay, layouts & visual editor | ✓ | — |
 | SimHub racing telemetry | ✓ | — |
@@ -64,10 +71,11 @@ One installer, two editions. You pick right after the info page — and you can 
 | Fan control, curves & guardian watchdog | ✓ | ✓ |
 | HW info, sensors & network monitoring | ✓ | ✓ |
 | Stress test, session reports & alerts | ✓ | ✓ |
+| System cleanup & start/tasks manager | ✓ | ✓ |
 | Settings, updates, autostart, 7 languages | ✓ | ✓ |
 | WebView2 runtime loaded | ✓ | never |
 
-*Both editions get their own Start-menu shortcut (desktop optional). Lite is a lean resident tool for PC tuning — no overlay, no SimHub, minimal RAM.*
+*Both editions get their own Start-menu shortcut (desktop optional). HW Tools is the same `chicago.exe` running in a dedicated `--tools` mode — no overlay, no SimHub, minimal RAM.*
 
 ---
 

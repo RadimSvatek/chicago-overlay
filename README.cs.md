@@ -1,9 +1,9 @@
 ![Chicago Overlay](assets/chicago_banner.png)
 
 **Lehký, plně přizpůsobitelný telemetrický a systémový HUD overlay pro Windows 10/11 na víc monitorů.**
-Postavený pro simracing (přes SimHub), sledování hardwaru PC a bezpečné řízení ventilátorů na úrovni hardware — ale hlavně je to vrstva, co Windows nikdy neměly: vizuální stavitel widgetů pro cokoliv, co tvůj počítač ví. Editor drag-and-drop, 600+ datových zdrojů, texty, lišty, grafy i obrázky kdekoli na každé obrazovce — bez jediného řádku kódu. Závodní HUD v sobotu, PC dashboard v neděli — stejný motor, tvůj layout.
+Postavený pro simracing (přes SimHub), sledování hardwaru PC a bezpečné řízení ventilátorů na úrovni hardware — ale hlavně je to vrstva, co Windows nikdy neměly: vizuální stavitel widgetů pro cokoliv, co tvůj počítač ví. Editor drag-and-drop, 1 400+ datových zdrojů, texty, lišty, grafy i obrázky kdekoli na každé obrazovce — bez jediného řádku kódu. Závodní HUD v sobotu, PC dashboard v neděli — stejný motor, tvůj layout.
 
-**600+ živých propů včetně celé SimHub telemetrie — každý přetáhneš na plátno drag-and-drop editorem: HUD, pilulka, widget nebo RTSS overlay přímo ve hře. Nula kódu, vzhled je 100% tvoje fantazie.**
+**1 448 bindovatelných propů — 540 vestavěných + 908 z celé SimHub telemetrie. Každý přetáhneš na plátno drag-and-drop editorem: HUD, pilulka, widget nebo RTSS overlay přímo ve hře. Nula kódu, vzhled je 100% tvoje fantazie.**
 
 ![Chicago Overlay — závodní HUD v Assetto Corse na 60 Hz](assets/ingame_ac.jpg)
 

@@ -32,6 +32,15 @@ Built for sim racing (via SimHub), PC hardware monitoring, and safe hardware-lev
   * Rich visual elements: data readouts, bars (solid, gradient, HSL spectrum, LED segments, glow, reflection), line graphs, flags, sectors, lap times, status boxes — and **image elements** for team logos, channel branding, badges or any picture — a must-have when your HUD doubles as a stream overlay (fit modes, opacity, background, corner radius, PNG transparency).
   * Right-click any element for **layer ordering** — to front / forward / backward / to back works across every element type, groups move as a block, full undo support.
   * **Smart Conditional Rules:** 3-level color thresholds, blinking alerts, and visibility rules (`<`, `<=`, `=`, `!=`, `>=`, `>`) without touching a single line of code.
+* **Desktop Widgets — the layer Windows never shipped:**
+  * Free-floating native widgets (pills) drawn by a built-in WPF engine — **zero WebView2, near-zero RAM**. Snap them to any screen edge, or flip to **free mode** and park them anywhere with pixel-precise X/Y.
+  * **Grab and drag them right on the desktop** in Edit mode (`Ctrl+Alt+E`) — the position saves itself and click-through comes back the moment you're done.
+  * Per widget: horizontal or vertical orientation, custom name (shown in the tray submenu), FanControl-style **theme presets** instead of endless color fiddling, overall transparency plus a separate background alpha, and corner radius (capsule pill by default, `0` = sharp box).
+  * Every widget is a row (or column) of live values with its own skin — FPS, frametimes, CPU, RAM, GPU load & temp… whatever source you pick. A ready-made `start-widget` ships on first install, widgets toggle straight from the tray menu, and a standalone Widgets window manages them all.
+* **Render engine per monitor:**
+  * Pick `webview` or `native` per display — the native engine paints `data` & `box` layout nodes directly in WPF with **no WebView2 process at all** on that screen: less RAM, instant paint, and fixed-width digit slots so values never jitter.
+* **RTSS in-game OSD:**
+  * Stream any widget's live text into **RivaTuner Statistics Server** shared memory — your stats inside exclusive-fullscreen games where ordinary overlays can't reach (verified live on RTSS 7.3.7).
 * **Auto Profiles (game-aware HUD):**
   * Switch layouts automatically when a game or any process starts — race HUD on launch, back to a clean desktop on exit. Detection via process name or SimHub game name (partial match).
   * Per-monitor or all monitors, plus "HUD off" rules — e.g. race layout on the main screen, side monitors dark.
@@ -121,6 +130,8 @@ Every idea, bug report, layout share, or suggestion from the community is genuin
 If you enjoy using Chicago Overlay and want to support future development (or simply help out in a tough situation), any voluntary contribution means the world to me — both as recognition of the work and as real, practical help:
 
 **[Support on Ko-fi (Card / Apple Pay / Google Pay / PayPal)](https://ko-fi.com/radimsvatek)**
+
+*P.S. The project still sits at 0 stars — if Chicago made your PC a bit nicer, hitting ⭐ costs nothing and genuinely helps it get found.*
 
 Thank you for taking it for a spin — see you on track!
 

@@ -16,6 +16,15 @@ Navržený pro simracing (přes SimHub) i sledování výkonu PC — bez zbyteč
   * Přetahování myší, hromadný výběr prvků (jako v Průzkumníku), přichytávání k mřížce se zvýrazněnými hlavními linkami, zaměřovač přes obrazovku a ztmavení podkladu při úpravách.
   * Bohaté vizuální prvky: datové hodnoty, bary (plné, gradient, HSL spektrum, LED segmenty, svit, zrcadlový odraz), křivkové grafy, vlajky, sektory, časy kol a stavové boxy.
   * **Chytrá podmíněná pravidla:** Tříúrovňové barevné prahy, blikající výstrahy a podmínky zobrazení (`<`, `<=`, `=`, `!=`, `>=`, `>`) bez jediného řádku kódu.
+* **Widgety na ploše — vrstva, co Windows nikdy neměly:**
+  * Volně plovoucí nativní widgety (pilulky) kreslené vestavěným WPF enginem — **nula WebView2, minimum RAM**. Připneš je k libovolné hraně obrazovky, nebo přepneš na **volný režim** a zaparkuješ kamkoliv s přesnými X/Y.
+  * **Chyť a táhni je přímo po ploše** v Edit módu (`Ctrl+Alt+E`) — pozice se sama uloží a po dokončení se vrací click-through.
+  * Pro každý widget: vodorovná či svislá orientace, vlastní jméno (vidět v tray submenu), **témata ve stylu FanControlu** místo nekonečného ladění barev, celková průhlednost + zvlášť alfa podkladu a radius rohů (defaultně kapsle, `0` = hranaté).
+  * Každý widget je řada (nebo sloupec) živých hodnot s vlastním skinem — FPS, frametimes, CPU, RAM, zátěž a teplota GPU… co zdroj vybereš. `start-widget` je v balení hned od první instalace, widgety se přepínají rovnou z tray menu a spravuje je samostatné okno Widgety.
+* **Render motor na každý monitor zvlášť:**
+  * `webview` nebo `native` per display — nativní engine kreslí `data` a `box` nody layoutu přímo ve WPF, **úplně bez WebView2 procesu** na dané obrazovce: míň RAM, okamžité kreslení a fixní číslicové sloty, takže hodnoty nikdy neposkakují.
+* **RTSS OSD do hry:**
+  * Živý text libovolného widgetu proudí do **RivaTuner Statistics Server** sdílené paměti — statistiky přímo ve hrách a exkluzivním fullscreenu, kam se běžný overlay nedostane (ověřeno naživo s RTSS 7.3.7).
 * **Auto profily (HUD podle hry):**
   * Layout se přepne automaticky při spuštění hry nebo libovolného procesu — závodní HUD po startu, po vypnutí zpátky na čistou plochu. Detekce podle názvu procesu nebo hry ze SimHubu (částečná shoda).
   * Pro jednotlivé nebo všechny monitory, včetně pravidel „HUD vypnutý" — třeba závod na hlavním monitoru a postranní zhasnuté.
@@ -58,6 +67,8 @@ Každý nápad, názor, hlášení chyby nebo vlastní layout od komunity je up�
 Pokud vám Chicago Overlay dělá radost a chcete podpořit jeho další vývoj (nebo mi jen pomoct v nelehké životní situaci), jakýkoliv dobrovolný příspěvek pro mě bude mít obrovskou hodnotu — nejen jako uznání odvedené práce, ale i jako skutečná pomoc:
 
 **[Podpořit přes Ko-fi (Karta / Apple Pay / Google Pay / PayPal)](https://ko-fi.com/radimsvatek)**
+
+*P.S. Projekt má pořád 0 hvězdiček — když ti Chicago udělá radost, kliknutí na ⭐ nic nestojí a hrozně pomůže, aby ho vůbec někdo našel.*
 
 Díky za vyzkoušení — vidíme se na trati!
 

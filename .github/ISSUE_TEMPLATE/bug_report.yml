@@ -1,0 +1,57 @@
+name: Bug report
+description: Something is broken or behaves wrong
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: Shown in Control Center -> About, or in the installer file name
+      placeholder: "e.g. 1.2.336"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: "e.g. Windows 11 24H2"
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where is the problem
+      options:
+        - HUD / overlay layout
+        - Control Center
+        - Fans / hardware monitoring
+        - Cleaner (T800)
+        - SimHub plugin / telemetry
+        - Installer / update
+        - Startup / tasks
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: Describe the bug - what you did, what happened, what you expected instead
+      placeholder: "I opened ... and ..."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. ...&#10;2. ...&#10;3. ..."
+    validations:
+      required: false
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots / extra context
+      description: Drag & drop screenshots here, or add anything else that helps (game name for telemetry issues, hw model for fan issues...)
+    validations:
+      required: false

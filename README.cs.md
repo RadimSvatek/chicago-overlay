@@ -1,6 +1,6 @@
 ![Chicago Overlay](assets/chicago_banner.png)
 
-*Od dob projektu Chicago systému Windows něco scházelo — vrstvu, která je víc než módní doplněk. A tak jsem ji spojil.*
+*Od dob projektu Chicago systému Windows něco scházelo — vrstva, která je víc než módní doplněk. A tak jsem ji spojil.*
 
 **Lehký, plně přizpůsobitelný telemetrický a systémový HUD overlay pro Windows 10/11 na víc monitorů.**
 Postavený pro simracing (přes SimHub), sledování hardwaru PC a bezpečné řízení ventilátorů na úrovni hardware — ale hlavně je to vrstva, co Windows nikdy neměly: vizuální stavitel widgetů pro cokoliv, co tvůj počítač ví. Editor drag-and-drop, 1 400+ datových zdrojů, texty, lišty, grafy i obrázky kdekoli na každé obrazovce — bez jediného řádku kódu. Závodní HUD v sobotu, PC dashboard v neděli — stejný motor, tvůj layout.

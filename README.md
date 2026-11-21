@@ -12,7 +12,7 @@ Built for sim racing (via SimHub), PC hardware monitoring, and safe hardware-lev
 ### Key Features
 
 * **Universal Telemetry & System Data:**
-  * **Sim Racing (SimHub Bridge):** Full support for 600+ SimHub properties (speed, RPM, gear, live delta, sector & lap times with automatic purple/green/yellow status colors, gaps, tyre/brake temperatures & pressures, fuel, flags, pedal graphs). Includes automatic plugin installation and version checks.
+  * **Sim Racing (SimHub Bridge):** Full support for 900+ SimHub properties (speed, RPM, gear, live delta, sector & lap times with automatic purple/green/yellow status colors, gaps, tyre/brake temperatures & pressures, fuel, flags, pedal graphs). Runs the full licensed 60 Hz tick with delta frames (only changed values travel the wire), cached accessors and bindable wheel-button actions — feather-light CPU cost. Includes automatic plugin installation and version checks.
   * **DirectX FPS & Frametimes:** Vendor-agnostic FPS, frametime graphs, and CPU/GPU frame times powered by Intel PresentMon (works in borderless & fullscreen).
   * **Hardware Sensors:** Real-time CPU/GPU temperatures, power draw (W), usage, RAM, motherboard temperature sensors and fan RPMs via LibreHardwareMonitor & signed PawnIO driver.
   * **Network Telemetry:** ping, packet loss %, and down/up throughput (kB/s) — with configurable ping targets (address list in Settings, add your own, cycle them via a shortcut; `Net.Target` shows the active one). For online racing and everyday monitoring; usable in alert rules ("packet loss" voice warning).
@@ -52,9 +52,10 @@ Built for sim racing (via SimHub), PC hardware monitoring, and safe hardware-lev
 * **Chicago HW Tools — dedicated PC-tuning mode:**
   * Don't race? Run Chicago as a lean PC-tuning tool: fan control with curves, tray temperature icons, HW info, live network ping/loss, stress test, session reports, system cleanup and alerts — with the overlay, SimHub plugin and WebView2 completely off.
   * Installs as an optional component with its own **"Chicago HW Tools"** shortcut and icon — or launch it anytime via `chicago.exe --tools`. The main app can also run lean with `/lite`.
-* **True Multi-Monitor & Low RAM Architecture:**
+* **True Multi-Monitor & Low-Footprint Architecture:**
   * Assign different layouts and independent refresh rates (Full / 60 / 30 / 20 / 10 / 5 Hz) per monitor.
   * Choose between **Shared Canvas** (single WebView2 renderer across all monitors, saving ~140 MB RAM per extra display) or **Split Canvas**.
+  * Tuned for near-zero CPU cost: hardware init and rescans run in the background, telemetry rides on delta frames, and idle work is gated — the overlay stays snappy and invisible until it has something to show.
 * **17 Ready-to-Use Presets Included:**
   * Includes `start`, `race-minimal`, `race-hud`, `race-pro`, `race-pro-2`, `race-hw`, `system-hw`, `system-hud`, `hw-info`, `maxi-hw`, `media-eq`, `media-hud`, `media-hud-2`, `combo-desk`, `combo-hud`, `tune-lab` (fan-curve & stress tuning), and `sci-fi`.
 * **7 Languages & Native Windows 11/10 Styling:**

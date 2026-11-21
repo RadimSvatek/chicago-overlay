@@ -38,9 +38,12 @@ Built for sim racing (via SimHub), PC hardware monitoring, and safe hardware-lev
   * Per widget: horizontal or vertical orientation, custom name (shown in the tray submenu), FanControl-style **theme presets** instead of endless color fiddling, overall transparency plus a separate background alpha, and corner radius (capsule pill by default, `0` = sharp box).
   * Every widget is a row (or column) of live values with its own skin — FPS, frametimes, CPU, RAM, GPU load & temp… whatever source you pick. A ready-made `start-widget` ships on first install, widgets toggle straight from the tray menu, and a standalone Widgets window manages them all.
 * **Render engine per monitor:**
-  * Pick `webview` or `native` per display — the native engine paints `data` & `box` layout nodes directly in WPF with **no WebView2 process at all** on that screen: less RAM, instant paint, and fixed-width digit slots so values never jitter.
+  * Pick `webview` or `native` per display — the native engine paints `data` & `box` layout nodes directly in WPF with **no WebView2 process at all** on that screen: less RAM, instant paint, and fixed-width digit slots so values never jitter. A layout holding only a pill never starts WebView at all — the monitor runs native automatically, and `Ctrl+Alt+I` shows which engine each screen actually uses.
 * **RTSS in-game OSD:**
   * Stream any widget's live text into **RivaTuner Statistics Server** shared memory — your stats inside exclusive-fullscreen games where ordinary overlays can't reach (verified live on RTSS 7.3.7).
+* **Smart Resource Supervision — checkbox = permission, run = demand:**
+  * An enabled source no longer runs just because the app is open. EQ, clock, hardware monitoring and PresentMon start only while something actually consumes them (a layout, widget, RTSS stream, alert rule, live session, fan control, an open HW window) — and stop the moment nobody needs them. Idle tray icon = idle app.
+  * **Chicago audits itself:** `App.*` props expose its own CPU, private & shared RAM, WebView child count and their cost, threads, window counts and every source's state. The **Sources page** shows live usage plus *why* each source runs or idles.
 * **Auto Profiles (game-aware HUD):**
   * Switch layouts automatically when a game or any process starts — race HUD on launch, back to a clean desktop on exit. Detection via process name or SimHub game name (partial match).
   * Per-monitor or all monitors, plus "HUD off" rules — e.g. race layout on the main screen, side monitors dark.
@@ -67,7 +70,7 @@ Built for sim racing (via SimHub), PC hardware monitoring, and safe hardware-lev
 * **Start & Tasks manager:**
   * Everything that starts with your PC in a single window — registry Run keys, startup folders, services and all scheduled tasks (trigger type, next & last run, run-now, disable, and delete for non-system entries).
 * **Command-line control (`/help`):**
-  * One exe, many switches (`/x`, `-x` or `--x`): jump straight to any window (`/settings`, `/cleaner`, `/startup`, `/fans`, `/hwinfo` …), pick a mode (`/tools`, `/lite`, `/full`), run a silent clean (`/clean`, `/clean-bin`) or set launch state without writing settings (`/debug`, `/applog`, `/source`, `/lang`, `/scale`, `/layout`).
+  * One exe, many switches (`/x`, `-x` or `--x`): jump straight to any window (`/settings`, `/widgets`, `/cleaner`, `/startup`, `/fans`, `/hwinfo` …), pick a mode (`/tools`, `/lite`, `/full`), run a silent clean (`/clean`, `/clean-bin`) or set launch state without writing settings (`/debug`, `/applog`, `/source`, `/lang`, `/scale`, `/layout`).
   * The installer adds an optional **"Chicago Control Center"** desktop icon that opens the Control Center directly (`/settings`) — handy if the tray icon is ever unreachable. Copy the shortcut and change its parameter to pin any window to your desktop.
 * **Chicago HW Tools — dedicated PC-tuning mode:**
   * Don't race? Run Chicago as a lean PC-tuning tool: fan control with curves, tray temperature icons, HW info, live network ping/loss, stress test, session reports, system cleanup and alerts — with the overlay, SimHub plugin and WebView2 completely off.
@@ -76,8 +79,8 @@ Built for sim racing (via SimHub), PC hardware monitoring, and safe hardware-lev
   * Assign different layouts and independent refresh rates (Full / 60 / 30 / 20 / 10 / 5 Hz) per monitor.
   * Choose between **Shared Canvas** (single WebView2 renderer across all monitors, saving ~140 MB RAM per extra display) or **Split Canvas**.
   * Tuned for near-zero CPU cost: hardware init and rescans run in the background, telemetry rides on delta frames, and idle work is gated — the overlay stays snappy and invisible until it has something to show.
-* **17 Ready-to-Use Presets Included:**
-  * Includes `start`, `race-minimal`, `race-hud`, `race-pro`, `race-pro-2`, `race-hw`, `system-hw`, `system-hud`, `hw-info`, `maxi-hw`, `media-eq`, `media-hud`, `media-hud-2`, `combo-desk`, `combo-hud`, `tune-lab` (fan-curve & stress tuning), and `sci-fi`.
+* **20 Ready-to-Use Presets Included:**
+  * Includes `start`, `race-minimal`, `race-hud`, `race-pro`, `race-pro-2`, `race-hw`, `system-hw`, `system-hud`, `hw-info`, `maxi-hw`, `media-eq`, `media-hud`, `media-hud-2`, `combo-desk`, `combo-hud`, `tune-lab` (fan-curve & stress tuning), `flat-stage`, `persp-stage`, `pill-hw` (native widget demo) and `sci-fi`.
 * **7 Languages & Native Windows 11/10 Styling:**
   * Available in **English, Czech, German, Spanish, French, Italian, and Polish** (both installer and app). Follows your Windows accent color and dark/light theme — or pick any custom accent; the brand teal `#18D4C2` comes preselected on a clean install (your choice is never overwritten).
 

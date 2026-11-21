@@ -3,6 +3,8 @@
 **Ein leichtgewichtiges, frei anpassbares Multi-Monitor-Telemetrie- und System-HUD-Overlay für Windows 10/11.**
 Gebaut für Sim-Racing (über SimHub), PC-Hardware-Monitoring und sichere Lüftersteuerung auf Hardware-Ebene — aber eigentlich ist es die Ebene, die Windows nie hatte: ein visueller Widget-Baukasten für alles, was dein PC weiß. Drag-and-Drop-Layouteditor, 600+ Datenquellen, Texte, Balken, Graphen und Bilder überall auf jedem Bildschirm — null Code. Renn-HUD am Samstag, PC-Dashboard am Sonntag — dieselbe Engine, dein Layout.
 
+**600+ Live-Props — jeder einzelne geht ins HUD, in die Pille, ins Widget oder ins RTSS-Ingame-Overlay. Der Look ist zu 100% deine Leinwand.**
+
 ![Chicago Overlay — Assetto-Corsa-Renn-HUD mit 60 Hz](assets/ingame_ac.jpg)
 
 ![Chicago Overlay — Kontrollzentrum, Autostart & Aufgaben, Bereinigung und Lüfterkurven](assets/promo_windows.png)

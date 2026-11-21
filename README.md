@@ -35,7 +35,7 @@ Built for sim racing (via SimHub), PC hardware monitoring, and safe hardware-lev
 * **Desktop Widgets — the layer Windows never shipped:**
   * Free-floating native widgets (pills) drawn by a built-in WPF engine — **zero WebView2, near-zero RAM**. Snap them to any screen edge, or flip to **free mode** and park them anywhere with pixel-precise X/Y.
   * **Grab and drag them right on the desktop** in Edit mode (`Ctrl+Alt+E`) — the position saves itself and click-through comes back the moment you're done.
-  * Per widget: horizontal or vertical orientation, custom name (shown in the tray submenu), FanControl-style **theme presets** instead of endless color fiddling, overall transparency plus a separate background alpha, and corner radius (capsule pill by default, `0` = sharp box).
+  * Per widget: horizontal or vertical orientation, custom name (shown in the tray submenu), **theme presets** instead of endless color fiddling, overall transparency plus a separate background alpha, and corner radius (capsule pill by default, `0` = sharp box).
   * Every widget is a row (or column) of live values with its own skin — FPS, frametimes, CPU, RAM, GPU load & temp… whatever source you pick. A ready-made `start-widget` ships on first install, widgets toggle straight from the tray menu, and a standalone Widgets window manages them all.
 * **Render engine per monitor:**
   * Pick `webview` or `native` per display — the native engine paints `data` & `box` layout nodes directly in WPF with **no WebView2 process at all** on that screen: less RAM, instant paint, and fixed-width digit slots so values never jitter. A layout holding only a pill never starts WebView at all — the monitor runs native automatically, and `Ctrl+Alt+I` shows which engine each screen actually uses.
@@ -48,7 +48,7 @@ Built for sim racing (via SimHub), PC hardware monitoring, and safe hardware-lev
   * Switch layouts automatically when a game or any process starts — race HUD on launch, back to a clean desktop on exit. Detection via process name or SimHub game name (partial match).
   * Per-monitor or all monitors, plus "HUD off" rules — e.g. race layout on the main screen, side monitors dark.
 * **Fan Control (safe, hardware-level):**
-  * Control motherboard fan headers (SuperIO chip via PawnIO — like FanControl), GPU fans, and USB fan controllers — auto / manual % / temperature curve.
+  * Control motherboard fan headers (SuperIO chip via PawnIO), GPU fans, and USB fan controllers — auto / manual % / temperature curve.
   * Curves with 2-6 draggable points and per-curve hysteresis; fan identification spins a channel to 100 % so you can tell which header is which.
   * **Tray temperature icons:** any fan's temperature source can live in the tray as a transparent icon with the live value — LED "segment" digits (default) or classic mono typeface, accent or custom color per fan.
   * Dedicated **Fans window** from the tray menu, plus built-in warnings for missing admin rights and conflicts with other fan-control software.
@@ -57,7 +57,7 @@ Built for sim racing (via SimHub), PC hardware monitoring, and safe hardware-lev
   * Bind any keyboard key or steering wheel / button-box button (up to 16 devices × 32 buttons) on the dedicated Shortcuts page — cycle layouts, HUD on/off, edit mode, identify monitors, fans on/off, or start the stress test.
   * Works in-game; layout cycling offers a per-monitor choice and an optional voice announcement of the layout name — handy for VR.
 * **HW Info — your PC at a glance:**
-  * Windows version, BIOS, motherboard, CPU (cores/socket/clock), GPU (VRAM/driver), RAM modules, and disks with capacity — in a tray window, a settings page, and the bundled `hw-info` HUD layout. No separate HWiNFO summary needed.
+  * Windows version, BIOS, motherboard, CPU (cores/socket/clock), GPU (VRAM/driver), RAM modules, and disks with capacity — in a tray window, a settings page, and the bundled `hw-info` HUD layout. Complete PC summary at a glance.
 * **Session Reports & Built-in Stress Test:**
   * After each gaming session a summary is recorded (average fps, 1% low, max CPU/GPU temps & power, duration) — browse them in the standalone Sessions window (tray menu or Settings), delete or ignore apps you don't want tracked.
   * Built-in CPU (0-100 % on all cores), GPU (WebGL shader) and RAM (MB allocation) stress test — perfect for tuning fan curves and the `tune-lab` layout without external tools.

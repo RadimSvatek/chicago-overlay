@@ -35,7 +35,7 @@ Gebaut für Sim-Racing (über SimHub), PC-Hardware-Monitoring und sichere Lüfte
 * **Desktop-Widgets — die Ebene, die Windows nie hatte:**
   * Frei schwebende native Widgets (Pills), gezeichnet von der eingebauten WPF-Engine — **null WebView2, minimaler RAM-Verbrauch**. An jede Bildschirmkante andocken oder in den **Frei-Modus** schalten und mit pixelgenauem X/Y parken.
   * **Direkt auf dem Desktop greifen und ziehen** im Edit-Modus (`Strg+Alt+E`) — die Position speichert sich von selbst, Click-Through kehrt danach zurück.
-  * Pro Widget: horizontale oder vertikale Ausrichtung, eigener Name (im Tray-Untermenü sichtbar), **Theme-Presets im FanControl-Stil** statt endloser Farbspielerei, Gesamt-Transparenz plus separates Hintergrund-Alpha und Eckenradius (standardmäßig Kapsel, `0` = eckig).
+  * Pro Widget: horizontale oder vertikale Ausrichtung, eigener Name (im Tray-Untermenü sichtbar), **fertige Theme-Presets** statt endloser Farbspielerei, Gesamt-Transparenz plus separates Hintergrund-Alpha und Eckenradius (standardmäßig Kapsel, `0` = eckig).
   * Jedes Widget ist eine Zeile (oder Spalte) Live-Werte mit eigenem Skin — FPS, Frametimes, CPU, RAM, GPU-Last & -Temperatur… je nach gewählter Quelle. Ein fertiges `start-widget` liegt ab der Erstinstallation bei, Widgets schalten sich direkt im Tray-Menü um, und ein eigenes Widget-Fenster verwaltet sie alle.
 * **Render-Engine pro Monitor:**
   * `webview` oder `native` pro Anzeige wählbar — die native Engine zeichnet `data`- & `box`-Layoutknoten direkt in WPF, **ganz ohne WebView2-Prozess** auf diesem Bildschirm: weniger RAM, sofortiges Zeichnen und feste Ziffernslots, sodass Werte nie zittern. Ein Layout nur mit Pill startet WebView gar nicht — der Monitor läuft automatisch nativ, und `Strg+Alt+I` zeigt, welche Engine wo wirklich läuft.
@@ -48,7 +48,7 @@ Gebaut für Sim-Racing (über SimHub), PC-Hardware-Monitoring und sichere Lüfte
   * Wechselt Layouts automatisch, wenn ein Spiel oder ein beliebiger Prozess startet — Renn-HUD beim Start, nach dem Beenden zurück zum aufgeräumten Desktop. Erkennung über Prozessname oder SimHub-Spielname (Teilübereinstimmung).
   * Pro Monitor oder für alle, plus „HUD aus"-Regeln — z. B. Rennlayout auf dem Hauptbildschirm, Seitenmonitore dunkel.
 * **Lüftersteuerung (sicher, auf Hardware-Ebene):**
-  * Steuerung der Mainboard-Lüfter-Header (SuperIO-Chip über PawnIO — wie FanControl), GPU-Lüfter und USB-Lüftercontroller — Auto / manuell % / Temperaturkurve.
+  * Steuerung der Mainboard-Lüfter-Header (SuperIO-Chip über PawnIO), GPU-Lüfter und USB-Lüftercontroller — Auto / manuell % / Temperaturkurve.
   * Kurven mit 2–6 Ankern und Hysterese pro Kurve; Lüfter-Identifikation dreht einen Kanal auf 100 %, damit du erkennst, welcher Header welcher ist.
   * **Tray-Temperatur-Icons:** jede Lüfter-Temperaturquelle kann als transparentes Icon mit Live-Wert im Tray leben — LED-„Segment"-Ziffern (Standard) oder klassische Mono-Schrift, Akzent oder eigene Farbe pro Lüfter.
   * Eigenes **Lüfter-Fenster** aus dem Tray-Menü, plus eingebaute Warnungen bei fehlenden Adminrechten und Konflikten mit anderer Lüftersoftware.
@@ -57,7 +57,7 @@ Gebaut für Sim-Racing (über SimHub), PC-Hardware-Monitoring und sichere Lüfte
   * Belege jede Tastaturtaste oder Lenkrad-/Button-Box-Taste (bis zu 16 Geräte × 32 Tasten) auf der eigenen Shortcuts-Seite — Layoutwechsel, HUD an/aus, Edit-Modus, Monitore identifizieren, Lüfter an/aus oder Stresstest starten.
   * Funktioniert im Spiel; Layoutwechsel bietet Monitorwahl und optionale Sprachansage des Layoutnamens — praktisch für VR.
 * **HW-Info — dein PC auf einen Blick:**
-  * Windows-Version, BIOS, Mainboard, CPU (Kerne/Sockel/Takt), GPU (VRAM/Treiber), RAM-Module und Festplatten mit Kapazität — im Tray-Fenster, auf einer Einstellungsseite und im mitgelieferten `hw-info`-Layout. Ersetzt die HWiNFO-Übersicht.
+  * Windows-Version, BIOS, Mainboard, CPU (Kerne/Sockel/Takt), GPU (VRAM/Treiber), RAM-Module und Festplatten mit Kapazität — im Tray-Fenster, auf einer Einstellungsseite und im mitgelieferten `hw-info`-Layout. Komplette PC-Übersicht auf einen Blick.
 * **Session-Reports & eingebauter Stresstest:**
   * Nach jeder Gaming-Session wird eine Zusammenfassung gespeichert (FPS-Schnitt, 1 %-Low, max. CPU/GPU-Temps & -Leistung, Dauer) — im eigenen Sessions-Fenster stöbern (Tray-Menü oder Einstellungen), unerwünschte Apps löschen oder ignorieren.
   * Eingebauter CPU- (0–100 % auf allen Kernen), GPU- (WebGL-Shader) und RAM-Stresstest (MB-Allokation) — perfekt zum Tunen von Lüfterkurven und dem `tune-lab`-Layout ohne externe Tools.

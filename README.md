@@ -15,6 +15,8 @@ Built for sim racing (via SimHub), PC hardware monitoring, and safe hardware-lev
 
 ![Computed grid nodes — perspective synthwave platform with depth-scaled crawl text and a 3D EQ spectrum filling the grid cells live](assets/synthwave_stage.png)
 
+![Tron tunnel — flipped ceiling platform with crawl text converging on the horizon above a floor platform running a live 3D EQ spectrum](assets/4.png)
+
 ---
 
 ### Key Features

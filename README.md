@@ -13,6 +13,8 @@ Built for sim racing (via SimHub), PC hardware monitoring, and safe hardware-lev
 
 ![Editor canvas zoom at 305% — pro-grade zoom for tiny elements: Ctrl+wheel to center, Alt+wheel around the cursor, Ctrl+Alt+drag pans, floating pill returns to 100%](assets/desktop_zoom.png)
 
+![Computed grid nodes — perspective synthwave platform with depth-scaled crawl text and a 3D EQ spectrum filling the grid cells live](assets/synthwave_stage.png)
+
 ---
 
 ### Key Features

@@ -21,6 +21,17 @@ Built for sim racing (via SimHub), PC hardware monitoring, and safe hardware-lev
 
 ---
 
+### Why it is different
+
+Most hardware and telemetry tools end at a passive table inside their own window. Chicago Overlay keeps going — four layers, one data engine:
+
+- **Complete HW diagnostics & inventory** — sensor-level depth like dedicated detection tools, in a clean searchable table with CSV export (540 built-in props + 908 from the SimHub telemetry feed = **1,448 total**).
+- **Multiple visual outputs** — WebView canvas, native WPF, or RTSS text. Any value from that table goes straight onto your screen, into a game in exclusive fullscreen, or to a second monitor.
+- **Two control modes** — Easy mode pills/widgets: click, pick a skin and values, drag with the mouse — done in 10 seconds, no WebView2. Advanced Inspector (`Ctrl+Alt+E`): full creative freedom without code — 25–800 % zoom, 3D perspective grids, EQ, custom graphs, layers, clipboard sharing.
+- **Honest system tools on top** — fan curves with a guardian watchdog, CPU/GPU/RAM stress test, the fast T800 cleaner and Start & Tasks manager in a single lightweight app.
+
+---
+
 ### Key Features
 
 * **Universal Telemetry & System Data:**

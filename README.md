@@ -7,6 +7,10 @@ Built for sim racing (via SimHub), PC hardware monitoring, and safe hardware-lev
 
 ![Chicago Overlay — control center, startup & tasks, cleanup and fan curves](assets/promo_windows.png)
 
+![Desktop widgets — clock, now playing and audio spectrum on the desktop](assets/desktop.jpg)
+
+![The same HUD in the visual editor — drag & drop, snapping grid, live inspector, zero code](assets/desktop_edit.jpg)
+
 ---
 
 ### Key Features
@@ -49,6 +53,7 @@ Built for sim racing (via SimHub), PC hardware monitoring, and safe hardware-lev
   * Everything that starts with your PC in a single window — registry Run keys, startup folders, services and all scheduled tasks (trigger type, next & last run, run-now, disable, and delete for non-system entries).
 * **Command-line control (`/help`):**
   * One exe, many switches (`/x`, `-x` or `--x`): jump straight to any window (`/settings`, `/cleaner`, `/startup`, `/fans`, `/hwinfo` …), pick a mode (`/tools`, `/lite`, `/full`), run a silent clean (`/clean`, `/clean-bin`) or set launch state without writing settings (`/debug`, `/applog`, `/source`, `/lang`, `/scale`, `/layout`).
+  * The installer adds an optional **"Chicago Control Center"** desktop icon that opens the Control Center directly (`/settings`) — handy if the tray icon is ever unreachable. Copy the shortcut and change its parameter to pin any window to your desktop.
 * **Chicago HW Tools — dedicated PC-tuning mode:**
   * Don't race? Run Chicago as a lean PC-tuning tool: fan control with curves, tray temperature icons, HW info, live network ping/loss, stress test, session reports, system cleanup and alerts — with the overlay, SimHub plugin and WebView2 completely off.
   * Installs as an optional component with its own **"Chicago HW Tools"** shortcut and icon — or launch it anytime via `chicago.exe --tools`. The main app can also run lean with `/lite`.

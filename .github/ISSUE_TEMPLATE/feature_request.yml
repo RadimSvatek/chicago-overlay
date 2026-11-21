@@ -1,0 +1,27 @@
+name: Feature request
+description: An idea for a new widget, data source or improvement
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does it solve
+      description: What are you trying to do that the app cannot do today?
+      placeholder: "When I ... I wish the app could ..."
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: How should it work? Widget, setting, shortcut, data source...?
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Mockups / extra context
+      description: Sketches, screenshots of similar tools, links - anything that helps
+    validations:
+      required: false

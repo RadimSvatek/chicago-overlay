@@ -35,7 +35,7 @@ Postavený pro simracing (přes SimHub), sledování hardwaru PC a bezpečné ř
 * **Widgety na ploše — vrstva, co Windows nikdy neměly:**
   * Volně plovoucí nativní widgety (pilulky) kreslené vestavěným WPF enginem — **nula WebView2, minimum RAM**. Připneš je k libovolné hraně obrazovky, nebo přepneš na **volný režim** a zaparkuješ kamkoliv s přesnými X/Y.
   * **Chyť a táhni je přímo po ploše** v Edit módu (`Ctrl+Alt+E`) — pozice se sama uloží a po dokončení se vrací click-through.
-  * Pro každý widget: vodorovná či svislá orientace, vlastní jméno (vidět v tray submenu), **témata ve stylu FanControlu** místo nekonečného ladění barev, celková průhlednost + zvlášť alfa podkladu a radius rohů (defaultně kapsle, `0` = hranaté).
+  * Pro každý widget: vodorovná či svislá orientace, vlastní jméno (vidět v tray submenu), **hotová témata** místo nekonečného ladění barev, celková průhlednost + zvlášť alfa podkladu a radius rohů (defaultně kapsle, `0` = hranaté).
   * Každý widget je řada (nebo sloupec) živých hodnot s vlastním skinem — FPS, frametimes, CPU, RAM, zátěž a teplota GPU… co zdroj vybereš. `start-widget` je v balení hned od první instalace, widgety se přepínají rovnou z tray menu a spravuje je samostatné okno Widgety.
 * **Render motor na každý monitor zvlášť:**
   * `webview` nebo `native` per display — nativní engine kreslí `data` a `box` nody layoutu přímo ve WPF, **úplně bez WebView2 procesu** na dané obrazovce: míň RAM, okamžité kreslení a fixní číslicové sloty, takže hodnoty nikdy neposkakují. Layout jen s pilulkou nepustí WebView vůbec — monitor jede native automaticky a `Ctrl+Alt+I` ukáže, který engine kde skutečně běží.
@@ -48,7 +48,7 @@ Postavený pro simracing (přes SimHub), sledování hardwaru PC a bezpečné ř
   * Layout se přepne automaticky při spuštění hry nebo libovolného procesu — závodní HUD po startu, po vypnutí zpátky na čistou plochu. Detekce podle názvu procesu nebo hry ze SimHubu (částečná shoda).
   * Pro jednotlivé nebo všechny monitory, včetně pravidel „HUD vypnutý" — třeba závod na hlavním monitoru a postranní zhasnuté.
 * **Řízení ventilátorů (bezpečné, na úrovni hw):**
-  * Ovládání hlaviček ventilátorů desky (SuperIO čip přes PawnIO — jako FanControl), větráků GPU i USB řadičů — auto / manuální % / teplotní křivka.
+  * Ovládání hlaviček ventilátorů desky (SuperIO čip přes PawnIO), větráků GPU i USB řadičů — auto / manuální % / teplotní křivka.
   * Křivky s 2–6 táhly a hysterezí pro každou křivku; identifikace roztočí kanál na 100 %, aby bylo poznat, který větrák to fyzicky je.
   * **Teplotní ikony v tray:** libovolný teplotní zdroj větráku může žít v tray jako průhledná ikona s živou hodnotou — LED „segmentové" číslice (default) nebo klasický mono font, akcent nebo vlastní barva na větrák.
   * Dedikované **okno Větráky** z tray menu, plus vestavěná varování na chybějící admin práva a konflikty s jiným fan-control softwarem.
@@ -57,7 +57,7 @@ Postavený pro simracing (přes SimHub), sledování hardwaru PC a bezpečné ř
   * Binduj libovolnou klávesu nebo tlačítko volantu / button boxu (až 16 zařízení × 32 tlačítek) na dedikované stránce Zkratky — cyklus layoutů, HUD zap/vyp, edit mód, identifikace monitorů, větráky zap/vyp nebo spuštění stress testu.
   * Funguje i ve hře; cyklování layoutů nabízí výběr monitoru a volitelnou hlasovou hlášku názvu layoutu — šikovné pro VR.
 * **HW info — PC na jeden pohled:**
-  * Verze Windows, BIOS, deska, CPU (jádra/socket/takt), GPU (VRAM/ovladač), moduly RAM a disky s kapacitou — v okně z tray, na stránce v nastavení i v přiloženém layoutu `hw-info`. Náhrada výpisu HWiNFO.
+  * Verze Windows, BIOS, deska, CPU (jádra/socket/takt), GPU (VRAM/ovladač), moduly RAM a disky s kapacitou — v okně z tray, na stránce v nastavení i v přiloženém layoutu `hw-info`. Kompletní přehled o PC na jednom místě.
 * **Reporty relací a vestavěný stress test:**
   * Po každé herní relaci se zapíše souhrn (průměr fps, 1 % low, max teploty a spotřeby CPU/GPU, délka) — prohlížení v samostatném okně Relace (tray menu nebo Nastavení), mazání nebo ignorování aplikací, které nesledovat.
   * Vestavěný stress test CPU (0–100 % na všechna jádra), GPU (WebGL shader) a RAM (alokace MB) — ideální pro ladění křivek ventilátorů a layoutu `tune-lab` bez externích nástrojů.

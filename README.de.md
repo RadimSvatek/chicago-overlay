@@ -16,6 +16,15 @@ Entwickelt für Sim-Racing (über SimHub) und PC-Hardware-Monitoring — ohne un
   * Drag-and-Drop-Platzierung, Mehrfachauswahl (Auswahlrahmen), einrastendes Raster mit konfigurierbaren Hauptlinien, bildschirmweites Fadenkreuz und Hintergrundabdunklung für entspanntes Bearbeiten.
   * Vielfältige visuelle Elemente: Datenfelder, Balken (einfarbig, Farbverlauf, HSL-Spektrum, LED-Segmente, Leuchteffekt, Spiegelung), Liniendiagramme, Flaggen, Sektoren, Rundenzeiten und Status-Boxen.
   * **Intelligente bedingte Regeln:** 3-stufige Farbschwellenwerte, blinkende Warnungen und Sichtbarkeitsregeln (`<`, `<=`, `=`, `!=`, `>=`, `>`) ganz ohne Programmierkenntnisse.
+* **Desktop-Widgets — die Ebene, die Windows nie hatte:**
+  * Frei schwebende native Widgets (Pills), gezeichnet von der eingebauten WPF-Engine — **null WebView2, minimaler RAM-Verbrauch**. An jede Bildschirmkante andocken oder in den **Frei-Modus** schalten und mit pixelgenauem X/Y parken.
+  * **Direkt auf dem Desktop greifen und ziehen** im Edit-Modus (`Strg+Alt+E`) — die Position speichert sich von selbst, Click-Through kehrt danach zurück.
+  * Pro Widget: horizontale oder vertikale Ausrichtung, eigener Name (im Tray-Untermenü sichtbar), **Theme-Presets im FanControl-Stil** statt endloser Farbspielerei, Gesamt-Transparenz plus separates Hintergrund-Alpha und Eckenradius (standardmäßig Kapsel, `0` = eckig).
+  * Jedes Widget ist eine Zeile (oder Spalte) Live-Werte mit eigenem Skin — FPS, Frametimes, CPU, RAM, GPU-Last & -Temperatur… je nach gewählter Quelle. Ein fertiges `start-widget` liegt ab der Erstinstallation bei, Widgets schalten sich direkt im Tray-Menü um, und ein eigenes Widget-Fenster verwaltet sie alle.
+* **Render-Engine pro Monitor:**
+  * `webview` oder `native` pro Anzeige wählbar — die native Engine zeichnet `data`- & `box`-Layoutknoten direkt in WPF, **ganz ohne WebView2-Prozess** auf diesem Bildschirm: weniger RAM, sofortiges Zeichnen und feste Ziffernslots, sodass Werte nie zittern.
+* **RTSS-Ingame-OSD:**
+  * Live-Text jedes Widgets in den **RivaTuner Statistics Server** Shared Memory streamen — Statistiken in exklusivem Vollbild, wo normale Overlays nicht hinkommen (live verifiziert mit RTSS 7.3.7).
 * **Auto-Profile (spielabhängiges HUD):**
   * Wechselt Layouts automatisch, wenn ein Spiel oder ein beliebiger Prozess startet — Renn-HUD beim Start, nach dem Beenden zurück zum aufgeräumten Desktop. Erkennung über Prozessname oder SimHub-Spielname (Teilübereinstimmung).
   * Pro Monitor oder für alle, plus „HUD aus"-Regeln — z. B. Rennlayout auf dem Hauptbildschirm, Seitenmonitore dunkel.
@@ -58,6 +67,8 @@ Jede Idee, jeder Fehlerbericht, jedes geteilte Layout und jeder Vorschlag aus de
 Wenn dir Chicago Overlay Freude bereitet und du die Weiterentwicklung unterstützen möchtest (oder mir einfach in einer nicht ganz einfachen Lebenssituation helfen willst), hat jeder freiwillige Beitrag für mich einen enormen Wert — sowohl als Anerkennung der Arbeit als auch als echte, praktische Hilfe:
 
 **[Auf Ko-fi unterstützen (Karte / Apple Pay / Google Pay / PayPal)](https://ko-fi.com/radimsvatek)**
+
+*P.S. Das Projekt steht immer noch bei 0 Sternen — wenn Chicago deinen PC etwas schöner macht, kostet ein ⭐ nichts und hilft wirklich, es überhaupt zu finden.*
 
 Vielen Dank fürs Ausprobieren — wir sehen uns auf der Strecke!
 

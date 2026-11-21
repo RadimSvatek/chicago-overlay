@@ -11,6 +11,8 @@ Built for sim racing (via SimHub), PC hardware monitoring, and safe hardware-lev
 
 ![The same HUD in the visual editor — drag & drop, snapping grid, live inspector, zero code](assets/desktop_edit.jpg)
 
+![Editor canvas zoom at 305% — pro-grade zoom for tiny elements: Ctrl+wheel to center, Alt+wheel around the cursor, Ctrl+Alt+drag pans, floating pill returns to 100%](assets/desktop_zoom.png)
+
 ---
 
 ### Key Features

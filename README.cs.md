@@ -87,9 +87,9 @@ Většina hardware a telemetrických nástrojů končí pasivní tabulkou ve vla
 * **Ovládání z příkazovky (`/help`):**
   * Jedno exe, hodně přepínačů (`/x`, `-x` nebo `--x`): skok rovnou do libovolného okna (`/settings`, `/widgets`, `/cleaner`, `/startup`, `/fans`, `/hwinfo` …), volba režimu (`/tools`, `/lite`, `/full`), tichý úklid (`/clean`, `/clean-bin`) nebo nastavení stavu startu bez zápisu do settings (`/debug`, `/applog`, `/source`, `/lang`, `/scale`, `/layout`).
   * Instalátor přidává volitelnou ikonu **„Chicago Control Center"** na plochu, která otevírá Ovládací centrum přímo (`/settings`) — šikovné, kdyby byla tray ikona nedostupná. Zástupce zkopíruj, změň parametr a připni libovolné okno na plochu.
-* **Chicago HW Tools — dedikovaný režim ladění PC:**
+* **Chicago Nástroje — dedikovaný režim ladění PC:**
   * Nezávodíš? Použij Chicago jako útlý nástroj pro ladění PC: řízení ventilátorů s křivkami, teplotní ikony v tray, HW info, živý ping/ztráty, stress test, reporty relací, úklid systému a upozornění — s overlayem, SimHub pluginem a WebView2 úplně vypnutými.
-  * Instaluje se jako volitelná komponenta s vlastní zástupce **„Chicago HW Tools"** a ikonou — nebo spusť kdykoli přes `chicago.exe --tools`. Hlavní appka umí zlehka i s `/lite`.
+  * Instaluje se jako volitelná komponenta s vlastní zástupce **„Chicago Nástroje"** a ikonou — nebo spusť kdykoli přes `chicago.exe --tools`. Hlavní appka umí zlehka i s `/lite`.
 * **Skutečná podpora více monitorů a úspora RAM:**
   * Každý monitor může mít vlastní layout i nezávislou obnovovací frekvenci (Plná / 60 / 30 / 20 / 10 / 5 Hz).
   * Volba mezi **sdíleným plátnem** (jeden WebView2 renderer pro všechny monitory — úspora ~140 MB RAM na každý další monitor) nebo **oddělenými okny**.
@@ -101,11 +101,11 @@ Většina hardware a telemetrických nástrojů končí pasivní tabulkou ve vla
 
 ---
 
-### Full nebo HW Tools — volba při instalaci
+### Full nebo Nástroje — volba při instalaci
 
 Jeden instalátor, dvě edice. Vybíráš hned po úvodní stránce — a druhou edici můžeš kdykoli spustit později, žijí vedle sebe.
 
-|| **Full** | **HW Tools** |
+|| **Full** | **Nástroje** |
 |---|:---:|:---:|
 | HUD overlay, layouty a vizuální editor | ✓ | — |
 | SimHub závodní telemetrie | ✓ | — |
@@ -118,7 +118,7 @@ Jeden instalátor, dvě edice. Vybíráš hned po úvodní stránce — a druhou
 | Nastavení, aktualizace, autostart, 7 jazyků | ✓ | ✓ |
 | WebView2 runtime naložený | ✓ | nikdy |
 
-*Obě edice mají vlastní zástupce ve Start menu (desktop volitelný). HW Tools je stejné `chicago.exe` v dedikovaném režimu `--tools` — bez overlaye, bez SimHubu, minimální RAM.*
+*Obě edice mají vlastní zástupce ve Start menu (desktop volitelný). Nástroje je stejné `chicago.exe` v dedikovaném režimu `--tools` — bez overlaye, bez SimHubu, minimální RAM.*
 
 ---
 

@@ -87,9 +87,9 @@ Die meisten Hardware- und Telemetrie-Tools enden bei einer passiven Tabelle im e
 * **Kommandozeilen-Steuerung (`/help`):**
   * Eine exe, viele Schalter (`/x`, `-x` oder `--x`): direkt in jedes Fenster springen (`/settings`, `/widgets`, `/cleaner`, `/startup`, `/fans`, `/hwinfo` …), Modus wählen (`/tools`, `/lite`, `/full`), stille Bereinigung (`/clean`, `/clean-bin`) oder Startzustand setzen, ohne Einstellungen zu schreiben (`/debug`, `/applog`, `/source`, `/lang`, `/scale`, `/layout`).
   * Der Installer legt optional ein **„Chicago Control Center"**-Desktop-Icon an, das das Kontrollzentrum direkt öffnet (`/settings`) — praktisch, falls das Tray-Icon mal unerreichbar ist. Shortcut kopieren, Parameter ändern, beliebiges Fenster an den Desktop pinnen.
-* **Chicago HW Tools — eigener PC-Tuning-Modus:**
+* **Chicago Werkzeuge — eigener PC-Tuning-Modus:**
   * Kein Racing? Nutze Chicago als schlankes PC-Tuning-Werkzeug: Lüftersteuerung mit Kurven, Tray-Temperatur-Icons, HW-Info, Live-Ping/Verluste, Stresstest, Session-Reports, System-Bereinigung und Warnungen — mit Overlay, SimHub-Plugin und WebView2 komplett aus.
-  * Installiert als optionale Komponente mit eigenem **„Chicago HW Tools"**-Shortcut und Icon — oder jederzeit per `chicago.exe --tools`. Die Haupt-App läuft ebenfalls schlank mit `/lite`.
+  * Installiert als optionale Komponente mit eigenem **„Chicago Werkzeuge"**-Shortcut und Icon — oder jederzeit per `chicago.exe --tools`. Die Haupt-App läuft ebenfalls schlank mit `/lite`.
 * **Echte Multi-Monitor-Unterstützung & geringer RAM-Verbrauch:**
   * Jedem Monitor lassen sich ein eigenes Layout sowie eine unabhängige Bildwiederholrate (Volle Geschwindigkeit / 60 / 30 / 20 / 10 / 5 Hz) zuweisen.
   * Wahl zwischen **Shared Canvas** (ein einziger WebView2-Renderer für alle Monitore — spart ca. 140 MB RAM pro zusätzlichem Bildschirm) oder **Split Canvas**.
@@ -101,11 +101,11 @@ Die meisten Hardware- und Telemetrie-Tools enden bei einer passiven Tabelle im e
 
 ---
 
-### Full oder HW Tools — Wahl bei der Installation
+### Full oder Werkzeuge — Wahl bei der Installation
 
 Ein Installer, zwei Editionen. Du wählst direkt nach der Infoseite — und kannst die andere Edition später jederzeit starten, beide leben nebeneinander.
 
-|| **Full** | **HW Tools** |
+|| **Full** | **Werkzeuge** |
 |---|:---:|:---:|
 | HUD-Overlay, Layouts & visueller Editor | ✓ | — |
 | SimHub-Renntelemetrie | ✓ | — |
@@ -118,7 +118,7 @@ Ein Installer, zwei Editionen. Du wählst direkt nach der Infoseite — und kann
 | Einstellungen, Updates, Autostart, 7 Sprachen | ✓ | ✓ |
 | WebView2-Runtime geladen | ✓ | niemals |
 
-*Beide Editionen bekommen einen eigenen Startmenü-Shortcut (Desktop optional). HW Tools ist dieselbe `chicago.exe` im dedizierten `--tools`-Modus — kein Overlay, kein SimHub, minimaler RAM.*
+*Beide Editionen bekommen einen eigenen Startmenü-Shortcut (Desktop optional). Werkzeuge ist dieselbe `chicago.exe` im dedizierten `--tools`-Modus — kein Overlay, kein SimHub, minimaler RAM.*
 
 ---
 

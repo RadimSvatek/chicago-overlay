@@ -87,9 +87,9 @@ Most hardware and telemetry tools end at a passive table inside their own window
 * **Command-line control (`/help`):**
   * One exe, many switches (`/x`, `-x` or `--x`): jump straight to any window (`/settings`, `/widgets`, `/cleaner`, `/startup`, `/fans`, `/hwinfo` …), pick a mode (`/tools`, `/lite`, `/full`), run a silent clean (`/clean`, `/clean-bin`) or set launch state without writing settings (`/debug`, `/applog`, `/source`, `/lang`, `/scale`, `/layout`).
   * The installer adds an optional **"Chicago Control Center"** desktop icon that opens the Control Center directly (`/settings`) — handy if the tray icon is ever unreachable. Copy the shortcut and change its parameter to pin any window to your desktop.
-* **Chicago HW Tools — dedicated PC-tuning mode:**
-  * Don't race? Run Chicago as a lean PC-tuning tool: fan control with curves, tray temperature icons, HW info, live network ping/loss, stress test, session reports, system cleanup and alerts — with the overlay, SimHub plugin and WebView2 completely off.
-  * Installs as an optional component with its own **"Chicago HW Tools"** shortcut and icon — or launch it anytime via `chicago.exe --tools`. The main app can also run lean with `/lite`.
+* **Chicago Tools — dedicated PC-tuning mode:**
+  * Don't race? Run Chicago as a lean PC-tuning tool: fan control with curves, tray temperature icons, HW info, live network ping/loss, stress test, session reports, system cleanup, software uninstall and alerts — with the overlay, SimHub plugin and WebView2 completely off.
+  * Installs as an optional component with its own **"Chicago Tools"** shortcut and icon — or launch it anytime via `chicago.exe --tools`. The main app can also run lean with `/lite`.
 * **True Multi-Monitor & Low-Footprint Architecture:**
   * Assign different layouts and independent refresh rates (Full / 60 / 30 / 20 / 10 / 5 Hz) per monitor.
   * Choose between **Shared Canvas** (single WebView2 renderer across all monitors, saving ~140 MB RAM per extra display) or **Split Canvas**.
@@ -101,11 +101,11 @@ Most hardware and telemetry tools end at a passive table inside their own window
 
 ---
 
-### Full or HW Tools — your choice at install
+### Full or Tools — your choice at install
 
 One installer, two editions. You pick right after the info page — and you can always launch the other edition later, both live side by side.
 
-| | **Full** | **HW Tools** |
+| | **Full** | **Tools** |
 |---|:---:|:---:|
 | HUD overlay, layouts & visual editor | ✓ | — |
 | SimHub racing telemetry | ✓ | — |
@@ -114,11 +114,11 @@ One installer, two editions. You pick right after the info page — and you can 
 | Fan control, curves & guardian watchdog | ✓ | ✓ |
 | HW info, sensors & network monitoring | ✓ | ✓ |
 | Stress test, session reports & alerts | ✓ | ✓ |
-| System cleanup & start/tasks manager | ✓ | ✓ |
+| System cleanup, start/tasks & software manager | ✓ | ✓ |
 | Settings, updates, autostart, 7 languages | ✓ | ✓ |
 | WebView2 runtime loaded | ✓ | never |
 
-*Both editions get their own Start-menu shortcut (desktop optional). HW Tools is the same `chicago.exe` running in a dedicated `--tools` mode — no overlay, no SimHub, minimal RAM.*
+*Both editions get their own Start-menu shortcut (desktop optional). Tools is the same `chicago.exe` running in a dedicated `--tools` mode — no overlay, no SimHub, minimal RAM.*
 
 ---
 

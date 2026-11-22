@@ -1,0 +1,98 @@
+{
+ "grid": {
+  "snap": true,
+  "step": 10
+ },
+ "nodes": [
+  {
+   "anchor": "c",
+   "color": "#01cdfe",
+   "color2": "#b967ff",
+   "cols": 13,
+   "font": {
+    "family": "oxan",
+    "size": 36,
+    "weight": 700
+   },
+   "glow": 8,
+   "h": 480,
+   "id": "g_crawl",
+   "lw": 1.5,
+   "mode": "flat",
+   "rows": 7,
+   "tcolor": "#ffffff",
+   "type": "grid",
+   "w": 1000,
+   "x": -500,
+   "y": -20,
+   "rules": []
+  },
+  {
+   "anchor": "c",
+   "color": "#ff2bd6",
+   "color2": "#b967ff",
+   "cols": 32,
+   "fcolor": "#01cdfe",
+   "fcolor2": "#b967ff",
+   "fcolor3": "#ff2bd6",
+   "fill": "eq",
+   "glow": 8,
+   "h": 400,
+   "id": "g_eq",
+   "lw": 1.5,
+   "mode": "flat",
+   "propBase": "Eq.Band",
+   "rows": 8,
+   "type": "grid",
+   "w": 1000,
+   "x": -500,
+   "y": 400
+  },
+  {
+   "align": "center",
+   "anchor": "c",
+   "color": "#ffffff",
+   "id": "crawl0",
+   "inherit": true,
+   "text": "FROM CHICAGO",
+   "type": "data",
+   "x": 0,
+   "y": -40
+  },
+  {
+   "align": "center",
+   "anchor": "c",
+   "color": "#ffffff",
+   "id": "crawl1",
+   "inherit": true,
+   "text": "FAR AWAY",
+   "type": "data",
+   "x": 0,
+   "y": -100
+  },
+  {
+   "align": "center",
+   "anchor": "c",
+   "color": "#ffffff",
+   "id": "crawl2",
+   "inherit": true,
+   "text": "NOT SO",
+   "type": "data",
+   "x": 0,
+   "y": -170
+  },
+  {
+   "align": "center",
+   "anchor": "c",
+   "color": "#ffffff",
+   "id": "crawl3",
+   "inherit": true,
+   "text": "IN A SECTOR",
+   "type": "data",
+   "x": -10,
+   "y": -240
+  }
+ ],
+ "zv": 1,
+ "_seed": true
+}

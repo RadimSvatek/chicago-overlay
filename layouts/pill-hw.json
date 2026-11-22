@@ -1,0 +1,32 @@
+{
+ "grid": {
+  "snap": true,
+  "step": 10
+ },
+ "nodes": [
+  {
+   "id": "pill_hw",
+   "type": "pill",
+   "dock": "top",
+   "h": 36,
+   "bg": true,
+   "bgColor": "#080a10",
+   "bgAlpha": 60,
+   "align": "center",
+   "font": {
+    "family": "oxan",
+    "size": 18,
+    "weight": 500
+   },
+   "items": [
+    { "prop": "Dx.Fps", "label": "FPS", "color": "#7dffce", "dec": 0 },
+    { "prop": "Dx.FrameMs", "label": "", "color": "#7dffce", "dec": 1, "unit": "ms" },
+    { "prop": "Sys.Cpu", "label": "CPU", "color": "#7dc8ff", "dec": 0, "unit": "%" },
+    { "prop": "Sys.Ram", "label": "RAM", "color": "#7dc8ff", "dec": 0, "unit": "%" },
+    { "prop": "Gpu.Usage", "label": "GPU", "color": "#ff9dd8", "dec": 0, "unit": "%" },
+    { "prop": "Gpu.Temp", "label": "", "color": "#ffcf7d", "dec": 0, "unit": "°C" }
+   ],
+   "rules": []
+  }
+ ]
+}

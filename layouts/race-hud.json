@@ -1,995 +1,948 @@
 {
-  "_seed": true,
-  "grid": {
-    "snap": true,
-    "step": 20
+ "_seed": true,
+ "grid": {
+  "snap": true,
+  "step": 20
+ },
+ "nodes": [
+  {
+   "anchor": "c",
+   "id": "rt0",
+   "type": "box",
+   "x": -220,
+   "y": -479,
+   "w": 1,
+   "h": 7,
+   "bg": true,
+   "bgColor": "#39ff70",
+   "bgAlpha": 34
   },
-  "nodes": [
-    {
-      "anchor": "c",
-      "id": "speed",
-      "type": "data",
-      "prop": "SpeedKmh",
-      "x": -140,
-      "y": -122,
-      "w": 220,
-      "color": "#39ff70",
-      "font": {
-        "family": "seg7m",
-        "size": 62,
-        "weight": 700
-      },
-      "align": "left",
-      "unit": "km/h",
-      "digits": 3,
-      "mono": true
-    },
-    {
-      "anchor": "c",
-      "id": "gear",
-      "type": "data",
-      "prop": "Gear",
-      "x": 114,
-      "y": -125,
-      "w": 76,
-      "color": "#39ff70",
-      "font": {
-        "family": "seg7m",
-        "size": 48,
-        "weight": 700
-      },
-      "align": "left",
-      "digits": 1,
-      "mono": true
-    },
-    {
-      "anchor": "c",
-      "id": "c_gear",
-      "type": "box",
-      "text": "gear",
-      "x": 114,
-      "y": -91,
-      "w": 76,
-      "h": 15,
-      "color": "#1f9e4d",
-      "font": {
-        "family": "droid",
-        "size": 9,
-        "weight": 500
-      },
-      "align": "center"
-    },
-    {
-      "anchor": "c",
-      "id": "c_spd",
-      "type": "box",
-      "text": "speed",
-      "x": -140,
-      "y": -89,
-      "w": 220,
-      "h": 15,
-      "color": "#1f9e4d",
-      "font": {
-        "family": "droid",
-        "size": 9,
-        "weight": 500
-      },
-      "align": "center"
-    },
-    {
-      "anchor": "c",
-      "id": "rpm",
-      "type": "bar",
-      "prop": "Rpms",
-      "x": -220,
-      "y": -209,
-      "w": 440,
-      "h": 5,
-      "orient": "h",
-      "min": 0,
-      "max": 14200,
-      "color": "#39ff70",
-      "bg": true,
-      "bgAlpha": 16,
-      "bgColor": "#000000",
-      "rules": [
-        {
-          "when": "v > 12500",
-          "then": {
-            "blink": true,
-            "color": "#9dffb8"
-          }
-        }
-      ]
-    },
-    {
-      "anchor": "c",
-      "id": "rt0",
-      "type": "box",
-      "x": -220,
-      "y": -219,
-      "w": 1,
-      "h": 7,
-      "bg": true,
-      "bgColor": "#39ff70",
-      "bgAlpha": 34
-    },
-    {
-      "anchor": "c",
-      "id": "rt1",
-      "type": "box",
-      "x": -200,
-      "y": -222,
-      "w": 1,
-      "h": 4,
-      "bg": true,
-      "bgColor": "#39ff70",
-      "bgAlpha": 34
-    },
-    {
-      "anchor": "c",
-      "id": "rt2",
-      "type": "box",
-      "x": -180,
-      "y": -222,
-      "w": 1,
-      "h": 4,
-      "bg": true,
-      "bgColor": "#39ff70",
-      "bgAlpha": 34
-    },
-    {
-      "anchor": "c",
-      "id": "rt3",
-      "type": "box",
-      "x": -160,
-      "y": -222,
-      "w": 1,
-      "h": 4,
-      "bg": true,
-      "bgColor": "#39ff70",
-      "bgAlpha": 34
-    },
-    {
-      "anchor": "c",
-      "id": "rt4",
-      "type": "box",
-      "x": -140,
-      "y": -219,
-      "w": 1,
-      "h": 7,
-      "bg": true,
-      "bgColor": "#39ff70",
-      "bgAlpha": 34
-    },
-    {
-      "anchor": "c",
-      "id": "rt5",
-      "type": "box",
-      "x": -120,
-      "y": -222,
-      "w": 1,
-      "h": 4,
-      "bg": true,
-      "bgColor": "#39ff70",
-      "bgAlpha": 34
-    },
-    {
-      "anchor": "c",
-      "id": "rt6",
-      "type": "box",
-      "x": -100,
-      "y": -222,
-      "w": 1,
-      "h": 4,
-      "bg": true,
-      "bgColor": "#39ff70",
-      "bgAlpha": 34
-    },
-    {
-      "anchor": "c",
-      "id": "rt7",
-      "type": "box",
-      "x": -80,
-      "y": -222,
-      "w": 1,
-      "h": 4,
-      "bg": true,
-      "bgColor": "#39ff70",
-      "bgAlpha": 34
-    },
-    {
-      "anchor": "c",
-      "id": "rt8",
-      "type": "box",
-      "x": -60,
-      "y": -219,
-      "w": 1,
-      "h": 7,
-      "bg": true,
-      "bgColor": "#39ff70",
-      "bgAlpha": 34
-    },
-    {
-      "anchor": "c",
-      "id": "rt9",
-      "type": "box",
-      "x": -40,
-      "y": -222,
-      "w": 1,
-      "h": 4,
-      "bg": true,
-      "bgColor": "#39ff70",
-      "bgAlpha": 34
-    },
-    {
-      "anchor": "c",
-      "id": "rt10",
-      "type": "box",
-      "x": -20,
-      "y": -222,
-      "w": 1,
-      "h": 4,
-      "bg": true,
-      "bgColor": "#39ff70",
-      "bgAlpha": 34
-    },
-    {
-      "anchor": "c",
-      "id": "rt11",
-      "type": "box",
-      "x": 0,
-      "y": -222,
-      "w": 1,
-      "h": 4,
-      "bg": true,
-      "bgColor": "#39ff70",
-      "bgAlpha": 34
-    },
-    {
-      "anchor": "c",
-      "id": "rt12",
-      "type": "box",
-      "x": 20,
-      "y": -219,
-      "w": 1,
-      "h": 7,
-      "bg": true,
-      "bgColor": "#39ff70",
-      "bgAlpha": 34
-    },
-    {
-      "anchor": "c",
-      "id": "rt13",
-      "type": "box",
-      "x": 40,
-      "y": -222,
-      "w": 1,
-      "h": 4,
-      "bg": true,
-      "bgColor": "#39ff70",
-      "bgAlpha": 34
-    },
-    {
-      "anchor": "c",
-      "id": "rt14",
-      "type": "box",
-      "x": 60,
-      "y": -222,
-      "w": 1,
-      "h": 4,
-      "bg": true,
-      "bgColor": "#39ff70",
-      "bgAlpha": 34
-    },
-    {
-      "anchor": "c",
-      "id": "rt15",
-      "type": "box",
-      "x": 80,
-      "y": -222,
-      "w": 1,
-      "h": 4,
-      "bg": true,
-      "bgColor": "#39ff70",
-      "bgAlpha": 34
-    },
-    {
-      "anchor": "c",
-      "id": "rt16",
-      "type": "box",
-      "x": 100,
-      "y": -219,
-      "w": 1,
-      "h": 7,
-      "bg": true,
-      "bgColor": "#39ff70",
-      "bgAlpha": 34
-    },
-    {
-      "anchor": "c",
-      "id": "rt17",
-      "type": "box",
-      "x": 120,
-      "y": -222,
-      "w": 1,
-      "h": 4,
-      "bg": true,
-      "bgColor": "#39ff70",
-      "bgAlpha": 34
-    },
-    {
-      "anchor": "c",
-      "id": "rt18",
-      "type": "box",
-      "x": 140,
-      "y": -222,
-      "w": 1,
-      "h": 4,
-      "bg": true,
-      "bgColor": "#39ff70",
-      "bgAlpha": 34
-    },
-    {
-      "anchor": "c",
-      "id": "rt19",
-      "type": "box",
-      "x": 160,
-      "y": -222,
-      "w": 1,
-      "h": 4,
-      "bg": true,
-      "bgColor": "#39ff70",
-      "bgAlpha": 34
-    },
-    {
-      "anchor": "c",
-      "id": "rt20",
-      "type": "box",
-      "x": 180,
-      "y": -219,
-      "w": 1,
-      "h": 7,
-      "bg": true,
-      "bgColor": "#39ff70",
-      "bgAlpha": 34
-    },
-    {
-      "anchor": "c",
-      "id": "rt21",
-      "type": "box",
-      "x": 200,
-      "y": -222,
-      "w": 1,
-      "h": 4,
-      "bg": true,
-      "bgColor": "#39ff70",
-      "bgAlpha": 34
-    },
-    {
-      "anchor": "c",
-      "id": "rt22",
-      "type": "box",
-      "x": 220,
-      "y": -222,
-      "w": 1,
-      "h": 4,
-      "bg": true,
-      "bgColor": "#39ff70",
-      "bgAlpha": 34
-    },
-    {
-      "anchor": "c",
-      "id": "delta",
-      "type": "bar",
-      "prop": "DeltaToSessionBest",
-      "x": -220,
-      "y": -81,
-      "w": 440,
-      "h": 5,
-      "orient": "c",
-      "min": -1,
-      "max": 1,
-      "color": "#1f9e4d",
-      "bg": true,
-      "bgAlpha": 16,
-      "bgColor": "#000000",
-      "colorNeg": "#39ff70"
-    },
-    {
-      "anchor": "c",
-      "id": "delta_v",
-      "type": "data",
-      "prop": "DeltaToSessionBest",
-      "x": -220,
-      "y": -64,
-      "w": 100,
-      "color": "#39ff70",
-      "font": {
-        "family": "oxan",
-        "size": 16,
-        "weight": 700
-      },
-      "align": "left",
-      "dec": 3,
-      "mono": true
-    },
-    {
-      "anchor": "c",
-      "id": "c_dlt",
-      "type": "box",
-      "text": "delta",
-      "x": -118,
-      "y": -61,
-      "w": 60,
-      "h": 15,
-      "color": "#0f4d26",
-      "font": {
-        "family": "droid",
-        "size": 9,
-        "weight": 500
-      },
-      "align": "left"
-    },
-    {
-      "anchor": "c",
-      "id": "c_pos",
-      "type": "box",
-      "text": "pos",
-      "x": -560,
-      "y": -315,
-      "w": 50,
-      "h": 15,
-      "color": "#1f9e4d",
-      "font": {
-        "family": "droid",
-        "size": 9,
-        "weight": 500
-      },
-      "align": "center"
-    },
-    {
-      "anchor": "c",
-      "id": "pos",
-      "type": "data",
-      "prop": "Position",
-      "x": -560,
-      "y": -281,
-      "w": 60,
-      "color": "#39ff70",
-      "font": {
-        "family": "seg7c",
-        "size": 34,
-        "weight": 700
-      },
-      "align": "left",
-      "dec": 0,
-      "digits": 2,
-      "mono": true
-    },
-    {
-      "anchor": "c",
-      "id": "c_lap",
-      "type": "box",
-      "text": "lap",
-      "x": -452,
-      "y": -315,
-      "w": 60,
-      "h": 15,
-      "color": "#1f9e4d",
-      "font": {
-        "family": "droid",
-        "size": 9,
-        "weight": 500
-      },
-      "align": "center"
-    },
-    {
-      "anchor": "c",
-      "id": "lap_n",
-      "type": "data",
-      "prop": "CompletedLaps",
-      "x": -452,
-      "y": -286,
-      "w": 44,
-      "color": "#39ff70",
-      "font": {
-        "family": "oxan",
-        "size": 26,
-        "weight": 700
-      },
-      "align": "right",
-      "dec": 0,
-      "digits": 2,
-      "mono": true
-    },
-    {
-      "anchor": "c",
-      "id": "lsep",
-      "type": "box",
-      "text": "/",
-      "x": -432,
-      "y": -280,
-      "w": 14,
-      "h": 26,
-      "color": "#1f9e4d",
-      "font": {
-        "family": "droid",
-        "size": 20,
-        "weight": 500
-      },
-      "align": "center"
-    },
-    {
-      "anchor": "c",
-      "id": "lap_t",
-      "type": "data",
-      "prop": "TotalLaps",
-      "x": -386,
-      "y": -286,
-      "w": 44,
-      "color": "#39ff70",
-      "font": {
-        "family": "oxan",
-        "size": 26,
-        "weight": 400
-      },
-      "align": "left",
-      "dec": 0,
-      "mono": true
-    },
-    {
-      "anchor": "c",
-      "id": "r1",
-      "type": "box",
-      "x": -560,
-      "y": -267,
-      "w": 190,
-      "h": 1,
-      "bg": true,
-      "bgColor": "#39ff70",
-      "bgAlpha": 40
-    },
-    {
-      "anchor": "c",
-      "id": "c_gap",
-      "type": "box",
-      "text": "gap",
-      "x": -560,
-      "y": -241,
-      "w": 50,
-      "h": 15,
-      "color": "#1f9e4d",
-      "font": {
-        "family": "droid",
-        "size": 9,
-        "weight": 500
-      },
-      "align": "center"
-    },
-    {
-      "anchor": "c",
-      "id": "ga_l",
-      "type": "box",
-      "text": "ahead",
-      "x": -560,
-      "y": -219,
-      "w": 46,
-      "h": 15,
-      "color": "#0f4d26",
-      "font": {
-        "family": "droid",
-        "size": 9,
-        "weight": 500
-      },
-      "align": "right"
-    },
-    {
-      "anchor": "c",
-      "id": "gap_a",
-      "type": "data",
-      "prop": "GapAhead",
-      "x": -508,
-      "y": -224,
-      "w": 80,
-      "color": "#39ff70",
-      "font": {
-        "family": "oxan",
-        "size": 18,
-        "weight": 400
-      },
-      "align": "left",
-      "unit": "s",
-      "dec": 1,
-      "mono": true
-    },
-    {
-      "anchor": "c",
-      "id": "gb_l",
-      "type": "box",
-      "text": "behind",
-      "x": -560,
-      "y": -193,
-      "w": 46,
-      "h": 15,
-      "color": "#0f4d26",
-      "font": {
-        "family": "droid",
-        "size": 9,
-        "weight": 500
-      },
-      "align": "right"
-    },
-    {
-      "anchor": "c",
-      "id": "gap_b",
-      "type": "data",
-      "prop": "GapBehind",
-      "x": -508,
-      "y": -198,
-      "w": 80,
-      "color": "#39ff70",
-      "font": {
-        "family": "oxan",
-        "size": 18,
-        "weight": 400
-      },
-      "align": "left",
-      "unit": "s",
-      "dec": 1,
-      "mono": true
-    },
-    {
-      "anchor": "c",
-      "id": "f_blue",
-      "type": "flag",
-      "flag": "blue",
-      "x": -560,
-      "y": -142,
-      "w": 26,
-      "h": 26
-    },
-    {
-      "anchor": "c",
-      "id": "f_yellow",
-      "type": "flag",
-      "flag": "yellow",
-      "x": -528,
-      "y": -142,
-      "w": 26,
-      "h": 26
-    },
-    {
-      "anchor": "c",
-      "id": "f_red",
-      "type": "flag",
-      "flag": "red",
-      "x": -496,
-      "y": -142,
-      "w": 26,
-      "h": 26
-    },
-    {
-      "anchor": "c",
-      "id": "f_checkered",
-      "type": "flag",
-      "flag": "checkered",
-      "x": -464,
-      "y": -142,
-      "w": 26,
-      "h": 26
-    },
-    {
-      "anchor": "c",
-      "id": "c_b",
-      "type": "box",
-      "text": "best",
-      "x": 396,
-      "y": -315,
-      "w": 56,
-      "h": 15,
-      "color": "#0f4d26",
-      "font": {
-        "family": "droid",
-        "size": 9,
-        "weight": 500
-      },
-      "align": "right"
-    },
-    {
-      "anchor": "c",
-      "id": "lap_b",
-      "type": "lap",
-      "lap": "best",
-      "x": 460,
-      "y": -316,
-      "w": 100,
-      "color": "#39ff70",
-      "font": {
-        "family": "oxan",
-        "size": 18,
-        "weight": 500
-      },
-      "stPaint": "text"
-    },
-    {
-      "anchor": "c",
-      "id": "c_l",
-      "type": "box",
-      "text": "last",
-      "x": 396,
-      "y": -287,
-      "w": 56,
-      "h": 15,
-      "color": "#0f4d26",
-      "font": {
-        "family": "droid",
-        "size": 9,
-        "weight": 500
-      },
-      "align": "right"
-    },
-    {
-      "anchor": "c",
-      "id": "lap_l",
-      "type": "lap",
-      "lap": "last",
-      "x": 460,
-      "y": -288,
-      "w": 100,
-      "color": "#39ff70",
-      "font": {
-        "family": "oxan",
-        "size": 18,
-        "weight": 500
-      },
-      "stPaint": "text"
-    },
-    {
-      "anchor": "c",
-      "id": "c_c",
-      "type": "box",
-      "text": "cur",
-      "x": 396,
-      "y": -259,
-      "w": 56,
-      "h": 15,
-      "color": "#0f4d26",
-      "font": {
-        "family": "droid",
-        "size": 9,
-        "weight": 500
-      },
-      "align": "right"
-    },
-    {
-      "anchor": "c",
-      "id": "lap_c",
-      "type": "lap",
-      "lap": "current",
-      "x": 460,
-      "y": -260,
-      "w": 100,
-      "color": "#39ff70",
-      "font": {
-        "family": "oxan",
-        "size": 18,
-        "weight": 500
-      },
-      "stPaint": "text"
-    },
-    {
-      "anchor": "c",
-      "id": "r2",
-      "type": "box",
-      "x": 396,
-      "y": -251,
-      "w": 164,
-      "h": 1,
-      "bg": true,
-      "bgColor": "#39ff70",
-      "bgAlpha": 40
-    },
-    {
-      "anchor": "c",
-      "id": "c_s1",
-      "type": "box",
-      "text": "s1",
-      "x": 396,
-      "y": -225,
-      "w": 28,
-      "h": 15,
-      "color": "#0f4d26",
-      "font": {
-        "family": "droid",
-        "size": 9,
-        "weight": 500
-      },
-      "align": "right"
-    },
-    {
-      "anchor": "c",
-      "id": "s1",
-      "type": "sector",
-      "sector": 1,
-      "x": 432,
-      "y": -231,
-      "w": 84,
-      "color": "#39ff70",
-      "font": {
-        "family": "oxan",
-        "size": 14,
-        "weight": 400
-      },
-      "stPaint": "text"
-    },
-    {
-      "anchor": "c",
-      "id": "c_s2",
-      "type": "box",
-      "text": "s2",
-      "x": 488,
-      "y": -225,
-      "w": 28,
-      "h": 15,
-      "color": "#0f4d26",
-      "font": {
-        "family": "droid",
-        "size": 9,
-        "weight": 500
-      },
-      "align": "right"
-    },
-    {
-      "anchor": "c",
-      "id": "s2",
-      "type": "sector",
-      "sector": 2,
-      "x": 524,
-      "y": -231,
-      "w": 84,
-      "color": "#39ff70",
-      "font": {
-        "family": "oxan",
-        "size": 14,
-        "weight": 400
-      },
-      "stPaint": "text"
-    },
-    {
-      "anchor": "c",
-      "id": "c_s3",
-      "type": "box",
-      "text": "s3",
-      "x": 396,
-      "y": -197,
-      "w": 28,
-      "h": 15,
-      "color": "#0f4d26",
-      "font": {
-        "family": "droid",
-        "size": 9,
-        "weight": 500
-      },
-      "align": "right"
-    },
-    {
-      "anchor": "c",
-      "id": "s3",
-      "type": "sector",
-      "sector": 3,
-      "x": 432,
-      "y": -203,
-      "w": 84,
-      "color": "#39ff70",
-      "font": {
-        "family": "oxan",
-        "size": 14,
-        "weight": 400
-      },
-      "stPaint": "text"
-    },
-    {
-      "anchor": "c",
-      "id": "thr",
-      "type": "bar",
-      "prop": "Throttle",
-      "x": -286,
-      "y": -76,
-      "w": 8,
-      "h": 84,
-      "orient": "v",
-      "min": 0,
-      "max": 100,
-      "color": "#39ff70",
-      "bg": true,
-      "bgAlpha": 14,
-      "bgColor": "#000000"
-    },
-    {
-      "anchor": "c",
-      "id": "brk",
-      "type": "bar",
-      "prop": "Brake",
-      "x": 278,
-      "y": -76,
-      "w": 8,
-      "h": 84,
-      "orient": "v",
-      "min": 0,
-      "max": 100,
-      "color": "#39ff70",
-      "bg": true,
-      "bgAlpha": 14,
-      "bgColor": "#000000"
-    },
-    {
-      "anchor": "c",
-      "id": "c_thr",
-      "type": "box",
-      "text": "thr",
-      "x": -294,
-      "y": -54,
-      "w": 24,
-      "h": 14,
-      "color": "#0f4d26",
-      "font": {
-        "family": "droid",
-        "size": 8,
-        "weight": 500
-      },
-      "align": "center"
-    },
-    {
-      "anchor": "c",
-      "id": "c_brk",
-      "type": "box",
-      "text": "brk",
-      "x": 270,
-      "y": -54,
-      "w": 24,
-      "h": 14,
-      "color": "#0f4d26",
-      "font": {
-        "family": "droid",
-        "size": 8,
-        "weight": 500
-      },
-      "align": "center"
-    },
-    {
-      "anchor": "c",
-      "id": "steer",
-      "type": "bar",
-      "prop": "SteeringWheelAngle",
-      "x": -220,
-      "y": -53,
-      "w": 440,
-      "h": 3,
-      "orient": "c",
-      "min": -540,
-      "max": 540,
-      "color": "#1f9e4d",
-      "bg": true,
-      "bgAlpha": 12,
-      "bgColor": "#000000"
-    },
-    {
-      "anchor": "c",
-      "id": "c_str",
-      "type": "box",
-      "text": "steer",
-      "x": -58,
-      "y": -32,
-      "w": 60,
-      "h": 14,
-      "color": "#0f4d26",
-      "font": {
-        "family": "droid",
-        "size": 8,
-        "weight": 500
-      },
-      "align": "center"
+  {
+   "anchor": "c",
+   "id": "rt1",
+   "type": "box",
+   "x": -200,
+   "y": -482,
+   "w": 1,
+   "h": 4,
+   "bg": true,
+   "bgColor": "#39ff70",
+   "bgAlpha": 34
+  },
+  {
+   "anchor": "c",
+   "id": "rt2",
+   "type": "box",
+   "x": -180,
+   "y": -482,
+   "w": 1,
+   "h": 4,
+   "bg": true,
+   "bgColor": "#39ff70",
+   "bgAlpha": 34
+  },
+  {
+   "anchor": "c",
+   "id": "rt3",
+   "type": "box",
+   "x": -160,
+   "y": -482,
+   "w": 1,
+   "h": 4,
+   "bg": true,
+   "bgColor": "#39ff70",
+   "bgAlpha": 34
+  },
+  {
+   "anchor": "c",
+   "id": "rt4",
+   "type": "box",
+   "x": -140,
+   "y": -479,
+   "w": 1,
+   "h": 7,
+   "bg": true,
+   "bgColor": "#39ff70",
+   "bgAlpha": 34
+  },
+  {
+   "anchor": "c",
+   "id": "rt5",
+   "type": "box",
+   "x": -120,
+   "y": -482,
+   "w": 1,
+   "h": 4,
+   "bg": true,
+   "bgColor": "#39ff70",
+   "bgAlpha": 34
+  },
+  {
+   "anchor": "c",
+   "id": "rt6",
+   "type": "box",
+   "x": -100,
+   "y": -482,
+   "w": 1,
+   "h": 4,
+   "bg": true,
+   "bgColor": "#39ff70",
+   "bgAlpha": 34
+  },
+  {
+   "anchor": "c",
+   "id": "rt7",
+   "type": "box",
+   "x": -80,
+   "y": -482,
+   "w": 1,
+   "h": 4,
+   "bg": true,
+   "bgColor": "#39ff70",
+   "bgAlpha": 34
+  },
+  {
+   "anchor": "c",
+   "id": "rt8",
+   "type": "box",
+   "x": -60,
+   "y": -479,
+   "w": 1,
+   "h": 7,
+   "bg": true,
+   "bgColor": "#39ff70",
+   "bgAlpha": 34
+  },
+  {
+   "anchor": "c",
+   "id": "rt9",
+   "type": "box",
+   "x": -40,
+   "y": -482,
+   "w": 1,
+   "h": 4,
+   "bg": true,
+   "bgColor": "#39ff70",
+   "bgAlpha": 34
+  },
+  {
+   "anchor": "c",
+   "id": "rt10",
+   "type": "box",
+   "x": -20,
+   "y": -482,
+   "w": 1,
+   "h": 4,
+   "bg": true,
+   "bgColor": "#39ff70",
+   "bgAlpha": 34
+  },
+  {
+   "anchor": "c",
+   "id": "rt11",
+   "type": "box",
+   "x": 0,
+   "y": -482,
+   "w": 1,
+   "h": 4,
+   "bg": true,
+   "bgColor": "#39ff70",
+   "bgAlpha": 34
+  },
+  {
+   "anchor": "c",
+   "id": "rt12",
+   "type": "box",
+   "x": 20,
+   "y": -479,
+   "w": 1,
+   "h": 7,
+   "bg": true,
+   "bgColor": "#39ff70",
+   "bgAlpha": 34
+  },
+  {
+   "anchor": "c",
+   "id": "rt13",
+   "type": "box",
+   "x": 40,
+   "y": -482,
+   "w": 1,
+   "h": 4,
+   "bg": true,
+   "bgColor": "#39ff70",
+   "bgAlpha": 34
+  },
+  {
+   "anchor": "c",
+   "id": "rt14",
+   "type": "box",
+   "x": 60,
+   "y": -482,
+   "w": 1,
+   "h": 4,
+   "bg": true,
+   "bgColor": "#39ff70",
+   "bgAlpha": 34
+  },
+  {
+   "anchor": "c",
+   "id": "rt15",
+   "type": "box",
+   "x": 80,
+   "y": -482,
+   "w": 1,
+   "h": 4,
+   "bg": true,
+   "bgColor": "#39ff70",
+   "bgAlpha": 34
+  },
+  {
+   "anchor": "c",
+   "id": "rt16",
+   "type": "box",
+   "x": 100,
+   "y": -479,
+   "w": 1,
+   "h": 7,
+   "bg": true,
+   "bgColor": "#39ff70",
+   "bgAlpha": 34
+  },
+  {
+   "anchor": "c",
+   "id": "rt17",
+   "type": "box",
+   "x": 120,
+   "y": -482,
+   "w": 1,
+   "h": 4,
+   "bg": true,
+   "bgColor": "#39ff70",
+   "bgAlpha": 34
+  },
+  {
+   "anchor": "c",
+   "id": "rt18",
+   "type": "box",
+   "x": 140,
+   "y": -482,
+   "w": 1,
+   "h": 4,
+   "bg": true,
+   "bgColor": "#39ff70",
+   "bgAlpha": 34
+  },
+  {
+   "anchor": "c",
+   "id": "rt19",
+   "type": "box",
+   "x": 160,
+   "y": -482,
+   "w": 1,
+   "h": 4,
+   "bg": true,
+   "bgColor": "#39ff70",
+   "bgAlpha": 34
+  },
+  {
+   "anchor": "c",
+   "id": "rt20",
+   "type": "box",
+   "x": 180,
+   "y": -479,
+   "w": 1,
+   "h": 7,
+   "bg": true,
+   "bgColor": "#39ff70",
+   "bgAlpha": 34
+  },
+  {
+   "anchor": "c",
+   "id": "rt21",
+   "type": "box",
+   "x": 200,
+   "y": -482,
+   "w": 1,
+   "h": 4,
+   "bg": true,
+   "bgColor": "#39ff70",
+   "bgAlpha": 34
+  },
+  {
+   "anchor": "c",
+   "id": "rt22",
+   "type": "box",
+   "x": 220,
+   "y": -482,
+   "w": 1,
+   "h": 4,
+   "bg": true,
+   "bgColor": "#39ff70",
+   "bgAlpha": 34
+  },
+  {
+   "anchor": "c",
+   "id": "r1",
+   "type": "box",
+   "x": -560,
+   "y": -415,
+   "w": 190,
+   "h": 1,
+   "bg": true,
+   "bgColor": "#39ff70",
+   "bgAlpha": 40
+  },
+  {
+   "anchor": "c",
+   "id": "f_blue",
+   "type": "flag",
+   "flag": "blue",
+   "x": -560,
+   "y": -302,
+   "w": 35,
+   "h": 26,
+   "bg": true
+  },
+  {
+   "anchor": "c",
+   "id": "f_yellow",
+   "type": "flag",
+   "flag": "yellow",
+   "x": -519,
+   "y": -302,
+   "w": 35,
+   "h": 26,
+   "bg": true
+  },
+  {
+   "anchor": "c",
+   "id": "f_red",
+   "type": "flag",
+   "flag": "red",
+   "x": -478,
+   "y": -302,
+   "w": 35,
+   "h": 26,
+   "bg": true
+  },
+  {
+   "anchor": "c",
+   "id": "f_checkered",
+   "type": "flag",
+   "flag": "checkered",
+   "x": -437,
+   "y": -302,
+   "w": 35,
+   "h": 26,
+   "bg": true
+  },
+  {
+   "anchor": "c",
+   "id": "r2",
+   "type": "box",
+   "x": 396,
+   "y": -411,
+   "w": 164,
+   "h": 1,
+   "bg": true,
+   "bgColor": "#39ff70",
+   "bgAlpha": 40
+  },
+  {
+   "anchor": "c",
+   "id": "speed",
+   "type": "data",
+   "prop": "SpeedKmh",
+   "x": -140,
+   "y": -382,
+   "w": 220,
+   "color": "#39ff70",
+   "font": {
+    "family": "seg7m",
+    "size": 62,
+    "weight": 700
+   },
+   "align": "left",
+   "unit": "km/h",
+   "digits": 3,
+   "mono": true
+  },
+  {
+   "anchor": "c",
+   "id": "gear",
+   "type": "data",
+   "prop": "Gear",
+   "x": 114,
+   "y": -385,
+   "w": 76,
+   "color": "#39ff70",
+   "font": {
+    "family": "seg7m",
+    "size": 48,
+    "weight": 700
+   },
+   "align": "left",
+   "digits": 1,
+   "mono": true
+  },
+  {
+   "anchor": "c",
+   "id": "c_gear",
+   "type": "data",
+   "text": "gear",
+   "x": 152,
+   "y": -342,
+   "color": "#1f9e4d",
+   "font": {
+    "family": "droid",
+    "size": 16,
+    "weight": 500
+   },
+   "align": "center"
+  },
+  {
+   "anchor": "c",
+   "id": "c_spd",
+   "type": "data",
+   "text": "speed",
+   "x": -30,
+   "y": -340,
+   "color": "#1f9e4d",
+   "font": {
+    "family": "droid",
+    "size": 16,
+    "weight": 500
+   },
+   "align": "center"
+  },
+  {
+   "anchor": "c",
+   "id": "rpm",
+   "type": "bar",
+   "prop": "Rpms",
+   "x": -220,
+   "y": -469,
+   "w": 440,
+   "h": 5,
+   "orient": "h",
+   "min": 0,
+   "max": 14200,
+   "color": "#39ff70",
+   "bg": true,
+   "bgAlpha": 16,
+   "bgColor": "#000000",
+   "rules": [
+    {
+     "when": "v > 12500",
+     "then": {
+      "blink": true,
+      "color": "#9dffb8"
+     }
     }
-  ]
+   ]
+  },
+  {
+   "anchor": "c",
+   "id": "delta",
+   "type": "bar",
+   "prop": "DeltaToSessionBest",
+   "x": -220,
+   "y": -315,
+   "w": 440,
+   "h": 5,
+   "orient": "c",
+   "min": -1,
+   "max": 1,
+   "color": "#1f9e4d",
+   "bg": true,
+   "bgAlpha": 16,
+   "bgColor": "#000000",
+   "colorNeg": "#39ff70"
+  },
+  {
+   "anchor": "c",
+   "id": "delta_v",
+   "type": "data",
+   "prop": "DeltaToSessionBest",
+   "x": -220,
+   "y": -298,
+   "w": 100,
+   "color": "#39ff70",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 700
+   },
+   "align": "left",
+   "dec": 3,
+   "mono": true
+  },
+  {
+   "anchor": "c",
+   "id": "c_dlt",
+   "type": "data",
+   "text": "delta",
+   "x": -118,
+   "y": -298,
+   "color": "#0f4d26",
+   "font": {
+    "family": "droid",
+    "size": 16,
+    "weight": 500
+   },
+   "align": "left"
+  },
+  {
+   "anchor": "c",
+   "id": "c_pos",
+   "type": "data",
+   "text": "pos",
+   "x": -480,
+   "y": -478,
+   "color": "#1f9e4d",
+   "font": {
+    "family": "droid",
+    "size": 16,
+    "weight": 500
+   },
+   "align": "right"
+  },
+  {
+   "anchor": "c",
+   "id": "pos",
+   "type": "data",
+   "prop": "Position",
+   "x": -460,
+   "y": -478,
+   "w": 60,
+   "color": "#39ff70",
+   "font": {
+    "family": "seg7c",
+    "size": 34,
+    "weight": 700
+   },
+   "align": "left",
+   "dec": 0,
+   "digits": 2,
+   "mono": true
+  },
+  {
+   "anchor": "c",
+   "id": "c_lap",
+   "type": "data",
+   "text": "lap",
+   "x": -480,
+   "y": -438,
+   "color": "#1f9e4d",
+   "font": {
+    "family": "droid",
+    "size": 16,
+    "weight": 500
+   },
+   "align": "right"
+  },
+  {
+   "anchor": "c",
+   "id": "lap_n",
+   "type": "data",
+   "prop": "CompletedLaps",
+   "x": -452,
+   "y": -438,
+   "w": 44,
+   "color": "#39ff70",
+   "font": {
+    "family": "oxan",
+    "size": 26,
+    "weight": 700
+   },
+   "align": "right",
+   "dec": 0,
+   "digits": 2,
+   "mono": true
+  },
+  {
+   "anchor": "c",
+   "id": "lsep",
+   "type": "data",
+   "text": "/",
+   "x": -440,
+   "y": -438,
+   "color": "#1f9e4d",
+   "font": {
+    "family": "droid",
+    "size": 20,
+    "weight": 500
+   },
+   "align": "center"
+  },
+  {
+   "anchor": "c",
+   "id": "lap_t",
+   "type": "data",
+   "prop": "TotalLaps",
+   "x": -428,
+   "y": -438,
+   "w": 44,
+   "color": "#39ff70",
+   "font": {
+    "family": "oxan",
+    "size": 26,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "mono": true
+  },
+  {
+   "anchor": "c",
+   "id": "ga_l",
+   "type": "data",
+   "text": "ahead",
+   "x": -480,
+   "y": -388,
+   "color": "#0f4d26",
+   "font": {
+    "family": "droid",
+    "size": 16,
+    "weight": 500
+   },
+   "align": "right"
+  },
+  {
+   "anchor": "c",
+   "id": "gap_a",
+   "type": "data",
+   "prop": "GapAhead",
+   "x": -460,
+   "y": -388,
+   "w": 80,
+   "color": "#39ff70",
+   "font": {
+    "family": "oxan",
+    "size": 18,
+    "weight": 400
+   },
+   "align": "left",
+   "unit": "s",
+   "dec": 1,
+   "mono": true
+  },
+  {
+   "anchor": "c",
+   "id": "gb_l",
+   "type": "data",
+   "text": "behind",
+   "x": -480,
+   "y": -358,
+   "color": "#0f4d26",
+   "font": {
+    "family": "droid",
+    "size": 16,
+    "weight": 500
+   },
+   "align": "right"
+  },
+  {
+   "anchor": "c",
+   "id": "gap_b",
+   "type": "data",
+   "prop": "GapBehind",
+   "x": -460,
+   "y": -358,
+   "w": 80,
+   "color": "#39ff70",
+   "font": {
+    "family": "oxan",
+    "size": 18,
+    "weight": 400
+   },
+   "align": "left",
+   "unit": "s",
+   "dec": 1,
+   "mono": true
+  },
+  {
+   "anchor": "c",
+   "id": "c_b",
+   "type": "data",
+   "text": "best",
+   "x": 452,
+   "y": -476,
+   "color": "#0f4d26",
+   "font": {
+    "family": "droid",
+    "size": 16,
+    "weight": 500
+   },
+   "align": "right"
+  },
+  {
+   "anchor": "c",
+   "id": "lap_b",
+   "type": "lap",
+   "lap": "best",
+   "x": 460,
+   "y": -476,
+   "w": 100,
+   "color": "#39ff70",
+   "font": {
+    "family": "oxan",
+    "size": 18,
+    "weight": 500
+   },
+   "stPaint": "text"
+  },
+  {
+   "anchor": "c",
+   "id": "c_l",
+   "type": "data",
+   "text": "last",
+   "x": 452,
+   "y": -448,
+   "color": "#0f4d26",
+   "font": {
+    "family": "droid",
+    "size": 16,
+    "weight": 500
+   },
+   "align": "right"
+  },
+  {
+   "anchor": "c",
+   "id": "lap_l",
+   "type": "lap",
+   "lap": "last",
+   "x": 460,
+   "y": -448,
+   "w": 100,
+   "color": "#39ff70",
+   "font": {
+    "family": "oxan",
+    "size": 18,
+    "weight": 500
+   },
+   "stPaint": "text"
+  },
+  {
+   "anchor": "c",
+   "id": "c_c",
+   "type": "data",
+   "text": "cur",
+   "x": 452,
+   "y": -420,
+   "color": "#0f4d26",
+   "font": {
+    "family": "droid",
+    "size": 16,
+    "weight": 500
+   },
+   "align": "right"
+  },
+  {
+   "anchor": "c",
+   "id": "lap_c",
+   "type": "lap",
+   "lap": "current",
+   "x": 460,
+   "y": -420,
+   "w": 100,
+   "color": "#39ff70",
+   "font": {
+    "family": "oxan",
+    "size": 18,
+    "weight": 500
+   },
+   "stPaint": "text"
+  },
+  {
+   "anchor": "c",
+   "id": "c_s1",
+   "type": "data",
+   "text": "s1",
+   "x": 452,
+   "y": -392,
+   "color": "#0f4d26",
+   "font": {
+    "family": "droid",
+    "size": 16,
+    "weight": 500
+   },
+   "align": "right"
+  },
+  {
+   "anchor": "c",
+   "id": "s1",
+   "type": "sector",
+   "sector": 1,
+   "x": 460,
+   "y": -392,
+   "w": 84,
+   "color": "#39ff70",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "stPaint": "text"
+  },
+  {
+   "anchor": "c",
+   "id": "c_s2",
+   "type": "data",
+   "text": "s2",
+   "x": 452,
+   "y": -364,
+   "color": "#0f4d26",
+   "font": {
+    "family": "droid",
+    "size": 16,
+    "weight": 500
+   },
+   "align": "right"
+  },
+  {
+   "anchor": "c",
+   "id": "s2",
+   "type": "sector",
+   "sector": 2,
+   "x": 460,
+   "y": -364,
+   "w": 84,
+   "color": "#39ff70",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "stPaint": "text"
+  },
+  {
+   "anchor": "c",
+   "id": "c_s3",
+   "type": "data",
+   "text": "s3",
+   "x": 452,
+   "y": -336,
+   "color": "#0f4d26",
+   "font": {
+    "family": "droid",
+    "size": 16,
+    "weight": 500
+   },
+   "align": "right"
+  },
+  {
+   "anchor": "c",
+   "id": "s3",
+   "type": "sector",
+   "sector": 3,
+   "x": 460,
+   "y": -336,
+   "w": 84,
+   "color": "#39ff70",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "stPaint": "text"
+  },
+  {
+   "anchor": "c",
+   "id": "thr",
+   "type": "bar",
+   "prop": "Throttle",
+   "x": -286,
+   "y": -258,
+   "w": 8,
+   "h": 84,
+   "orient": "v",
+   "min": 0,
+   "max": 100,
+   "color": "#39ff70",
+   "bg": true,
+   "bgAlpha": 14,
+   "bgColor": "#000000"
+  },
+  {
+   "anchor": "c",
+   "id": "brk",
+   "type": "bar",
+   "prop": "Brake",
+   "x": 278,
+   "y": -258,
+   "w": 8,
+   "h": 84,
+   "orient": "v",
+   "min": 0,
+   "max": 100,
+   "color": "#39ff70",
+   "bg": true,
+   "bgAlpha": 14,
+   "bgColor": "#000000"
+  },
+  {
+   "anchor": "c",
+   "id": "c_thr",
+   "type": "data",
+   "text": "thr",
+   "x": -282,
+   "y": -238,
+   "color": "#0f4d26",
+   "font": {
+    "family": "droid",
+    "size": 16,
+    "weight": 500
+   },
+   "align": "center"
+  },
+  {
+   "anchor": "c",
+   "id": "c_brk",
+   "type": "data",
+   "text": "brk",
+   "x": 282,
+   "y": -238,
+   "color": "#0f4d26",
+   "font": {
+    "family": "droid",
+    "size": 16,
+    "weight": 500
+   },
+   "align": "center"
+  },
+  {
+   "anchor": "c",
+   "id": "steer",
+   "type": "bar",
+   "prop": "SteeringWheelAngle",
+   "x": -220,
+   "y": -270,
+   "w": 440,
+   "h": 3,
+   "orient": "c",
+   "min": -540,
+   "max": 540,
+   "color": "#1f9e4d",
+   "bg": true,
+   "bgAlpha": 12,
+   "bgColor": "#000000"
+  },
+  {
+   "anchor": "c",
+   "id": "c_str",
+   "type": "data",
+   "text": "steer",
+   "x": -28,
+   "y": -248,
+   "color": "#0f4d26",
+   "font": {
+    "family": "droid",
+    "size": 16,
+    "weight": 500
+   },
+   "align": "center"
+  }
+ ]
 }

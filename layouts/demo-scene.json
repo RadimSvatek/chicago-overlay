@@ -1,0 +1,231 @@
+{
+ "_seed": true,
+ "grid": {
+  "snap": true,
+  "step": 10
+ },
+ "nodes": [
+  {
+   "anchor": "c",
+   "type": "grid",
+   "id": "g_main",
+   "x": -700,
+   "y": -140,
+   "w": 1400,
+   "h": 520,
+   "mode": "persp",
+   "cols": 20,
+   "rows": 10,
+   "horizon": 0.22,
+   "stop": 0.28,
+   "vanish": 0.5,
+   "compress": 2,
+   "color": "#3a0d5e",
+   "color2": "#01cdfe",
+   "lw": 1.5,
+   "farFade": 0.7,
+   "glow": 6
+  },
+  {
+   "anchor": "c",
+   "type": "grid",
+   "id": "g_eq",
+   "x": -700,
+   "y": 240,
+   "w": 1400,
+   "h": 300,
+   "mode": "persp",
+   "cols": 32,
+   "rows": 6,
+   "horizon": 0.25,
+   "stop": 0.3,
+   "vanish": 0.5,
+   "compress": 2,
+   "color": "#ff2bd6",
+   "color2": "#b967ff",
+   "lw": 1.5,
+   "fill": "eq",
+   "propBase": "Eq.Band",
+   "fcolor": "#01cdfe",
+   "fcolor2": "#b967ff",
+   "fcolor3": "#ff2bd6",
+   "glow": 6
+  },
+  {
+   "anchor": "c",
+   "type": "data",
+   "id": "t_title",
+   "x": 0,
+   "y": -60,
+   "text": "CHICAGO",
+   "inherit": true,
+   "align": "center",
+   "color": "#ffffff",
+   "font": {
+    "family": "oxan",
+    "size": 110,
+    "weight": 700
+   },
+   "crawl": {
+    "dur": 8000,
+    "hold": 1200,
+    "gap": 1000,
+    "bounce": true
+   }
+  },
+  {
+   "anchor": "c",
+   "type": "data",
+   "id": "t_sub",
+   "x": 0,
+   "y": 120,
+   "text": "LIVE DATA DEMO SCENE",
+   "inherit": true,
+   "align": "center",
+   "color": "#01cdfe",
+   "font": {
+    "family": "nasa",
+    "size": 24,
+    "weight": 700
+   },
+   "typewriter": {
+    "cps": 14,
+    "hold": 2600,
+    "gap": 1600,
+    "cursor": true
+   }
+  },
+  {
+   "anchor": "c",
+   "type": "events",
+   "id": "ev",
+   "x": 460,
+   "y": 60,
+   "w": 480,
+   "h": 220,
+   "dir": "fountain",
+   "jitter": 60,
+   "spread": 120,
+   "dur": 2600,
+   "max": 8,
+   "font": {
+    "family": "nasa",
+    "size": 20,
+    "weight": 700
+   },
+   "watch": [
+    {
+     "prop": "Sys.Cpu",
+     "on": "delta",
+     "min": 5,
+     "fmt": "CPU {d}%",
+     "color": "#ff2bd6",
+     "crit": true
+    },
+    {
+     "prop": "Sys.Ram",
+     "on": "delta",
+     "min": 8,
+     "fmt": "RAM {d}%",
+     "color": "#01cdfe"
+    },
+    {
+     "prop": "Clock.Time",
+     "on": "change",
+     "fmt": "MINUTE {v}",
+     "color": "#b967ff",
+     "size": 14,
+     "cool": 60000
+    }
+   ]
+  },
+  {
+   "anchor": "c",
+   "type": "bar",
+   "id": "ring_cpu",
+   "x": -640,
+   "y": 60,
+   "w": 130,
+   "h": 130,
+   "prop": "Sys.Cpu",
+   "min": 0,
+   "max": 100,
+   "dec": 0,
+   "unit": "%",
+   "ring": true,
+   "ring0": -90,
+   "seg": 24,
+   "segGap": 2,
+   "thick": 12,
+   "color": "#01cdfe",
+   "color2": "#b967ff",
+   "color3": "#ff2bd6",
+   "fill": "gradient",
+   "ringVal": true,
+   "glow": 6,
+   "label": "CPU"
+  },
+  {
+   "anchor": "c",
+   "type": "bar",
+   "id": "ring_ram",
+   "x": -480,
+   "y": 60,
+   "w": 130,
+   "h": 130,
+   "prop": "Sys.Ram",
+   "min": 0,
+   "max": 100,
+   "dec": 0,
+   "unit": "%",
+   "ring": true,
+   "ring0": -90,
+   "seg": 24,
+   "segGap": 2,
+   "thick": 12,
+   "color": "#b967ff",
+   "color2": "#ff2bd6",
+   "color3": "#ff8a3d",
+   "fill": "gradient",
+   "ringVal": true,
+   "glow": 6,
+   "label": "RAM"
+  },
+  {
+   "anchor": "c",
+   "type": "data",
+   "id": "t_clock",
+   "x": -560,
+   "y": 230,
+   "prop": "Clock.Time",
+   "align": "center",
+   "color": "#01cdfe",
+   "font": {
+    "family": "nasa",
+    "size": 42,
+    "weight": 700
+   },
+   "glow": 8
+  },
+  {
+   "anchor": "c",
+   "type": "data",
+   "id": "mq_track",
+   "x": 0,
+   "y": 470,
+   "w": 900,
+   "h": 44,
+   "prop": "Sys.Cpu",
+   "marquee": true,
+   "align": "center",
+   "color": "#ff2bd6",
+   "font": {
+    "family": "oxan",
+    "size": 30,
+    "weight": 700
+   },
+   "glow": 6,
+   "fmt": "CHICAGO DEMO SCENE  //  CPU {v} %  //  1 565 LIVE SIGNALS  //  "
+  }
+ ]
+}

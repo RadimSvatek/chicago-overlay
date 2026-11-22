@@ -1,0 +1,110 @@
+{
+ "_seed": true,
+ "grid": {
+  "snap": true,
+  "step": 10
+ },
+ "nodes": [
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "g_crawl",
+   "type": "grid",
+   "x": -500,
+   "y": -80,
+   "w": 1000,
+   "h": 480,
+   "mode": "persp",
+   "cols": 14,
+   "rows": 8,
+   "lw": 1.5,
+   "horizon": 0.25,
+   "vanish": 0.5,
+   "stop": 0.3,
+   "compress": 2,
+   "color": "#01cdfe",
+   "color2": "#b967ff",
+   "glow": 8,
+   "tcolor": "#ffffff",
+   "font": {
+    "family": "oxan",
+    "size": 64,
+    "weight": 700
+   }
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "crawl0",
+   "type": "data",
+   "text": "FROM CHICAGO",
+   "x": 0,
+   "y": -102,
+   "align": "center",
+   "inherit": true,
+   "color": "#ffffff"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "crawl1",
+   "type": "data",
+   "text": "FAR AWAY",
+   "x": 0,
+   "y": -159,
+   "align": "center",
+   "inherit": true,
+   "color": "#ffffff"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "crawl2",
+   "type": "data",
+   "text": "NOT SO",
+   "x": 0,
+   "y": -207,
+   "align": "center",
+   "inherit": true,
+   "color": "#ffffff"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "crawl3",
+   "type": "data",
+   "text": "IN A SECTOR",
+   "x": 0,
+   "y": -247,
+   "align": "center",
+   "inherit": true,
+   "color": "#ffffff"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "g_eq",
+   "type": "grid",
+   "x": -500,
+   "y": 400,
+   "w": 1000,
+   "h": 400,
+   "mode": "persp",
+   "cols": 32,
+   "rows": 8,
+   "lw": 1.5,
+   "horizon": 0.25,
+   "vanish": 0.5,
+   "stop": 0.3,
+   "compress": 2,
+   "color": "#ff2bd6",
+   "color2": "#b967ff",
+   "glow": 8,
+   "fill": "eq",
+   "propBase": "Eq.Band",
+   "fcolor": "#01cdfe",
+   "fcolor2": "#b967ff",
+   "fcolor3": "#ff2bd6"
+  }
+ ]
+}

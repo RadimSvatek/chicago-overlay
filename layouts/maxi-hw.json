@@ -1,0 +1,4019 @@
+{
+ "_seed": true,
+ "grid": {
+  "snap": true,
+  "step": 20
+ },
+ "nodes": [
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "p_main",
+   "type": "box",
+   "x": -901,
+   "y": 910,
+   "w": 1802,
+   "h": 880,
+   "bg": true,
+   "bgColor": "#000000",
+   "bgAlpha": 80,
+   "radius": 12,
+   "borderW": 1,
+   "borderColor": "#232c3c"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "h1_0",
+   "type": "box",
+   "x": -877,
+   "y": 58,
+   "w": 200,
+   "h": 20,
+   "text": "DIRECTX",
+   "color": "#ffb347",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_0_0",
+   "type": "box",
+   "x": -877,
+   "y": 92,
+   "w": 104,
+   "h": 20,
+   "text": "fps",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_0_1",
+   "type": "box",
+   "x": -877,
+   "y": 117,
+   "w": 104,
+   "h": 20,
+   "text": "pres",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_0_2",
+   "type": "box",
+   "x": -877,
+   "y": 142,
+   "w": 104,
+   "h": 20,
+   "text": "frame",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_0_3",
+   "type": "box",
+   "x": -877,
+   "y": 167,
+   "w": 104,
+   "h": 20,
+   "text": "cpu ms",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_0_4",
+   "type": "box",
+   "x": -877,
+   "y": 192,
+   "w": 104,
+   "h": 20,
+   "text": "gpu ms",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_0_5",
+   "type": "box",
+   "x": -877,
+   "y": 217,
+   "w": 104,
+   "h": 20,
+   "text": "drops",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_0_6",
+   "type": "box",
+   "x": -877,
+   "y": 242,
+   "w": 104,
+   "h": 20,
+   "text": "app",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "h1_1",
+   "type": "box",
+   "x": -657,
+   "y": 58,
+   "w": 200,
+   "h": 20,
+   "text": "GPU",
+   "color": "#ffb347",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_1_0",
+   "type": "box",
+   "x": -657,
+   "y": 92,
+   "w": 104,
+   "h": 20,
+   "text": "load",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_1_1",
+   "type": "box",
+   "x": -657,
+   "y": 117,
+   "w": 104,
+   "h": 20,
+   "text": "temp",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_1_2",
+   "type": "box",
+   "x": -657,
+   "y": 142,
+   "w": 104,
+   "h": 20,
+   "text": "hotspot",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_1_3",
+   "type": "box",
+   "x": -657,
+   "y": 167,
+   "w": 104,
+   "h": 20,
+   "text": "mem temp",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_1_4",
+   "type": "box",
+   "x": -657,
+   "y": 192,
+   "w": 104,
+   "h": 20,
+   "text": "power",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_1_5",
+   "type": "box",
+   "x": -657,
+   "y": 217,
+   "w": 104,
+   "h": 20,
+   "text": "fan %",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_1_6",
+   "type": "box",
+   "x": -657,
+   "y": 242,
+   "w": 104,
+   "h": 20,
+   "text": "fan rpm",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_1_7",
+   "type": "box",
+   "x": -657,
+   "y": 267,
+   "w": 104,
+   "h": 20,
+   "text": "clock",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_1_8",
+   "type": "box",
+   "x": -657,
+   "y": 292,
+   "w": 104,
+   "h": 20,
+   "text": "mem clk",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_1_9",
+   "type": "box",
+   "x": -657,
+   "y": 317,
+   "w": 104,
+   "h": 20,
+   "text": "vram",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_1_10",
+   "type": "box",
+   "x": -657,
+   "y": 342,
+   "w": 104,
+   "h": 20,
+   "text": "vram tot",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_1_11",
+   "type": "box",
+   "x": -657,
+   "y": 367,
+   "w": 104,
+   "h": 20,
+   "text": "gpu fps",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "h1_2",
+   "type": "box",
+   "x": -437,
+   "y": 58,
+   "w": 200,
+   "h": 20,
+   "text": "CPU",
+   "color": "#ffb347",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_2_0",
+   "type": "box",
+   "x": -437,
+   "y": 92,
+   "w": 104,
+   "h": 20,
+   "text": "load",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_2_1",
+   "type": "box",
+   "x": -437,
+   "y": 117,
+   "w": 104,
+   "h": 20,
+   "text": "temp",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_2_2",
+   "type": "box",
+   "x": -437,
+   "y": 142,
+   "w": 104,
+   "h": 20,
+   "text": "power",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_2_3",
+   "type": "box",
+   "x": -437,
+   "y": 167,
+   "w": 104,
+   "h": 20,
+   "text": "ram",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_2_4",
+   "type": "box",
+   "x": -437,
+   "y": 192,
+   "w": 104,
+   "h": 20,
+   "text": "stress",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_2_5",
+   "type": "box",
+   "x": -437,
+   "y": 217,
+   "w": 104,
+   "h": 20,
+   "text": "limit",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_2_6",
+   "type": "box",
+   "x": -437,
+   "y": 242,
+   "w": 104,
+   "h": 20,
+   "text": "throttle",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "h1_3",
+   "type": "box",
+   "x": -217,
+   "y": 58,
+   "w": 200,
+   "h": 20,
+   "text": "BOARD",
+   "color": "#ffb347",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_3_0",
+   "type": "box",
+   "x": -217,
+   "y": 92,
+   "w": 104,
+   "h": 20,
+   "text": "mb temp",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_3_1",
+   "type": "box",
+   "x": -217,
+   "y": 117,
+   "w": 104,
+   "h": 20,
+   "text": "t1",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_3_2",
+   "type": "box",
+   "x": -217,
+   "y": 142,
+   "w": 104,
+   "h": 20,
+   "text": "t2",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_3_3",
+   "type": "box",
+   "x": -217,
+   "y": 167,
+   "w": 104,
+   "h": 20,
+   "text": "t3",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_3_4",
+   "type": "box",
+   "x": -217,
+   "y": 192,
+   "w": 104,
+   "h": 20,
+   "text": "t4",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_3_5",
+   "type": "box",
+   "x": -217,
+   "y": 217,
+   "w": 104,
+   "h": 20,
+   "text": "t5",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_3_6",
+   "type": "box",
+   "x": -217,
+   "y": 242,
+   "w": 104,
+   "h": 20,
+   "text": "t6",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "h1_4",
+   "type": "box",
+   "x": 3,
+   "y": 58,
+   "w": 200,
+   "h": 20,
+   "text": "FANS",
+   "color": "#ffb347",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_4_0",
+   "type": "box",
+   "x": 3,
+   "y": 92,
+   "w": 104,
+   "h": 20,
+   "text": "fan1",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_4_1",
+   "type": "box",
+   "x": 3,
+   "y": 117,
+   "w": 104,
+   "h": 20,
+   "text": "fan2",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_4_2",
+   "type": "box",
+   "x": 3,
+   "y": 142,
+   "w": 104,
+   "h": 20,
+   "text": "fan3",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_4_3",
+   "type": "box",
+   "x": 3,
+   "y": 167,
+   "w": 104,
+   "h": 20,
+   "text": "fan4",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_4_4",
+   "type": "box",
+   "x": 3,
+   "y": 192,
+   "w": 104,
+   "h": 20,
+   "text": "fan5",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_4_5",
+   "type": "box",
+   "x": 3,
+   "y": 217,
+   "w": 104,
+   "h": 20,
+   "text": "fan6",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "h1_5",
+   "type": "box",
+   "x": 223,
+   "y": 58,
+   "w": 200,
+   "h": 20,
+   "text": "CONTROL",
+   "color": "#ffb347",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_5_0",
+   "type": "box",
+   "x": 223,
+   "y": 92,
+   "w": 104,
+   "h": 20,
+   "text": "f1",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_5_1",
+   "type": "box",
+   "x": 223,
+   "y": 117,
+   "w": 104,
+   "h": 20,
+   "text": "f2",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_5_2",
+   "type": "box",
+   "x": 223,
+   "y": 142,
+   "w": 104,
+   "h": 20,
+   "text": "f3",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_5_3",
+   "type": "box",
+   "x": 223,
+   "y": 167,
+   "w": 104,
+   "h": 20,
+   "text": "f4",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_5_4",
+   "type": "box",
+   "x": 223,
+   "y": 192,
+   "w": 104,
+   "h": 20,
+   "text": "f5",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_5_5",
+   "type": "box",
+   "x": 223,
+   "y": 217,
+   "w": 104,
+   "h": 20,
+   "text": "f6",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_5_6",
+   "type": "box",
+   "x": 223,
+   "y": 242,
+   "w": 104,
+   "h": 20,
+   "text": "f7",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_5_7",
+   "type": "box",
+   "x": 223,
+   "y": 267,
+   "w": 104,
+   "h": 20,
+   "text": "f8",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_5_8",
+   "type": "box",
+   "x": 223,
+   "y": 292,
+   "w": 104,
+   "h": 20,
+   "text": "pump",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_5_9",
+   "type": "box",
+   "x": 223,
+   "y": 317,
+   "w": 104,
+   "h": 20,
+   "text": "pump2",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_5_10",
+   "type": "box",
+   "x": 223,
+   "y": 342,
+   "w": 104,
+   "h": 20,
+   "text": "temp",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_5_11",
+   "type": "box",
+   "x": 223,
+   "y": 367,
+   "w": 104,
+   "h": 20,
+   "text": "volt",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_5_12",
+   "type": "box",
+   "x": 223,
+   "y": 392,
+   "w": 104,
+   "h": 20,
+   "text": "amp",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_5_13",
+   "type": "box",
+   "x": 223,
+   "y": 417,
+   "w": 104,
+   "h": 20,
+   "text": "noise",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "h1_6",
+   "type": "box",
+   "x": 443,
+   "y": 58,
+   "w": 200,
+   "h": 20,
+   "text": "NET",
+   "color": "#ffb347",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_6_0",
+   "type": "box",
+   "x": 443,
+   "y": 92,
+   "w": 104,
+   "h": 20,
+   "text": "ping",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_6_1",
+   "type": "box",
+   "x": 443,
+   "y": 117,
+   "w": 104,
+   "h": 20,
+   "text": "loss",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_6_2",
+   "type": "box",
+   "x": 443,
+   "y": 142,
+   "w": 104,
+   "h": 20,
+   "text": "down",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_6_3",
+   "type": "box",
+   "x": 443,
+   "y": 167,
+   "w": 104,
+   "h": 20,
+   "text": "up",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_6_4",
+   "type": "box",
+   "x": 443,
+   "y": 192,
+   "w": 104,
+   "h": 20,
+   "text": "target",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "l_6_5",
+   "type": "box",
+   "x": 443,
+   "y": 217,
+   "w": 104,
+   "h": 20,
+   "text": "src sys",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "h2_0",
+   "type": "box",
+   "x": -877,
+   "y": 458,
+   "w": 450,
+   "h": 20,
+   "text": "SYSTEM",
+   "color": "#ffb347",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_0_0",
+   "type": "box",
+   "x": -877,
+   "y": 492,
+   "w": 80,
+   "h": 20,
+   "text": "os",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_0_1",
+   "type": "box",
+   "x": -877,
+   "y": 517,
+   "w": 80,
+   "h": 20,
+   "text": "mb",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_0_2",
+   "type": "box",
+   "x": -877,
+   "y": 542,
+   "w": 80,
+   "h": 20,
+   "text": "bios",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_0_3",
+   "type": "box",
+   "x": -877,
+   "y": 567,
+   "w": 80,
+   "h": 20,
+   "text": "cpu",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_0_4",
+   "type": "box",
+   "x": -877,
+   "y": 592,
+   "w": 80,
+   "h": 20,
+   "text": "cores",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_0_5",
+   "type": "box",
+   "x": -877,
+   "y": 617,
+   "w": 80,
+   "h": 20,
+   "text": "socket",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_0_6",
+   "type": "box",
+   "x": -877,
+   "y": 642,
+   "w": 80,
+   "h": 20,
+   "text": "l3",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_0_7",
+   "type": "box",
+   "x": -877,
+   "y": 667,
+   "w": 80,
+   "h": 20,
+   "text": "clock",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_0_8",
+   "type": "box",
+   "x": -877,
+   "y": 692,
+   "w": 80,
+   "h": 20,
+   "text": "sio",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "h2_1",
+   "type": "box",
+   "x": -411,
+   "y": 458,
+   "w": 280,
+   "h": 20,
+   "text": "GPU HW",
+   "color": "#ffb347",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_1_0",
+   "type": "box",
+   "x": -411,
+   "y": 492,
+   "w": 80,
+   "h": 20,
+   "text": "gpu",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_1_1",
+   "type": "box",
+   "x": -411,
+   "y": 517,
+   "w": 80,
+   "h": 20,
+   "text": "gpu 2",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_1_2",
+   "type": "box",
+   "x": -411,
+   "y": 542,
+   "w": 80,
+   "h": 20,
+   "text": "vram",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_1_3",
+   "type": "box",
+   "x": -411,
+   "y": 567,
+   "w": 80,
+   "h": 20,
+   "text": "drv",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "h2_2",
+   "type": "box",
+   "x": -115,
+   "y": 458,
+   "w": 330,
+   "h": 20,
+   "text": "RAM",
+   "color": "#ffb347",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_2_0",
+   "type": "box",
+   "x": -115,
+   "y": 492,
+   "w": 80,
+   "h": 20,
+   "text": "total",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_2_1",
+   "type": "box",
+   "x": -115,
+   "y": 517,
+   "w": 80,
+   "h": 20,
+   "text": "size",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_2_2",
+   "type": "box",
+   "x": -115,
+   "y": 542,
+   "w": 80,
+   "h": 20,
+   "text": "type",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_2_3",
+   "type": "box",
+   "x": -115,
+   "y": 567,
+   "w": 80,
+   "h": 20,
+   "text": "speed",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_2_4",
+   "type": "box",
+   "x": -115,
+   "y": 592,
+   "w": 80,
+   "h": 20,
+   "text": "part",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_2_5",
+   "type": "box",
+   "x": -115,
+   "y": 617,
+   "w": 80,
+   "h": 20,
+   "text": "mod 1",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_2_6",
+   "type": "box",
+   "x": -115,
+   "y": 642,
+   "w": 80,
+   "h": 20,
+   "text": "mod 2",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_2_7",
+   "type": "box",
+   "x": -115,
+   "y": 667,
+   "w": 80,
+   "h": 20,
+   "text": "mod 3",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_2_8",
+   "type": "box",
+   "x": -115,
+   "y": 692,
+   "w": 80,
+   "h": 20,
+   "text": "mod 4",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "h2_3",
+   "type": "box",
+   "x": 231,
+   "y": 458,
+   "w": 280,
+   "h": 20,
+   "text": "MONITORS",
+   "color": "#ffb347",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_3_0",
+   "type": "box",
+   "x": 231,
+   "y": 492,
+   "w": 80,
+   "h": 20,
+   "text": "count",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_3_1",
+   "type": "box",
+   "x": 231,
+   "y": 517,
+   "w": 80,
+   "h": 20,
+   "text": "m1",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_3_2",
+   "type": "box",
+   "x": 231,
+   "y": 542,
+   "w": 80,
+   "h": 20,
+   "text": "m1 res",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_3_3",
+   "type": "box",
+   "x": 231,
+   "y": 567,
+   "w": 80,
+   "h": 20,
+   "text": "m1 dpi",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_3_4",
+   "type": "box",
+   "x": 231,
+   "y": 592,
+   "w": 80,
+   "h": 20,
+   "text": "m1 prim",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_3_5",
+   "type": "box",
+   "x": 231,
+   "y": 617,
+   "w": 80,
+   "h": 20,
+   "text": "m2",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_3_6",
+   "type": "box",
+   "x": 231,
+   "y": 642,
+   "w": 80,
+   "h": 20,
+   "text": "m2 res",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_3_7",
+   "type": "box",
+   "x": 231,
+   "y": 667,
+   "w": 80,
+   "h": 20,
+   "text": "m2 dpi",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_3_8",
+   "type": "box",
+   "x": 231,
+   "y": 692,
+   "w": 80,
+   "h": 20,
+   "text": "m2 prim",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_3_9",
+   "type": "box",
+   "x": 231,
+   "y": 717,
+   "w": 80,
+   "h": 20,
+   "text": "m3",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_3_10",
+   "type": "box",
+   "x": 231,
+   "y": 742,
+   "w": 80,
+   "h": 20,
+   "text": "m3 res",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_3_11",
+   "type": "box",
+   "x": 231,
+   "y": 767,
+   "w": 80,
+   "h": 20,
+   "text": "m3 dpi",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_3_12",
+   "type": "box",
+   "x": 231,
+   "y": 792,
+   "w": 80,
+   "h": 20,
+   "text": "m3 prim",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_3_13",
+   "type": "box",
+   "x": 231,
+   "y": 817,
+   "w": 80,
+   "h": 20,
+   "text": "m4",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_3_14",
+   "type": "box",
+   "x": 231,
+   "y": 842,
+   "w": 80,
+   "h": 20,
+   "text": "m4 res",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_3_15",
+   "type": "box",
+   "x": 231,
+   "y": 867,
+   "w": 80,
+   "h": 20,
+   "text": "m4 dpi",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_3_16",
+   "type": "box",
+   "x": 231,
+   "y": 892,
+   "w": 80,
+   "h": 20,
+   "text": "m4 prim",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "h2_4",
+   "type": "box",
+   "x": 527,
+   "y": 458,
+   "w": 350,
+   "h": 20,
+   "text": "DISKS",
+   "color": "#ffb347",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_4_4",
+   "type": "box",
+   "x": 527,
+   "y": 592,
+   "w": 80,
+   "h": 20,
+   "text": "ctl 1",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hl_4_5",
+   "type": "box",
+   "x": 527,
+   "y": 617,
+   "w": 80,
+   "h": 20,
+   "text": "ctl 2",
+   "color": "#6b7688",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_0_0",
+   "type": "data",
+   "prop": "Dx.Fps",
+   "x": -769,
+   "y": 88,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "fps",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_0_1",
+   "type": "data",
+   "prop": "Dx.FpsPres",
+   "x": -769,
+   "y": 113,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "fps",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_0_2",
+   "type": "data",
+   "prop": "Dx.FrameMs",
+   "x": -769,
+   "y": 138,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 1,
+   "unit": "ms",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_0_3",
+   "type": "data",
+   "prop": "Dx.CpuMs",
+   "x": -769,
+   "y": 163,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 1,
+   "unit": "ms",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_0_4",
+   "type": "data",
+   "prop": "Dx.GpuMs",
+   "x": -769,
+   "y": 188,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 1,
+   "unit": "ms",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_0_5",
+   "type": "data",
+   "prop": "Dx.Drops",
+   "x": -769,
+   "y": 213,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_0_6",
+   "type": "data",
+   "prop": "Dx.App",
+   "x": -769,
+   "y": 238,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_1_0",
+   "type": "data",
+   "prop": "Gpu.Usage",
+   "x": -549,
+   "y": 88,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "%",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_1_1",
+   "type": "data",
+   "prop": "Gpu.Temp",
+   "x": -549,
+   "y": 113,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "°C",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_1_2",
+   "type": "data",
+   "prop": "Gpu.Hotspot",
+   "x": -549,
+   "y": 138,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "°C",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_1_3",
+   "type": "data",
+   "prop": "Gpu.MemTemp",
+   "x": -549,
+   "y": 163,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "°C",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_1_4",
+   "type": "data",
+   "prop": "Gpu.Power",
+   "x": -549,
+   "y": 188,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "W",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_1_5",
+   "type": "data",
+   "prop": "Gpu.FanPct",
+   "x": -549,
+   "y": 213,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "%",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_1_6",
+   "type": "data",
+   "prop": "Gpu.Fan",
+   "x": -549,
+   "y": 238,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "rpm",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_1_7",
+   "type": "data",
+   "prop": "Gpu.Clock",
+   "x": -549,
+   "y": 263,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "MHz",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_1_8",
+   "type": "data",
+   "prop": "Gpu.MemClock",
+   "x": -549,
+   "y": 288,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "MHz",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_1_9",
+   "type": "data",
+   "prop": "Gpu.VramUsed",
+   "x": -549,
+   "y": 313,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "MB",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_1_10",
+   "type": "data",
+   "prop": "Gpu.VramTotal",
+   "x": -549,
+   "y": 338,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "MB",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_1_11",
+   "type": "data",
+   "prop": "Gpu.Fps",
+   "x": -549,
+   "y": 363,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "fps",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_2_0",
+   "type": "data",
+   "prop": "Sys.Cpu",
+   "x": -329,
+   "y": 88,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "%",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_2_1",
+   "type": "data",
+   "prop": "Sys.CpuTemp",
+   "x": -329,
+   "y": 113,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "°C",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_2_2",
+   "type": "data",
+   "prop": "Sys.CpuPower",
+   "x": -329,
+   "y": 138,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "W",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_2_3",
+   "type": "data",
+   "prop": "Sys.Ram",
+   "x": -329,
+   "y": 163,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "%",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_2_4",
+   "type": "data",
+   "prop": "Sys.Stress",
+   "x": -329,
+   "y": 188,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "%",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_2_5",
+   "type": "data",
+   "prop": "Sys.Limit",
+   "x": -329,
+   "y": 213,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_2_6",
+   "type": "data",
+   "prop": "Sys.Throttle",
+   "x": -329,
+   "y": 238,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_3_0",
+   "type": "data",
+   "prop": "Mb.Temp",
+   "x": -109,
+   "y": 88,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "°C",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_3_1",
+   "type": "data",
+   "prop": "Mb.Temp.1",
+   "x": -109,
+   "y": 113,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "°C",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_3_2",
+   "type": "data",
+   "prop": "Mb.Temp.2",
+   "x": -109,
+   "y": 138,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "°C",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_3_3",
+   "type": "data",
+   "prop": "Mb.Temp.3",
+   "x": -109,
+   "y": 163,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "°C",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_3_4",
+   "type": "data",
+   "prop": "Mb.Temp.4",
+   "x": -109,
+   "y": 188,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "°C",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_3_5",
+   "type": "data",
+   "prop": "Mb.Temp.5",
+   "x": -109,
+   "y": 213,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "°C",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_3_6",
+   "type": "data",
+   "prop": "Mb.Temp.6",
+   "x": -109,
+   "y": 238,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "°C",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_4_0",
+   "type": "data",
+   "prop": "Fan.1",
+   "x": 111,
+   "y": 88,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "rpm",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_4_1",
+   "type": "data",
+   "prop": "Fan.2",
+   "x": 111,
+   "y": 113,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "rpm",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_4_2",
+   "type": "data",
+   "prop": "Fan.3",
+   "x": 111,
+   "y": 138,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "rpm",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_4_3",
+   "type": "data",
+   "prop": "Fan.4",
+   "x": 111,
+   "y": 163,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "rpm",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_4_4",
+   "type": "data",
+   "prop": "Fan.5",
+   "x": 111,
+   "y": 188,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "rpm",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_4_5",
+   "type": "data",
+   "prop": "Fan.6",
+   "x": 111,
+   "y": 213,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "rpm",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_5_0",
+   "type": "data",
+   "prop": "Ctl.Fan.1",
+   "x": 331,
+   "y": 88,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "rpm",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_5_1",
+   "type": "data",
+   "prop": "Ctl.Fan.2",
+   "x": 331,
+   "y": 113,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "rpm",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_5_2",
+   "type": "data",
+   "prop": "Ctl.Fan.3",
+   "x": 331,
+   "y": 138,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "rpm",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_5_3",
+   "type": "data",
+   "prop": "Ctl.Fan.4",
+   "x": 331,
+   "y": 163,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "rpm",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_5_4",
+   "type": "data",
+   "prop": "Ctl.Fan.5",
+   "x": 331,
+   "y": 188,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "rpm",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_5_5",
+   "type": "data",
+   "prop": "Ctl.Fan.6",
+   "x": 331,
+   "y": 213,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "rpm",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_5_6",
+   "type": "data",
+   "prop": "Ctl.Fan.7",
+   "x": 331,
+   "y": 238,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "rpm",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_5_7",
+   "type": "data",
+   "prop": "Ctl.Fan.8",
+   "x": 331,
+   "y": 263,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "rpm",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_5_8",
+   "type": "data",
+   "prop": "Ctl.Pump",
+   "x": 331,
+   "y": 288,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "rpm",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_5_9",
+   "type": "data",
+   "prop": "Ctl.Pump.2",
+   "x": 331,
+   "y": 313,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "rpm",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_5_10",
+   "type": "data",
+   "prop": "Ctl.Temp",
+   "x": 331,
+   "y": 338,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "°C",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_5_11",
+   "type": "data",
+   "prop": "Ctl.Volt",
+   "x": 331,
+   "y": 363,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "V",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_5_12",
+   "type": "data",
+   "prop": "Ctl.Amp",
+   "x": 331,
+   "y": 388,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "A",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_5_13",
+   "type": "data",
+   "prop": "Ctl.Noise",
+   "x": 331,
+   "y": 413,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "dB",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_6_0",
+   "type": "data",
+   "prop": "Net.Ping",
+   "x": 551,
+   "y": 88,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "ms",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_6_1",
+   "type": "data",
+   "prop": "Net.Loss",
+   "x": 551,
+   "y": 113,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "%",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_6_2",
+   "type": "data",
+   "prop": "Net.Down",
+   "x": 551,
+   "y": 138,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "kB/s",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_6_3",
+   "type": "data",
+   "prop": "Net.Up",
+   "x": 551,
+   "y": 163,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0,
+   "unit": "kB/s",
+   "usz": 1
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_6_4",
+   "type": "data",
+   "prop": "Net.Target",
+   "x": 551,
+   "y": 188,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "v_6_5",
+   "type": "data",
+   "prop": "Src.Sys.Live",
+   "x": 551,
+   "y": 213,
+   "w": 104,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_0_0",
+   "type": "data",
+   "prop": "Hw.Os",
+   "x": -793,
+   "y": 488,
+   "w": 370,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_0_1",
+   "type": "data",
+   "prop": "Hw.Mb",
+   "x": -793,
+   "y": 513,
+   "w": 370,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_0_2",
+   "type": "data",
+   "prop": "Hw.Bios",
+   "x": -793,
+   "y": 538,
+   "w": 370,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_0_3",
+   "type": "data",
+   "prop": "Hw.Cpu",
+   "x": -793,
+   "y": 563,
+   "w": 370,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_0_4",
+   "type": "data",
+   "prop": "Hw.Cpu.Cores",
+   "x": -793,
+   "y": 588,
+   "w": 370,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_0_5",
+   "type": "data",
+   "prop": "Hw.Cpu.Socket",
+   "x": -793,
+   "y": 613,
+   "w": 370,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_0_6",
+   "type": "data",
+   "prop": "Hw.Cpu.L3",
+   "x": -793,
+   "y": 638,
+   "w": 370,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_0_7",
+   "type": "data",
+   "prop": "Hw.Cpu.Clock",
+   "x": -793,
+   "y": 663,
+   "w": 370,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_0_8",
+   "type": "data",
+   "prop": "Hw.Sio",
+   "x": -793,
+   "y": 688,
+   "w": 370,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_1_0",
+   "type": "data",
+   "prop": "Hw.Gpu",
+   "x": -327,
+   "y": 488,
+   "w": 196,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_1_1",
+   "type": "data",
+   "prop": "Hw.Gpu.2",
+   "x": -327,
+   "y": 513,
+   "w": 196,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_1_2",
+   "type": "data",
+   "prop": "Hw.Gpu.Vram",
+   "x": -327,
+   "y": 538,
+   "w": 196,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_1_3",
+   "type": "data",
+   "prop": "Hw.Gpu.Drv",
+   "x": -327,
+   "y": 563,
+   "w": 196,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_2_0",
+   "type": "data",
+   "prop": "Hw.Ram",
+   "x": -31,
+   "y": 488,
+   "w": 246,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_2_1",
+   "type": "data",
+   "prop": "Hw.Ram.Size",
+   "x": -31,
+   "y": 513,
+   "w": 246,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_2_2",
+   "type": "data",
+   "prop": "Hw.Ram.Type",
+   "x": -31,
+   "y": 538,
+   "w": 246,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_2_3",
+   "type": "data",
+   "prop": "Hw.Ram.Speed",
+   "x": -31,
+   "y": 563,
+   "w": 246,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_2_4",
+   "type": "data",
+   "prop": "Hw.Ram.Part",
+   "x": -31,
+   "y": 588,
+   "w": 246,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_2_5",
+   "type": "data",
+   "prop": "Hw.Ram.1",
+   "x": -31,
+   "y": 613,
+   "w": 246,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_2_6",
+   "type": "data",
+   "prop": "Hw.Ram.2",
+   "x": -31,
+   "y": 638,
+   "w": 246,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_2_7",
+   "type": "data",
+   "prop": "Hw.Ram.3",
+   "x": -31,
+   "y": 663,
+   "w": 246,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_2_8",
+   "type": "data",
+   "prop": "Hw.Ram.4",
+   "x": -31,
+   "y": 688,
+   "w": 246,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_3_0",
+   "type": "data",
+   "prop": "Mon.Count",
+   "x": 315,
+   "y": 488,
+   "w": 196,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_3_1",
+   "type": "data",
+   "prop": "Mon.1.Name",
+   "x": 315,
+   "y": 513,
+   "w": 196,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_3_2",
+   "type": "data",
+   "prop": "Mon.1.Res",
+   "x": 315,
+   "y": 538,
+   "w": 196,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_3_3",
+   "type": "data",
+   "prop": "Mon.1.Dpi",
+   "x": 315,
+   "y": 563,
+   "w": 196,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_3_4",
+   "type": "data",
+   "prop": "Mon.1.Primary",
+   "x": 315,
+   "y": 588,
+   "w": 196,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_3_5",
+   "type": "data",
+   "prop": "Mon.2.Name",
+   "x": 315,
+   "y": 613,
+   "w": 196,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_3_6",
+   "type": "data",
+   "prop": "Mon.2.Res",
+   "x": 315,
+   "y": 638,
+   "w": 196,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_3_7",
+   "type": "data",
+   "prop": "Mon.2.Dpi",
+   "x": 315,
+   "y": 663,
+   "w": 196,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_3_8",
+   "type": "data",
+   "prop": "Mon.2.Primary",
+   "x": 315,
+   "y": 688,
+   "w": 196,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_3_9",
+   "type": "data",
+   "prop": "Mon.3.Name",
+   "x": 315,
+   "y": 713,
+   "w": 196,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_3_10",
+   "type": "data",
+   "prop": "Mon.3.Res",
+   "x": 315,
+   "y": 738,
+   "w": 196,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_3_11",
+   "type": "data",
+   "prop": "Mon.3.Dpi",
+   "x": 315,
+   "y": 763,
+   "w": 196,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_3_12",
+   "type": "data",
+   "prop": "Mon.3.Primary",
+   "x": 315,
+   "y": 788,
+   "w": 196,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_3_13",
+   "type": "data",
+   "prop": "Mon.4.Name",
+   "x": 315,
+   "y": 813,
+   "w": 196,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_3_14",
+   "type": "data",
+   "prop": "Mon.4.Res",
+   "x": 315,
+   "y": 838,
+   "w": 196,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_3_15",
+   "type": "data",
+   "prop": "Mon.4.Dpi",
+   "x": 315,
+   "y": 863,
+   "w": 196,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_3_16",
+   "type": "data",
+   "prop": "Mon.4.Primary",
+   "x": 315,
+   "y": 888,
+   "w": 196,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_4_0",
+   "type": "data",
+   "prop": "Hw.Disk.1",
+   "x": 527,
+   "y": 488,
+   "w": 350,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_4_1",
+   "type": "data",
+   "prop": "Hw.Disk.2",
+   "x": 527,
+   "y": 513,
+   "w": 350,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_4_2",
+   "type": "data",
+   "prop": "Hw.Disk.3",
+   "x": 527,
+   "y": 538,
+   "w": 350,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_4_3",
+   "type": "data",
+   "prop": "Hw.Disk.4",
+   "x": 527,
+   "y": 563,
+   "w": 350,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_4_4",
+   "type": "data",
+   "prop": "Hw.Ctl.1",
+   "x": 611,
+   "y": 588,
+   "w": 266,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "tc",
+   "id": "hv_4_5",
+   "type": "data",
+   "prop": "Hw.Ctl.2",
+   "x": 611,
+   "y": 613,
+   "w": 266,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   },
+   "align": "left",
+   "dec": 0
+  }
+ ]
+}

@@ -1,0 +1,158 @@
+{
+ "grid": {
+  "snap": true,
+  "step": 10
+ },
+ "nodes": [
+  {
+   "anchor": "c",
+   "color": "#01cdfe",
+   "color2": "#b967ff",
+   "cols": 14,
+   "compress": 2,
+   "farFade": 1,
+   "flip": false,
+   "font": {
+    "family": "oxan",
+    "size": 64,
+    "weight": 700
+   },
+   "glow": 8,
+   "grid": null,
+   "h": 390,
+   "horizon": 0.296,
+   "id": "g_crawl",
+   "lw": 1.5,
+   "mode": "persp",
+   "rows": 8,
+   "stop": 0.3,
+   "tcolor": "#ffffff",
+   "type": "grid",
+   "vanish": 0.509,
+   "w": 1000,
+   "x": -500,
+   "y": -140
+  },
+  {
+   "anchor": "c",
+   "color": "#ff2bd6",
+   "color2": "#b967ff",
+   "cols": 32,
+   "compress": 2,
+   "fcolor": "#01cdfe",
+   "fcolor2": "#b967ff",
+   "fcolor3": "#ff2bd6",
+   "fill": "eq",
+   "glow": 8,
+   "grid": null,
+   "h": 380,
+   "horizon": 0.25,
+   "id": "g_eq",
+   "lw": 1.5,
+   "mode": "persp",
+   "propBase": "Eq.Band",
+   "rows": 8,
+   "stop": 0.3,
+   "type": "grid",
+   "vanish": 0.5,
+   "w": 1000,
+   "x": -500,
+   "y": 240
+  },
+  {
+   "anchor": "c",
+   "color": "#ffffff",
+   "dir": "fountain",
+   "dur": 2600,
+   "font": {
+    "family": "nasa",
+    "size": 22,
+    "weight": 700
+   },
+   "grid": "g_eq",
+   "h": 200,
+   "id": "ev1",
+   "jitter": 70,
+   "max": 8,
+   "spread": 140,
+   "type": "events",
+   "w": 420,
+   "watch": [
+    {
+     "color": "#7dc8ff",
+     "cool": 2900,
+     "fmt": "TICK {v}",
+     "on": "change",
+     "prop": "Clock.Time"
+    },
+    {
+     "color": "#7dffce",
+     "fmt": "CPU {d}%  ->  {v}%",
+     "min": 4,
+     "on": "delta",
+     "prop": "Sys.Cpu"
+    },
+    {
+     "at": 55,
+     "color": "#ff4646",
+     "cool": 15000,
+     "crit": true,
+     "fmt": "CPU HOT {v}%",
+     "on": "above",
+     "prop": "Sys.Cpu"
+    }
+   ],
+   "x": -210,
+   "y": 140
+  },
+  {
+   "anchor": "c",
+   "color": "#01cdfe",
+   "color2": "#b967ff",
+   "color3": "#ff2bd6",
+   "dec": 0,
+   "fill": "gradient",
+   "grid": "g_eq",
+   "h": 110,
+   "id": "ring_ram",
+   "max": 100,
+   "min": 0,
+   "prop": "Eq.Level",
+   "ring": true,
+   "ring0": -90,
+   "seg": 12,
+   "segGap": 2,
+   "thick": 10,
+   "type": "bar",
+   "unit": "%",
+   "w": 110,
+   "x": -50,
+   "y": 50
+  },
+  {
+   "align": "center",
+   "anchor": "c",
+   "color": "#ffffff",
+   "crawl": {
+    "dur": 16000,
+    "gap": 2000,
+    "hold": 800,
+    "ls": 0.07
+   },
+   "font": {
+    "family": "oxan",
+    "size": 44,
+    "weight": 700
+   },
+   "glow": 6,
+   "grid": "g_crawl",
+   "id": "crawlcol",
+   "text": "EPISODE 1.4\nTHE PHANTOM CANVAS\n\nTURMOIL HAS ENGULFED\nTHE DESKTOP LAYER.\nSTATIC SKINS RULE\nTHE OUTER SECTORS...\n\nNOT SO FAR AWAY\nFROM CHICAGO,\n1,565 LIVE SIGNALS\nAWAIT YOUR IMAGINATION.",
+   "type": "data",
+   "x": 0,
+   "y": -80
+  }
+ ],
+ "zv": 1,
+ "_seed": true
+}

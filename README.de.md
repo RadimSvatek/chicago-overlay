@@ -96,8 +96,8 @@ Die meisten Hardware- und Telemetrie-Tools enden bei einer passiven Tabelle im e
   * Auf fast null CPU-Kosten getrimmt: Hardware-Init und Rescans laufen im Hintergrund, Telemetrie fährt auf Delta-Frames und Leerlaufarbeit ist geblockt - das Overlay bleibt flott und unsichtbar, bis es etwas zu zeigen hat.
 * **20 einsatzbereite Vorlagen enthalten:**
   * Enthält `start`, `race-minimal`, `race-hud`, `race-pro`, `race-pro-2`, `race-hw`, `system-hw`, `system-hud`, `hw-info`, `maxi-hw`, `media-eq`, `media-hud`, `media-hud-2`, `combo-desk`, `combo-hud`, `tune-lab` (Lüfterkurven- & Stress-Tuning), `flat-stage`, `persp-stage`, `pill-hw` (Native-Widget-Demo) und `sci-fi`.
-* **7 Sprachen & natives Windows-11/10-Design:**
-  * Verfügbar auf **Deutsch, Englisch, Tschechisch, Spanisch, Französisch, Italienisch und Polnisch** (sowohl Installer als auch App). Übernimmt automatisch die Windows-Akzentfarbe sowie den Dunkel-/Hellmodus - oder wähle einen eigenen Akzent; die Markenfarbe Teal `#18D4C2` ist auf Neuinstallationen vorgewählt (deine Wahl wird nie überschrieben).
+* **8 Sprachen & natives Windows-11/10-Design:**
+  * Verfügbar auf **Deutsch, Englisch, Tschechisch, Spanisch, Französisch, Italienisch, Polnisch und Russisch** (sowohl Installer als auch App). Übernimmt automatisch die Windows-Akzentfarbe sowie den Dunkel-/Hellmodus - oder wähle einen eigenen Akzent; die Markenfarbe Teal `#18D4C2` ist auf Neuinstallationen vorgewählt (deine Wahl wird nie überschrieben).
 
 ---
 
@@ -115,7 +115,7 @@ Ein Installer, zwei Editionen. Du wählst direkt nach der Infoseite - und kannst
 | HW-Info, Sensoren & Netzwerk-Monitoring | ✓ | ✓ |
 | Stresstest, Session-Reports & Warnungen | ✓ | ✓ |
 | System-Bereinigung & Autostart-/Aufgaben-Manager | ✓ | ✓ |
-| Einstellungen, Updates, Autostart, 7 Sprachen | ✓ | ✓ |
+| Einstellungen, Updates, Autostart, 8 Sprachen | ✓ | ✓ |
 | WebView2-Runtime geladen | ✓ | niemals |
 
 *Beide Editionen bekommen einen eigenen Startmenü-Shortcut (Desktop optional). Werkzeuge ist dieselbe `chicago.exe` im dedizierten `--tools`-Modus - kein Overlay, kein SimHub, minimaler RAM.*

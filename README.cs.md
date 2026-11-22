@@ -96,8 +96,8 @@ Většina hardware a telemetrických nástrojů končí pasivní tabulkou ve vla
   * Laděné na téměř nulovou cenu CPU: hw init a rescan běží na pozadí, telemetrie jede na delta rámcích a nečinná práce je blokovaná - overlay zůstává svižný a neviditelný, dokud nemá co ukázat.
 * **20 vyladěných šablon v balíčku:**
   * Obsahuje `start`, `race-minimal`, `race-hud`, `race-pro`, `race-pro-2`, `race-hw`, `system-hw`, `system-hud`, `hw-info`, `maxi-hw`, `media-eq`, `media-hud`, `media-hud-2`, `combo-desk`, `combo-hud`, `tune-lab` (ladění křivek a stressu), `flat-stage`, `persp-stage`, `pill-hw` (demo nativního widgetu) a `sci-fi`.
-* **7 jazyků a nativní vzhled Windows 11/10:**
-  * V **češtině, angličtině, němčině, španělštině, francouzštině, italštině a polštině** (instalátor i appka). Kopíruje akcentovou barvu Windows a dark/light režim - nebo zvol vlastní akcent; značková teal `#18D4C2` je předvybraná na čisté instalaci (tvoje volba se nikdy nepřepíše).
+* **8 jazyků a nativní vzhled Windows 11/10:**
+  * V **češtině, angličtině, němčině, španělštině, francouzštině, italštině, polštině a ruštině** (instalátor i appka). Kopíruje akcentovou barvu Windows a dark/light režim - nebo zvol vlastní akcent; značková teal `#18D4C2` je předvybraná na čisté instalaci (tvoje volba se nikdy nepřepíše).
 
 ---
 
@@ -115,7 +115,7 @@ Jeden instalátor, dvě edice. Vybíráš hned po úvodní stránce - a druhou e
 | HW info, senzory a síťový monitoring | ✓ | ✓ |
 | Stress test, reporty relací a upozornění | ✓ | ✓ |
 | Úklid systému a správce spuštění/úloh | ✓ | ✓ |
-| Nastavení, aktualizace, autostart, 7 jazyků | ✓ | ✓ |
+| Nastavení, aktualizace, autostart, 8 jazyků | ✓ | ✓ |
 | WebView2 runtime naložený | ✓ | nikdy |
 
 *Obě edice mají vlastní zástupce ve Start menu (desktop volitelný). Nástroje je stejné `chicago.exe` v dedikovaném režimu `--tools` - bez overlaye, bez SimHubu, minimální RAM.*

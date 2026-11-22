@@ -27,7 +27,7 @@ Gebaut für Sim-Racing (über SimHub), PC-Hardware-Monitoring und sichere Lüfte
 
 Die meisten Hardware- und Telemetrie-Tools enden bei einer passiven Tabelle im eigenen Fenster. Chicago Overlay geht weiter - vier Schichten, eine Datenengine:
 
-- **Komplette HW-Diagnostik & Inventur** - Erkennung auf dem Niveau der meistgenutzten Konkurrenz (CPU-Z/GPU-Z/HWiNFO-Klasse), in einer sauberen durchsuchbaren Tabelle mit CSV-Export (657 eingebaute Props + 908 aus der SimHub-Telemetrie = **1.565 gesamt**).
+- **Komplette HW-Diagnostik & Inventur** - Erkennung auf dem Niveau der Besten - like CPU-Z, GPU-Z oder HWiNFO, in einer sauberen durchsuchbaren Tabelle mit CSV-Export (657 eingebaute Props + 908 aus der SimHub-Telemetrie = **1.565 gesamt**).
 - **Mehrere visuelle Ausgänge** - WebView-Canvas, natives WPF oder RTSS-Text. Jeder Wert aus der Tabelle geht direkt auf deinen Bildschirm, ins Spiel im exklusiven Vollbild oder auf den zweiten Monitor.
 - **Zwei Bedienmodi** - Easy-Modus Pillen/Widgets: klicken, Skin und Werte wählen, mit der Maus ziehen - fertig in 10 Sekunden, ohne WebView2. Fortgeschrittener Inspektor (`Strg+Alt+E`): volle kreative Freiheit ohne Code - 25-800 % Zoom, 3D-Perspektivgrids, EQ, eigene Graphen, Ebenen, Clipboard-Sharing.
 - **Ehrliche System-Tools obendrauf** - Lüfterkurven mit Guardian-Watchdog, CPU/GPU/RAM-Stresstest, der schnelle T800-Cleaner und Start-&-Tasks-Manager in einer einzigen leichten App.

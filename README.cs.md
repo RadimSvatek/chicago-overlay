@@ -27,7 +27,7 @@ Postavený pro simracing (přes SimHub), sledování hardwaru PC a bezpečné ř
 
 Většina hardware a telemetrických nástrojů končí pasivní tabulkou ve vlastním okně. Chicago Overlay jde dál - čtyři vrstvy, jeden datový motor:
 
-- **Kompletní HW diagnostika a inventura** - detekce na úrovni nejpoužívanější konkurence (třída CPU-Z/GPU-Z/HWiNFO), v čisté prohledávatelné tabulce s CSV exportem (657 vestavěných propů + 908 ze SimHub telemetrie = **1 565 celkem**).
+- **Kompletní HW diagnostika a inventura** - detekce na úrovni nejlepších - like CPU-Z, GPU-Z nebo HWiNFO, v čisté prohledávatelné tabulce s CSV exportem (657 vestavěných propů + 908 ze SimHub telemetrie = **1 565 celkem**).
 - **Vícenásobný vizuální výstup** - WebView canvas, nativní WPF nebo RTSS text. Jakoukoliv hodnotu z tabulky pošleš rovnou na obrazovku, do hry v exclusive fullscreenu nebo na druhý monitor.
 - **Dva režimy ovládání** - Easy režim pilulek/widgetů: klikneš, vybereš skin a hodnoty, přetáhneš myší - hotovo za 10 sekund, bez WebView2. Pokročilý inspektor (`Ctrl+Alt+E`): plná tvůrčí svoboda bez kódu - zoom 25-800 %, 3D perspektivní gridy, ekvalizér, vlastní grafy, vrstvy, sdílení přes schránku.
 - **Poctivé systémové nástroje navrch** - křivky ventilátorů s guardianem, stress test CPU/GPU/RAM, rychlý T800 čistič a správce Start & Tasks v jediné lehké aplikaci.

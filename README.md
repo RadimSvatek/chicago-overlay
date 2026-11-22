@@ -98,6 +98,7 @@ Most hardware and telemetry tools end at a passive table inside their own window
   * Includes `start`, `race-minimal`, `race-hud`, `race-pro`, `race-pro-2`, `race-hw`, `system-hw`, `system-hud`, `hw-info`, `maxi-hw`, `media-eq`, `media-hud`, `media-hud-2`, `combo-desk`, `combo-hud`, `tune-lab` (fan-curve & stress tuning), `flat-stage`, `persp-stage`, `pill-hw` (native widget demo) and `sci-fi`.
 * **7 Languages & Native Windows 11/10 Styling:**
   * Available in **English, Czech, German, Spanish, French, Italian, and Polish** (both installer and app). Follows your Windows accent color and dark/light theme - or pick any custom accent; the brand teal `#18D4C2` comes preselected on a clean install (your choice is never overwritten).
+  * *Language note: the author is not a native English speaker - the English texts are AI-assisted translations, and so are the other UI languages (Czech is the original). Not perfect, but better than nothing - if something reads wrong, corrections are welcome.*
 
 ---
 

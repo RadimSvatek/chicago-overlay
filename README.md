@@ -9,7 +9,7 @@ https://github.com/user-attachments/assets/f295d1df-57e7-49dc-af6d-08ef3f8c6a13
 **A lightweight, customizable, multi-monitor telemetry & system HUD overlay for Windows 10/11.**
 Built for sim racing (via SimHub), PC hardware monitoring, and safe hardware-level fan control - but really, it is the layer Windows never shipped: a visual widget builder for anything your PC knows. Drag-and-drop layout editor, 1,400+ data sources, text, bars, graphs and images anywhere on any screen - zero code. Race HUD on Saturday, PC dashboard on Sunday - the same engine, your layout.
 
-**2,154 bindable props - 672 built-in + 1,482 from the full SimHub telemetry feed. Drag any of them onto your canvas with the drag-and-drop editor: HUD, pill, widget or RTSS in-game overlay. Zero code, the look is 100% your imagination.**
+**2,164 bindable props - 682 built-in + 1,482 from the full SimHub telemetry feed. Drag any of them onto your canvas with the drag-and-drop editor: HUD, pill, widget or RTSS in-game overlay. Zero code, the look is 100% your imagination.**
 
 [![1.5 teaser video - Chicago Overlay in action](assets/promo_windows.png)](https://github.com/RadimSvatek/chicago-overlay/releases/download/v1.5.527/chicago1_5.mp4)
 
@@ -35,7 +35,7 @@ Built for sim racing (via SimHub), PC hardware monitoring, and safe hardware-lev
 
 Most hardware and telemetry tools end at a passive table inside their own window. Chicago Overlay keeps going - four layers, one data engine:
 
-- **Complete HW diagnostics & inventory** - detection on par with the best - like CPU-Z, GPU-Z or HWiNFO, in a clean searchable table with CSV export (672 built-in props + 1,482 from the SimHub telemetry feed = **2,154 total**).
+- **Complete HW diagnostics & inventory** - detection on par with the best - like CPU-Z, GPU-Z or HWiNFO, in a clean searchable table with CSV export (682 built-in props + 1,482 from the SimHub telemetry feed = **2,164 total**).
 - **Multiple visual outputs** - WebView canvas, native WPF, or RTSS text. Any value from that table goes straight onto your screen, into a game in exclusive fullscreen, or to a second monitor.
 - **Two control modes** - Easy mode pills/widgets: click, pick a skin and values, drag with the mouse - done in 10 seconds, no WebView2. Advanced Inspector (`Ctrl+Alt+E`): full creative freedom without code - 25-800 % zoom, 3D perspective grids, EQ, custom graphs, layers, clipboard sharing.
 - **Honest system tools on top** - fan curves with a guardian watchdog, CPU/GPU/RAM stress test, the fast T800 cleaner and Start & Tasks manager in a single lightweight app.

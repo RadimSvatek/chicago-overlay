@@ -39,7 +39,7 @@ Die meisten Hardware- und Telemetrie-Tools enden bei einer passiven Tabelle im e
 ### Hauptfunktionen
 
 * **Universelle Telemetrie & Systemdaten:**
-  * **Sim-Racing (SimHub Bridge):** Volle Unterstützung von 900+ SimHub-Properties (Tempo, Drehzahl, Gang, Live-Delta, Sektor- & Rundenzeiten mit automatischem Purple/Green/Yellow-Status, Gaps, Reifen-/Bremstemperaturen & -drücke, Sprit, Flaggen, Pedal-Graphen). Läuft den vollen lizenzierten 60-Hz-Tick mit Delta-Frames (nur geänderte Werte reisen über die Leitung), gecachte Accessoren und belegbare Lenkrad-Tastenaktionen - federleichte CPU-Last. Inklusive automatischer Plugin-Installation und Versionsprüfung.
+  * **Sim-Racing (SimHub Bridge):** Volle Unterstützung von 1.400+ SimHub-Properties (Tempo, Drehzahl, Gang, Live-Delta, Sektor- & Rundenzeiten mit automatischem Purple/Green/Yellow-Status, Gaps, Reifen-/Bremstemperaturen & -drücke, Sprit, Flaggen, Pedal-Graphen). Läuft den vollen lizenzierten 60-Hz-Tick mit Delta-Frames (nur geänderte Werte reisen über die Leitung), gecachte Accessoren und belegbare Lenkrad-Tastenaktionen - federleichte CPU-Last. Inklusive automatischer Plugin-Installation und Versionsprüfung.
   * **DirectX FPS & Frametimes:** Herstellerunabhängige FPS, Frametime-Graphen und CPU/GPU-Framezeiten per Intel PresentMon (läuft in Borderless & Vollbild).
   * **Hardware-Sensoren:** Echtzeit-CPU/GPU-Temperaturen, Leistungsaufnahme (W), Auslastung, RAM, Mainboard-Temperatursensoren und Lüfterdrehzahlen via LibreHardwareMonitor & signiertem PawnIO-Treiber.
   * **Netzwerk-Telemetrie:** Ping, Paketverlust % und Down-/Up-Durchsatz (kB/s) - mit konfigurierbaren Ping-Zielen (Adressliste in den Einstellungen, eigene ergänzen, per Hotkey durchschalten; `Net.Target` zeigt das aktive). Für Online-Rennen und Alltags-Monitoring; in Alarmregeln nutzbar („Paketverlust"-Sprachwarnung).
@@ -58,6 +58,11 @@ Die meisten Hardware- und Telemetrie-Tools enden bei einer passiven Tabelle im e
   * `webview` oder `native` pro Anzeige wählbar - die native Engine zeichnet `data`- & `box`-Layoutknoten direkt in WPF, **ganz ohne WebView2-Prozess** auf diesem Bildschirm: weniger RAM, sofortiges Zeichnen und feste Ziffernslots, sodass Werte nie zittern. Ein Layout nur mit Pill startet WebView gar nicht - der Monitor läuft automatisch nativ, und `Strg+Alt+I` zeigt, welche Engine wo wirklich läuft.
 * **RTSS-Ingame-OSD:**
   * Live-Text jedes Widgets in den **RivaTuner Statistics Server** Shared Memory streamen - Statistiken in exklusivem Vollbild, wo normale Overlays nicht hinkommen (live verifiziert mit RTSS 7.3.7).
+* **LAN-Dashboard - dein HUD auf jedem Gerät:**
+  * Die ganze Leinwand als Live-Webseite auf Handy, Tablet oder zweitem PC im selben Netz - gestreamt per WebSocket nur mit den Keys, die das Layout wirklich liest.
+  * Optionaler PIN sperrt den Handshake (sonst HTTP 401), die Seite skaliert auf jeden Viewport, und "send UI too" erlaubt Layout-Bearbeitung direkt vom Handy.
+* **RGB-Hintergrundbeleuchtung (Aura):**
+  * Aura-Regeln pro Prop steuern Tastatur- und Soundkarten-LEDs - nativ, ohne externes Tool, oder via OpenRGB als eigenem Kanal. Backend-Wahl pro Gerät und Dedup sorgen dafür, dass sich zwei Kanäle nie um dieselbe Hardware streiten.
 * **Intelligente Quellen-Überwachung - Häkchen = Erlaubnis, Lauf = Bedarf:**
   * Eine erlaubte Quelle läuft nicht mehr, nur weil die App offen ist. EQ, Uhr, HW-Monitoring und PresentMon starten nur solange sie etwas verbraucht (Layout, Widget, RTSS-Stream, Alarm, laufende Session, Lüftersteuerung, offenes HW-Fenster) - und stoppen, sobald sie keiner braucht. Idle-Tray-Icon = Idle-App.
   * **Chicago überwacht sich selbst:** `App.*`-Props zeigen eigene CPU, privaten & geteilten RAM, WebView-Prozesszahl und deren Kosten, Threads, Fensterzahlen und den Status jeder Quelle. Die Seite **Quellen** zeigt Live-Verbrauch und *warum* jede Quelle läuft oder ruht.
@@ -134,7 +139,9 @@ Ein Installer, zwei Editionen. Du wählst direkt nach der Infoseite - und kannst
 
 ### Download
 
-Hol dir das neueste `chicago_overlay_<ver>.zip` aus den **[Releases](../../releases)**, entpacke es und starte das Setup darin (.NET-8- & WebView2-Voraussetzungen sind gebündelt). Der eingebaute Update-Checker meldet neue Versionen.
+[![Download](https://img.shields.io/github/v/release/RadimSvatek/chicago-overlay?label=download&color=18D4C2)](https://github.com/RadimSvatek/chicago-overlay/releases/latest)
+
+Hol dir das neueste `chicago_overlay_<ver>.zip` aus den **[Releases](../../releases)**, entpacke es und starte das Setup darin (.NET-8- & WebView2-Voraussetzungen sind gebündelt). Der eingebaute Update-Checker meldet neue Versionen. Jedes Release veröffentlicht den SHA-256 des Setups und einen [VirusTotal](https://www.virustotal.com/)-Link - falls SmartScreen vor unsignierter Freeware warnt, lässt sich die Datei mit einem Klick prüfen.
 
 ---
 

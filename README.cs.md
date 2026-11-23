@@ -39,7 +39,7 @@ Většina hardware a telemetrických nástrojů končí pasivní tabulkou ve vla
 ### Hlavní funkce
 
 * **Univerzální telemetrie a systémová data:**
-  * **Simracing (SimHub Bridge):** plná podpora 900+ SimHub propů (rychlost, otáčky, rychlostní stupeň, živá delta, časy sektorů a kol s automatickými barvami purple/green/yellow, odstupy, teploty a tlaky pneu a brzd, palivo, vlajky, grafy pedálů). Běží plný licencovaný 60 Hz tick s delta rámci (po drátě putují jen změněné hodnoty), cachované akcesory a bindovatelné akce tlačítek volantu - minimální zátěž CPU. Včetně automatické instalace pluginu a kontroly verze.
+  * **Simracing (SimHub Bridge):** plná podpora 1 400+ SimHub propů (rychlost, otáčky, rychlostní stupeň, živá delta, časy sektorů a kol s automatickými barvami purple/green/yellow, odstupy, teploty a tlaky pneu a brzd, palivo, vlajky, grafy pedálů). Běží plný licencovaný 60 Hz tick s delta rámci (po drátě putují jen změněné hodnoty), cachované akcesory a bindovatelné akce tlačítek volantu - minimální zátěž CPU. Včetně automatické instalace pluginu a kontroly verze.
   * **DirectX FPS a frametimes:** FPS nezávisle na výrobci, grafy frametime a CPU/GPU frame časy přes Intel PresentMon (funguje v borderless i fullscreenu).
   * **Hardwarové senzory:** teploty CPU/GPU, spotřeba ve Wattech, vytížení, RAM, teplotní čidla desky a otáčky ventilátorů přes LibreHardwareMonitor a podepsaný ovladač PawnIO.
   * **Síťová telemetrie:** ping, ztráta paketů % a down/up throughput (kB/s) - s nastavitelnými cíli pingu (seznam adres v Nastavení, vlastní adresy, cyklování zkratkou; `Net.Target` ukazuje aktivní). Pro online závody i běžný monitoring; použitelné v pravidlech upozornění (hlasová výstraha „ztráta paketů").
@@ -58,6 +58,11 @@ Většina hardware a telemetrických nástrojů končí pasivní tabulkou ve vla
   * `webview` nebo `native` per display - nativní engine kreslí `data` a `box` nody layoutu přímo ve WPF, **úplně bez WebView2 procesu** na dané obrazovce: míň RAM, okamžité kreslení a fixní číslicové sloty, takže hodnoty nikdy neposkakují. Layout jen s pilulkou nepustí WebView vůbec - monitor jede native automaticky a `Ctrl+Alt+I` ukáže, který engine kde skutečně běží.
 * **RTSS OSD do hry:**
   * Živý text libovolného widgetu proudí do **RivaTuner Statistics Server** sdílené paměti - statistiky přímo ve hrách a exkluzivním fullscreenu, kam se běžný overlay nedostane (ověřeno naživo s RTSS 7.3.7).
+* **LAN dashboard - HUD na každém zařízení:**
+  * Celé plátno jako živá webová stránka na mobilu, tabletu nebo druhém PC ve stejné síti - streamuje přes WebSocket jen klíče, které layout skutečně čte.
+  * Volitelný PIN zamkne handshake (bez něj HTTP 401), stránka se sama přizpůsobí viewportu a "send UI too" dovolí upravovat layouty přímo z mobilu.
+* **RGB podsvícení (Aura):**
+  * Aura pravidla na propech rozsvěcují klávesnici i LED na zvukové kartě - nativně bez externího nástroje, nebo přes OpenRGB jako samostatný kanál. Volba backendu per zařízení a deduplikace zaručí, že se dva kanály o stejný hardware neperou.
 * **Chytré hlídání zdrojů - fajfka = povolení, běh = poptávka:**
   * Povolený zdroj už neběží jen proto, že appka je otevřená. EQ, hodiny, HW monitoring i PresentMon naskočí jen dokud je něco čte (layout, widget, RTSS stream, alert, živá relace, řízení větráků, otevřené HW okno) - a zhasnou, jakmile je nikdo nepotřebuje. Ikona v tray = klidová appka.
   * **Chicago hlídá samo sebe:** propy `App.*` ukazují vlastní CPU, privátní i sdílenou RAM, počet WebView procesů a jejich cenu, vlákna, počty oken a stav každého zdroje. Stránka **Zdroje** ukazuje živou spotřebu i *proč* každý zdroj běží nebo stojí.
@@ -134,7 +139,9 @@ Jeden instalátor, dvě edice. Vybíráš hned po úvodní stránce - a druhou e
 
 ### Stažení
 
-Stáhni nejnovější `chicago_overlay_<ver>.zip` z **[Releases](../../releases)**, rozbal a spusť setup uvnitř (prerekvizity .NET 8 + WebView2 jsou v balení). Vestavěný update checker upozorní na nové verze.
+[![Download](https://img.shields.io/github/v/release/RadimSvatek/chicago-overlay?label=stáhnout&color=18D4C2)](https://github.com/RadimSvatek/chicago-overlay/releases/latest)
+
+Stáhni nejnovější `chicago_overlay_<ver>.zip` z **[Releases](../../releases)**, rozbal a spusť setup uvnitř (prerekvizity .NET 8 + WebView2 jsou v balení). Vestavěný update checker upozorní na nové verze. Každý release zveřejňuje SHA-256 setupu a odkaz na [VirusTotal](https://www.virustotal.com/) - když SmartScreen varuje před nepodepsaným freewarem, soubor ověříš jedním kliknutím.
 
 ---
 

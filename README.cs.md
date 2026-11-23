@@ -7,7 +7,9 @@ Postavený pro simracing (přes SimHub), sledování hardwaru PC a bezpečné ř
 
 **2 154 bindovatelných propů - 672 vestavěných + 1 482 z celé SimHub telemetrie. Každý přetáhneš na plátno drag-and-drop editorem: HUD, pilulka, widget nebo RTSS overlay přímo ve hře. Nula kódu, vzhled je 100% tvoje fantazie.**
 
-<video src="https://github.com/RadimSvatek/chicago-overlay/raw/main/assets/chicago1_5.mp4" controls muted playsinline width="100%"></video>
+[![1.5 teaser video - Chicago Overlay v akci](assets/promo_windows.png)](https://github.com/RadimSvatek/chicago-overlay/releases/download/v1.5.527/chicago1_5.mp4)
+
+*▶ Přehraj 1.5 teaser video (mp4)*
 
 ![Chicago Overlay - závodní HUD v Assetto Corse na 60 Hz](assets/ingame_ac.jpg)
 

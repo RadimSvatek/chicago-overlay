@@ -7,7 +7,9 @@ Built for sim racing (via SimHub), PC hardware monitoring, and safe hardware-lev
 
 **2,154 bindable props - 672 built-in + 1,482 from the full SimHub telemetry feed. Drag any of them onto your canvas with the drag-and-drop editor: HUD, pill, widget or RTSS in-game overlay. Zero code, the look is 100% your imagination.**
 
-<video src="https://github.com/RadimSvatek/chicago-overlay/raw/main/assets/chicago1_5.mp4" controls muted playsinline width="100%"></video>
+[![1.5 teaser video - Chicago Overlay in action](assets/promo_windows.png)](https://github.com/RadimSvatek/chicago-overlay/releases/download/v1.5.527/chicago1_5.mp4)
+
+*▶ Watch the 1.5 teaser video (mp4)*
 
 ![Chicago Overlay - Assetto Corsa race HUD at 60 Hz](assets/ingame_ac.jpg)
 

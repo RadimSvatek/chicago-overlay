@@ -5,7 +5,7 @@
 **Lehký, plně přizpůsobitelný telemetrický a systémový HUD overlay pro Windows 10/11 na víc monitorů.**
 Postavený pro simracing (přes SimHub), sledování hardwaru PC a bezpečné řízení ventilátorů na úrovni hardware - ale hlavně je to vrstva, co Windows nikdy neměly: vizuální stavitel widgetů pro cokoliv, co tvůj počítač ví. Editor drag-and-drop, 1 400+ datových zdrojů, texty, lišty, grafy i obrázky kdekoli na každé obrazovce - bez jediného řádku kódu. Závodní HUD v sobotu, PC dashboard v neděli - stejný motor, tvůj layout.
 
-**2 164 bindovatelných propů - 682 vestavěných + 1 482 z celé SimHub telemetrie. Každý přetáhneš na plátno drag-and-drop editorem: HUD, pilulka, widget nebo RTSS overlay přímo ve hře. Nula kódu, vzhled je 100% tvoje fantazie.**
+**2 205 bindovatelných propů - 723 vestavěných + 1 482 z celé SimHub telemetrie. Každý přetáhneš na plátno drag-and-drop editorem: HUD, pilulka, widget nebo RTSS overlay přímo ve hře. Nula kódu, vzhled je 100% tvoje fantazie.**
 
 [![1.5 teaser video - Chicago Overlay v akci](assets/promo_windows.png)](https://github.com/RadimSvatek/chicago-overlay/releases/download/v1.5.527/chicago1_5.mp4)
 
@@ -31,7 +31,7 @@ Postavený pro simracing (přes SimHub), sledování hardwaru PC a bezpečné ř
 
 Většina hardware a telemetrických nástrojů končí pasivní tabulkou ve vlastním okně. Chicago Overlay jde dál - čtyři vrstvy, jeden datový motor:
 
-- **Kompletní HW diagnostika a inventura** - detekce na úrovni nejlepších - like CPU-Z, GPU-Z nebo HWiNFO, v čisté prohledávatelné tabulce s CSV exportem (682 vestavěných propů + 1 482 ze SimHub telemetrie = **2 164 celkem**).
+- **Kompletní HW diagnostika a inventura** - detekce na úrovni nejlepších - like CPU-Z, GPU-Z nebo HWiNFO, v čisté prohledávatelné tabulce s CSV exportem (723 vestavěných propů + 1 482 ze SimHub telemetrie = **2 205 celkem**).
 - **Vícenásobný vizuální výstup** - WebView canvas, nativní WPF nebo RTSS text. Jakoukoliv hodnotu z tabulky pošleš rovnou na obrazovku, do hry v exclusive fullscreenu nebo na druhý monitor.
 - **Dva režimy ovládání** - Easy režim pilulek/widgetů: klikneš, vybereš skin a hodnoty, přetáhneš myší - hotovo za 10 sekund, bez WebView2. Pokročilý inspektor (`Ctrl+Alt+E`): plná tvůrčí svoboda bez kódu - zoom 25-800 %, 3D perspektivní gridy, ekvalizér, vlastní grafy, vrstvy, sdílení přes schránku.
 - **Poctivé systémové nástroje navrch** - křivky ventilátorů s guardianem, stress test CPU/GPU/RAM, rychlý T800 čistič a správce Start & Tasks v jediné lehké aplikaci.
@@ -69,8 +69,25 @@ Většina hardware a telemetrických nástrojů končí pasivní tabulkou ve vla
   * Povolený zdroj už neběží jen proto, že appka je otevřená. EQ, hodiny, HW monitoring i PresentMon naskočí jen dokud je něco čte (layout, widget, RTSS stream, alert, živá relace, řízení větráků, otevřené HW okno) - a zhasnou, jakmile je nikdo nepotřebuje. Ikona v tray = klidová appka.
   * **Chicago hlídá samo sebe:** propy `App.*` ukazují vlastní CPU, privátní i sdílenou RAM, počet WebView procesů a jejich cenu, vlákna, počty oken a stav každého zdroje. Stránka **Zdroje** ukazuje živou spotřebu i *proč* každý zdroj běží nebo stojí.
 * **Auto profily (HUD podle hry):**
-  * Layout se přepne automaticky při spuštění hry nebo libovolného procesu - závodní HUD po startu, po vypnutí zpátky na čistou plochu. Detekce podle názvu procesu nebo hry ze SimHubu (částečná shoda).
+  * Layout se přepne automaticky při spuštění hry nebo libovolného procesu - závodní HUD po startu, po vypnutí zpátky na čistou plochu. Detekce podle názvu procesu nebo hry ze SimHubu (částečná shoda). Profil umí taky překrýt layout nad základním (`ov:`), nebo místo layoutu spustit makro.
   * Pro jednotlivé nebo všechny monitory, včetně pravidel „HUD vypnutý" - třeba závod na hlavním monitoru a postranní zhasnuté.
+* **Můstek - živá velínská místnost:**
+  * Nativní konzolové okno, které kreslí zapojení celé aplikace jako živou mapu: pravidla uzlů, aury, alerty, profily, bindingy, makra a akce - s reálnými hodnotami tečoucími po hranách a rozsvícenými aktivními větvemi.
+  * Vypínače pravidel, triggery akcí/maker, táhlo co živě řídí libovolný prop a testovací injektor (`prop=hodnota` na N framů) - ladíš logiku HUDu bez opuštění konzole. Tray menu nebo `/bridge`.
+* **Barman - servíruj layouty jako drinky:**
+  * Vyber monitor („stůl"), klikni na kartu a layout se nalije skrze normální profilovou cestu - manuální bar vedle automatických profilů. Widgety a button gridy můžou nést vlastní serve slot, co nalije tam, kde zrovna sedí.
+  * Tray menu je taky stůl: naservíruj mu layout a jeho datové uzly se vykreslí jako živé řádky hodnot (teploty, ping, fps), button uzly jako klikatelné položky menu.
+  * Drinks jde mixovat („mix with" sloučí dva layouty), označené drinky rotují v playlistu každých N sekund napříč zaškrtnutými stoly, a každý drink zabalíš do přenositelného `.cpk` (layout + všechny obrázkové assety) na přenos mezi stroji.
+* **Windows úpravy jako bindovatelné propy:**
+  * Stránka **Windows** v Ovládacím centru mění vzhled OS přímo z appky - zarovnání taskbaru, tmavý motiv, přípony souborů, velikost scrollbarů, klasické kontextové menu, sekundy v hodinách, Copilot a návrhy vypnuté, plná kontrola spořiče a další. Každá úprava je prop `Win.*` - bindovatelný do layoutů, widgetů i maker jako telemetrie, se zálohou před prvním zápisem a undo na jedno kliknutí.
+  * Okna `wininfo` / `winmaxi` jsou dvojče hwinfo/hwmaxi pro Windows: kompaktní živá čtečka a plný editor katalogu úprav (`/wininfo`, `/winmaxi`).
+* **Vlastní, počítané a odvozené propy:**
+  * Přidej si vlastní: `data\props\*.json` slévá trvalé klíče do každého framu, `data\calc\*.json` počítá výrazy nad živými hodnotami každý frame (např. `Calc.FuelDelta`) - všechno se hned objeví v katalogu a pickerech.
+  * **Odvozené propy** přilepí příponu za libovolný číselný prop: `.avg` / `.min` / `.max` / `.rate` spočítá klouzavou 10s statistiku (`Sys.Ram.avg`, `Gpu.Temp.max`, `Net.Ping.rate`) - bindovatelné všude jako prop.
+  * **PropManager** (`/props`) spravuje celý katalog - builtin/SimHub/custom/calc taby, živé hodnoty framu, hledání a editaci/přejmenování/smazání vlastních záznamů pravým klikem bez restartu.
+* **Vzhled lodi - skiny, sekce a spořiče:**
+  * Celkové skiny aplikace (Classic, Wave, Aurora…) plus barvy jednotlivých sekcí - Můstek, větráky, čistič a každá sekce nosí vlastní odstín, skin editor nechá přebarvit každou zvlášť (stačí holý akcent, paleta se dopočítá).
+  * Layoutové spořiče na monitor (`saver`, `saver-stars`, `saver-dmg` jsou rovnou k dispozici) s OSD ovládací palubou: podržení `Ctrl+Alt` drží nad každým monitorem karty pro cyklování layoutů a enginů, edit, spořič a burn test.
 * **Řízení ventilátorů (bezpečné, na úrovni hw):**
   * Ovládání hlaviček ventilátorů desky (SuperIO čip přes PawnIO), větráků GPU i USB řadičů - auto / manuální % / teplotní křivka.
   * Křivky s 2-6 táhly a hysterezí pro každou křivku; identifikace roztočí kanál na 100 %, aby bylo poznat, který větrák to fyzicky je.
@@ -103,8 +120,8 @@ Většina hardware a telemetrických nástrojů končí pasivní tabulkou ve vla
   * Každý monitor může mít vlastní layout i nezávislou obnovovací frekvenci (Plná / 60 / 30 / 20 / 10 / 5 Hz).
   * Volba mezi **sdíleným plátnem** (jeden WebView2 renderer pro všechny monitory - úspora ~140 MB RAM na každý další monitor) nebo **oddělenými okny**.
   * Laděné na téměř nulovou cenu CPU: hw init a rescan běží na pozadí, telemetrie jede na delta rámcích a nečinná práce je blokovaná - overlay zůstává svižný a neviditelný, dokud nemá co ukázat.
-* **20 vyladěných šablon v balíčku:**
-  * Obsahuje `start`, `race-minimal`, `race-hud`, `race-pro`, `race-pro-2`, `race-hw`, `system-hw`, `system-hud`, `hw-info`, `maxi-hw`, `media-eq`, `media-hud`, `media-hud-2`, `combo-desk`, `combo-hud`, `tune-lab` (ladění křivek a stressu), `flat-stage`, `persp-stage`, `pill-hw` (demo nativního widgetu) a `sci-fi`.
+* **28 vyladěných šablon v balíčku:**
+  * Obsahuje `start`, `race-minimal`, `race-hud`, `race-pro`, `race-pro-2`, `race-hw`, `system-hw`, `system-hud`, `hw-info`, `maxi-hw`, `media-eq`, `media-hud`, `media-hud-2`, `combo-desk`, `combo-hud`, `tune-lab` (ladění křivek a stressu), `flat-stage`, `persp-stage`, `crawl-stage`, `pill-hw` (demo nativního widgetu), `ring-lab`, `fx-lab`, `demo-scene`, `rig-desk` (fotka tvého rigu se živými diodami), `sci-fi` a tři spořičové layouty (`saver`, `saver-stars`, `saver-dmg`).
 * **8 jazyků a nativní vzhled Windows 11/10:**
   * V **češtině, angličtině, němčině, španělštině, francouzštině, italštině, polštině a ruštině** (instalátor i appka). Kopíruje akcentovou barvu Windows a dark/light režim - nebo zvol vlastní akcent; značková teal `#18D4C2` je předvybraná na čisté instalaci (tvoje volba se nikdy nepřepíše).
 

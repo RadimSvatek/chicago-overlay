@@ -1,0 +1,247 @@
+{
+ "_seed": true,
+ "grid": {
+  "snap": true,
+  "step": 10
+ },
+ "nodes": [
+  {
+   "id": "fx_plasma",
+   "type": "fx",
+   "anchor": "c",
+   "x": -480,
+   "y": -200,
+   "w": 300,
+   "h": 170,
+   "kind": "plasma",
+   "prop": "Sys.Cpu",
+   "min": 0,
+   "max": 100,
+   "ps": 4,
+   "speed": 1,
+   "color": "#01cdfe",
+   "color2": "#b967ff",
+   "color3": "#ff2bd6"
+  },
+  {
+   "id": "fx_tunnel",
+   "type": "fx",
+   "anchor": "c",
+   "x": -160,
+   "y": -200,
+   "w": 300,
+   "h": 170,
+   "kind": "tunnel",
+   "prop": "Gpu.Usage",
+   "min": 0,
+   "max": 100,
+   "ps": 4,
+   "speed": 1,
+   "color": "#01cdfe",
+   "color2": "#b967ff",
+   "color3": "#ff2bd6"
+  },
+  {
+   "id": "fx_stars",
+   "type": "fx",
+   "anchor": "c",
+   "x": 160,
+   "y": -200,
+   "w": 300,
+   "h": 170,
+   "kind": "stars",
+   "prop": "Sys.Ram",
+   "min": 0,
+   "max": 100,
+   "ps": 4,
+   "speed": 1,
+   "color": "#01cdfe",
+   "color2": "#b967ff",
+   "color3": "#ff2bd6"
+  },
+  {
+   "id": "fx_rotozoom",
+   "type": "fx",
+   "anchor": "c",
+   "x": 480,
+   "y": -200,
+   "w": 300,
+   "h": 170,
+   "kind": "rotozoom",
+   "prop": "Sys.CpuTemp",
+   "min": 20,
+   "max": 90,
+   "ps": 4,
+   "speed": 1,
+   "color": "#01cdfe",
+   "color2": "#b967ff",
+   "color3": "#ff2bd6"
+  },
+  {
+   "id": "fx_blobs",
+   "type": "fx",
+   "anchor": "c",
+   "x": -320,
+   "y": 10,
+   "w": 300,
+   "h": 170,
+   "kind": "blobs",
+   "prop": "Eq.Band0",
+   "min": 0,
+   "max": 100,
+   "ps": 4,
+   "speed": 1,
+   "color": "#01cdfe",
+   "color2": "#b967ff",
+   "color3": "#ff2bd6"
+  },
+  {
+   "id": "fx_raster",
+   "type": "fx",
+   "anchor": "c",
+   "x": 0,
+   "y": 10,
+   "w": 300,
+   "h": 170,
+   "kind": "raster",
+   "prop": "Gpu.Temp",
+   "min": 20,
+   "max": 90,
+   "ps": 4,
+   "speed": 1,
+   "color": "#01cdfe",
+   "color2": "#b967ff",
+   "color3": "#ff2bd6"
+  },
+  {
+   "id": "fx_bob",
+   "type": "fx",
+   "anchor": "c",
+   "x": 320,
+   "y": 10,
+   "w": 300,
+   "h": 170,
+   "kind": "bob",
+   "prop": "Clock.Second",
+   "min": 0,
+   "max": 59,
+   "ps": 4,
+   "speed": 1,
+   "color": "#01cdfe",
+   "color2": "#b967ff",
+   "color3": "#ff2bd6"
+  },
+  {
+   "id": "lab_plasma",
+   "type": "data",
+   "anchor": "c",
+   "x": -480,
+   "y": -25,
+   "w": 300,
+   "align": "center",
+   "text": "PLASMA like cracktro",
+   "color": "#8fa3c0",
+   "font": {
+    "family": "oxan",
+    "size": 14,
+    "weight": 500
+   }
+  },
+  {
+   "id": "lab_tunnel",
+   "type": "data",
+   "anchor": "c",
+   "x": -160,
+   "y": -25,
+   "w": 300,
+   "align": "center",
+   "text": "TUNNEL like 2nd Reality",
+   "color": "#8fa3c0",
+   "font": {
+    "family": "oxan",
+    "size": 14,
+    "weight": 500
+   }
+  },
+  {
+   "id": "lab_stars",
+   "type": "data",
+   "anchor": "c",
+   "x": 160,
+   "y": -25,
+   "w": 300,
+   "align": "center",
+   "text": "STARS like hyperspace",
+   "color": "#8fa3c0",
+   "font": {
+    "family": "oxan",
+    "size": 14,
+    "weight": 500
+   }
+  },
+  {
+   "id": "lab_rotozoom",
+   "type": "data",
+   "anchor": "c",
+   "x": 480,
+   "y": -25,
+   "w": 300,
+   "align": "center",
+   "text": "ROTOZOOM like Amiga",
+   "color": "#8fa3c0",
+   "font": {
+    "family": "oxan",
+    "size": 14,
+    "weight": 500
+   }
+  },
+  {
+   "id": "lab_blobs",
+   "type": "data",
+   "anchor": "c",
+   "x": -320,
+   "y": 185,
+   "w": 300,
+   "align": "center",
+   "text": "BLOBS like 90s demo",
+   "color": "#8fa3c0",
+   "font": {
+    "family": "oxan",
+    "size": 14,
+    "weight": 500
+   }
+  },
+  {
+   "id": "lab_raster",
+   "type": "data",
+   "anchor": "c",
+   "x": 0,
+   "y": 185,
+   "w": 300,
+   "align": "center",
+   "text": "RASTER like copper bars",
+   "color": "#8fa3c0",
+   "font": {
+    "family": "oxan",
+    "size": 14,
+    "weight": 500
+   }
+  },
+  {
+   "id": "lab_bob",
+   "type": "data",
+   "anchor": "c",
+   "x": 320,
+   "y": 185,
+   "w": 300,
+   "align": "center",
+   "text": "BOB like blitter objects",
+   "color": "#8fa3c0",
+   "font": {
+    "family": "oxan",
+    "size": 14,
+    "weight": 500
+   }
+  }
+ ]
+}

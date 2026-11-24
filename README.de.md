@@ -5,7 +5,7 @@
 **Ein leichtgewichtiges, frei anpassbares Multi-Monitor-Telemetrie- und System-HUD-Overlay für Windows 10/11.**
 Gebaut für Sim-Racing (über SimHub), PC-Hardware-Monitoring und sichere Lüftersteuerung auf Hardware-Ebene - aber eigentlich ist es die Ebene, die Windows nie hatte: ein visueller Widget-Baukasten für alles, was dein PC weiß. Drag-and-Drop-Layouteditor, 1.400+ Datenquellen, Texte, Balken, Graphen und Bilder überall auf jedem Bildschirm - null Code. Renn-HUD am Samstag, PC-Dashboard am Sonntag - dieselbe Engine, dein Layout.
 
-**2.164 bindbare Props - 682 eingebaute + 1.482 aus der kompletten SimHub-Telemetrie. Zieh jeden per Drag-and-Drop-Editor auf deine Leinwand: HUD, Pille, Widget oder RTSS-Ingame-Overlay. Null Code, der Look ist zu 100% deine Fantasie.**
+**2.205 bindbare Props - 723 eingebaute + 1.482 aus der kompletten SimHub-Telemetrie. Zieh jeden per Drag-and-Drop-Editor auf deine Leinwand: HUD, Pille, Widget oder RTSS-Ingame-Overlay. Null Code, der Look ist zu 100% deine Fantasie.**
 
 [![1.5 Teaser-Video - Chicago Overlay in Aktion](assets/promo_windows.png)](https://github.com/RadimSvatek/chicago-overlay/releases/download/v1.5.527/chicago1_5.mp4)
 
@@ -31,7 +31,7 @@ Gebaut für Sim-Racing (über SimHub), PC-Hardware-Monitoring und sichere Lüfte
 
 Die meisten Hardware- und Telemetrie-Tools enden bei einer passiven Tabelle im eigenen Fenster. Chicago Overlay geht weiter - vier Schichten, eine Datenengine:
 
-- **Komplette HW-Diagnostik & Inventur** - Erkennung auf dem Niveau der Besten - like CPU-Z, GPU-Z oder HWiNFO, in einer sauberen durchsuchbaren Tabelle mit CSV-Export (682 eingebaute Props + 1.482 aus der SimHub-Telemetrie = **2.164 gesamt**).
+- **Komplette HW-Diagnostik & Inventur** - Erkennung auf dem Niveau der Besten - like CPU-Z, GPU-Z oder HWiNFO, in einer sauberen durchsuchbaren Tabelle mit CSV-Export (723 eingebaute Props + 1.482 aus der SimHub-Telemetrie = **2.205 gesamt**).
 - **Mehrere visuelle Ausgänge** - WebView-Canvas, natives WPF oder RTSS-Text. Jeder Wert aus der Tabelle geht direkt auf deinen Bildschirm, ins Spiel im exklusiven Vollbild oder auf den zweiten Monitor.
 - **Zwei Bedienmodi** - Easy-Modus Pillen/Widgets: klicken, Skin und Werte wählen, mit der Maus ziehen - fertig in 10 Sekunden, ohne WebView2. Fortgeschrittener Inspektor (`Strg+Alt+E`): volle kreative Freiheit ohne Code - 25-800 % Zoom, 3D-Perspektivgrids, EQ, eigene Graphen, Ebenen, Clipboard-Sharing.
 - **Ehrliche System-Tools obendrauf** - Lüfterkurven mit Guardian-Watchdog, CPU/GPU/RAM-Stresstest, der schnelle T800-Cleaner und Start-&-Tasks-Manager in einer einzigen leichten App.
@@ -69,8 +69,25 @@ Die meisten Hardware- und Telemetrie-Tools enden bei einer passiven Tabelle im e
   * Eine erlaubte Quelle läuft nicht mehr, nur weil die App offen ist. EQ, Uhr, HW-Monitoring und PresentMon starten nur solange sie etwas verbraucht (Layout, Widget, RTSS-Stream, Alarm, laufende Session, Lüftersteuerung, offenes HW-Fenster) - und stoppen, sobald sie keiner braucht. Idle-Tray-Icon = Idle-App.
   * **Chicago überwacht sich selbst:** `App.*`-Props zeigen eigene CPU, privaten & geteilten RAM, WebView-Prozesszahl und deren Kosten, Threads, Fensterzahlen und den Status jeder Quelle. Die Seite **Quellen** zeigt Live-Verbrauch und *warum* jede Quelle läuft oder ruht.
 * **Auto-Profile (spielabhängiges HUD):**
-  * Wechselt Layouts automatisch, wenn ein Spiel oder ein beliebiger Prozess startet - Renn-HUD beim Start, nach dem Beenden zurück zum aufgeräumten Desktop. Erkennung über Prozessname oder SimHub-Spielname (Teilübereinstimmung).
+  * Wechselt Layouts automatisch, wenn ein Spiel oder ein beliebiger Prozess startet - Renn-HUD beim Start, nach dem Beenden zurück zum aufgeräumten Desktop. Erkennung über Prozessname oder SimHub-Spielname (Teilübereinstimmung). Ein Profil kann auch ein Layout über das Basislayout legen (`ov:`) oder stattdessen ein Makro ausführen.
   * Pro Monitor oder für alle, plus „HUD aus"-Regeln - z. B. Rennlayout auf dem Hauptbildschirm, Seitenmonitore dunkel.
+* **Die Brücke - ein Live-Kontrollraum:**
+  * Ein natives Konsolenfenster, das die gesamte Verdrahtung der App als Live-Karte zeichnet: Node-Regeln, Auras, Alerts, Profile, Bindings, Makros und Aktionen - mit echten Werten auf den Kanten und leuchtenden aktiven Zweigen.
+  * Kill-Switches pro Regel, Aktions-/Makro-Trigger, ein Schieberegler der jeden Prop live steuert, und ein Test-Injektor (`prop=wert` für N Frames) - debugge deine HUD-Logik ohne die Konsole zu verlassen. Tray-Menü oder `/bridge`.
+* **Bartender - serviere Layouts wie Drinks:**
+  * Wähl einen Monitor (den „Tisch"), klick eine Karte, und das Layout wird über den normalen Profilpfad eingeschenkt - die manuelle Bar neben den automatischen Profilen. Widgets und Button-Grids können eigene Serve-Slots tragen, die dorthin einschenken, wo sie sitzen.
+  * Das Tray-Menü ist auch ein Tisch: Serviere ihm ein Layout und seine Daten-Nodes rendern als Live-Wertzeilen (Temps, Ping, FPS), Button-Nodes werden klickbare Menüeinträge.
+  * Drinks lassen sich mischen („mix with" verschmilzt zwei Layouts), markierte Drinks rotieren in einer Playlist alle N Sekunden über angehakte Tische, und jeder Drink packt sich als portables `.cpk` (Layout + alle Bild-Assets) für den Umzug zwischen Maschinen.
+* **Windows-Tweaks als bindbare Props:**
+  * Die **Windows-Seite** im Control Center ändert den OS-Look direkt aus der App - Taskleisten-Ausrichtung, Dark Theme, Dateiendungen, Scrollbar-Größe, klassisches Kontextmenü, Sekunden in der Uhr, Copilot & Vorschläge aus, volle Bildschirmschoner-Kontrolle und mehr. Jeder Tweak ist ein `Win.*`-Prop - bindbar in Layouts, Widgets und Makros wie Telemetrie, mit Backup vor dem ersten Schreiben und Undo per Klick.
+  * Die Fenster `wininfo` / `winmaxi` sind das hwinfo/hwmaxi-Paar für Windows: kompakter Live-Reader und vollständiger Tweak-Katalog-Editor (`/wininfo`, `/winmaxi`).
+* **Eigene, berechnete & abgeleitete Props:**
+  * Füg eigene hinzu: `data\props\*.json` merged permanente Keys in jeden Frame, `data\calc\*.json` wertet Ausdrücke über Live-Werte pro Frame aus (z. B. `Calc.FuelDelta`) - alles erscheint sofort im Katalog und den Pickern.
+  * **Abgeleitete Props** hängen ein Suffix an jeden numerischen Prop: `.avg` / `.min` / `.max` / `.rate` berechnet eine gleitende 10-s-Statistik (`Sys.Ram.avg`, `Gpu.Temp.max`, `Net.Ping.rate`) - überall bindbar wie ein Prop.
+  * **PropManager** (`/props`) verwaltet den ganzen Katalog - Builtin/SimHub/Custom/Calc-Tabs, Live-Frame-Werte, Suche und Rechtsklick-Bearbeiten/Umbenennen/Löschen eigener Einträge ohne Neustart.
+* **Schiffs-Look - Skins, Sektionen & Bildschirmschoner:**
+  * App-weite Skins (Classic, Wave, Aurora…) plus Farben pro Sektion - die Brücke, Lüfter, Cleaner und jede Sektion trägt ihren eigenen Farbton, und der Skin-Editor lässt dich jede einzeln umfärben (ein blanker Akzent reicht, die Palette leitet sich ab).
+  * Layout-Bildschirmschoner pro Monitor (`saver`, `saver-stars`, `saver-dmg` liegen bei) mit OSD-Kontrolldeck: `Strg+Alt` halten zeigt pro Monitor Karten für Layout- & Engine-Wechsel, Edit, Saver und Burn-Test.
 * **Lüftersteuerung (sicher, auf Hardware-Ebene):**
   * Steuerung der Mainboard-Lüfter-Header (SuperIO-Chip über PawnIO), GPU-Lüfter und USB-Lüftercontroller - Auto / manuell % / Temperaturkurve.
   * Kurven mit 2-6 Ankern und Hysterese pro Kurve; Lüfter-Identifikation dreht einen Kanal auf 100 %, damit du erkennst, welcher Header welcher ist.
@@ -103,8 +120,8 @@ Die meisten Hardware- und Telemetrie-Tools enden bei einer passiven Tabelle im e
   * Jedem Monitor lassen sich ein eigenes Layout sowie eine unabhängige Bildwiederholrate (Volle Geschwindigkeit / 60 / 30 / 20 / 10 / 5 Hz) zuweisen.
   * Wahl zwischen **Shared Canvas** (ein einziger WebView2-Renderer für alle Monitore - spart ca. 140 MB RAM pro zusätzlichem Bildschirm) oder **Split Canvas**.
   * Auf fast null CPU-Kosten getrimmt: Hardware-Init und Rescans laufen im Hintergrund, Telemetrie fährt auf Delta-Frames und Leerlaufarbeit ist geblockt - das Overlay bleibt flott und unsichtbar, bis es etwas zu zeigen hat.
-* **20 einsatzbereite Vorlagen enthalten:**
-  * Enthält `start`, `race-minimal`, `race-hud`, `race-pro`, `race-pro-2`, `race-hw`, `system-hw`, `system-hud`, `hw-info`, `maxi-hw`, `media-eq`, `media-hud`, `media-hud-2`, `combo-desk`, `combo-hud`, `tune-lab` (Lüfterkurven- & Stress-Tuning), `flat-stage`, `persp-stage`, `pill-hw` (Native-Widget-Demo) und `sci-fi`.
+* **28 einsatzbereite Vorlagen enthalten:**
+  * Enthält `start`, `race-minimal`, `race-hud`, `race-pro`, `race-pro-2`, `race-hw`, `system-hw`, `system-hud`, `hw-info`, `maxi-hw`, `media-eq`, `media-hud`, `media-hud-2`, `combo-desk`, `combo-hud`, `tune-lab` (Lüfterkurven- & Stress-Tuning), `flat-stage`, `persp-stage`, `crawl-stage`, `pill-hw` (Native-Widget-Demo), `ring-lab`, `fx-lab`, `demo-scene`, `rig-desk` (dein Rig-Foto mit Live-Dioden), `sci-fi` und drei Bildschirmschoner-Layouts (`saver`, `saver-stars`, `saver-dmg`).
 * **8 Sprachen & natives Windows-11/10-Design:**
   * Verfügbar auf **Deutsch, Englisch, Tschechisch, Spanisch, Französisch, Italienisch, Polnisch und Russisch** (sowohl Installer als auch App). Übernimmt automatisch die Windows-Akzentfarbe sowie den Dunkel-/Hellmodus - oder wähle einen eigenen Akzent; die Markenfarbe Teal `#18D4C2` ist auf Neuinstallationen vorgewählt (deine Wahl wird nie überschrieben).
 

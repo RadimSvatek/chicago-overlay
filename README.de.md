@@ -1,8 +1,6 @@
 https://github.com/user-attachments/assets/f295d1df-57e7-49dc-af6d-08ef3f8c6a13
 
-[![1.5 Teaser-Video - Chicago Overlay in Aktion](assets/promo_windows.png)](https://github.com/RadimSvatek/chicago-overlay/releases/download/v1.5.527/chicago1_5.mp4)
-
-*▶ 1.5-Teaser-Video ansehen (mp4)*
+*▶ [1.5-Teaser-Video ansehen (mp4)](https://github.com/RadimSvatek/chicago-overlay/releases/download/v1.5.527/chicago1_5.mp4)*
 
 ![Chicago Overlay](assets/chicago_banner.png)
 

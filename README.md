@@ -2,6 +2,10 @@
 
 https://github.com/user-attachments/assets/f295d1df-57e7-49dc-af6d-08ef3f8c6a13
 
+[![1.5 teaser video - Chicago Overlay in action](assets/promo_windows.png)](https://github.com/RadimSvatek/chicago-overlay/releases/download/v1.5.527/chicago1_5.mp4)
+
+*▶ Watch the 1.5 teaser video (mp4)*
+
 ![Chicago Overlay](assets/chicago_banner.png)
 
 *Since Project Chicago, Windows was missing a layer that is more than a fashion accessory. So I wired it up.*
@@ -11,23 +15,6 @@ Built for sim racing (via SimHub), PC hardware monitoring, and safe hardware-lev
 
 **2,205 bindable props - 723 built-in + 1,482 from the full SimHub telemetry feed. Drag any of them onto your canvas with the drag-and-drop editor: HUD, pill, widget or RTSS in-game overlay. Zero code, the look is 100% your imagination.**
 
-[![1.5 teaser video - Chicago Overlay in action](assets/promo_windows.png)](https://github.com/RadimSvatek/chicago-overlay/releases/download/v1.5.527/chicago1_5.mp4)
-
-*▶ Watch the 1.5 teaser video (mp4)*
-
-![Chicago Overlay - Assetto Corsa race HUD at 60 Hz](assets/ingame_ac.jpg)
-
-![Chicago Overlay - control center, startup & tasks, cleanup and fan curves](assets/promo_windows.png)
-
-![Desktop widgets - clock, now playing and audio spectrum on the desktop](assets/desktop.jpg)
-
-![The same HUD in the visual editor - drag & drop, snapping grid, live inspector, zero code](assets/desktop_edit.jpg)
-
-![Editor canvas zoom at 305% - pro-grade zoom for tiny elements: Ctrl+wheel to center, Alt+wheel around the cursor, Ctrl+Alt+drag pans, floating pill returns to 100%](assets/desktop_zoom.png)
-
-![Computed grid nodes - perspective synthwave platform with depth-scaled crawl text and a 3D EQ spectrum filling the grid cells live](assets/synthwave_stage.png)
-
-![Tron tunnel - flipped ceiling platform with crawl text converging on the horizon above a floor platform running a live 3D EQ spectrum](assets/4.png)
 
 ---
 
@@ -140,14 +127,18 @@ One installer, two editions. You pick right after the info page - and you can al
 |---|:---:|:---:|
 | HUD overlay, layouts & visual editor | ✓ | - |
 | SimHub racing telemetry | ✓ | - |
-| Media info & audio spectrum | ✓ | - |
+| On-canvas widgets & media visuals | ✓ | - |
 | FPS & frametimes (PresentMon) | ✓ | ✓ |
 | Fan control, curves & guardian watchdog | ✓ | ✓ |
 | HW info, sensors & network monitoring | ✓ | ✓ |
 | Stress test, session reports & alerts | ✓ | ✓ |
 | System cleanup, start/tasks & software manager | ✓ | ✓ |
 | Settings, updates, autostart, 8 languages | ✓ | ✓ |
-| WebView2 runtime loaded | ✓ | never |
+| RGB aura, LED matrices & keyboard canvas | ✓ | ✓ |
+| EQ spectrum & media props to RGB/LED outputs | ✓ | ✓ |
+| Data bus: MQTT, HTTP/JSON, webhooks, HWiNFO SM | ✓ | ✓ |
+| Custom & calculated props, AI data link | ✓ | ✓ |
+| WebView2 runtime | bundled | not needed |
 
 *Both editions get their own Start-menu shortcut (desktop optional). Tools is the same `chicago.exe` running in a dedicated `--tools` mode - no overlay, no SimHub, minimal RAM.*
 
@@ -194,3 +185,21 @@ Thank you for taking it for a spin - see you on track!
 * **Source code:** not public - kept private by the author. Any use of the code in other projects or products requires the author's permission.
 * **Layouts & Language Packs (`.json`):** free to use, modify, and share within the community.
 * **Warranty:** the software is provided "as is", without warranty of any kind. Use at your own risk.
+
+---
+
+### Gallery
+
+![Chicago Overlay - Assetto Corsa race HUD at 60 Hz](assets/ingame_ac.jpg)
+
+![Chicago Overlay - control center, startup & tasks, cleanup and fan curves](assets/promo_windows.png)
+
+![Desktop widgets - clock, now playing and audio spectrum on the desktop](assets/desktop.jpg)
+
+![The same HUD in the visual editor - drag & drop, snapping grid, live inspector, zero code](assets/desktop_edit.jpg)
+
+![Editor canvas zoom at 305% - pro-grade zoom for tiny elements: Ctrl+wheel to center, Alt+wheel around the cursor, Ctrl+Alt+drag pans, floating pill returns to 100%](assets/desktop_zoom.png)
+
+![Computed grid nodes - perspective synthwave platform with depth-scaled crawl text and a 3D EQ spectrum filling the grid cells live](assets/synthwave_stage.png)
+
+![Tron tunnel - flipped ceiling platform with crawl text converging on the horizon above a floor platform running a live 3D EQ spectrum](assets/4.png)

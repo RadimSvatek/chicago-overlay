@@ -1,3 +1,9 @@
+https://github.com/user-attachments/assets/f295d1df-57e7-49dc-af6d-08ef3f8c6a13
+
+[![1.5 teaser video - Chicago Overlay v akci](assets/promo_windows.png)](https://github.com/RadimSvatek/chicago-overlay/releases/download/v1.5.527/chicago1_5.mp4)
+
+*▶ Přehraj 1.5 teaser video (mp4)*
+
 ![Chicago Overlay](assets/chicago_banner.png)
 
 *Od dob projektu Chicago systému Windows něco scházelo - vrstva, která je víc než módní doplněk. A tak jsem ji spojil.*
@@ -7,23 +13,6 @@ Postavený pro simracing (přes SimHub), sledování hardwaru PC a bezpečné ř
 
 **2 205 bindovatelných propů - 723 vestavěných + 1 482 z celé SimHub telemetrie. Každý přetáhneš na plátno drag-and-drop editorem: HUD, pilulka, widget nebo RTSS overlay přímo ve hře. Nula kódu, vzhled je 100% tvoje fantazie.**
 
-[![1.5 teaser video - Chicago Overlay v akci](assets/promo_windows.png)](https://github.com/RadimSvatek/chicago-overlay/releases/download/v1.5.527/chicago1_5.mp4)
-
-*▶ Přehraj 1.5 teaser video (mp4)*
-
-![Chicago Overlay - závodní HUD v Assetto Corse na 60 Hz](assets/ingame_ac.jpg)
-
-![Chicago Overlay - ovládací centrum, spuštění a úlohy, úklid a křivky ventilátorů](assets/promo_windows.png)
-
-![Widgety na ploše - hodiny, přehrávaná skladba a audio spektrum na desktopu](assets/desktop.jpg)
-
-![Stejný HUD ve vizuálním editoru - drag & drop, mřížka, živý inspektor, nula kódu](assets/desktop_edit.jpg)
-
-![Zoom plátna editoru na 305 % - profesionální zoom pro drobné prvky: Ctrl+kolečko na střed, Alt+kolečko ke kurzoru, Ctrl+Alt+drag posouvá, plovoucí pilulka vrací na 100 %](assets/desktop_zoom.png)
-
-![Počítané grid nody - perspektivní synthwave plošina s crawl textem zmenšujícím se do dálky a 3D EQ spektrum zaplňující buňky mřížky živě](assets/synthwave_stage.png)
-
-![Tron tunel - překlopená stropní plošina s crawl textem mířícím k horizontu nad podlahovou plošinou s živým 3D EQ spektrem](assets/4.png)
 
 ---
 
@@ -135,14 +124,18 @@ Jeden instalátor, dvě edice. Vybíráš hned po úvodní stránce - a druhou e
 |---|:---:|:---:|
 | HUD overlay, layouty a vizuální editor | ✓ | - |
 | SimHub závodní telemetrie | ✓ | - |
-| Media info a audio spektrum | ✓ | - |
+| Widgety a média na plátně | ✓ | - |
 | FPS a frametimes (PresentMon) | ✓ | ✓ |
 | Řízení ventilátorů, křivky a guardian | ✓ | ✓ |
 | HW info, senzory a síťový monitoring | ✓ | ✓ |
 | Stress test, reporty relací a upozornění | ✓ | ✓ |
 | Úklid systému a správce spuštění/úloh | ✓ | ✓ |
 | Nastavení, aktualizace, autostart, 8 jazyků | ✓ | ✓ |
-| WebView2 runtime naložený | ✓ | nikdy |
+| RGB aura, LED matice a klávesnice jako plátno | ✓ | ✓ |
+| EQ spektrum a media props do RGB/LED výstupů | ✓ | ✓ |
+| Datová sběrnice: MQTT, HTTP/JSON, webhooky, HWiNFO SM | ✓ | ✓ |
+| Vlastní a počítané propy, AI datová linka | ✓ | ✓ |
+| WebView2 runtime | v balíku | není potřeba |
 
 *Obě edice mají vlastní zástupce ve Start menu (desktop volitelný). Nástroje je stejné `chicago.exe` v dedikovaném režimu `--tools` - bez overlaye, bez SimHubu, minimální RAM.*
 
@@ -189,3 +182,21 @@ Díky za vyzkoušení - vidíme se na trati!
 * **Zdrojový kód:** není veřejný - autor si ho nechává privátní. Jakékoli použití kódu v jiných projektech nebo produktech vyžaduje svolení autora.
 * **Layouty a jazykové balíčky (`.json`):** volné k použití, úpravám a sdílení v komunitě.
 * **Záruka:** software je poskytován „tak jak je", bez jakékoli záruky. Použití na vlastní riziko.
+
+---
+
+### Galerie
+
+![Chicago Overlay - závodní HUD v Assetto Corse na 60 Hz](assets/ingame_ac.jpg)
+
+![Chicago Overlay - ovládací centrum, spuštění a úlohy, úklid a křivky ventilátorů](assets/promo_windows.png)
+
+![Widgety na ploše - hodiny, přehrávaná skladba a audio spektrum na desktopu](assets/desktop.jpg)
+
+![Stejný HUD ve vizuálním editoru - drag & drop, mřížka, živý inspektor, nula kódu](assets/desktop_edit.jpg)
+
+![Zoom plátna editoru na 305 % - profesionální zoom pro drobné prvky: Ctrl+kolečko na střed, Alt+kolečko ke kurzoru, Ctrl+Alt+drag posouvá, plovoucí pilulka vrací na 100 %](assets/desktop_zoom.png)
+
+![Počítané grid nody - perspektivní synthwave plošina s crawl textem zmenšujícím se do dálky a 3D EQ spektrum zaplňující buňky mřížky živě](assets/synthwave_stage.png)
+
+![Tron tunel - překlopená stropní plošina s crawl textem mířícím k horizontu nad podlahovou plošinou s živým 3D EQ spektrem](assets/4.png)

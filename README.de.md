@@ -1,3 +1,9 @@
+https://github.com/user-attachments/assets/f295d1df-57e7-49dc-af6d-08ef3f8c6a13
+
+[![1.5 Teaser-Video - Chicago Overlay in Aktion](assets/promo_windows.png)](https://github.com/RadimSvatek/chicago-overlay/releases/download/v1.5.527/chicago1_5.mp4)
+
+*▶ 1.5-Teaser-Video ansehen (mp4)*
+
 ![Chicago Overlay](assets/chicago_banner.png)
 
 *Seit Projekt Chicago fehlte Windows eine Ebene, die mehr ist als ein modisches Accessoire. Also habe ich sie verbunden.*
@@ -7,23 +13,6 @@ Gebaut für Sim-Racing (über SimHub), PC-Hardware-Monitoring und sichere Lüfte
 
 **2.205 bindbare Props - 723 eingebaute + 1.482 aus der kompletten SimHub-Telemetrie. Zieh jeden per Drag-and-Drop-Editor auf deine Leinwand: HUD, Pille, Widget oder RTSS-Ingame-Overlay. Null Code, der Look ist zu 100% deine Fantasie.**
 
-[![1.5 Teaser-Video - Chicago Overlay in Aktion](assets/promo_windows.png)](https://github.com/RadimSvatek/chicago-overlay/releases/download/v1.5.527/chicago1_5.mp4)
-
-*▶ 1.5-Teaser-Video ansehen (mp4)*
-
-![Chicago Overlay - Assetto-Corsa-Renn-HUD mit 60 Hz](assets/ingame_ac.jpg)
-
-![Chicago Overlay - Kontrollzentrum, Autostart & Aufgaben, Bereinigung und Lüfterkurven](assets/promo_windows.png)
-
-![Desktop-Widgets - Uhr, aktueller Titel und Audiospektrum auf dem Desktop](assets/desktop.jpg)
-
-![Dasselbe HUD im visuellen Editor - Drag & Drop, Fangraster, Live-Inspektor, null Code](assets/desktop_edit.jpg)
-
-![Editor-Zoom bei 305 % - Pro-Zoom für winzige Elemente: Strg+Rad zur Mitte, Alt+Rad zum Cursor, Strg+Alt+Ziehen schwenkt, schwebende Pill setzt auf 100 % zurück](assets/desktop_zoom.png)
-
-![Berechnete Grid-Knoten - perspektivische Synthwave-Plattform mit tiefengestaffeltem Crawl-Text und einem 3D-EQ-Spektrum, das die Rasterzellen live füllt](assets/synthwave_stage.png)
-
-![Tron-Tunnel - umgedrehte Deckenplattform mit Crawl-Text, der am Horizont über einer Bodenplattform mit live 3D-EQ-Spektrum zusammenläuft](assets/4.png)
 
 ---
 
@@ -135,14 +124,18 @@ Ein Installer, zwei Editionen. Du wählst direkt nach der Infoseite - und kannst
 |---|:---:|:---:|
 | HUD-Overlay, Layouts & visueller Editor | ✓ | - |
 | SimHub-Renntelemetrie | ✓ | - |
-| Media-Info & Audiospektrum | ✓ | - |
+| Widgets & Medien auf der Leinwand | ✓ | - |
 | FPS & Frametimes (PresentMon) | ✓ | ✓ |
 | Lüftersteuerung, Kurven & Guardian-Watchdog | ✓ | ✓ |
 | HW-Info, Sensoren & Netzwerk-Monitoring | ✓ | ✓ |
 | Stresstest, Session-Reports & Warnungen | ✓ | ✓ |
 | System-Bereinigung & Autostart-/Aufgaben-Manager | ✓ | ✓ |
 | Einstellungen, Updates, Autostart, 8 Sprachen | ✓ | ✓ |
-| WebView2-Runtime geladen | ✓ | niemals |
+| RGB-Aura, LED-Matrizen & Tastatur als Canvas | ✓ | ✓ |
+| EQ-Spektrum & Media-Props auf RGB/LED-Ausgaben | ✓ | ✓ |
+| Datenbus: MQTT, HTTP/JSON, Webhooks, HWiNFO SM | ✓ | ✓ |
+| Eigene & berechnete Props, AI-Datenlink | ✓ | ✓ |
+| WebView2-Runtime | im Paket | nicht nötig |
 
 *Beide Editionen bekommen einen eigenen Startmenü-Shortcut (Desktop optional). Werkzeuge ist dieselbe `chicago.exe` im dedizierten `--tools`-Modus - kein Overlay, kein SimHub, minimaler RAM.*
 
@@ -189,3 +182,21 @@ Danke fürs Ausprobieren - wir sehen uns auf der Strecke!
 * **Quellcode:** nicht öffentlich - bleibt privat beim Autor. Jede Verwendung des Codes in anderen Projekten oder Produkten erfordert die Erlaubnis des Autors.
 * **Layouts & Sprachpakete (`.json`):** frei nutzbar, veränderbar und in der Community teilbar.
 * **Gewährleistung:** die Software wird „wie besehen" ohne jegliche Gewährleistung bereitgestellt. Nutzung auf eigene Gefahr.
+
+---
+
+### Galerie
+
+![Chicago Overlay - Assetto-Corsa-Renn-HUD mit 60 Hz](assets/ingame_ac.jpg)
+
+![Chicago Overlay - Kontrollzentrum, Autostart & Aufgaben, Bereinigung und Lüfterkurven](assets/promo_windows.png)
+
+![Desktop-Widgets - Uhr, aktueller Titel und Audiospektrum auf dem Desktop](assets/desktop.jpg)
+
+![Dasselbe HUD im visuellen Editor - Drag & Drop, Fangraster, Live-Inspektor, null Code](assets/desktop_edit.jpg)
+
+![Editor-Zoom bei 305 % - Pro-Zoom für winzige Elemente: Strg+Rad zur Mitte, Alt+Rad zum Cursor, Strg+Alt+Ziehen schwenkt, schwebende Pill setzt auf 100 % zurück](assets/desktop_zoom.png)
+
+![Berechnete Grid-Knoten - perspektivische Synthwave-Plattform mit tiefengestaffeltem Crawl-Text und einem 3D-EQ-Spektrum, das die Rasterzellen live füllt](assets/synthwave_stage.png)
+
+![Tron-Tunnel - umgedrehte Deckenplattform mit Crawl-Text, der am Horizont über einer Bodenplattform mit live 3D-EQ-Spektrum zusammenläuft](assets/4.png)

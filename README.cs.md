@@ -149,7 +149,7 @@ Jeden instalátor, dvě edice. Vybíráš hned po úvodní stránce - a druhou e
 
 ### Stažení
 
-[![Download](https://img.shields.io/github/v/release/RadimSvatek/chicago-overlay?label=stáhnout&color=18D4C2)](https://github.com/RadimSvatek/chicago-overlay/releases/latest)
+**[Stáhnout nejnovější verzi](https://github.com/RadimSvatek/chicago-overlay/releases/latest)**
 
 Stáhni nejnovější `chicago_overlay_<ver>.zip` z **[Releases](../../releases)**, rozbal a spusť setup uvnitř (prerekvizity .NET 8 + WebView2 jsou v balení). Vestavěný update checker upozorní na nové verze. Každý release zveřejňuje SHA-256 setupu a odkaz na [VirusTotal](https://www.virustotal.com/) - když SmartScreen varuje před nepodepsaným freewarem, soubor ověříš jedním kliknutím.
 

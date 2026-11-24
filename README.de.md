@@ -149,7 +149,7 @@ Ein Installer, zwei Editionen. Du wählst direkt nach der Infoseite - und kannst
 
 ### Download
 
-[![Download](https://img.shields.io/github/v/release/RadimSvatek/chicago-overlay?label=download&color=18D4C2)](https://github.com/RadimSvatek/chicago-overlay/releases/latest)
+**[Neueste Version herunterladen](https://github.com/RadimSvatek/chicago-overlay/releases/latest)**
 
 Hol dir das neueste `chicago_overlay_<ver>.zip` aus den **[Releases](../../releases)**, entpacke es und starte das Setup darin (.NET-8- & WebView2-Voraussetzungen sind gebündelt). Der eingebaute Update-Checker meldet neue Versionen. Jedes Release veröffentlicht den SHA-256 des Setups und einen [VirusTotal](https://www.virustotal.com/)-Link - falls SmartScreen vor unsignierter Freeware warnt, lässt sich die Datei mit einem Klick prüfen.
 

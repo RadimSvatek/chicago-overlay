@@ -40,6 +40,8 @@ Most hardware and telemetry tools end at a passive table inside their own window
   * **Winamp-style magnetizing:** module edges snap to each other as you drag, and modules touching edge-to-edge link with a visible joint - your connected components literally dock together.
   * Right-click any module for **properties**: size, custom image, custom font - and on hardware components a **run-as-administrator flag** so admin rights apply only where actually needed, never dragging down WebView2 elsewhere.
   * Map settings live behind one button: background grid on/off, edge magnetizing, default module size, custom background image, layout reset. **Fullscreen mode (F11)** turns the map into a dedicated control surface. The installer puts a "Chicago Map" shortcut on the desktop and in Start - or run `chicago.exe /map`.
+  * 📖 **[The Map Cheat Sheet & Theme Ideas](MAP.md)** - spatial memory tricks, per-module security and theme builds (ISS, floorplan, talent tree, Winamp rack).
+
 * **Open data channels - the ship talks to your whole house (experimental):**
   * Every channel is a JSON file in `data\` - the app reads it, spawns the source, and its values land on the same prop bus as telemetry: bindable to layouts, widgets, auras, alerts and macros with zero code. Everything is demand-gated - a channel runs only while something actually reads it.
   * **Smart home & IoT:** MQTT subscribe (topics with wildcards, JSON payloads flatten into props) + `mqtt:pub` back channel; Home Assistant over its websocket API (live `state_changed` push + `ha:` service calls back); a universal HTTP/JSON poller with custom headers (Bearer/API keys, DPAPI-encrypted secrets) and `http:post` write-back.

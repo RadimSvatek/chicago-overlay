@@ -38,6 +38,8 @@ Die meisten Hardware- und Telemetrie-Tools enden bei einer passiven Tabelle im e
   * **Magnetisierung im Winamp-Stil:** Modulkanten rasten beim Ziehen aneinander ein und sich beruehrende Module verbinden sich mit einem sichtbaren Gelenk - deine Komponenten docken buchstaeblich an.
   * Rechtsklick auf ein Modul = **Eigenschaften**: Groesse, eigenes Bild, eigene Schrift - und bei Hardware-Komponenten ein **Als-Administrator-ausfuehren-Flag**, damit Adminrechte nur dort gelten, wo sie wirklich gebraucht werden, und WebView2 nicht darunter leidet.
   * Karteneinstellungen hinter einem Button: Hintergrundraster an/aus, Kantenmagnetisierung, Standardgroesse, eigenes Hintergrundbild, Reset. **Vollbild (F11)** macht die Karte zur eigenen Bedienflaeche. Der Installer legt eine "Chicago Karte"-Verknuepfung auf Desktop und ins Startmenue - oder `chicago.exe /map`.
+  * 📖 **[Karten-Spickzettel & Themen-Ideen](MAP.md)** - raeumliches Gedaechtnis, Sicherheit pro Modul und Builds (ISS, Grundriss, Talentbaum, Winamp-Rack).
+
 * **Offene Datenkanaele - das Schiff spricht mit dem ganzen Haus (experimental):**
   * Jeder Kanal ist eine JSON-Datei in `data\` - die App liest sie, startet die Quelle und ihre Werte landen auf demselben Prop-Bus wie Telemetrie: bindbar in Layouts, Widgets, Auren, Alerts und Makros ohne eine Zeile Code. Alles laeuft bedarfsgesteuert - ein Kanal lebt nur solange ihn etwas liest.
   * **Smart Home & IoT:** MQTT-Subscribe (Topics mit Wildcards, JSON-Payloads werden zu Props) + Rueckkanal `mqtt:pub`; Home Assistant ueber die Websocket-API (live `state_changed` Push + Service-Aufrufe `ha:`); universeller HTTP/JSON-Poller mit eigenen Headern (Bearer/API-Keys, DPAPI-verschluesselte Secrets) und `http:post` Rueckschreiben.

@@ -38,6 +38,8 @@ Většina hardware a telemetrických nástrojů končí pasivní tabulkou ve vla
   * **Magnetizace ve stylu Winampu:** hrany modulu se pri tazeni prichytavaji k sobe a moduly co se dotykaji hranou se propoji viditelnym kloubem - propojene komponenty se doslova dokuj k sobe.
   * Pravy klik na modul = **vlastnosti**: velikost, vlastni obrazek, vlastni pismo - a u hw komponent **fajfka "spoustet jako spravce"**, takze admin prava jsou jen tam, kde jsou opravdu potreba, a webview za nimi netrpi.
   * Nastaveni mapy je pod jednim tlacitkem: mrizka na pozadi, magnetizace, vychozi velikost modulu, vlastni pozadi, reset. **Fullscreen (F11)** meni mapu na dedikovanou ovladaci plochu. Instalator dava zastupce "Chicago Mapa" na plochu i do Startu - nebo `chicago.exe /map`.
+  * 📖 **[Tahak Mapy a navody na témata](MAP.md)** - triky prostorove pameti, bezpecnost per modul a stavby (ISS, pudorys, talent tree, Winamp rack).
+
 * **Otevrene datove kanaly - lod mluvi s celou domacnosti (experimental):**
   * Kazdy kanal je JSON soubor v `data\` - appka ho precte, zdroj spusti a jeho hodnoty pristanou na stejne sbernici props jako telemetrie: bindovatelne do layoutu, widgetu, aur, alertu i maker bez radku kodu. Vsechno bezi na poptavku - kanal zije jen kdyz ho neco cte.
   * **Chytra domacnost a IoT:** MQTT subscribe (topicy s wildcardy, JSON payloady se rozsplaskati na props) + zpetny kanal `mqtt:pub`; Home Assistant pres websocket API (zive `state_changed` push + volani sluzeb `ha:`); univerzalni HTTP/JSON poller s vlastnimi hlavickami (Bearer/API klice, DPAPI sifrovane tajemstvi) a zapis `http:post`.

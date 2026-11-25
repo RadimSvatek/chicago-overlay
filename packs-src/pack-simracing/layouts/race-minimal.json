@@ -1,0 +1,504 @@
+{
+ "_seed": true,
+ "grid": {
+  "snap": true,
+  "step": 20
+ },
+ "nodes": [
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "p_main",
+   "type": "box",
+   "x": -412,
+   "y": -54,
+   "w": 568,
+   "h": 328,
+   "bg": true,
+   "bgColor": "#0a0d14",
+   "bgAlpha": 58,
+   "radius": 9,
+   "borderW": 1,
+   "borderColor": "#232c3c"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "flag_blue",
+   "type": "flag",
+   "flag": "blue",
+   "x": -396,
+   "y": -280,
+   "w": 53,
+   "h": 40,
+   "bg": true
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "flag_yel",
+   "type": "flag",
+   "flag": "yellow",
+   "x": -337,
+   "y": -280,
+   "w": 53,
+   "h": 40,
+   "bg": true
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "flag_red",
+   "type": "flag",
+   "flag": "red",
+   "x": -278,
+   "y": -280,
+   "w": 53,
+   "h": 40,
+   "bg": true
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "flag_chk",
+   "type": "flag",
+   "flag": "checkered",
+   "x": -219,
+   "y": -280,
+   "w": 53,
+   "h": 40,
+   "bg": true
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "d_top",
+   "type": "box",
+   "x": -396,
+   "y": -273,
+   "w": 512,
+   "h": 1,
+   "bg": true,
+   "bgColor": "#232c3c",
+   "bgAlpha": 60
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "c_flags",
+   "type": "data",
+   "text": "FLAGS",
+   "x": -396,
+   "y": -340,
+   "color": "#6b7688",
+   "font": {
+    "family": "droid",
+    "size": 16,
+    "weight": 500
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "c_pos",
+   "type": "data",
+   "text": "POS",
+   "x": 100,
+   "y": -340,
+   "color": "#6b7688",
+   "font": {
+    "family": "droid",
+    "size": 16,
+    "weight": 500
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "pos",
+   "type": "data",
+   "prop": "Position",
+   "x": 100,
+   "y": -295,
+   "w": 70,
+   "color": "#ffd24a",
+   "font": {
+    "family": "seg7c",
+    "size": 30,
+    "weight": 700
+   },
+   "align": "left",
+   "digits": 2,
+   "mono": true,
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "c_lap",
+   "type": "data",
+   "text": "LAP",
+   "x": -50,
+   "y": -340,
+   "color": "#6b7688",
+   "font": {
+    "family": "droid",
+    "size": 16,
+    "weight": 500
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "lap_n",
+   "type": "data",
+   "prop": "CompletedLaps",
+   "x": -50,
+   "y": -295,
+   "w": 45,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 24,
+    "weight": 700
+   },
+   "align": "right",
+   "digits": 2,
+   "mono": true,
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "lap_sep",
+   "type": "data",
+   "text": "/",
+   "x": 10,
+   "y": -295,
+   "color": "#aab4c4",
+   "font": {
+    "family": "droid",
+    "size": 20,
+    "weight": 500
+   },
+   "align": "center"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "lap_t",
+   "type": "data",
+   "prop": "TotalLaps",
+   "x": 24,
+   "y": -295,
+   "w": 45,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 24,
+    "weight": 400
+   },
+   "align": "left",
+   "digits": 2,
+   "mono": true,
+   "dec": 0
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "c_spd",
+   "type": "data",
+   "text": "SPEED KM/H",
+   "x": -396,
+   "y": -242,
+   "color": "#6b7688",
+   "font": {
+    "family": "droid",
+    "size": 16,
+    "weight": 500
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "speed",
+   "type": "data",
+   "prop": "SpeedKmh",
+   "x": -396,
+   "y": -185,
+   "w": 150,
+   "color": "#eef2f8",
+   "font": {
+    "family": "seg7c",
+    "size": 34,
+    "weight": 700
+   },
+   "align": "left",
+   "digits": 3,
+   "mono": true
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "c_gear",
+   "type": "data",
+   "text": "GEAR",
+   "x": -216,
+   "y": -242,
+   "color": "#6b7688",
+   "font": {
+    "family": "droid",
+    "size": 16,
+    "weight": 500
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "gear",
+   "type": "data",
+   "prop": "Gear",
+   "x": -216,
+   "y": -185,
+   "w": 80,
+   "color": "#ffd24a",
+   "font": {
+    "family": "seg7m",
+    "size": 48,
+    "weight": 700
+   },
+   "align": "left",
+   "digits": 1,
+   "mono": true
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "c_rpm",
+   "type": "data",
+   "text": "RPM",
+   "x": -116,
+   "y": -242,
+   "color": "#6b7688",
+   "font": {
+    "family": "droid",
+    "size": 16,
+    "weight": 500
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "rpm",
+   "type": "bar",
+   "prop": "Rpms",
+   "x": -116,
+   "y": -216,
+   "w": 256,
+   "h": 14,
+   "orient": "h",
+   "min": 0,
+   "max": 14200,
+   "color": "#37f06a",
+   "bg": true,
+   "bgAlpha": 45,
+   "bgColor": "#080810",
+   "rules": [
+    {
+     "when": "v > 12500",
+     "then": {
+      "blink": true,
+      "color": "#ff4646"
+     }
+    }
+   ]
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "c_dlt",
+   "type": "data",
+   "text": "DELTA",
+   "x": -116,
+   "y": -184,
+   "color": "#6b7688",
+   "font": {
+    "family": "droid",
+    "size": 16,
+    "weight": 500
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "delta",
+   "type": "bar",
+   "prop": "DeltaToSessionBest",
+   "x": -116,
+   "y": -168,
+   "w": 256,
+   "h": 8,
+   "orient": "c",
+   "min": -1,
+   "max": 1,
+   "color": "#ff4646",
+   "bg": true,
+   "bgAlpha": 45,
+   "bgColor": "#080810",
+   "colorNeg": "#37f06a"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "c_thr",
+   "type": "data",
+   "text": "THROTTLE",
+   "x": -396,
+   "y": -130,
+   "color": "#6b7688",
+   "font": {
+    "family": "droid",
+    "size": 16,
+    "weight": 500
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "c_brk",
+   "type": "data",
+   "text": "BRAKE",
+   "x": -240,
+   "y": -130,
+   "color": "#6b7688",
+   "font": {
+    "family": "droid",
+    "size": 16,
+    "weight": 500
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "g_thr",
+   "type": "graph",
+   "prop": "Throttle",
+   "x": -396,
+   "y": -80,
+   "w": 140,
+   "h": 40,
+   "color": "#37f06a",
+   "min": 0,
+   "max": 100
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "g_brk",
+   "type": "graph",
+   "prop": "Brake",
+   "x": -240,
+   "y": -80,
+   "w": 140,
+   "h": 40,
+   "color": "#ff4646",
+   "min": 0,
+   "max": 100
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "c_gap",
+   "type": "data",
+   "text": "GAP",
+   "x": -80,
+   "y": -130,
+   "color": "#6b7688",
+   "font": {
+    "family": "droid",
+    "size": 16,
+    "weight": 500
+   },
+   "align": "left"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "gap_a_l",
+   "type": "data",
+   "text": "ahead",
+   "x": -30,
+   "y": -102,
+   "color": "#6b7688",
+   "font": {
+    "family": "droid",
+    "size": 16,
+    "weight": 500
+   },
+   "align": "right"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "gap_a",
+   "type": "data",
+   "prop": "GapAhead",
+   "x": -18,
+   "y": -102,
+   "w": 90,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 20,
+    "weight": 400
+   },
+   "align": "left",
+   "unit": "s",
+   "dec": 1
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "gap_b_l",
+   "type": "data",
+   "text": "behind",
+   "x": -30,
+   "y": -74,
+   "color": "#6b7688",
+   "font": {
+    "family": "droid",
+    "size": 16,
+    "weight": 500
+   },
+   "align": "right"
+  },
+  {
+   "_on": null,
+   "anchor": "c",
+   "id": "gap_b",
+   "type": "data",
+   "prop": "GapBehind",
+   "x": -18,
+   "y": -74,
+   "w": 90,
+   "color": "#eef2f8",
+   "font": {
+    "family": "oxan",
+    "size": 20,
+    "weight": 400
+   },
+   "align": "left",
+   "unit": "s",
+   "dec": 1
+  }
+ ]
+}

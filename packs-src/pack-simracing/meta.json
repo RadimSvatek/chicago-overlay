@@ -1,0 +1,9 @@
+{
+  "id": "pack-simracing",
+  "type": "layout",
+  "ver": "1.0",
+  "name": "Sim Racing layouts",
+  "min_app": "1.6.736",
+  "desc_cs": "Závodní HUD layouty (race-hud, race-hw, race-minimal, race-pro, race-pro-2) + makro race-mode",
+  "desc_en": "Racing HUD layouts (race-hud, race-hw, race-minimal, race-pro, race-pro-2) + race-mode macro"
+}

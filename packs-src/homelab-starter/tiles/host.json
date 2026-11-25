@@ -1,0 +1,62 @@
+{
+ "span": 1,
+ "h": 160,
+ "rows": [
+  {
+   "h": 24,
+   "cells": [
+    {
+     "el": "label",
+     "text": "{name}",
+     "color": "#eef2f8",
+     "size": 13,
+     "weight": 700,
+     "w": 2
+    },
+    {
+     "el": "pill",
+     "prop": "{r}Ok",
+     "w": 1,
+     "map": {
+      "1": "On",
+      "0": "Off"
+     },
+     "colors": {
+      "1": "#37f06a",
+      "0": "#ff4646"
+     }
+    }
+   ]
+  },
+  {
+   "cells": [
+    {
+     "el": "spark",
+     "prop": "{r}Sys.Cpu",
+     "min": 0,
+     "max": 100,
+     "color": "#ffd24a"
+    }
+   ]
+  },
+  {
+   "h": 22,
+   "cells": [
+    {
+     "el": "value",
+     "prop": "{r}Sys.Cpu",
+     "unit": "%",
+     "size": 12,
+     "color": "#ffd24a"
+    },
+    {
+     "el": "value",
+     "prop": "{r}Sys.Ram",
+     "unit": "%",
+     "size": 12,
+     "color": "#c77dff"
+    }
+   ]
+  }
+ ]
+}

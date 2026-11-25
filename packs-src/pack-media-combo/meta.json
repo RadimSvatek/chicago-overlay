@@ -1,0 +1,9 @@
+{
+  "id": "pack-media-combo",
+  "type": "layout",
+  "ver": "1.0",
+  "name": "Media & combo layouts",
+  "min_app": "1.6.736",
+  "desc_cs": "Media a combo layouty (combo-desk, combo-hud, media-hud, media-hud-2, sci-fi, tune-lab)",
+  "desc_en": "Media and combo layouts (combo-desk, combo-hud, media-hud, media-hud-2, sci-fi, tune-lab)"
+}

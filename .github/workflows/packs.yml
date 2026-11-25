@@ -1,0 +1,42 @@
+name: packs
+
+on:
+  pull_request:
+    paths: ["packs-src/**", "tools/**"]
+  push:
+    branches: [main]
+    paths: ["packs-src/**", "tools/**"]
+
+permissions:
+  contents: write
+
+jobs:
+  validate:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate packs-src
+        run: python tools/validate_packs.py
+
+  build:
+    # jen push do main - PR validuje, nebuilduje ani necommituje
+    if: github.event_name == 'push'
+    needs: validate
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build cpk + index.json
+        run: python tools/build_packs.py
+      - name: Commit artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add packs/
+          git diff --cached --quiet || git commit -m "packs: rebuild cpk + index [skip ci]"
+          git push

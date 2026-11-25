@@ -9,31 +9,11 @@
       "desc_cs": "Dashboard homelab - KPI řada, vzdálené stroje (Remote.*), graf sítě + nová šablona dlaždice host",
       "desc_en": "Homelab dashboard - KPI row, remote machines (Remote.*), network chart + new host tile template",
       "zip": "homelab-starter.cpk",
-      "sha256": "cde50385e555873173b9499d2ba111b38a41b5caf3ffbc2ac7b4c0fac167113e",
-      "size": 1143,
+      "sha256": "20e00e97bf38e7992f8f06521e803ab4686ec8214e1701f17b7f0ba1ed5846c0",
+      "size": 1141,
       "files": [
         "dash.homelab.json",
         "tiles/host.json"
-      ]
-    },
-    {
-      "id": "pack-simracing",
-      "name": "Sim Racing layouts",
-      "ver": "1.0",
-      "type": "layout",
-      "min_app": "1.6.736",
-      "desc_cs": "Závodní HUD layouty (race-hud, race-hw, race-minimal, race-pro, race-pro-2) + makro race-mode",
-      "desc_en": "Racing HUD layouts (race-hud, race-hw, race-minimal, race-pro, race-pro-2) + race-mode macro",
-      "zip": "pack-simracing.cpk",
-      "sha256": "5805c3a9c328e6969f76d81bc78ef6d5370a890edf9effbc8445ae0664523a8e",
-      "size": 10878,
-      "files": [
-        "layouts/race-hud.json",
-        "layouts/race-hw.json",
-        "layouts/race-minimal.json",
-        "layouts/race-pro-2.json",
-        "layouts/race-pro.json",
-        "macros/race-mode.json"
       ]
     },
     {
@@ -45,7 +25,7 @@
       "desc_cs": "Case mod a desk layouty (rig-desk, rpi-5dash, rpi-7dash, maxi-hw, system-hw, ring-lab)",
       "desc_en": "Case mod and desk layouts (rig-desk, rpi-5dash, rpi-7dash, maxi-hw, system-hw, ring-lab)",
       "zip": "pack-casemod.cpk",
-      "sha256": "8ff9363bb015aedd19e0ace15b2b279186b61f035d14a47ae0fed1c2d0575f8f",
+      "sha256": "f484926bc9a71b110b51682b01639ff6377c45844de98a14c756f5f305be2bae",
       "size": 9500,
       "files": [
         "layouts/maxi-hw.json",
@@ -65,7 +45,7 @@
       "desc_cs": "Demoscene a stage layouty (demo-scene, flat-stage, persp-stage, fx-lab, saver-stars)",
       "desc_en": "Demoscene and stage layouts (demo-scene, flat-stage, persp-stage, fx-lab, saver-stars)",
       "zip": "pack-demoscene.cpk",
-      "sha256": "7fe4ac772223aeb8b103668c3bb8b1214adb1044888b18adde3925e63834e212",
+      "sha256": "5505d72245cf526d84adf8cfab7ba5be4d39f222ae560fef012c16b80caefff1",
       "size": 3761,
       "files": [
         "layouts/demo-scene.json",
@@ -84,7 +64,7 @@
       "desc_cs": "Media a combo layouty (combo-desk, combo-hud, media-hud, media-hud-2, sci-fi, tune-lab)",
       "desc_en": "Media and combo layouts (combo-desk, combo-hud, media-hud, media-hud-2, sci-fi, tune-lab)",
       "zip": "pack-media-combo.cpk",
-      "sha256": "229c893ae89e80bfd6ac74e5c96e8ca76198e3112444e23c1cf1d1db3339d097",
+      "sha256": "912f555332f1af67fd9cc543891c3e541c386cb8699ac70f27463a90af070978",
       "size": 10342,
       "files": [
         "layouts/combo-desk.json",
@@ -93,6 +73,26 @@
         "layouts/media-hud.json",
         "layouts/sci-fi.json",
         "layouts/tune-lab.json"
+      ]
+    },
+    {
+      "id": "pack-simracing",
+      "name": "Sim Racing layouts",
+      "ver": "1.0",
+      "type": "layout",
+      "min_app": "1.6.736",
+      "desc_cs": "Závodní HUD layouty (race-hud, race-hw, race-minimal, race-pro, race-pro-2) + makro race-mode",
+      "desc_en": "Racing HUD layouts (race-hud, race-hw, race-minimal, race-pro, race-pro-2) + race-mode macro",
+      "zip": "pack-simracing.cpk",
+      "sha256": "fe6cdf7430471f47eeb2106bfa2dea0103f5cd04c53249c3efef52d47e69327d",
+      "size": 10878,
+      "files": [
+        "layouts/race-hud.json",
+        "layouts/race-hw.json",
+        "layouts/race-minimal.json",
+        "layouts/race-pro-2.json",
+        "layouts/race-pro.json",
+        "macros/race-mode.json"
       ]
     }
   ]

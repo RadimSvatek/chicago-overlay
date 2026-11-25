@@ -1,0 +1,117 @@
+{
+ "cols": 4,
+ "pad": 16,
+ "gap": 12,
+ "canvas": {
+  "w": 1680
+ },
+ "tile": {
+  "h": 230
+ },
+ "tiles": [
+  {
+   "type": "card",
+   "tpl": "kpi",
+   "vars": {
+    "name": "CPU",
+    "p": "Sys.Cpu",
+    "u": "%",
+    "c": "#01cdfe",
+    "sub": "zatížení"
+   }
+  },
+  {
+   "type": "card",
+   "tpl": "kpi",
+   "vars": {
+    "name": "RAM",
+    "p": "Sys.Ram",
+    "u": "%",
+    "c": "#c77dff",
+    "sub": "paměť"
+   }
+  },
+  {
+   "type": "card",
+   "tpl": "kpi",
+   "vars": {
+    "name": "Stahování",
+    "p": "Net.Down",
+    "u": "kB/s",
+    "c": "#7dffce",
+    "sub": "internet"
+   }
+  },
+  {
+   "type": "card",
+   "tpl": "kpi",
+   "vars": {
+    "name": "Odesílání",
+    "p": "Net.Up",
+    "u": "kB/s",
+    "c": "#ffd24a",
+    "sub": "internet"
+   }
+  }
+ ],
+ "sections": [
+  {
+   "title": "Homelab stroje",
+   "color": "#01cdfe",
+   "tiles": [
+    {
+     "type": "card",
+     "tpl": "host",
+     "span": 1,
+     "vars": {
+      "name": "NAS",
+      "r": "Remote.nas."
+     }
+    },
+    {
+     "type": "card",
+     "tpl": "host",
+     "span": 1,
+     "vars": {
+      "name": "Server",
+      "r": "Remote.srv."
+     }
+    },
+    {
+     "type": "card",
+     "tpl": "host",
+     "span": 1,
+     "vars": {
+      "name": "Pi",
+      "r": "Remote.pi."
+     }
+    }
+   ]
+  },
+  {
+   "title": "Síť",
+   "color": "#7dffce",
+   "tiles": [
+    {
+     "type": "chart",
+     "title": "Internet",
+     "span": 2,
+     "h": 240,
+     "series": [
+      {
+       "prop": "Net.Down",
+       "color": "#01cdfe",
+       "max": 5000
+      },
+      {
+       "prop": "Net.Up",
+       "color": "#ff7d9d",
+       "max": 5000
+      }
+     ],
+     "axes": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "homelab-starter",
+  "type": "dash",
+  "ver": "1.0",
+  "name": "Homelab starter",
+  "min_app": "1.6.736",
+  "desc_cs": "Dashboard homelab - KPI řada, vzdálené stroje (Remote.*), graf sítě + nová šablona dlaždice host",
+  "desc_en": "Homelab dashboard - KPI row, remote machines (Remote.*), network chart + new host tile template"
+}

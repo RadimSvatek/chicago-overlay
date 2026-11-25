@@ -1,0 +1,9 @@
+{
+  "id": "pack-demoscene",
+  "type": "layout",
+  "ver": "1.0",
+  "name": "Demoscene layouts",
+  "min_app": "1.6.736",
+  "desc_cs": "Demoscene a stage layouty (demo-scene, flat-stage, persp-stage, fx-lab, saver-stars)",
+  "desc_en": "Demoscene and stage layouts (demo-scene, flat-stage, persp-stage, fx-lab, saver-stars)"
+}

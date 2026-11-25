@@ -1,0 +1,7 @@
+{
+  "name": "race mode",
+  "steps": [
+    { "act": "lay:race-pro.json" },
+    { "wait": 200, "act": "ident" }
+  ]
+}

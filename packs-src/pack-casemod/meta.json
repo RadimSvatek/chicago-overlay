@@ -1,0 +1,9 @@
+{
+  "id": "pack-casemod",
+  "type": "layout",
+  "ver": "1.0",
+  "name": "Case Modder layouts",
+  "min_app": "1.6.736",
+  "desc_cs": "Case mod a desk layouty (rig-desk, rpi-5dash, rpi-7dash, maxi-hw, system-hw, ring-lab)",
+  "desc_en": "Case mod and desk layouts (rig-desk, rpi-5dash, rpi-7dash, maxi-hw, system-hw, ring-lab)"
+}

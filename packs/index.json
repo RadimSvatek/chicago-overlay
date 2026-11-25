@@ -15,6 +15,85 @@
         "dash.homelab.json",
         "tiles/host.json"
       ]
+    },
+    {
+      "id": "pack-simracing",
+      "name": "Sim Racing layouts",
+      "ver": "1.0",
+      "type": "layout",
+      "min_app": "1.6.736",
+      "desc_cs": "Závodní HUD layouty (race-hud, race-hw, race-minimal, race-pro, race-pro-2) + makro race-mode",
+      "desc_en": "Racing HUD layouts (race-hud, race-hw, race-minimal, race-pro, race-pro-2) + race-mode macro",
+      "zip": "pack-simracing.cpk",
+      "sha256": "5805c3a9c328e6969f76d81bc78ef6d5370a890edf9effbc8445ae0664523a8e",
+      "size": 10878,
+      "files": [
+        "layouts/race-hud.json",
+        "layouts/race-hw.json",
+        "layouts/race-minimal.json",
+        "layouts/race-pro-2.json",
+        "layouts/race-pro.json",
+        "macros/race-mode.json"
+      ]
+    },
+    {
+      "id": "pack-casemod",
+      "name": "Case Modder layouts",
+      "ver": "1.0",
+      "type": "layout",
+      "min_app": "1.6.736",
+      "desc_cs": "Case mod a desk layouty (rig-desk, rpi-5dash, rpi-7dash, maxi-hw, system-hw, ring-lab)",
+      "desc_en": "Case mod and desk layouts (rig-desk, rpi-5dash, rpi-7dash, maxi-hw, system-hw, ring-lab)",
+      "zip": "pack-casemod.cpk",
+      "sha256": "8ff9363bb015aedd19e0ace15b2b279186b61f035d14a47ae0fed1c2d0575f8f",
+      "size": 9500,
+      "files": [
+        "layouts/maxi-hw.json",
+        "layouts/rig-desk.json",
+        "layouts/ring-lab.json",
+        "layouts/rpi-5dash.json",
+        "layouts/rpi-7dash.json",
+        "layouts/system-hw.json"
+      ]
+    },
+    {
+      "id": "pack-demoscene",
+      "name": "Demoscene layouts",
+      "ver": "1.0",
+      "type": "layout",
+      "min_app": "1.6.736",
+      "desc_cs": "Demoscene a stage layouty (demo-scene, flat-stage, persp-stage, fx-lab, saver-stars)",
+      "desc_en": "Demoscene and stage layouts (demo-scene, flat-stage, persp-stage, fx-lab, saver-stars)",
+      "zip": "pack-demoscene.cpk",
+      "sha256": "7fe4ac772223aeb8b103668c3bb8b1214adb1044888b18adde3925e63834e212",
+      "size": 3761,
+      "files": [
+        "layouts/demo-scene.json",
+        "layouts/flat-stage.json",
+        "layouts/fx-lab.json",
+        "layouts/persp-stage.json",
+        "layouts/saver-stars.json"
+      ]
+    },
+    {
+      "id": "pack-media-combo",
+      "name": "Media & combo layouts",
+      "ver": "1.0",
+      "type": "layout",
+      "min_app": "1.6.736",
+      "desc_cs": "Media a combo layouty (combo-desk, combo-hud, media-hud, media-hud-2, sci-fi, tune-lab)",
+      "desc_en": "Media and combo layouts (combo-desk, combo-hud, media-hud, media-hud-2, sci-fi, tune-lab)",
+      "zip": "pack-media-combo.cpk",
+      "sha256": "229c893ae89e80bfd6ac74e5c96e8ca76198e3112444e23c1cf1d1db3339d097",
+      "size": 10342,
+      "files": [
+        "layouts/combo-desk.json",
+        "layouts/combo-hud.json",
+        "layouts/media-hud-2.json",
+        "layouts/media-hud.json",
+        "layouts/sci-fi.json",
+        "layouts/tune-lab.json"
+      ]
     }
   ]
 }

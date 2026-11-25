@@ -1,0 +1,20 @@
+{
+  "packs": [
+    {
+      "id": "homelab-starter",
+      "name": "Homelab starter",
+      "ver": "1.0",
+      "type": "dash",
+      "min_app": "1.6.736",
+      "desc_cs": "Dashboard homelab - KPI řada, vzdálené stroje (Remote.*), graf sítě + nová šablona dlaždice host",
+      "desc_en": "Homelab dashboard - KPI row, remote machines (Remote.*), network chart + new host tile template",
+      "zip": "homelab-starter.cpk",
+      "sha256": "cde50385e555873173b9499d2ba111b38a41b5caf3ffbc2ac7b4c0fac167113e",
+      "size": 1143,
+      "files": [
+        "dash.homelab.json",
+        "tiles/host.json"
+      ]
+    }
+  ]
+}

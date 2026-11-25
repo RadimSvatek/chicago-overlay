@@ -7,6 +7,7 @@ https://github.com/user-attachments/assets/f295d1df-57e7-49dc-af6d-08ef3f8c6a13
 *Od dob projektu Chicago systému Windows něco scházelo - vrstva, která je víc než módní doplněk. A tak jsem ji spojil.*
 
 **Lehký, plně přizpůsobitelný telemetrický a systémový HUD overlay pro Windows 10/11 na víc monitorů.**
+*Windows 10 už Microsoft nepodporuje. Chicago Overlay by mělo stále běžet, ale tato konfigurace není testovaná ani zaručená.*
 Postavený pro simracing (přes SimHub), sledování hardwaru PC a bezpečné řízení ventilátorů na úrovni hardware - ale hlavně je to vrstva, co Windows nikdy neměly: vizuální stavitel widgetů pro cokoliv, co tvůj počítač ví. Editor drag-and-drop, 1 400+ datových zdrojů, texty, lišty, grafy i obrázky kdekoli na každé obrazovce - bez jediného řádku kódu. Závodní HUD v sobotu, PC dashboard v neděli - stejný motor, tvůj layout.
 
 **2 269 bindovatelných propů - 787 vestavěných + 1 482 z celé SimHub telemetrie. Každý přetáhneš na plátno drag-and-drop editorem: HUD, pilulka, widget nebo RTSS overlay přímo ve hře. Nula kódu, vzhled je 100% tvoje fantazie.**

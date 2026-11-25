@@ -9,6 +9,7 @@ https://github.com/user-attachments/assets/f295d1df-57e7-49dc-af6d-08ef3f8c6a13
 *Since Project Chicago, Windows was missing a layer that is more than a fashion accessory. So I wired it up.*
 
 **A lightweight, customizable, multi-monitor telemetry & system HUD overlay for Windows 10/11.**
+*Windows 10 is no longer supported by Microsoft. Chicago Overlay should still run, but this configuration is not tested and not guaranteed.*
 Built for sim racing (via SimHub), PC hardware monitoring, and safe hardware-level fan control - but really, it is the layer Windows never shipped: a visual widget builder for anything your PC knows. Drag-and-drop layout editor, 1,400+ data sources, text, bars, graphs and images anywhere on any screen - zero code. Race HUD on Saturday, PC dashboard on Sunday - the same engine, your layout.
 
 **2,269 bindable props - 787 built-in + 1,482 from the full SimHub telemetry feed. Drag any of them onto your canvas with the drag-and-drop editor: HUD, pill, widget or RTSS in-game overlay. Zero code, the look is 100% your imagination.**

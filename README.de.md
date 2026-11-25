@@ -9,7 +9,7 @@ https://github.com/user-attachments/assets/f295d1df-57e7-49dc-af6d-08ef3f8c6a13
 **Ein leichtgewichtiges, frei anpassbares Multi-Monitor-Telemetrie- und System-HUD-Overlay für Windows 10/11.**
 Gebaut für Sim-Racing (über SimHub), PC-Hardware-Monitoring und sichere Lüftersteuerung auf Hardware-Ebene - aber eigentlich ist es die Ebene, die Windows nie hatte: ein visueller Widget-Baukasten für alles, was dein PC weiß. Drag-and-Drop-Layouteditor, 1.400+ Datenquellen, Texte, Balken, Graphen und Bilder überall auf jedem Bildschirm - null Code. Renn-HUD am Samstag, PC-Dashboard am Sonntag - dieselbe Engine, dein Layout.
 
-**2.205 bindbare Props - 723 eingebaute + 1.482 aus der kompletten SimHub-Telemetrie. Zieh jeden per Drag-and-Drop-Editor auf deine Leinwand: HUD, Pille, Widget oder RTSS-Ingame-Overlay. Null Code, der Look ist zu 100% deine Fantasie.**
+**2.269 bindbare Props - 787 eingebaute + 1.482 aus der kompletten SimHub-Telemetrie. Zieh jeden per Drag-and-Drop-Editor auf deine Leinwand: HUD, Pille, Widget oder RTSS-Ingame-Overlay. Null Code, der Look ist zu 100% deine Fantasie.**
 
 
 ---
@@ -18,7 +18,7 @@ Gebaut für Sim-Racing (über SimHub), PC-Hardware-Monitoring und sichere Lüfte
 
 Die meisten Hardware- und Telemetrie-Tools enden bei einer passiven Tabelle im eigenen Fenster. Chicago Overlay geht weiter - vier Schichten, eine Datenengine:
 
-- **Komplette HW-Diagnostik & Inventur** - Erkennung auf dem Niveau der Besten - like CPU-Z, GPU-Z oder HWiNFO, in einer sauberen durchsuchbaren Tabelle mit CSV-Export (723 eingebaute Props + 1.482 aus der SimHub-Telemetrie = **2.205 gesamt**).
+- **Komplette HW-Diagnostik & Inventur** - Erkennung auf dem Niveau der Besten - like CPU-Z, GPU-Z oder HWiNFO, in einer sauberen durchsuchbaren Tabelle mit CSV-Export (787 eingebaute Props + 1.482 aus der SimHub-Telemetrie = **2.269 gesamt**).
 - **Mehrere visuelle Ausgänge** - WebView-Canvas, natives WPF oder RTSS-Text. Jeder Wert aus der Tabelle geht direkt auf deinen Bildschirm, ins Spiel im exklusiven Vollbild oder auf den zweiten Monitor.
 - **Zwei Bedienmodi** - Easy-Modus Pillen/Widgets: klicken, Skin und Werte wählen, mit der Maus ziehen - fertig in 10 Sekunden, ohne WebView2. Fortgeschrittener Inspektor (`Strg+Alt+E`): volle kreative Freiheit ohne Code - 25-800 % Zoom, 3D-Perspektivgrids, EQ, eigene Graphen, Ebenen, Clipboard-Sharing.
 - **Ehrliche System-Tools obendrauf** - Lüfterkurven mit Guardian-Watchdog, CPU/GPU/RAM-Stresstest, der schnelle T800-Cleaner und Start-&-Tasks-Manager in einer einzigen leichten App.
@@ -60,6 +60,10 @@ Die meisten Hardware- und Telemetrie-Tools enden bei einer passiven Tabelle im e
   * **Direkt auf dem Desktop greifen und ziehen** im Edit-Modus (`Strg+Alt+E`) - die Position speichert sich von selbst, Click-Through kehrt danach zurück.
   * Pro Widget: horizontale oder vertikale Ausrichtung, eigener Name (im Tray-Untermenü sichtbar), **fertige Theme-Presets** statt endloser Farbspielerei, Gesamt-Transparenz plus separates Hintergrund-Alpha und Eckenradius (standardmäßig Kapsel, `0` = eckig).
   * Jedes Widget ist eine Zeile (oder Spalte) Live-Werte mit eigenem Skin - FPS, Frametimes, CPU, RAM, GPU-Last & -Temperatur… je nach gewählter Quelle. Ein fertiges `start-widget` liegt ab der Erstinstallation bei, Widgets schalten sich direkt im Tray-Menü um, und ein eigenes Widget-Fenster verwaltet sie alle.
+* **HUD im Fenster - jedes Layout als eigenständiges Fenster:**
+  * Das Tray-Menü „Fenster" verwandelt ein Layout in ein normales Fenster, komplett entkoppelt von der Monitorzuordnung - „neu" startet weitere Instanzen, mehrere Fenster laufen gleichzeitig (auch dasselbe Layout zweimal). Ein Layout kann auf der HUD-Fläche und im Fenster gleichzeitig leben.
+  * Die Titelleiste trägt Slider für Fenster-Deckkraft und Canvas-Zoom, Häkchen für Titelleiste / Vollbild F11 / Maximieren und ein Layout-Dropdown zum Wechseln des Inhalts; Rechtsklick auf die Leinwand öffnet das Fenstermenü (immer im Vordergrund, Slider, Inspektor, schließen). Buttons reagieren im Fenster-Render auf direkte Klicks.
+  * Der Fensterzustand (Position, Größe, Deckkraft, Zoom, Hintergrund) liegt in der `win`-Sektion des Layouts und überlebt Neustart und `.cpk`-Export.
 * **Render-Engine pro Monitor:**
   * `webview` oder `native` pro Anzeige wählbar - die native Engine zeichnet `data`- & `box`-Layoutknoten direkt in WPF, **ganz ohne WebView2-Prozess** auf diesem Bildschirm: weniger RAM, sofortiges Zeichnen und feste Ziffernslots, sodass Werte nie zittern. Ein Layout nur mit Pill startet WebView gar nicht - der Monitor läuft automatisch nativ, und `Strg+Alt+I` zeigt, welche Engine wo wirklich läuft.
 * **RTSS-Ingame-OSD:**
@@ -71,7 +75,7 @@ Die meisten Hardware- und Telemetrie-Tools enden bei einer passiven Tabelle im e
   * Aura-Regeln pro Prop steuern Tastatur- und Soundkarten-LEDs - nativ, ohne externes Tool, oder via OpenRGB als eigenem Kanal. Backend-Wahl pro Gerät und Dedup sorgen dafür, dass sich zwei Kanäle nie um dieselbe Hardware streiten.
 * **Intelligente Quellen-Überwachung - Häkchen = Erlaubnis, Lauf = Bedarf:**
   * Eine erlaubte Quelle läuft nicht mehr, nur weil die App offen ist. EQ, Uhr, HW-Monitoring und PresentMon starten nur solange sie etwas verbraucht (Layout, Widget, RTSS-Stream, Alarm, laufende Session, Lüftersteuerung, offenes HW-Fenster) - und stoppen, sobald sie keiner braucht. Idle-Tray-Icon = Idle-App.
-  * **Chicago überwacht sich selbst:** `App.*`-Props zeigen eigene CPU, privaten & geteilten RAM, WebView-Prozesszahl und deren Kosten, Threads, Fensterzahlen und den Status jeder Quelle. Die Seite **Quellen** zeigt Live-Verbrauch und *warum* jede Quelle läuft oder ruht.
+  * **Chicago überwacht sich selbst:** `App.*`-Props zeigen eigene CPU, privaten & geteilten RAM, WebView-Prozesszahl und deren Kosten, Threads, Fensterzahlen und den Status jeder Quelle - plus Installations-/Daten-/Brand-Pfade und die App-Version für Text- & Web-Knoten (`app:`-Brand-Assets im Lieferumfang). Die Seite **Quellen** zeigt Live-Verbrauch und *warum* jede Quelle läuft oder ruht.
 * **Auto-Profile (spielabhängiges HUD):**
   * Wechselt Layouts automatisch, wenn ein Spiel oder ein beliebiger Prozess startet - Renn-HUD beim Start, nach dem Beenden zurück zum aufgeräumten Desktop. Erkennung über Prozessname oder SimHub-Spielname (Teilübereinstimmung). Ein Profil kann auch ein Layout über das Basislayout legen (`ov:`) oder stattdessen ein Makro ausführen.
   * Pro Monitor oder für alle, plus „HUD aus"-Regeln - z. B. Rennlayout auf dem Hauptbildschirm, Seitenmonitore dunkel.

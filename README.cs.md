@@ -9,7 +9,7 @@ https://github.com/user-attachments/assets/f295d1df-57e7-49dc-af6d-08ef3f8c6a13
 **Lehký, plně přizpůsobitelný telemetrický a systémový HUD overlay pro Windows 10/11 na víc monitorů.**
 Postavený pro simracing (přes SimHub), sledování hardwaru PC a bezpečné řízení ventilátorů na úrovni hardware - ale hlavně je to vrstva, co Windows nikdy neměly: vizuální stavitel widgetů pro cokoliv, co tvůj počítač ví. Editor drag-and-drop, 1 400+ datových zdrojů, texty, lišty, grafy i obrázky kdekoli na každé obrazovce - bez jediného řádku kódu. Závodní HUD v sobotu, PC dashboard v neděli - stejný motor, tvůj layout.
 
-**2 205 bindovatelných propů - 723 vestavěných + 1 482 z celé SimHub telemetrie. Každý přetáhneš na plátno drag-and-drop editorem: HUD, pilulka, widget nebo RTSS overlay přímo ve hře. Nula kódu, vzhled je 100% tvoje fantazie.**
+**2 269 bindovatelných propů - 787 vestavěných + 1 482 z celé SimHub telemetrie. Každý přetáhneš na plátno drag-and-drop editorem: HUD, pilulka, widget nebo RTSS overlay přímo ve hře. Nula kódu, vzhled je 100% tvoje fantazie.**
 
 
 ---
@@ -18,7 +18,7 @@ Postavený pro simracing (přes SimHub), sledování hardwaru PC a bezpečné ř
 
 Většina hardware a telemetrických nástrojů končí pasivní tabulkou ve vlastním okně. Chicago Overlay jde dál - čtyři vrstvy, jeden datový motor:
 
-- **Kompletní HW diagnostika a inventura** - detekce na úrovni nejlepších - like CPU-Z, GPU-Z nebo HWiNFO, v čisté prohledávatelné tabulce s CSV exportem (723 vestavěných propů + 1 482 ze SimHub telemetrie = **2 205 celkem**).
+- **Kompletní HW diagnostika a inventura** - detekce na úrovni nejlepších - like CPU-Z, GPU-Z nebo HWiNFO, v čisté prohledávatelné tabulce s CSV exportem (787 vestavěných propů + 1 482 ze SimHub telemetrie = **2 269 celkem**).
 - **Vícenásobný vizuální výstup** - WebView canvas, nativní WPF nebo RTSS text. Jakoukoliv hodnotu z tabulky pošleš rovnou na obrazovku, do hry v exclusive fullscreenu nebo na druhý monitor.
 - **Dva režimy ovládání** - Easy režim pilulek/widgetů: klikneš, vybereš skin a hodnoty, přetáhneš myší - hotovo za 10 sekund, bez WebView2. Pokročilý inspektor (`Ctrl+Alt+E`): plná tvůrčí svoboda bez kódu - zoom 25-800 %, 3D perspektivní gridy, ekvalizér, vlastní grafy, vrstvy, sdílení přes schránku.
 - **Poctivé systémové nástroje navrch** - křivky ventilátorů s guardianem, stress test CPU/GPU/RAM, rychlý T800 čistič a správce Start & Tasks v jediné lehké aplikaci.
@@ -60,6 +60,10 @@ Většina hardware a telemetrických nástrojů končí pasivní tabulkou ve vla
   * **Chyť a táhni je přímo po ploše** v Edit módu (`Ctrl+Alt+E`) - pozice se sama uloží a po dokončení se vrací click-through.
   * Pro každý widget: vodorovná či svislá orientace, vlastní jméno (vidět v tray submenu), **hotová témata** místo nekonečného ladění barev, celková průhlednost + zvlášť alfa podkladu a radius rohů (defaultně kapsle, `0` = hranaté).
   * Každý widget je řada (nebo sloupec) živých hodnot s vlastním skinem - FPS, frametimes, CPU, RAM, zátěž a teplota GPU… co zdroj vybereš. `start-widget` je v balení hned od první instalace, widgety se přepínají rovnou z tray menu a spravuje je samostatné okno Widgety.
+* **HUD v okně - jakýkoliv layout jako samostatné okno:**
+  * Tray menu „Okno" přemění layout na normální okno, zcela nezávislé na přiřazení monitoru - „nové" spawnuje další instance, takže oken může běžet víc najednou (i dvakrát tentýž layout). Layout může žít na HUD ploše i v okně současně.
+  * Titulková lišta nese slidery průhlednosti okna a zoomu plátna, fajfky titulku / fullscreenu F11 / maximalizace a dropdown pro přepnutí obsahu; pravý klik na plátno otevře menu okna (vždy navrchu, slidery, inspektor, zavřít). Tlačítka v okenním renderu reagují na přímé kliky.
+  * Stav okna (pozice, velikost, průhlednost, zoom, pozadí) se drží v `win` sekci layoutu a přežije restart i `.cpk` export.
 * **Render motor na každý monitor zvlášť:**
   * `webview` nebo `native` per display - nativní engine kreslí `data` a `box` nody layoutu přímo ve WPF, **úplně bez WebView2 procesu** na dané obrazovce: míň RAM, okamžité kreslení a fixní číslicové sloty, takže hodnoty nikdy neposkakují. Layout jen s pilulkou nepustí WebView vůbec - monitor jede native automaticky a `Ctrl+Alt+I` ukáže, který engine kde skutečně běží.
 * **RTSS OSD do hry:**
@@ -71,7 +75,7 @@ Většina hardware a telemetrických nástrojů končí pasivní tabulkou ve vla
   * Aura pravidla na propech rozsvěcují klávesnici i LED na zvukové kartě - nativně bez externího nástroje, nebo přes OpenRGB jako samostatný kanál. Volba backendu per zařízení a deduplikace zaručí, že se dva kanály o stejný hardware neperou.
 * **Chytré hlídání zdrojů - fajfka = povolení, běh = poptávka:**
   * Povolený zdroj už neběží jen proto, že appka je otevřená. EQ, hodiny, HW monitoring i PresentMon naskočí jen dokud je něco čte (layout, widget, RTSS stream, alert, živá relace, řízení větráků, otevřené HW okno) - a zhasnou, jakmile je nikdo nepotřebuje. Ikona v tray = klidová appka.
-  * **Chicago hlídá samo sebe:** propy `App.*` ukazují vlastní CPU, privátní i sdílenou RAM, počet WebView procesů a jejich cenu, vlákna, počty oken a stav každého zdroje. Stránka **Zdroje** ukazuje živou spotřebu i *proč* každý zdroj běží nebo stojí.
+  * **Chicago hlídá samo sebe:** propy `App.*` ukazují vlastní CPU, privátní i sdílenou RAM, počet WebView procesů a jejich cenu, vlákna, počty oken a stav každého zdroje - plus cesty instalace/dat/brandu a verzi appky pro text a web nody (`app:` brand assety v balení). Stránka **Zdroje** ukazuje živou spotřebu i *proč* každý zdroj běží nebo stojí.
 * **Auto profily (HUD podle hry):**
   * Layout se přepne automaticky při spuštění hry nebo libovolného procesu - závodní HUD po startu, po vypnutí zpátky na čistou plochu. Detekce podle názvu procesu nebo hry ze SimHubu (částečná shoda). Profil umí taky překrýt layout nad základním (`ov:`), nebo místo layoutu spustit makro.
   * Pro jednotlivé nebo všechny monitory, včetně pravidel „HUD vypnutý" - třeba závod na hlavním monitoru a postranní zhasnuté.

@@ -11,7 +11,7 @@ https://github.com/user-attachments/assets/f295d1df-57e7-49dc-af6d-08ef3f8c6a13
 **A lightweight, customizable, multi-monitor telemetry & system HUD overlay for Windows 10/11.**
 Built for sim racing (via SimHub), PC hardware monitoring, and safe hardware-level fan control - but really, it is the layer Windows never shipped: a visual widget builder for anything your PC knows. Drag-and-drop layout editor, 1,400+ data sources, text, bars, graphs and images anywhere on any screen - zero code. Race HUD on Saturday, PC dashboard on Sunday - the same engine, your layout.
 
-**2,205 bindable props - 723 built-in + 1,482 from the full SimHub telemetry feed. Drag any of them onto your canvas with the drag-and-drop editor: HUD, pill, widget or RTSS in-game overlay. Zero code, the look is 100% your imagination.**
+**2,269 bindable props - 787 built-in + 1,482 from the full SimHub telemetry feed. Drag any of them onto your canvas with the drag-and-drop editor: HUD, pill, widget or RTSS in-game overlay. Zero code, the look is 100% your imagination.**
 
 
 ---
@@ -20,7 +20,7 @@ Built for sim racing (via SimHub), PC hardware monitoring, and safe hardware-lev
 
 Most hardware and telemetry tools end at a passive table inside their own window. Chicago Overlay keeps going - four layers, one data engine:
 
-- **Complete HW diagnostics & inventory** - detection on par with the best - like CPU-Z, GPU-Z or HWiNFO, in a clean searchable table with CSV export (723 built-in props + 1,482 from the SimHub telemetry feed = **2,205 total**).
+- **Complete HW diagnostics & inventory** - detection on par with the best - like CPU-Z, GPU-Z or HWiNFO, in a clean searchable table with CSV export (787 built-in props + 1,482 from the SimHub telemetry feed = **2,269 total**).
 - **Multiple visual outputs** - WebView canvas, native WPF, or RTSS text. Any value from that table goes straight onto your screen, into a game in exclusive fullscreen, or to a second monitor.
 - **Two control modes** - Easy mode pills/widgets: click, pick a skin and values, drag with the mouse - done in 10 seconds, no WebView2. Advanced Inspector (`Ctrl+Alt+E`): full creative freedom without code - 25-800 % zoom, 3D perspective grids, EQ, custom graphs, layers, clipboard sharing.
 - **Honest system tools on top** - fan curves with a guardian watchdog, CPU/GPU/RAM stress test, the fast T800 cleaner and Start & Tasks manager in a single lightweight app.
@@ -62,6 +62,10 @@ Most hardware and telemetry tools end at a passive table inside their own window
   * **Grab and drag them right on the desktop** in Edit mode (`Ctrl+Alt+E`) - the position saves itself and click-through comes back the moment you're done.
   * Per widget: horizontal or vertical orientation, custom name (shown in the tray submenu), **theme presets** instead of endless color fiddling, overall transparency plus a separate background alpha, and corner radius (capsule pill by default, `0` = sharp box).
   * Every widget is a row (or column) of live values with its own skin - FPS, frametimes, CPU, RAM, GPU load & temp… whatever source you pick. A ready-made `start-widget` ships on first install, widgets toggle straight from the tray menu, and a standalone Widgets window manages them all.
+* **HUD in a window - any layout as a standalone window:**
+  * Tray menu "Window" turns a layout into a normal window, fully decoupled from monitor assignment - "new" spawns extra instances, so several windows can run at once (even the same layout twice). A layout can live on the HUD surface and in a window at the same time.
+  * The title bar carries window-opacity and canvas-zoom sliders, title / fullscreen F11 / maximize toggles and a layout dropdown that swaps the window's content in place; right-click on the canvas opens the window menu (always on top, sliders, inspector, close). Buttons respond to direct clicks in the windowed render.
+  * Window state (position, size, opacity, zoom, background) persists in the layout's `win` section and survives restart and `.cpk` export.
 * **Render engine per monitor:**
   * Pick `webview` or `native` per display - the native engine paints `data` & `box` layout nodes directly in WPF with **no WebView2 process at all** on that screen: less RAM, instant paint, and fixed-width digit slots so values never jitter. A layout holding only a pill never starts WebView at all - the monitor runs native automatically, and `Ctrl+Alt+I` shows which engine each screen actually uses.
 * **RTSS in-game OSD:**
@@ -73,7 +77,7 @@ Most hardware and telemetry tools end at a passive table inside their own window
   * Per-prop aura rules light up keyboard and sound-card LEDs - natively, no external tool needed, or via OpenRGB as a separate channel. Per-device backend choice and dedup mean two channels never fight over the same hardware.
 * **Smart Resource Supervision - checkbox = permission, run = demand:**
   * An enabled source no longer runs just because the app is open. EQ, clock, hardware monitoring and PresentMon start only while something actually consumes them (a layout, widget, RTSS stream, alert rule, live session, fan control, an open HW window) - and stop the moment nobody needs them. Idle tray icon = idle app.
-  * **Chicago audits itself:** `App.*` props expose its own CPU, private & shared RAM, WebView child count and their cost, threads, window counts and every source's state. The **Sources page** shows live usage plus *why* each source runs or idles.
+  * **Chicago audits itself:** `App.*` props expose its own CPU, private & shared RAM, WebView child count and their cost, threads, window counts and every source's state - plus install/data/brand paths and the app version for text & web nodes (`app:` brand assets included). The **Sources page** shows live usage plus *why* each source runs or idles.
 * **Auto Profiles (game-aware HUD):**
   * Switch layouts automatically when a game or any process starts - race HUD on launch, back to a clean desktop on exit. Detection via process name or SimHub game name (partial match). A profile can also overlay a layout on top of the base one (`ov:`), or run a macro instead.
   * Per-monitor or all monitors, plus "HUD off" rules - e.g. race layout on the main screen, side monitors dark.

@@ -9,8 +9,8 @@
       "desc_cs": "Dashboard v TRON stylu - cyan/magenta KPI dlaždice, Encom motiv",
       "desc_en": "TRON style dashboard - cyan/magenta KPI tiles, Encom theme",
       "zip": "dash-tron.cpk",
-      "sha256": "a2e16defe4093066046d44b636f97dc6143387019205e368c1be65e9538e4fc7",
-      "size": 564,
+      "sha256": "dd39e20937ccdc9ea65a59a4c9265b1c06d5dea6a25bbe4d497f9c5298eeff1f",
+      "size": 559,
       "files": [
         "dash.tron.json"
       ]
@@ -24,8 +24,8 @@
       "desc_cs": "Dashboard homelab - KPI řada, vzdálené stroje (Remote.*), graf sítě + nová šablona dlaždice host",
       "desc_en": "Homelab dashboard - KPI row, remote machines (Remote.*), network chart + new host tile template",
       "zip": "homelab-starter.cpk",
-      "sha256": "601a2be18825dc83ba3da1d93beaccef779dcb7ea57017624f1f7a122a199a8b",
-      "size": 1152,
+      "sha256": "22443289284171f8e9a58dd0a11f25328820aea49dd88881aeaf0e1278dd280a",
+      "size": 1141,
       "files": [
         "dash.homelab.json",
         "tiles/host.json"
@@ -40,7 +40,7 @@
       "desc_cs": "Case mod a desk layouty (rig-desk, rpi-5dash, rpi-7dash, maxi-hw, system-hw, ring-lab)",
       "desc_en": "Case mod and desk layouts (rig-desk, rpi-5dash, rpi-7dash, maxi-hw, system-hw, ring-lab)",
       "zip": "pack-casemod.cpk",
-      "sha256": "6250f609bcb1b7a0ef7732b553d406c0a5c8ea6df6c97a3519b02d6fa0037bb7",
+      "sha256": "5720f570578affd0549d1f6e2394f71208446dd37e0108553e43c404e88c0236",
       "size": 9500,
       "files": [
         "layouts/maxi-hw.json",
@@ -60,7 +60,7 @@
       "desc_cs": "Demoscene a stage layouty (demo-scene, flat-stage, persp-stage, fx-lab, saver-stars)",
       "desc_en": "Demoscene and stage layouts (demo-scene, flat-stage, persp-stage, fx-lab, saver-stars)",
       "zip": "pack-demoscene.cpk",
-      "sha256": "feab107e4ceaaaad70635bb043da81b10eb22bb6f5b920754251ef6797f6d0ff",
+      "sha256": "a15a5e69cb6a6a3e380344e91fffa16f7e2c437530d74422d48d36be3f839823",
       "size": 8977,
       "files": [
         "layouts/cyber-stage.json",
@@ -85,7 +85,7 @@
       "desc_cs": "Media a combo layouty (combo-desk, combo-hud, media-hud, media-hud-2, sci-fi, tune-lab)",
       "desc_en": "Media and combo layouts (combo-desk, combo-hud, media-hud, media-hud-2, sci-fi, tune-lab)",
       "zip": "pack-media-combo.cpk",
-      "sha256": "82ebd30eb232879abbf862d5c5fb8dc11018ec0b6a99b5a8e38a9700cdcd6778",
+      "sha256": "36a6ecc93cd683e5bc431355d4c06476f626bc1f398a46f3cccfd0e9d3a45e32",
       "size": 10342,
       "files": [
         "layouts/combo-desk.json",
@@ -101,12 +101,12 @@
       "name": "Screensaver pack",
       "ver": "1.0",
       "type": "layout",
-      "min_app": "1.7.770",
+      "min_app": "1.7.786",
       "desc_cs": "14 spořičů (matrix, hvězdy, cluster, aurora, bounce, eq, grid, hypno, neon, retro, scan, vital, deep, dmg) + anti-burn drift. Každý je čistý JSON - uprav v našem editoru, externím editoru nebo s AI; katalog propů = props-export.json. Vlastní kousky sdílej zpátky s komunitou.",
       "desc_en": "14 screensavers (matrix, stars, cluster, aurora, bounce, eq, grid, hypno, neon, retro, scan, vital, deep, dmg) + anti-burn drift. Each is plain JSON - tweak it in our editor, an external editor or with AI; prop catalog = props-export.json. Share your own back with the community.",
       "zip": "pack-screensavers.cpk",
-      "sha256": "7bbecd4ef0c3a3a80189d5b5dbb6acab543b4b68d17490fc7052d2f1121f608f",
-      "size": 7304,
+      "sha256": "2d9f1665143473f4624eca6e8b35703105e88c6848ec5379fc0b9a046100e25f",
+      "size": 7236,
       "files": [
         "layouts/saver-aurora.json",
         "layouts/saver-bounce.json",
@@ -133,7 +133,7 @@
       "desc_cs": "Závodní HUD layouty (race-hud, race-hw, race-minimal, race-pro, race-pro-2) + makro race-mode",
       "desc_en": "Racing HUD layouts (race-hud, race-hw, race-minimal, race-pro, race-pro-2) + race-mode macro",
       "zip": "pack-simracing.cpk",
-      "sha256": "40f5320a9c5bf0999b80de7014407499e7b75b9abbe60e45f3c707b8db4fed84",
+      "sha256": "b97e7821c99f456e59ae71988b9d834bcf66201c148f1f97cff3e9ce59b75ecc",
       "size": 12912,
       "files": [
         "layouts/race-hud.json",

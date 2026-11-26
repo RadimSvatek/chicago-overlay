@@ -3,7 +3,7 @@
   "type": "layout",
   "ver": "1.0",
   "name": "Screensaver pack",
-  "min_app": "1.7.770",
+  "min_app": "1.7.786",
   "desc_cs": "14 spořičů (matrix, hvězdy, cluster, aurora, bounce, eq, grid, hypno, neon, retro, scan, vital, deep, dmg) + anti-burn drift. Každý je čistý JSON - uprav v našem editoru, externím editoru nebo s AI; katalog propů = props-export.json. Vlastní kousky sdílej zpátky s komunitou.",
   "desc_en": "14 screensavers (matrix, stars, cluster, aurora, bounce, eq, grid, hypno, neon, retro, scan, vital, deep, dmg) + anti-burn drift. Each is plain JSON - tweak it in our editor, an external editor or with AI; prop catalog = props-export.json. Share your own back with the community."
 }

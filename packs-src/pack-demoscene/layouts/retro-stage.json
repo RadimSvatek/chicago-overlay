@@ -1,0 +1,133 @@
+{
+ "_seed": true,
+ "grid": {
+  "snap": true,
+  "step": 10
+ },
+ "nodes": [
+  {
+   "id": "terrain",
+   "type": "fx",
+   "anchor": "c",
+   "x": -960,
+   "y": -540,
+   "w": 1920,
+   "h": 640,
+   "kind": "terrain",
+   "prop": "Gpu.Usage",
+   "min": 0,
+   "max": 100,
+   "ps": 2,
+   "horizon": 0.35,
+   "speed": 1,
+   "color": "#020618",
+   "color2": "#01cdfe",
+   "color3": "#b6f4ff"
+  },
+  {
+   "id": "wire",
+   "type": "fx",
+   "anchor": "c",
+   "x": 480,
+   "y": -480,
+   "w": 480,
+   "h": 380,
+   "kind": "wire",
+   "prop": "Sys.Cpu",
+   "min": 0,
+   "max": 100,
+   "ps": 2,
+   "speed": 1,
+   "color": "#02141f",
+   "color2": "#01cdfe",
+   "color3": "#d6fcff"
+  },
+  {
+   "id": "waves",
+   "type": "fx",
+   "anchor": "c",
+   "x": -960,
+   "y": 100,
+   "w": 1920,
+   "h": 240,
+   "kind": "waves",
+   "prop": "Net.Ping",
+   "min": 0,
+   "max": 200,
+   "ps": 2,
+   "rows": 14,
+   "color": "#020618",
+   "color2": "#016a86",
+   "color3": "#01cdfe"
+  },
+  {
+   "id": "scroll",
+   "type": "fx",
+   "anchor": "c",
+   "x": -960,
+   "y": 380,
+   "w": 1920,
+   "h": 100,
+   "kind": "scroller",
+   "prop": "Sys.Cpu",
+   "min": 0,
+   "max": 100,
+   "ps": 2,
+   "cw": 9,
+   "text": "VOXEL TERRAIN *** VECTOR BALLS ARE BACK *** CPU {v}% LOAD *** ",
+   "color": "#020618",
+   "color2": "#01cdfe",
+   "color3": "#ff2bd6"
+  },
+  {
+   "id": "crt",
+   "type": "fx",
+   "anchor": "c",
+   "x": -960,
+   "y": -540,
+   "w": 1920,
+   "h": 1080,
+   "kind": "crt",
+   "ps": 2,
+   "cell": 5,
+   "prop": "Sys.Cpu",
+   "min": 0,
+   "max": 100,
+   "color": "#000000",
+   "color2": "#101010",
+   "color3": "#202020"
+  },
+  {
+   "id": "t_title",
+   "type": "data",
+   "anchor": "c",
+   "x": -440,
+   "y": -420,
+   "w": 500,
+   "align": "left",
+   "text": "RETRO STAGE",
+   "color": "#7df9ff",
+   "font": {
+    "family": "nasa",
+    "size": 60,
+    "weight": 400
+   }
+  },
+  {
+   "id": "t_sub",
+   "type": "data",
+   "anchor": "c",
+   "x": -440,
+   "y": -350,
+   "w": 500,
+   "align": "left",
+   "text": "voxel flyover + wireframe + waves",
+   "color": "#01cdfe",
+   "font": {
+    "family": "oxan",
+    "size": 18,
+    "weight": 400
+   }
+  }
+ ]
+}

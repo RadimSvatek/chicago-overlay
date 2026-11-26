@@ -1,6 +1,21 @@
 {
   "packs": [
     {
+      "id": "dash-tron",
+      "name": "TRON grid dash",
+      "ver": "1.0",
+      "type": "dash",
+      "min_app": "1.7.770",
+      "desc_cs": "Dashboard v TRON stylu - cyan/magenta KPI dlaždice, Encom motiv",
+      "desc_en": "TRON style dashboard - cyan/magenta KPI tiles, Encom theme",
+      "zip": "dash-tron.cpk",
+      "sha256": "3d48a2d86713db8831ef69f37d6dbb9fe2d90e2002abcde4c40e15b50d59242c",
+      "size": 559,
+      "files": [
+        "dash.tron.json"
+      ]
+    },
+    {
       "id": "homelab-starter",
       "name": "Homelab starter",
       "ver": "1.0",
@@ -9,7 +24,7 @@
       "desc_cs": "Dashboard homelab - KPI řada, vzdálené stroje (Remote.*), graf sítě + nová šablona dlaždice host",
       "desc_en": "Homelab dashboard - KPI row, remote machines (Remote.*), network chart + new host tile template",
       "zip": "homelab-starter.cpk",
-      "sha256": "4c05690af087847247b7bf2387f8400630fefa510827fca43ee3026a940ca5cd",
+      "sha256": "7e7d0a36eb5ad7919eadf74826b5284ca9f82e2a43272403b66c61f417de25fb",
       "size": 1141,
       "files": [
         "dash.homelab.json",
@@ -25,7 +40,7 @@
       "desc_cs": "Case mod a desk layouty (rig-desk, rpi-5dash, rpi-7dash, maxi-hw, system-hw, ring-lab)",
       "desc_en": "Case mod and desk layouts (rig-desk, rpi-5dash, rpi-7dash, maxi-hw, system-hw, ring-lab)",
       "zip": "pack-casemod.cpk",
-      "sha256": "fa6696e3edf962f7686cbf5bd60b4d133d100b4eb1a42e7520b2c060a15fee6d",
+      "sha256": "bcfc5aba432e1fe8c526b62946bb275d95cc29f926666e51df12ad9bb7c046cb",
       "size": 9500,
       "files": [
         "layouts/maxi-hw.json",
@@ -45,7 +60,7 @@
       "desc_cs": "Demoscene a stage layouty (demo-scene, flat-stage, persp-stage, fx-lab, saver-stars)",
       "desc_en": "Demoscene and stage layouts (demo-scene, flat-stage, persp-stage, fx-lab, saver-stars)",
       "zip": "pack-demoscene.cpk",
-      "sha256": "f63cac4af4d616cdf75e50ebbd8127dfd74f2548c9d7cd14bc04782c61a23282",
+      "sha256": "c33c2bec0ef0668a6cb3af2fd3127f09d5eced2abdf622d0128e55c1db7fd99d",
       "size": 8977,
       "files": [
         "layouts/cyber-stage.json",
@@ -70,7 +85,7 @@
       "desc_cs": "Media a combo layouty (combo-desk, combo-hud, media-hud, media-hud-2, sci-fi, tune-lab)",
       "desc_en": "Media and combo layouts (combo-desk, combo-hud, media-hud, media-hud-2, sci-fi, tune-lab)",
       "zip": "pack-media-combo.cpk",
-      "sha256": "5a6b0297701f2f63623fa8764656933833a9456d54f924c234fdba17d8b010dd",
+      "sha256": "7f6e9481c0186175cd3459c03c0c820ff66ab5db95c12afb2f7946af08a89a12",
       "size": 10342,
       "files": [
         "layouts/combo-desk.json",
@@ -90,7 +105,7 @@
       "desc_cs": "Závodní HUD layouty (race-hud, race-hw, race-minimal, race-pro, race-pro-2) + makro race-mode",
       "desc_en": "Racing HUD layouts (race-hud, race-hw, race-minimal, race-pro, race-pro-2) + race-mode macro",
       "zip": "pack-simracing.cpk",
-      "sha256": "50a4d299e7d92500918947611c66dce57686268337f3edcc62604e4cd84410da",
+      "sha256": "af82fa128a4058f903d633a671e7e9f8404554baf0ec9dfd792f423d2c06a0f8",
       "size": 12912,
       "files": [
         "layouts/race-hud.json",

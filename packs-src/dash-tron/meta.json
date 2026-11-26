@@ -1,0 +1,9 @@
+{
+  "id": "dash-tron",
+  "type": "dash",
+  "ver": "1.0",
+  "name": "TRON grid dash",
+  "min_app": "1.7.770",
+  "desc_cs": "Dashboard v TRON stylu - cyan/magenta KPI dlaždice, Encom motiv",
+  "desc_en": "TRON style dashboard - cyan/magenta KPI tiles, Encom theme"
+}

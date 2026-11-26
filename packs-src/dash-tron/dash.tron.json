@@ -1,0 +1,57 @@
+{
+ "cols": 4,
+ "pad": 16,
+ "gap": 12,
+ "canvas": {
+  "w": 1680
+ },
+ "tile": {
+  "h": 230
+ },
+ "tiles": [
+  {
+   "type": "card",
+   "tpl": "kpi",
+   "vars": {
+    "name": "CPU CORE",
+    "p": "Sys.Cpu",
+    "u": "%",
+    "c": "#01cdfe",
+    "sub": "processor grid"
+   }
+  },
+  {
+   "type": "card",
+   "tpl": "kpi",
+   "vars": {
+    "name": "GPU PIPE",
+    "p": "Gpu.Usage",
+    "u": "%",
+    "c": "#ff9a3d",
+    "sub": "render engine"
+   }
+  },
+  {
+   "type": "card",
+   "tpl": "kpi",
+   "vars": {
+    "name": "MEMORY",
+    "p": "Sys.Ram",
+    "u": "%",
+    "c": "#b967ff",
+    "sub": "data banks"
+   }
+  },
+  {
+   "type": "card",
+   "tpl": "kpi",
+   "vars": {
+    "name": "UPLINK",
+    "p": "Net.Ping",
+    "u": "ms",
+    "c": "#7df9ff",
+    "sub": "grid latency"
+   }
+  }
+ ]
+}

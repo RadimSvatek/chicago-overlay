@@ -1,0 +1,131 @@
+{
+ "_seed": true,
+ "grid": {
+  "snap": true,
+  "step": 10
+ },
+ "nodes": [
+  {
+   "id": "pcb",
+   "type": "fx",
+   "anchor": "c",
+   "x": -960,
+   "y": -540,
+   "w": 1920,
+   "h": 1080,
+   "kind": "circuit",
+   "prop": "Net.Ping",
+   "min": 0,
+   "max": 200,
+   "ps": 2,
+   "speed": 1,
+   "color": "#02120a",
+   "color2": "#00a050",
+   "color3": "#d0ffe0"
+  },
+  {
+   "id": "orb",
+   "type": "fx",
+   "anchor": "c",
+   "x": 480,
+   "y": -400,
+   "w": 480,
+   "h": 480,
+   "kind": "orbit",
+   "prop": "Sys.Cpu",
+   "min": 0,
+   "max": 100,
+   "ps": 2,
+   "speed": 1,
+   "color": "#02120a",
+   "color2": "#00d4a0",
+   "color3": "#d0fff0"
+  },
+  {
+   "id": "cpu",
+   "type": "data",
+   "anchor": "c",
+   "x": -440,
+   "y": -400,
+   "w": 340,
+   "align": "left",
+   "prop": "Sys.Cpu",
+   "dec": 0,
+   "unit": "%  bus utilization",
+   "color": "#00d4a0",
+   "font": {
+    "family": "oxan",
+    "size": 30,
+    "weight": 500
+   }
+  },
+  {
+   "id": "ram",
+   "type": "data",
+   "anchor": "c",
+   "x": -440,
+   "y": -350,
+   "w": 340,
+   "align": "left",
+   "prop": "Sys.Ram",
+   "dec": 0,
+   "unit": "%  memory banks",
+   "color": "#7df9ff",
+   "font": {
+    "family": "oxan",
+    "size": 30,
+    "weight": 500
+   }
+  },
+  {
+   "id": "ping",
+   "type": "data",
+   "anchor": "c",
+   "x": -440,
+   "y": -300,
+   "w": 340,
+   "align": "left",
+   "prop": "Net.Ping",
+   "dec": 0,
+   "unit": "ms  uplink",
+   "color": "#ff9a3d",
+   "font": {
+    "family": "oxan",
+    "size": 30,
+    "weight": 500
+   }
+  },
+  {
+   "id": "t_title",
+   "type": "data",
+   "anchor": "c",
+   "x": -440,
+   "y": -480,
+   "w": 500,
+   "align": "left",
+   "text": "MAINFRAME",
+   "color": "#00d4a0",
+   "font": {
+    "family": "nasa",
+    "size": 56,
+    "weight": 400
+   }
+  },
+  {
+   "id": "clock",
+   "type": "data",
+   "anchor": "c",
+   "x": -440,
+   "y": -200,
+   "w": 340,
+   "align": "left",
+   "prop": "Clock.TimeHM",
+   "color": "#eef2f8",
+   "font": {
+    "family": "nasa",
+    "size": 64,
+    "weight": 400
+   }
+  }
+ ]
+}

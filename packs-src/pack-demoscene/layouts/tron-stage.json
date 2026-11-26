@@ -1,0 +1,201 @@
+{
+ "_seed": true,
+ "grid": {
+  "snap": true,
+  "step": 10
+ },
+ "nodes": [
+  {
+   "id": "hex_bg",
+   "type": "fx",
+   "anchor": "c",
+   "x": -960,
+   "y": -540,
+   "w": 1920,
+   "h": 1080,
+   "kind": "hexgrid",
+   "prop": "Sys.Cpu",
+   "min": 0,
+   "max": 100,
+   "ps": 2,
+   "cell": 16,
+   "speed": 0.6,
+   "color": "#010612",
+   "color2": "#013a55",
+   "color3": "#01cdfe"
+  },
+  {
+   "id": "floor",
+   "type": "fx",
+   "anchor": "c",
+   "x": -960,
+   "y": -160,
+   "w": 1920,
+   "h": 380,
+   "kind": "perspgrid",
+   "prop": "Net.Ping",
+   "min": 0,
+   "max": 200,
+   "ps": 2,
+   "horizon": 0.1,
+   "color": "#02061a",
+   "color2": "#016a86",
+   "color3": "#01cdfe"
+  },
+  {
+   "id": "disc",
+   "type": "fx",
+   "anchor": "c",
+   "x": 560,
+   "y": -420,
+   "w": 400,
+   "h": 400,
+   "kind": "radar",
+   "prop": "Gpu.Usage",
+   "min": 0,
+   "max": 100,
+   "ps": 2,
+   "speed": 1,
+   "color": "#02141f",
+   "color2": "#01cdfe",
+   "color3": "#d6fcff"
+  },
+  {
+   "id": "t_title",
+   "type": "data",
+   "anchor": "c",
+   "x": -400,
+   "y": -400,
+   "w": 500,
+   "align": "left",
+   "text": "ENCOM OS-12",
+   "color": "#7df9ff",
+   "font": {
+    "family": "nasa",
+    "size": 64,
+    "weight": 400
+   }
+  },
+  {
+   "id": "t_sub",
+   "type": "data",
+   "anchor": "c",
+   "x": -400,
+   "y": -320,
+   "w": 500,
+   "align": "left",
+   "text": "GRID STATUS // ONLINE",
+   "color": "#01cdfe",
+   "font": {
+    "family": "oxan",
+    "size": 20,
+    "weight": 400
+   }
+  },
+  {
+   "id": "cpu",
+   "type": "data",
+   "anchor": "c",
+   "x": -400,
+   "y": -230,
+   "w": 300,
+   "align": "left",
+   "prop": "Sys.Cpu",
+   "dec": 0,
+   "unit": "%  cpu core load",
+   "color": "#7df9ff",
+   "font": {
+    "family": "oxan",
+    "size": 26,
+    "weight": 500
+   }
+  },
+  {
+   "id": "gpu",
+   "type": "data",
+   "anchor": "c",
+   "x": -400,
+   "y": -190,
+   "w": 300,
+   "align": "left",
+   "prop": "Gpu.Usage",
+   "dec": 0,
+   "unit": "%  gpu pipeline",
+   "color": "#ff9a3d",
+   "font": {
+    "family": "oxan",
+    "size": 26,
+    "weight": 500
+   }
+  },
+  {
+   "id": "ram",
+   "type": "data",
+   "anchor": "c",
+   "x": -400,
+   "y": -150,
+   "w": 300,
+   "align": "left",
+   "prop": "Sys.Ram",
+   "dec": 0,
+   "unit": "%  memory sector",
+   "color": "#01cdfe",
+   "font": {
+    "family": "oxan",
+    "size": 26,
+    "weight": 500
+   }
+  },
+  {
+   "id": "ping",
+   "type": "data",
+   "anchor": "c",
+   "x": -400,
+   "y": -110,
+   "w": 300,
+   "align": "left",
+   "prop": "Net.Ping",
+   "dec": 0,
+   "unit": "ms  uplink latency",
+   "color": "#7df9ff",
+   "font": {
+    "family": "oxan",
+    "size": 26,
+    "weight": 500
+   }
+  },
+  {
+   "id": "bar_cpu",
+   "type": "bar",
+   "anchor": "c",
+   "x": -400,
+   "y": -75,
+   "w": 340,
+   "h": 8,
+   "prop": "Sys.Cpu",
+   "min": 0,
+   "max": 100,
+   "seg": 34,
+   "segGap": 2,
+   "fill": "solid",
+   "color": "#01cdfe",
+   "glow": 6
+  },
+  {
+   "id": "clock",
+   "type": "data",
+   "anchor": "c",
+   "x": -400,
+   "y": 120,
+   "w": 500,
+   "align": "left",
+   "prop": "Clock.TimeHM",
+   "color": "#eef2f8",
+   "font": {
+    "family": "nasa",
+    "size": 88,
+    "weight": 400
+   }
+  }
+ ]
+}

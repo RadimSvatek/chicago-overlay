@@ -1,0 +1,307 @@
+{
+ "_seed": true,
+ "grid": {
+  "snap": true,
+  "step": 10
+ },
+ "nodes": [
+  {
+   "id": "grid_floor",
+   "type": "fx",
+   "anchor": "c",
+   "x": -960,
+   "y": -540,
+   "w": 1920,
+   "h": 1080,
+   "kind": "perspgrid",
+   "prop": "SpeedKmh",
+   "min": 0,
+   "max": 300,
+   "ps": 2,
+   "speed": 1,
+   "horizon": 0.55,
+   "color": "#02061a",
+   "color2": "#01cdfe",
+   "color3": "#b6f4ff"
+  },
+  {
+   "id": "p_speed",
+   "type": "box",
+   "anchor": "c",
+   "x": -180,
+   "y": -70,
+   "w": 360,
+   "h": 140,
+   "bg": true,
+   "bgColor": "#03081a",
+   "bgAlpha": 62,
+   "radius": 0,
+   "borderW": 1,
+   "borderColor": "#01cdfe"
+  },
+  {
+   "id": "speed",
+   "type": "data",
+   "anchor": "c",
+   "x": -170,
+   "y": 40,
+   "w": 240,
+   "align": "right",
+   "prop": "SpeedKmh",
+   "dec": 0,
+   "color": "#7df9ff",
+   "font": {
+    "family": "nasa",
+    "size": 96,
+    "weight": 400
+   }
+  },
+  {
+   "id": "speed_u",
+   "type": "data",
+   "anchor": "c",
+   "x": 80,
+   "y": 40,
+   "w": 90,
+   "align": "left",
+   "text": "km/h",
+   "color": "#01cdfe",
+   "font": {
+    "family": "oxan",
+    "size": 24,
+    "weight": 400
+   }
+  },
+  {
+   "id": "gear",
+   "type": "data",
+   "anchor": "c",
+   "x": -40,
+   "y": -10,
+   "w": 80,
+   "align": "center",
+   "prop": "Gear",
+   "color": "#ff9a3d",
+   "font": {
+    "family": "nasa",
+    "size": 44,
+    "weight": 700
+   }
+  },
+  {
+   "id": "rpm_bar",
+   "type": "bar",
+   "anchor": "c",
+   "x": -480,
+   "y": -140,
+   "w": 960,
+   "h": 18,
+   "prop": "Rpms",
+   "min": 0,
+   "max": 9000,
+   "seg": 48,
+   "segGap": 2,
+   "fill": "gradient",
+   "color": "#01cdfe",
+   "color2": "#7df9ff",
+   "color3": "#ff6a00",
+   "z1": 70,
+   "z2": 90,
+   "glow": 8
+  },
+  {
+   "id": "rpm_l",
+   "type": "data",
+   "anchor": "c",
+   "x": -480,
+   "y": -160,
+   "w": 200,
+   "align": "left",
+   "text": "RPM",
+   "color": "#01cdfe",
+   "font": {
+    "family": "oxan",
+    "size": 14,
+    "weight": 400
+   }
+  },
+  {
+   "id": "rpm_r",
+   "type": "data",
+   "anchor": "c",
+   "x": 280,
+   "y": -160,
+   "w": 200,
+   "align": "right",
+   "prop": "Rpms",
+   "dec": 0,
+   "color": "#7df9ff",
+   "font": {
+    "family": "oxan",
+    "size": 14,
+    "weight": 500
+   }
+  },
+  {
+   "id": "throttle",
+   "type": "bar",
+   "anchor": "c",
+   "x": -480,
+   "y": -180,
+   "w": 300,
+   "h": 10,
+   "prop": "Throttle",
+   "min": 0,
+   "max": 100,
+   "fill": "solid",
+   "color": "#37f06a",
+   "seg": 30,
+   "segGap": 2
+  },
+  {
+   "id": "throttle_l",
+   "type": "data",
+   "anchor": "c",
+   "x": -480,
+   "y": -200,
+   "w": 300,
+   "align": "left",
+   "text": "THR",
+   "color": "#3d4a63",
+   "font": {
+    "family": "oxan",
+    "size": 12,
+    "weight": 400
+   }
+  },
+  {
+   "id": "brake",
+   "type": "bar",
+   "anchor": "c",
+   "x": 180,
+   "y": -180,
+   "w": 300,
+   "h": 10,
+   "prop": "Brake",
+   "min": 0,
+   "max": 100,
+   "fill": "solid",
+   "color": "#ff3030",
+   "seg": 30,
+   "segGap": 2
+  },
+  {
+   "id": "brake_l",
+   "type": "data",
+   "anchor": "c",
+   "x": 180,
+   "y": -200,
+   "w": 300,
+   "align": "right",
+   "text": "BRK",
+   "color": "#3d4a63",
+   "font": {
+    "family": "oxan",
+    "size": 12,
+    "weight": 400
+   }
+  },
+  {
+   "id": "pos",
+   "type": "data",
+   "anchor": "c",
+   "x": -480,
+   "y": 60,
+   "w": 140,
+   "align": "left",
+   "prop": "Position",
+   "lbl": "P",
+   "color": "#ff9a3d",
+   "font": {
+    "family": "nasa",
+    "size": 36,
+    "weight": 700
+   }
+  },
+  {
+   "id": "lap",
+   "type": "data",
+   "anchor": "c",
+   "x": 340,
+   "y": 60,
+   "w": 140,
+   "align": "right",
+   "prop": "CompletedLaps",
+   "lbl": "L",
+   "color": "#7df9ff",
+   "font": {
+    "family": "nasa",
+    "size": 36,
+    "weight": 700
+   }
+  },
+  {
+   "id": "delta",
+   "type": "data",
+   "anchor": "c",
+   "x": -140,
+   "y": 60,
+   "w": 280,
+   "align": "center",
+   "prop": "DeltaToSessionBest",
+   "dec": 3,
+   "color": "#01cdfe",
+   "font": {
+    "family": "oxan",
+    "size": 30,
+    "weight": 500
+   }
+  },
+  {
+   "id": "flag_yel",
+   "type": "flag",
+   "flag": "yellow",
+   "anchor": "c",
+   "x": -60,
+   "y": -320,
+   "w": 50,
+   "h": 38
+  },
+  {
+   "id": "flag_blue",
+   "type": "flag",
+   "flag": "blue",
+   "anchor": "c",
+   "x": -120,
+   "y": -320,
+   "w": 50,
+   "h": 38
+  },
+  {
+   "id": "flag_red",
+   "type": "flag",
+   "flag": "red",
+   "anchor": "c",
+   "x": 0,
+   "y": -320,
+   "w": 50,
+   "h": 38
+  },
+  {
+   "id": "title",
+   "type": "data",
+   "anchor": "c",
+   "x": -200,
+   "y": -260,
+   "w": 400,
+   "align": "center",
+   "text": "TRON GRID RACE",
+   "color": "#01cdfe",
+   "font": {
+    "family": "oxan",
+    "size": 16,
+    "weight": 400
+   }
+  }
+ ]
+}

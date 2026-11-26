@@ -1,0 +1,129 @@
+{
+  "_seed": true,
+  "grid": {
+    "snap": true,
+    "step": 10
+  },
+  "nodes": [
+    {
+      "id": "rain",
+      "type": "fx",
+      "anchor": "c",
+      "x": -960,
+      "y": 540,
+      "w": 1920,
+      "h": 1080,
+      "kind": "matrix",
+      "prop": "Sys.Cpu",
+      "min": 0,
+      "max": 100,
+      "ps": 2,
+      "speed": 1,
+      "color": "#00260b",
+      "color2": "#00a33c",
+      "color3": "#b6ffc9"
+    },
+    {
+      "id": "clock",
+      "type": "data",
+      "anchor": "c",
+      "x": -300,
+      "y": -90,
+      "w": 600,
+      "align": "center",
+      "prop": "Clock.TimeHM",
+      "color": "#eef2f8",
+      "font": {
+        "family": "nasa",
+        "size": 96,
+        "weight": 400
+      }
+    },
+    {
+      "id": "date",
+      "type": "data",
+      "anchor": "c",
+      "x": -300,
+      "y": 30,
+      "w": 600,
+      "align": "center",
+      "prop": "Clock.Date",
+      "color": "#8fa3c0",
+      "font": {
+        "family": "oxan",
+        "size": 28,
+        "weight": 400
+      }
+    },
+    {
+      "id": "cpu",
+      "type": "data",
+      "anchor": "c",
+      "x": -400,
+      "y": 400,
+      "w": 180,
+      "align": "center",
+      "prop": "Sys.Cpu",
+      "dec": 0,
+      "unit": "% cpu",
+      "color": "#01cdfe",
+      "font": {
+        "family": "oxan",
+        "size": 22,
+        "weight": 500
+      }
+    },
+    {
+      "id": "gpu",
+      "type": "data",
+      "anchor": "c",
+      "x": -120,
+      "y": 400,
+      "w": 180,
+      "align": "center",
+      "prop": "Gpu.Usage",
+      "dec": 0,
+      "unit": "% gpu",
+      "color": "#b967ff",
+      "font": {
+        "family": "oxan",
+        "size": 22,
+        "weight": 500
+      }
+    },
+    {
+      "id": "ram",
+      "type": "data",
+      "anchor": "c",
+      "x": 160,
+      "y": 400,
+      "w": 180,
+      "align": "center",
+      "prop": "Sys.Ram",
+      "dec": 0,
+      "unit": "% ram",
+      "color": "#ff2bd6",
+      "font": {
+        "family": "oxan",
+        "size": 22,
+        "weight": 500
+      }
+    },
+    {
+      "id": "brand",
+      "type": "data",
+      "anchor": "c",
+      "x": -300,
+      "y": 480,
+      "w": 600,
+      "align": "center",
+      "text": "CHICAGO - live data screensaver",
+      "color": "#3d4a63",
+      "font": {
+        "family": "oxan",
+        "size": 16,
+        "weight": 400
+      }
+    }
+  ]
+}

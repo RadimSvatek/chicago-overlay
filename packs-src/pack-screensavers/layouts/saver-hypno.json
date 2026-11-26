@@ -1,0 +1,43 @@
+{
+  "_seed": true,
+  "grid": {
+    "snap": true,
+    "step": 10
+  },
+  "nodes": [
+    {
+      "id": "spiral",
+      "type": "fx",
+      "anchor": "c",
+      "x": -960,
+      "y": 540,
+      "w": 1920,
+      "h": 1080,
+      "kind": "spiral",
+      "prop": "Sys.Ram",
+      "min": 0,
+      "max": 100,
+      "ps": 2,
+      "speed": 1,
+      "color": "#0d0221",
+      "color2": "#ff2bd6",
+      "color3": "#01cdfe"
+    },
+    {
+      "id": "clock",
+      "type": "data",
+      "anchor": "c",
+      "x": -300,
+      "y": -80,
+      "w": 600,
+      "align": "center",
+      "prop": "Clock.TimeHM",
+      "color": "#eef2f8",
+      "font": {
+        "family": "nasa",
+        "size": 88,
+        "weight": 400
+      }
+    }
+  ]
+}

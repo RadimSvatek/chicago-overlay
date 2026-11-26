@@ -1,0 +1,119 @@
+{
+  "_seed": true,
+  "grid": {
+    "snap": true,
+    "step": 10
+  },
+  "nodes": [
+    {
+      "id": "bg_stars",
+      "type": "fx",
+      "anchor": "c",
+      "x": -960,
+      "y": 540,
+      "w": 1920,
+      "h": 1080,
+      "kind": "stars",
+      "prop": "Sys.Ram",
+      "min": 0,
+      "max": 100,
+      "ps": 3,
+      "speed": 0.5,
+      "color": "#101c33",
+      "color2": "#274b7a",
+      "color3": "#7dc8ff"
+    },
+    {
+      "id": "dmg",
+      "type": "events",
+      "anchor": "c",
+      "x": -480,
+      "y": -300,
+      "w": 960,
+      "h": 560,
+      "jitter": 90,
+      "max": 10,
+      "spread": 220,
+      "color": "#eef2f8",
+      "font": {
+        "family": "nasa",
+        "size": 34,
+        "weight": 700
+      },
+      "watch": [
+        {
+          "color": "#7dc8ff",
+          "fmt": "CPU {d}%  ->  {v}%",
+          "min": 6,
+          "on": "delta",
+          "prop": "Sys.Cpu"
+        },
+        {
+          "color": "#b967ff",
+          "fmt": "GPU {d}%  ->  {v}%",
+          "min": 6,
+          "on": "delta",
+          "prop": "Gpu.Usage"
+        },
+        {
+          "color": "#ff2bd6",
+          "fmt": "RAM {d}%  ->  {v}%",
+          "min": 4,
+          "on": "delta",
+          "prop": "Sys.Ram"
+        },
+        {
+          "at": 75,
+          "color": "#ff9a3d",
+          "cool": 12000,
+          "fmt": "CPU {v}% !",
+          "on": "above",
+          "prop": "Sys.Cpu"
+        },
+        {
+          "at": 78,
+          "color": "#ff4646",
+          "cool": 15000,
+          "crit": true,
+          "fmt": "GPU {v} C !",
+          "on": "above",
+          "prop": "Gpu.Temp"
+        },
+        {
+          "at": 85,
+          "color": "#ff4646",
+          "cool": 15000,
+          "crit": true,
+          "fmt": "HOTSPOT {v} C !",
+          "on": "above",
+          "prop": "Gpu.Hotspot"
+        },
+        {
+          "at": 90,
+          "color": "#ff4646",
+          "cool": 20000,
+          "crit": true,
+          "fmt": "RAM {v}% !",
+          "on": "above",
+          "prop": "Sys.Ram"
+        }
+      ]
+    },
+    {
+      "id": "clock",
+      "type": "data",
+      "anchor": "c",
+      "x": -200,
+      "y": -480,
+      "w": 400,
+      "align": "center",
+      "prop": "Clock.TimeHM",
+      "color": "#5a6b8a",
+      "font": {
+        "family": "nasa",
+        "size": 40,
+        "weight": 400
+      }
+    }
+  ]
+}

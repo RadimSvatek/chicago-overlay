@@ -1,0 +1,42 @@
+{
+  "_seed": true,
+  "grid": {
+    "snap": true,
+    "step": 10
+  },
+  "nodes": [
+    {
+      "id": "eq",
+      "type": "fx",
+      "anchor": "c",
+      "x": -960,
+      "y": 540,
+      "w": 1920,
+      "h": 1080,
+      "kind": "eq",
+      "propBase": "Eq.Band",
+      "bands": 32,
+      "ps": 2,
+      "speed": 1,
+      "color": "#12001e",
+      "color2": "#01cdfe",
+      "color3": "#ff2bd6"
+    },
+    {
+      "id": "clock",
+      "type": "data",
+      "anchor": "c",
+      "x": -300,
+      "y": -60,
+      "w": 600,
+      "align": "center",
+      "prop": "Clock.TimeHM",
+      "color": "#eef2f8",
+      "font": {
+        "family": "nasa",
+        "size": 72,
+        "weight": 400
+      }
+    }
+  ]
+}

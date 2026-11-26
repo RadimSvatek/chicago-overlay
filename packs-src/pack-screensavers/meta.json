@@ -1,0 +1,9 @@
+{
+  "id": "pack-screensavers",
+  "type": "layout",
+  "ver": "1.0",
+  "name": "Screensaver pack",
+  "min_app": "1.7.770",
+  "desc_cs": "Spořiče obrazovky - matrix, hvězdy, cluster, aurora, bounce, eq, grid, hypno, neon, retro, scan, vital, deep, dmg + anti-burn drift",
+  "desc_en": "Screensavers - matrix, stars, cluster, aurora, bounce, eq, grid, hypno, neon, retro, scan, vital, deep, dmg + anti-burn drift"
+}

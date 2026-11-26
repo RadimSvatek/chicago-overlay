@@ -69,6 +69,15 @@ Většina hardware a telemetrických nástrojů končí pasivní tabulkou ve vla
   * `webview` nebo `native` per display - nativní engine kreslí `data` a `box` nody layoutu přímo ve WPF, **úplně bez WebView2 procesu** na dané obrazovce: míň RAM, okamžité kreslení a fixní číslicové sloty, takže hodnoty nikdy neposkakují. Layout jen s pilulkou nepustí WebView vůbec - monitor jede native automaticky a `Ctrl+Alt+I` ukáže, který engine kde skutečně běží.
 * **RTSS OSD do hry:**
   * Živý text libovolného widgetu proudí do **RivaTuner Statistics Server** sdílené paměti - statistiky přímo ve hrách a exkluzivním fullscreenu, kam se běžný overlay nedostane (ověřeno naživo s RTSS 7.3.7).
+* **Dashboardy - dlaždice na mřížce:**
+  * Profily `dash:*` kompilují dlaždice do HUD layoutů - stránka Dashboard v Nastavení spravuje profily, plátno (sloupce, mezery, výšku a šířku dlaždice) a formuláře per typ (big-value, chart, list, card, server-card, serve); každá změna překreslí otevřené okno do ~400 ms. Tray menu nese rychlý přístup k profilům.
+  * Dash karty nesou schéma `rows[]`/`cells[]` - labely, hodnoty, sparky, grafy, bary, pilulky, seznamy i tlačítka v jedné dlaždici, sekce mají barevný tab, šablony `tpl:*` jsou v balení.
+  * Editační režim má **dvě úrovně** - dlaždice jako cihly (tažení se snapuje na mřížku obou os, resize úchyt v rohu, toolbar span/výška/pin) a opravdový inspektor na prvky *uvnitř* dlaždice: klikni na ně nebo je přetáhni v mezích dlaždice, pozice se ukládá relativně k dlaždici, takže zůstává jedna přesouvatelná cihla.
+* **Moduly jako atomy, packy a skladatelné tray menu:**
+  * **Správce komponent** přepíná každý ze 16 atomů appky jednotlivě - vypnutý modul jede plně offline (jako by nebyl nainstalovaný) a aktivační prompt ho vrátí zpět, presety čtvrtí překlápějí obvyklé sady a okna na něj odkazují přímo.
+  * **Content packy** - katalog ve Správci instaluje / odebírá / nasazuje layout packy; čtyři bundled `.cpk` packy jsou přímo v instalátoru.
+  * **Tray menu je strom** - celá top úroveň je uživatelsky skladatelná (`tray.items`), vlastní skupiny `grp.N` libovolně hluboko, oddělovače `sep.N` a editovatelný podstrom Nástroje.
+  * **Splashscreen při startu** - rámeček se zaoblenými rohy, logo, živý výpis startovacích kroků a progress s nastavitelným gradientem (vlastní hex dvojice nebo "dle Windows akcentu"); vypíná v Nastavení -> Systém.
 * **LAN dashboard - HUD na každém zařízení:**
   * Celé plátno jako živá webová stránka na mobilu, tabletu nebo druhém PC ve stejné síti - streamuje přes WebSocket jen klíče, které layout skutečně čte.
   * Volitelný PIN zamkne handshake (bez něj HTTP 401), stránka se sama přizpůsobí viewportu a "send UI too" dovolí upravovat layouty přímo z mobilu.
@@ -129,16 +138,16 @@ Většina hardware a telemetrických nástrojů končí pasivní tabulkou ve vla
   * Každý monitor může mít vlastní layout i nezávislou obnovovací frekvenci (Plná / 60 / 30 / 20 / 10 / 5 Hz).
   * Volba mezi **sdíleným plátnem** (jeden WebView2 renderer pro všechny monitory - úspora ~140 MB RAM na každý další monitor) nebo **oddělenými okny**.
   * Laděné na téměř nulovou cenu CPU: hw init a rescan běží na pozadí, telemetrie jede na delta rámcích a nečinná práce je blokovaná - overlay zůstává svižný a neviditelný, dokud nemá co ukázat.
-* **28 vyladěných šablon v balíčku:**
-  * Obsahuje `start`, `race-minimal`, `race-hud`, `race-pro`, `race-pro-2`, `race-hw`, `system-hw`, `system-hud`, `hw-info`, `maxi-hw`, `media-eq`, `media-hud`, `media-hud-2`, `combo-desk`, `combo-hud`, `tune-lab` (ladění křivek a stressu), `flat-stage`, `persp-stage`, `crawl-stage`, `pill-hw` (demo nativního widgetu), `ring-lab`, `fx-lab`, `demo-scene`, `rig-desk` (fotka tvého rigu se živými diodami), `sci-fi` a tři spořičové layouty (`saver`, `saver-stars`, `saver-dmg`).
-* **8 jazyků a nativní vzhled Windows 11/10:**
-  * V **češtině, angličtině, němčině, španělštině, francouzštině, italštině, polštině a ruštině** (instalátor i appka). Kopíruje akcentovou barvu Windows a dark/light režim - nebo zvol vlastní akcent; značková teal `#18D4C2` je předvybraná na čisté instalaci (tvoje volba se nikdy nepřepíše).
+* **30 vyladěných šablon v balíčku:**
+  * Obsahuje `start`, `race-minimal`, `race-hud`, `race-pro`, `race-pro-2`, `race-hw`, `system-hw`, `system-hud`, `hw-info`, `maxi-hw`, `media-eq`, `media-hud`, `media-hud-2`, `combo-desk`, `combo-hud`, `tune-lab` (ladění křivek a stressu), `flat-stage`, `persp-stage`, `crawl-stage`, `pill-hw` (demo nativního widgetu), `ring-lab`, `fx-lab`, `demo-scene`, `rig-desk` (fotka tvého rigu se živými diodami), `sci-fi`, dva LAN dashboard layouty pro Raspberry Pi panely (`rpi-5dash`, `rpi-7dash`) a tři spořičové layouty (`saver`, `saver-stars`, `saver-dmg`).
+* **9 jazyků a nativní vzhled Windows 11/10:**
+  * V **češtině, angličtině, němčině, španělštině, francouzštině, italštině, polštině, ruštině a rumunštině** (instalátor i appka). Kopíruje akcentovou barvu Windows a dark/light režim - nebo zvol vlastní akcent; značková teal `#18D4C2` je předvybraná na čisté instalaci (tvoje volba se nikdy nepřepíše).
 
 ---
 
-### Full nebo Nástroje - volba při instalaci
+### Rozsah instalace - Plná, Minimální nebo Volitelná
 
-Jeden instalátor, dvě edice. Vybíráš hned po úvodní stránce - a druhou edici můžeš kdykoli spustit později, žijí vedle sebe.
+Jeden instalátor, tři rozsahy hned po úvodní stránce: **Plná** (všechno, všech 16 modulů zapnuto), **Minimální** (edice Nástroje - bez overlaye, bez SimHubu) a **Volitelná** (stránka Moduly nabídne všech 16 atomů - dashboardy, větráky, aura, média, smart home, síť, letadlo, SimHub, HW info, stress, GPU burn, čistič, po startu, relace, SW info, WinLook - k přepnutí kus po kusu). Tabulka níže porovnává sady Full a Nástroje; Volitelná je prostě Plná mínus to, co odškrtneš. A druhou edici můžeš kdykoli spustit později, žijí vedle sebe.
 
 || **Full** | **Nástroje** |
 |---|:---:|:---:|
@@ -150,7 +159,7 @@ Jeden instalátor, dvě edice. Vybíráš hned po úvodní stránce - a druhou e
 | HW info, senzory a síťový monitoring | ✓ | ✓ |
 | Stress test, reporty relací a upozornění | ✓ | ✓ |
 | Úklid systému a správce spuštění/úloh | ✓ | ✓ |
-| Nastavení, aktualizace, autostart, 8 jazyků | ✓ | ✓ |
+| Nastavení, aktualizace, autostart, 9 jazyků | ✓ | ✓ |
 | RGB aura, LED matice a klávesnice jako plátno | ✓ | ✓ |
 | EQ spektrum a media props do RGB/LED výstupů | ✓ | ✓ |
 | Datová sběrnice: MQTT, HTTP/JSON, webhooky, HWiNFO SM | ✓ | ✓ |

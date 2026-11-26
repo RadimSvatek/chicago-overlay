@@ -71,6 +71,15 @@ Most hardware and telemetry tools end at a passive table inside their own window
   * Pick `webview` or `native` per display - the native engine paints `data` & `box` layout nodes directly in WPF with **no WebView2 process at all** on that screen: less RAM, instant paint, and fixed-width digit slots so values never jitter. A layout holding only a pill never starts WebView at all - the monitor runs native automatically, and `Ctrl+Alt+I` shows which engine each screen actually uses.
 * **RTSS in-game OSD:**
   * Stream any widget's live text into **RivaTuner Statistics Server** shared memory - your stats inside exclusive-fullscreen games where ordinary overlays can't reach (verified live on RTSS 7.3.7).
+* **Dashboards - tiles on a grid:**
+  * `dash:*` profiles compile tiles into HUD layouts - a Dashboard page in Settings manages profiles, the canvas (columns, gaps, tile height, width) and per-type tile forms (big-value, chart, list, card, server-card, serve); every change repaints an open window in ~400 ms. Tray menu carries quick profile access.
+  * Dash cards carry a `rows[]`/`cells[]` schema - labels, values, sparklines, charts, bars, pills, lists and buttons inside one tile, sections get a colored tab, `tpl:*` templates ship ready.
+  * Edit mode works in **two levels** - tiles as bricks (drag snapping to the grid on both axes, a resize grip in the corner, span/height/pin toolbar) and a real inspector on the elements *inside* each tile: click or drag them within the tile bounds, positions save relative to the tile so it stays one movable brick.
+* **Modules as atoms, packs & a composable tray:**
+  * The **Component manager** toggles each of the 16 app atoms individually - a disabled module goes fully offline (as if uninstalled) with an activation prompt to bring it back, quarter presets flip common bundles, and windows deeplink straight to it.
+  * **Content packs** - a catalog in the Manager installs / removes / seeds layout packs; four bundled `.cpk` packs ship inside the installer.
+  * The **tray menu is a tree** - the whole top level is user-composable (`tray.items`), with custom `grp.N` groups nested arbitrarily deep, `sep.N` separators and an editable Tools subtree.
+  * **Splash screen at startup** - a rounded frame with the logo, a live startup-step list and a configurable progress gradient (custom hex pair or "follow Windows accent"); toggled in Settings -> System.
 * **LAN Dashboard - your HUD on any device:**
   * The whole canvas as a live web page on your phone, tablet or a second PC on the same network - streamed over WebSocket carrying only the keys the layout actually reads.
   * Optional PIN locks the handshake (HTTP 401 without it), the page scale-fits to any viewport, and "send UI too" lets you edit layouts right from the phone.
@@ -131,17 +140,17 @@ Most hardware and telemetry tools end at a passive table inside their own window
   * Assign different layouts and independent refresh rates (Full / 60 / 30 / 20 / 10 / 5 Hz) per monitor.
   * Choose between **Shared Canvas** (single WebView2 renderer across all monitors, saving ~140 MB RAM per extra display) or **Split Canvas**.
   * Tuned for near-zero CPU cost: hardware init and rescans run in the background, telemetry rides on delta frames, and idle work is gated - the overlay stays snappy and invisible until it has something to show.
-* **28 Ready-to-Use Presets Included:**
-  * Includes `start`, `race-minimal`, `race-hud`, `race-pro`, `race-pro-2`, `race-hw`, `system-hw`, `system-hud`, `hw-info`, `maxi-hw`, `media-eq`, `media-hud`, `media-hud-2`, `combo-desk`, `combo-hud`, `tune-lab` (fan-curve & stress tuning), `flat-stage`, `persp-stage`, `crawl-stage`, `pill-hw` (native widget demo), `ring-lab`, `fx-lab`, `demo-scene`, `rig-desk` (your rig photo with live diodes), `sci-fi` and three screensaver layouts (`saver`, `saver-stars`, `saver-dmg`).
-* **8 Languages & Native Windows 11/10 Styling:**
-  * Available in **English, Czech, German, Spanish, French, Italian, Polish, and Russian** (both installer and app). Follows your Windows accent color and dark/light theme - or pick any custom accent; the brand teal `#18D4C2` comes preselected on a clean install (your choice is never overwritten).
+* **30 Ready-to-Use Presets Included:**
+  * Includes `start`, `race-minimal`, `race-hud`, `race-pro`, `race-pro-2`, `race-hw`, `system-hw`, `system-hud`, `hw-info`, `maxi-hw`, `media-eq`, `media-hud`, `media-hud-2`, `combo-desk`, `combo-hud`, `tune-lab` (fan-curve & stress tuning), `flat-stage`, `persp-stage`, `crawl-stage`, `pill-hw` (native widget demo), `ring-lab`, `fx-lab`, `demo-scene`, `rig-desk` (your rig photo with live diodes), `sci-fi`, two LAN dashboard layouts for Raspberry Pi panels (`rpi-5dash`, `rpi-7dash`) and three screensaver layouts (`saver`, `saver-stars`, `saver-dmg`).
+* **9 Languages & Native Windows 11/10 Styling:**
+  * Available in **English, Czech, German, Spanish, French, Italian, Polish, Russian, and Romanian** (both installer and app). Follows your Windows accent color and dark/light theme - or pick any custom accent; the brand teal `#18D4C2` comes preselected on a clean install (your choice is never overwritten).
   * *Language note: the author is not a native English speaker - the English texts are AI-assisted translations, and so are the other UI languages (Czech is the original). Not perfect, but better than nothing - if something reads wrong, corrections are welcome.*
 
 ---
 
-### Full or Tools - your choice at install
+### Install scope - Full, Minimal or Custom
 
-One installer, two editions. You pick right after the info page - and you can always launch the other edition later, both live side by side.
+One installer, three scopes picked right after the info page: **Full** (everything, all 16 modules on), **Minimal** (the tools edition - no overlay, no SimHub) and **Custom** (a Modules page offers all 16 atoms - dashboards, fans, aura, media, smart home, network, flight, SimHub, HW info, stress, GPU burn, cleaner, startup, sessions, SW info, WinLook - to toggle individually). The table below compares the Full and Tools feature sets; Custom is simply Full minus whatever you uncheck. And you can always launch the other edition later, both live side by side.
 
 | | **Full** | **Tools** |
 |---|:---:|:---:|
@@ -153,7 +162,7 @@ One installer, two editions. You pick right after the info page - and you can al
 | HW info, sensors & network monitoring | ✓ | ✓ |
 | Stress test, session reports & alerts | ✓ | ✓ |
 | System cleanup, start/tasks & software manager | ✓ | ✓ |
-| Settings, updates, autostart, 8 languages | ✓ | ✓ |
+| Settings, updates, autostart, 9 languages | ✓ | ✓ |
 | RGB aura, LED matrices & keyboard canvas | ✓ | ✓ |
 | EQ spectrum & media props to RGB/LED outputs | ✓ | ✓ |
 | Data bus: MQTT, HTTP/JSON, webhooks, HWiNFO SM | ✓ | ✓ |

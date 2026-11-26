@@ -69,6 +69,15 @@ Die meisten Hardware- und Telemetrie-Tools enden bei einer passiven Tabelle im e
   * `webview` oder `native` pro Anzeige wählbar - die native Engine zeichnet `data`- & `box`-Layoutknoten direkt in WPF, **ganz ohne WebView2-Prozess** auf diesem Bildschirm: weniger RAM, sofortiges Zeichnen und feste Ziffernslots, sodass Werte nie zittern. Ein Layout nur mit Pill startet WebView gar nicht - der Monitor läuft automatisch nativ, und `Strg+Alt+I` zeigt, welche Engine wo wirklich läuft.
 * **RTSS-Ingame-OSD:**
   * Live-Text jedes Widgets in den **RivaTuner Statistics Server** Shared Memory streamen - Statistiken in exklusivem Vollbild, wo normale Overlays nicht hinkommen (live verifiziert mit RTSS 7.3.7).
+* **Dashboards - Kacheln auf einem Raster:**
+  * `dash:*`-Profile kompilieren Kacheln zu HUD-Layouts - eine Dashboard-Seite in den Einstellungen verwaltet Profile, die Flaeche (Spalten, Abstaende, Kachelhoehe, -breite) und Formulare pro Typ (big-value, chart, list, card, server-card, serve); jede Aenderung zeichnet ein offenes Fenster in ~400 ms neu. Das Tray-Menue traegt Schnellzugriff auf Profile.
+  * Dash-Karten tragen ein `rows[]`/`cells[]`-Schema - Labels, Werte, Sparks, Charts, Balken, Pills, Listen und Buttons in einer Kachel, Sektionen bekommen einen farbigen Tab, `tpl:*`-Vorlagen sind dabei.
+  * Der Editiermodus hat **zwei Ebenen** - Kacheln als Bausteine (Drag rastet auf das Raster in beiden Achsen, Resize-Griff in der Ecke, Span/Hoehe/Pin-Toolbar) und ein echter Inspektor auf den Elementen *innerhalb* der Kachel: klicke sie an oder ziehe sie innerhalb der Kachelgrenzen, Positionen werden relativ zur Kachel gespeichert - sie bleibt ein verschiebbarer Baustein.
+* **Module als Atome, Packs & ein zusammenstellbares Tray:**
+  * Die **Komponentenverwaltung** schaltet jedes der 16 App-Atome einzeln - ein deaktiviertes Modul laeuft komplett offline (als waere es nicht installiert) mit einem Aktivierungs-Prompt zur Rueckholung, Viertel-Presets kippen uebliche Buendel, und Fenster deepllinken direkt dorthin.
+  * **Content-Packs** - ein Katalog in der Verwaltung installiert / entfernt / seedet Layout-Packs; vier gebundelte `.cpk`-Packs liegen im Installer bei.
+  * Das **Tray-Menue ist ein Baum** - die ganze Top-Ebene ist benutzer-zusammenstellbar (`tray.items`), eigene `grp.N`-Gruppen beliebig tief, `sep.N`-Trenner und ein editierbarer Werkzeuge-Teilbaum.
+  * **Splashscreen beim Start** - ein Rahmen mit abgerundeten Ecken, Logo, Live-Liste der Startschritte und ein Fortschrittsbalken mit konfigurierbarem Verlauf (eigenes Hex-Paar oder "Windows-Akzent folgen"); abschaltbar unter Einstellungen -> System.
 * **LAN-Dashboard - dein HUD auf jedem Gerät:**
   * Die ganze Leinwand als Live-Webseite auf Handy, Tablet oder zweitem PC im selben Netz - gestreamt per WebSocket nur mit den Keys, die das Layout wirklich liest.
   * Optionaler PIN sperrt den Handshake (sonst HTTP 401), die Seite skaliert auf jeden Viewport, und "send UI too" erlaubt Layout-Bearbeitung direkt vom Handy.
@@ -129,16 +138,16 @@ Die meisten Hardware- und Telemetrie-Tools enden bei einer passiven Tabelle im e
   * Jedem Monitor lassen sich ein eigenes Layout sowie eine unabhängige Bildwiederholrate (Volle Geschwindigkeit / 60 / 30 / 20 / 10 / 5 Hz) zuweisen.
   * Wahl zwischen **Shared Canvas** (ein einziger WebView2-Renderer für alle Monitore - spart ca. 140 MB RAM pro zusätzlichem Bildschirm) oder **Split Canvas**.
   * Auf fast null CPU-Kosten getrimmt: Hardware-Init und Rescans laufen im Hintergrund, Telemetrie fährt auf Delta-Frames und Leerlaufarbeit ist geblockt - das Overlay bleibt flott und unsichtbar, bis es etwas zu zeigen hat.
-* **28 einsatzbereite Vorlagen enthalten:**
-  * Enthält `start`, `race-minimal`, `race-hud`, `race-pro`, `race-pro-2`, `race-hw`, `system-hw`, `system-hud`, `hw-info`, `maxi-hw`, `media-eq`, `media-hud`, `media-hud-2`, `combo-desk`, `combo-hud`, `tune-lab` (Lüfterkurven- & Stress-Tuning), `flat-stage`, `persp-stage`, `crawl-stage`, `pill-hw` (Native-Widget-Demo), `ring-lab`, `fx-lab`, `demo-scene`, `rig-desk` (dein Rig-Foto mit Live-Dioden), `sci-fi` und drei Bildschirmschoner-Layouts (`saver`, `saver-stars`, `saver-dmg`).
-* **8 Sprachen & natives Windows-11/10-Design:**
-  * Verfügbar auf **Deutsch, Englisch, Tschechisch, Spanisch, Französisch, Italienisch, Polnisch und Russisch** (sowohl Installer als auch App). Übernimmt automatisch die Windows-Akzentfarbe sowie den Dunkel-/Hellmodus - oder wähle einen eigenen Akzent; die Markenfarbe Teal `#18D4C2` ist auf Neuinstallationen vorgewählt (deine Wahl wird nie überschrieben).
+* **30 einsatzbereite Vorlagen enthalten:**
+  * Enthält `start`, `race-minimal`, `race-hud`, `race-pro`, `race-pro-2`, `race-hw`, `system-hw`, `system-hud`, `hw-info`, `maxi-hw`, `media-eq`, `media-hud`, `media-hud-2`, `combo-desk`, `combo-hud`, `tune-lab` (Lüfterkurven- & Stress-Tuning), `flat-stage`, `persp-stage`, `crawl-stage`, `pill-hw` (Native-Widget-Demo), `ring-lab`, `fx-lab`, `demo-scene`, `rig-desk` (dein Rig-Foto mit Live-Dioden), `sci-fi`, zwei LAN-Dashboard-Layouts fuer Raspberry-Pi-Panels (`rpi-5dash`, `rpi-7dash`) und drei Bildschirmschoner-Layouts (`saver`, `saver-stars`, `saver-dmg`).
+* **9 Sprachen & natives Windows-11/10-Design:**
+  * Verfügbar auf **Deutsch, Englisch, Tschechisch, Spanisch, Französisch, Italienisch, Polnisch, Russisch und Rumänisch** (sowohl Installer als auch App). Übernimmt automatisch die Windows-Akzentfarbe sowie den Dunkel-/Hellmodus - oder wähle einen eigenen Akzent; die Markenfarbe Teal `#18D4C2` ist auf Neuinstallationen vorgewählt (deine Wahl wird nie überschrieben).
 
 ---
 
-### Full oder Werkzeuge - Wahl bei der Installation
+### Installationsumfang - Voll, Minimal oder Benutzerdefiniert
 
-Ein Installer, zwei Editionen. Du wählst direkt nach der Infoseite - und kannst die andere Edition später jederzeit starten, beide leben nebeneinander.
+Ein Installer, drei Umfänge direkt nach der Infoseite: **Voll** (alles, alle 16 Module an), **Minimal** (die Werkzeuge-Edition - kein Overlay, kein SimHub) und **Benutzerdefiniert** (eine Modul-Seite bietet alle 16 Atome - Dashboards, Lüfter, Aura, Medien, Smart Home, Netzwerk, Flugzeug, SimHub, HW-Info, Stress, GPU-Burn, Cleaner, Autostart, Sitzungen, SW-Info, WinLook - zum einzelnen Umschalten). Die Tabelle unten vergleicht die Voll- und Werkzeuge-Sets; Benutzerdefiniert ist einfach Voll minus dem, was du abwählst. Und die andere Edition kannst du später jederzeit starten, beide leben nebeneinander.
 
 || **Full** | **Werkzeuge** |
 |---|:---:|:---:|
@@ -150,7 +159,7 @@ Ein Installer, zwei Editionen. Du wählst direkt nach der Infoseite - und kannst
 | HW-Info, Sensoren & Netzwerk-Monitoring | ✓ | ✓ |
 | Stresstest, Session-Reports & Warnungen | ✓ | ✓ |
 | System-Bereinigung & Autostart-/Aufgaben-Manager | ✓ | ✓ |
-| Einstellungen, Updates, Autostart, 8 Sprachen | ✓ | ✓ |
+| Einstellungen, Updates, Autostart, 9 Sprachen | ✓ | ✓ |
 | RGB-Aura, LED-Matrizen & Tastatur als Canvas | ✓ | ✓ |
 | EQ-Spektrum & Media-Props auf RGB/LED-Ausgaben | ✓ | ✓ |
 | Datenbus: MQTT, HTTP/JSON, Webhooks, HWiNFO SM | ✓ | ✓ |

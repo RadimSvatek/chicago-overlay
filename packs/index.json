@@ -9,8 +9,8 @@
       "desc_cs": "Dashboard v TRON stylu - cyan/magenta KPI dlaždice, Encom motiv",
       "desc_en": "TRON style dashboard - cyan/magenta KPI tiles, Encom theme",
       "zip": "dash-tron.cpk",
-      "sha256": "5ee7caeca4415c1b4496f69c9116040e411a8365f9574db6f855d4068a5cd9b6",
-      "size": 564,
+      "sha256": "e82a215176a45761380a1a847e3c1dcdbec5e849fe20a1b69caf7cbaccd20f4f",
+      "size": 559,
       "files": [
         "dash.tron.json"
       ]
@@ -24,8 +24,8 @@
       "desc_cs": "Dashboard homelab - KPI řada, vzdálené stroje (Remote.*), graf sítě + nová šablona dlaždice host",
       "desc_en": "Homelab dashboard - KPI row, remote machines (Remote.*), network chart + new host tile template",
       "zip": "homelab-starter.cpk",
-      "sha256": "4956a39b7b8ecce96a8edb408635fe8bcba9c579e129511a304183fee54af125",
-      "size": 1152,
+      "sha256": "1d586f50aab51bbc87b61658b0bc7b444870263604dfc5ac6f6767ca23371e26",
+      "size": 1141,
       "files": [
         "dash.homelab.json",
         "tiles/host.json"
@@ -40,7 +40,7 @@
       "desc_cs": "Case mod a desk layouty (rig-desk, rpi-5dash, rpi-7dash, maxi-hw, system-hw, ring-lab)",
       "desc_en": "Case mod and desk layouts (rig-desk, rpi-5dash, rpi-7dash, maxi-hw, system-hw, ring-lab)",
       "zip": "pack-casemod.cpk",
-      "sha256": "369aa6d7732cfe57ab6ecf58a94d8a36c563b32534a275d8485ca6ff29a5559d",
+      "sha256": "3a42158e20708c80f456c03cbdb1f0b89ad3ffb8f7616694e3e370ecbef9edf0",
       "size": 9500,
       "files": [
         "layouts/maxi-hw.json",
@@ -60,7 +60,7 @@
       "desc_cs": "Demoscene a stage layouty (demo-scene, flat-stage, persp-stage, fx-lab, saver-stars)",
       "desc_en": "Demoscene and stage layouts (demo-scene, flat-stage, persp-stage, fx-lab, saver-stars)",
       "zip": "pack-demoscene.cpk",
-      "sha256": "1033bc0a3ef3c1c75f741993b8e6eb306646879bae52c096517b074192945f4e",
+      "sha256": "ca7ece3252df193274daa1238f5e810f1e8a89ad4e0cf88eefdc1770860f9d84",
       "size": 8977,
       "files": [
         "layouts/cyber-stage.json",
@@ -85,7 +85,7 @@
       "desc_cs": "Media a combo layouty (combo-desk, combo-hud, media-hud, media-hud-2, sci-fi, tune-lab)",
       "desc_en": "Media and combo layouts (combo-desk, combo-hud, media-hud, media-hud-2, sci-fi, tune-lab)",
       "zip": "pack-media-combo.cpk",
-      "sha256": "4b5cb195a2913b78484aea1a33bf4f6afd1e0d6e8d6ead4364b98f9b266a0800",
+      "sha256": "61097029d902550baadf20cd6833710b95a24bf5bdccb16c30c5770c7503ee51",
       "size": 10342,
       "files": [
         "layouts/combo-desk.json",
@@ -102,11 +102,11 @@
       "ver": "1.0",
       "type": "layout",
       "min_app": "1.7.770",
-      "desc_cs": "Spořiče obrazovky - matrix, hvězdy, cluster, aurora, bounce, eq, grid, hypno, neon, retro, scan, vital, deep, dmg + anti-burn drift",
-      "desc_en": "Screensavers - matrix, stars, cluster, aurora, bounce, eq, grid, hypno, neon, retro, scan, vital, deep, dmg + anti-burn drift",
+      "desc_cs": "14 spořičů (matrix, hvězdy, cluster, aurora, bounce, eq, grid, hypno, neon, retro, scan, vital, deep, dmg) + anti-burn drift. Každý je čistý JSON - uprav v našem editoru, externím editoru nebo s AI; katalog propů = props-export.json. Vlastní kousky sdílej zpátky s komunitou.",
+      "desc_en": "14 screensavers (matrix, stars, cluster, aurora, bounce, eq, grid, hypno, neon, retro, scan, vital, deep, dmg) + anti-burn drift. Each is plain JSON - tweak it in our editor, an external editor or with AI; prop catalog = props-export.json. Share your own back with the community.",
       "zip": "pack-screensavers.cpk",
-      "sha256": "603b52966ef01a67ce98a592b5a1a1f0b423b9fda365a7be9c53e87e93d95adc",
-      "size": 7304,
+      "sha256": "50bc06af4a528018f1ac534b986de6abe9f462a13e36b8f936eeeaf18e3bb1df",
+      "size": 7236,
       "files": [
         "layouts/saver-aurora.json",
         "layouts/saver-bounce.json",
@@ -133,7 +133,7 @@
       "desc_cs": "Závodní HUD layouty (race-hud, race-hw, race-minimal, race-pro, race-pro-2) + makro race-mode",
       "desc_en": "Racing HUD layouts (race-hud, race-hw, race-minimal, race-pro, race-pro-2) + race-mode macro",
       "zip": "pack-simracing.cpk",
-      "sha256": "b9b531f91fae58f175dd5cb96b8dc039e45ff267d06eb7b6aa864b8f66205ba1",
+      "sha256": "9c064beee8fda978431cf7b8894b5078434912f6c83c1203020ed3ffe1121b00",
       "size": 12912,
       "files": [
         "layouts/race-hud.json",

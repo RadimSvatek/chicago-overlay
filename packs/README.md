@@ -69,3 +69,22 @@ Pravidla (vynucuje validátor i aplikace při instalaci):
 PR review = čitelné JSON diffs (proto src složky, ne
 binárky). Maintainer merge = vydání. Sporný obsah:
 layouty propů - validátor strukturu, review smysl.
+
+## Vlastní JSONy - ne jen packy
+
+Všechny soubory v `data\` jsou **čistý JSON** - spořiče,
+layouty, makra, výpočty, kanály. Uživatel si je může
+doplnit/upravit podle sebe:
+
+- **v aplikaci** - inspektor/layout editor (drag&drop,
+  živý náhled ~400 ms hot-reload),
+- **externím editoru** - libovolný textový editor,
+  `ai-status.json` hlásí chyby formátu okamžitě,
+- **nechat udělat AI** - `data\AGENTS.md` nese kompletní
+  specifikaci formátu a bezpečnostní pravidla; katalog
+  propů je `exports\props-export.json` (regenerace
+  `/obj.aictx`) - AI klient ví, co smí vázat.
+
+Známý formát = snadné sdílení: zabal vlastní soubory jako
+pack (postup výše) a pošli PR - komunita si je nainstaluje
+jedním kliknutím ze Správce komponent → Packy.

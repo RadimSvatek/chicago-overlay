@@ -201,7 +201,7 @@ Pokud vám Chicago Overlay dělá radost a chcete podpořit jeho další vývoj 
 
 **[Podpořit přes Ko-fi (Karta / Apple Pay / Google Pay / PayPal)](https://ko-fi.com/radimsvatek)**
 
-*P.S. Projekt má pořád 0 hvězdiček - když ti Chicago udělá radost, kliknutí na ⭐ nic nestojí a hrozně pomůže, aby ho vůbec někdo našel.*
+*P.S. Když ti Chicago udělá radost, kliknutí na ⭐ na GitHubu nic nestojí a hrozně pomůže, aby ho vůbec někdo našel.*
 
 Díky za vyzkoušení - vidíme se na trati!
 

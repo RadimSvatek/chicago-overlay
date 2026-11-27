@@ -204,7 +204,7 @@ If you enjoy using Chicago Overlay and want to support future development (or si
 
 **[Support on Ko-fi (Card / Apple Pay / Google Pay / PayPal)](https://ko-fi.com/radimsvatek)**
 
-*P.S. The project still sits at 0 stars - if Chicago made your PC a bit nicer, hitting ⭐ costs nothing and genuinely helps it get found.*
+*P.S. If Chicago made your PC a bit nicer, hitting ⭐ on GitHub costs nothing and genuinely helps it get found.*
 
 Thank you for taking it for a spin - see you on track!
 

@@ -201,7 +201,7 @@ Wenn dir Chicago Overlay Freude macht und du die weitere Entwicklung unterstütz
 
 **[Unterstützen auf Ko-fi (Karte / Apple Pay / Google Pay / PayPal)](https://ko-fi.com/radimsvatek)**
 
-*P.S. Das Projekt steht immer noch bei 0 Sternen - wenn Chicago deinen PC etwas schöner macht, kostet ein ⭐ nichts und hilft wirklich, es überhaupt zu finden.*
+*P.S. Wenn Chicago deinen PC etwas schöner macht, kostet ein ⭐ auf GitHub nichts und hilft wirklich, es überhaupt zu finden.*
 
 Danke fürs Ausprobieren - wir sehen uns auf der Strecke!
 
